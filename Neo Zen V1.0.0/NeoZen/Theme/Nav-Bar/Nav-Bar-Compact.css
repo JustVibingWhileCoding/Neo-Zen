@@ -6,12 +6,27 @@
 
         }
 
-        #zen-appcontent-navbar-wrapper {}
-
-        #zen-appcontent-navbar-container {
-            background: transparent !important;
-            backdrop-filter: blur(9px) !important;
+        #zen-appcontent-navbar-wrapper {
+            & #zen-appcontent-navbar-container {
+                display: flex !important;
+                background: transparent !important;
+                justify-content: center !important;
+                box-shadow: none !important;
+                height: fit-content !important;
+                max-height: fit-content !important;
+            
+                & #nav-bar {
+                    padding: 0px 10px !important;
+                    margin-top: 12px !important;
+                    position: relative !important;
+                    height: 45px !important;
+                    max-height: 45px !important;
+                    background: var(--Neo-Blur-Color) !important;
+                    backdrop-filter: var(--Neo-Blur) !important;
+                    border-radius: var(--Neo-Border-Radius) !important;
+                    width: 90% !important;
+                }
+            }
         }
-
     }
 }
