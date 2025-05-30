@@ -3,7 +3,6 @@
 
         #zen-appcontent-navbar-wrapper[zen-has-hover="true"] {
             & #zen-appcontent-navbar-container {}
-
         }
 
         #zen-appcontent-navbar-wrapper {
@@ -14,7 +13,7 @@
                 box-shadow: none !important;
                 height: fit-content !important;
                 max-height: fit-content !important;
-            
+
                 & #nav-bar {
                     padding: 0px 10px !important;
                     margin-top: 12px !important;
