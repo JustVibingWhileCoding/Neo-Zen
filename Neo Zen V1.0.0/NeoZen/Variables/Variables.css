@@ -19,4 +19,7 @@
 
   /* Blur colors */
   --Neo-Blur-Color: color-mix(in srgb, var(--zen-primary-color) 5%, #000000a0);
+
+  /* Width Compact Mode */
+  --Neo-Width-Compact-Expanded: 20em;
 }

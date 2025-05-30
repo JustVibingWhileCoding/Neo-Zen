@@ -1,0 +1,42 @@
+/* -------------------------- COMPACT SIDEBAR -------------------------- */
+
+/* Fix for twilight acrylic */
+#navigator-toolbox:not([animate='true']) #titlebar {
+    position: relative;
+}
+
+#navigator-toolbox:not([animate='true']) #titlebar::before {
+    border: 0px solid transparent !important;
+    outline: none !important;
+    border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+    background: transparent !important;
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#navigator-toolbox:not([animate='true']) #titlebar::after {
+    border: 0px solid transparent !important;
+    outline: none !important;
+    border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+    content: '';
+    position: absolute;
+    background: transparent !important;
+    pointer-events: none;
+    z-index: 0;
+    opacity: var(--zen-grainy-background-opacity, 0);
+    mix-blend-mode: overlay;
+}
+
+/* Base blurred transparent background for compact sidebar */
+@media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
+    body:has([zen-compact-mode="true"]) #titlebar {
+        border: 0px solid transparent !important;
+        outline: none !important;
+        border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+
+        background: var(--Neo-Blur-Color) !important;
+        backdrop-filter: var(--Neo-Blur) !important;
+    }
+}
