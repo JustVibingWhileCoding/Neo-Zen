@@ -1,6 +1,18 @@
-:root:not([zen-single-toolbar="true"]):not([zen-compact-mode="true"]) {
-    #nav-bar {
-        height: 50px !important;
-        max-height: 50px !important;
+@media not (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+    :root:not([zen-single-toolbar="true"]) {
+        #zen-appcontent-navbar-container{            
+            & #nav-bar {
+                padding-top: 2px !important;
+                height: 50px !important;
+                max-height: 50px !important;
+            
+                align-content: center !important;
+            }
+        }
+        #zen-sidebar-top-buttons{
+            min-height: 50px !important;
+            height: 50px !important;
+            max-height: 50px !important;
+        }
     }
 }
