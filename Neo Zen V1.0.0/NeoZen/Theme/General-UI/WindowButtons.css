@@ -1,0 +1,63 @@
+#navigator-toolbox[zen-right-side="true"]>#zen-sidebar-top-buttons>.titlebar-buttonbox-container>.titlebar-buttonbox {
+    margin-top: 11px !important;
+}
+
+#navigator-toolbox[zen-right-side="true"]>#zen-sidebar-top-buttons>.titlebar-buttonbox-container {
+    order: 1 !important;
+}
+
+@media (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
+    .titlebar-buttonbox {
+        margin-right: 1px !important;
+        transform: translate(-2px, -1px) !important;
+    }
+
+    .titlebar-buttonbox-container {
+        order: 0 !important;
+    }
+}
+
+@media not (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
+    .titlebar-buttonbox {
+        margin: 0 10px 0 2px;
+    }
+}
+
+.titlebar-button {
+    padding: 0px !important;
+    min-height: 13px !important;
+    min-width: 13px !important;
+    height: 13px !important;
+    align-self: center;
+    margin-left: 5px !important;
+    border-radius: 50px;
+    transition: all 200ms ease-in-out;
+    background-color: rgba(200, 200, 200, 0.3) !important;
+}
+
+.titlebar-button:hover {
+    min-height: 20px !important;
+
+    &.titlebar-min:hover {
+        background-color: color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
+        box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
+    }
+
+    &.titlebar-restore:hover {
+        background-color: color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
+        box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
+    }
+    &.titlebar-max {
+        background-color: color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
+        box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
+    }
+
+    &.titlebar-close:hover {
+        background-color: color-mix(in srgb, var(--zen-primary-color) 40%, rgb(255, 90, 100)) !important;
+        box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 40%, rgb(255, 90, 100)) !important;
+    }
+}
+
+.titlebar-button>image {
+    visibility: collapse !important;
+}
