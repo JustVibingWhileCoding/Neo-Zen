@@ -1,0 +1,32 @@
+#urlbar #urlbar-background{
+    transition: backdrop-filter 0.3s ease, background 0.3s ease, opacity 0.5s ease !important;
+}
+
+#urlbar{
+    transition: width 0.0s ease, height 0.3s ease, max-height 0.3s ease, min-height 0.3s ease !important;
+}
+
+#urlbar[open]{
+    transition: width 0.3s ease, height 0.3s ease, max-height 0.3s ease, min-height 0.3s ease !important;
+}
+
+#urlbar[open] #urlbar-background {
+  background: var(--Neo-Blur-Color) !important;
+  /* Slightly lighter dark with transparency */
+  backdrop-filter: var(--Neo-Blur) !important;
+
+  box-shadow: 0px 0px 10px #000000 !important;
+  border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+  
+  opacity: 1.0 !important;
+  border: none !important;
+
+  outline-style: none !important;
+  outline-color: transparent !important;
+}
+
+.urlbarView-body-inner {
+  #urlbar[open] > .urlbarView > .urlbarView-body-outer > & {
+    border-top: 1px solid color-mix(in srgb, var(--zen-primary-color) 20%, transparent 100%) !important;
+  }
+}
