@@ -1,0 +1,17 @@
+@media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+    :root:not([zen-single-toolbar="true"]) {
+
+        #zen-appcontent-navbar-wrapper[zen-has-hover="true"] {
+            & #zen-appcontent-navbar-container {}
+
+        }
+
+        #zen-appcontent-navbar-wrapper {}
+
+        #zen-appcontent-navbar-container {
+            background: transparent !important;
+            backdrop-filter: blur(9px) !important;
+        }
+
+    }
+}
