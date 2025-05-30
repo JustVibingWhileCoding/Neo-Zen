@@ -1,5 +1,5 @@
 @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
-    :root:not([zen-single-toolbar="true"]) {
+    :root[zen-compact-mode="true"]:not([zen-single-toolbar="true"]) {
 
         #zen-appcontent-navbar-wrapper[zen-has-hover="true"] {
             & #zen-appcontent-navbar-container {}
