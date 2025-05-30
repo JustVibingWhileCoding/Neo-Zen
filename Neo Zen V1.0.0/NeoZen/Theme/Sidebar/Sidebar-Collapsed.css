@@ -1,0 +1,6 @@
+/* Bigger sidebar when collapsed */
+#navigator-toolbox:not([zen-sidebar-expanded="true"]) {
+    max-width: calc(var(--zen-toolbox-max-width) + 12px) !important;
+    min-width: calc(var(--zen-toolbox-max-width) + 12px) !important;
+    padding-bottom: var(--zen-toolbox-padding);
+}
