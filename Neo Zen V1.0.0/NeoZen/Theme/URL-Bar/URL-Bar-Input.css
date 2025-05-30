@@ -1,7 +1,7 @@
 /* Set the background container to transparent when url bar open */
 #urlbar-container {
     #nav-bar:is([downloadsbuttonshown], [unifiedextensionsbuttonshown]) & {
-        border-radius: var(--Unnamed-Border-Radius) !important;
+        border-radius: var(--Neo-Border-Radius) !important;
         background: #00000000 !important;
         transition: background 0.5s ease !important;
     }
