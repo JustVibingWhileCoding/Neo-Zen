@@ -1,1 +1,4 @@
+@import "Sidebar-Collapsed.css";
+@import "Sidebar-Expanded.css";
 @import "Compact/Sidebar-Blur-Compact.css";
+@import "Compact/Sidebar-Alignment.css";
