@@ -11,7 +11,7 @@
   --Neo-Glow-Color-3: color-mix(in srgb, var(--zen-primary-color) 70%, white);
 
   /* Border radius */
-  --Neo-Border-Radius: 5px;
+  --Neo-Border-Radius: 4px;
 
   /* Blur */
   --Neo-Blur: blur(32px) saturate(140%) brightness(110%);
