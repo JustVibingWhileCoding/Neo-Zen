@@ -8,14 +8,14 @@
 }
 
 #urlbar:not([breakout-extend="true"]) {
-  :root:not([supress-primary-adjustment]) & #urlbar-background {
-    border-radius: var(--Neo-Border-Radius) !important;
-    background: var(--Neo-Black-1) !important;
-    filter: blur(20px), brightness (1.2) !important;
-    transition: background 0.55s ease !important;
-    color: var(--zen-primary-color) !important;
-    outline: none !important;
-  }
+    :root:not([supress-primary-adjustment]) & #urlbar-background {
+        border-radius: var(--Neo-Border-Radius) !important;
+        background: var(--Neo-Black-1) !important;
+        filter: blur(20px), brightness (1.2) !important;
+        transition: background 0.55s ease !important;
+        color: var(--zen-primary-color) !important;
+        outline: none !important;
+    }
 }
 
 #urlbar:not([open]) .urlbar-input-container {
@@ -41,24 +41,25 @@
 }
 
 :root[zen-single-toolbar="true"] {
-  #urlbar:not([open]):not(:hover) #userContext-icons,
-  #urlbar:not([open]):not(:hover) #identity-permission-box,
-  #urlbar:not([open]):not(:hover) #identity-icon-box {
-    margin-inline-start: calc(-9px - 2 * var(--urlbar-icon-padding)) !important;
-    transform: translateX(100%);
-    opacity: 0;
-    width: auto !important;
-    transition: all 0.3s ease;
-  }
 
-  #urlbar:not([open]):hover #userContext-icons,
-  #urlbar:not([open]):hover #identity-permission-box,
-  #urlbar:not([open]):hover #identity-icon-box{
-    transform: none !important;
-    opacity: 1 !important;
-  }
+    #urlbar:not([open]):not(:hover) #userContext-icons,
+    #urlbar:not([open]):not(:hover) #identity-permission-box,
+    #urlbar:not([open]):not(:hover) #identity-icon-box {
+        margin-inline-start: calc(-9px - 2 * var(--urlbar-icon-padding)) !important;
+        transform: translateX(100%);
+        opacity: 0;
+        width: auto !important;
+        transition: all 0.3s ease;
+    }
+
+    #urlbar:not([open]):hover #userContext-icons,
+    #urlbar:not([open]):hover #identity-permission-box,
+    #urlbar:not([open]):hover #identity-icon-box {
+        transform: none !important;
+        opacity: 1 !important;
+    }
 }
 
 #urlbar:not([open]) #urlbar-background {
-  border-radius: var(--Neo-Border-Radius) !important;
+    border-radius: var(--Neo-Border-Radius) !important;
 }

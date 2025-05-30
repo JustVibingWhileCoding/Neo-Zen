@@ -47,6 +47,7 @@
         background-color: color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
         box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
     }
+
     &.titlebar-max {
         background-color: color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
         box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;

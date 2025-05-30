@@ -1,22 +1,22 @@
-:root{
-  
+:root {
+
   /* Black colors*/
   --Neo-Black-1: light-dark(color-mix(in srgb, #ffffff 40%, transparent), color-mix(in srgb, #000000 35%, transparent));
   --Neo-Black-2: light-dark(color-mix(in srgb, #ffffff 100%, transparent), color-mix(in srgb, #000000 35%, transparent));
   --Neo-Black-3: light-dark(color-mix(in srgb, #ffffff 25%, transparent), color-mix(in srgb, #000000 60%, transparent));
-  
+
   /*Glow Colors*/
   --Neo-Glow-Color-1: color-mix(in srgb, var(--zen-primary-color) 90%, white);
   --Neo-Glow-Color-2: color-mix(in srgb, var(--zen-primary-color) 80%, white);
   --Neo-Glow-Color-3: color-mix(in srgb, var(--zen-primary-color) 70%, white);
-  
+
   /* Border radius */
   --Neo-Border-Radius: 5px;
-  
+
   /* Blur */
   --Neo-Blur: blur(32px) saturate(140%) brightness(110%);
   --Neo-Blur-Simple: blur(10px);
-  
+
   /* Blur colors */
   --Neo-Blur-Color: color-mix(in srgb, var(--zen-primary-color) 5%, #000000a0);
 }
