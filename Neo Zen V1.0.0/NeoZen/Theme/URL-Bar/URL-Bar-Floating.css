@@ -7,7 +7,11 @@
 }
 
 #urlbar[open]{
-    transition: width 0.3s ease, height 0.3s ease, max-height 0.3s ease, min-height 0.3s ease !important;
+  transition: width 0.3s ease, height 0.3s ease, max-height 0.3s ease, min-height 0.3s ease !important;
+  
+  & #urlbar-label-box{
+    display: none !important;
+  }
 }
 
 #urlbar[open] #urlbar-background {
