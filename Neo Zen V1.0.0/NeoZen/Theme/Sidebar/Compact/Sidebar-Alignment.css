@@ -18,8 +18,8 @@
 }
 
 :root[zen-single-toolbar="true"] body:has([zen-compact-mode="true"]) #titlebar {
-  height: calc(100% - (var(--zen-element-separation) * 1.1)) !important;
-  margin-top: calc(var(--zen-element-separation) * 0.6) !important;
+  height: calc(100% - (var(--zen-element-separation) * 1)) !important;
+  margin-top: calc(var(--zen-element-separation) * 0.5) !important;
 }
 
 @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
@@ -36,4 +36,20 @@
     height: calc(100% - (var(--zen-element-separation) * 2.5)) !important;
     margin-top: calc(var(--zen-element-separation) * 2) !important;
   }
+}
+
+/* Fix issue from nebula when sidebar is at the right side not taking the correct position due to the navigator-toolbox width */
+:root[zen-right-side="true"][zen-compact-mode="true"] #navigator-toolbox{
+    width: var(--Neo-Width-Compact-Expanded) !important;
+}
+
+/* Adjustments for compact sidebar expanded mode */
+:root[zen-compact-mode="true"][zen-sidebar-expanded="true"] #sidebar {
+    width: var(--Neo-Width-Compact-Expanded) !important;
+    min-width: calc(var(--Neo-Width-Compact-Expanded) - 8px) !important;
+}
+/* Adjustments for compact sidebar expanded mode */
+:root[zen-sidebar-expanded="true"] body:has([zen-compact-mode="true"]) #titlebar{
+    width: var(--Neo-Width-Compact-Expanded) !important;
+    min-width: calc(var(--Neo-Width-Compact-Expanded) - 8px) !important;
 }
