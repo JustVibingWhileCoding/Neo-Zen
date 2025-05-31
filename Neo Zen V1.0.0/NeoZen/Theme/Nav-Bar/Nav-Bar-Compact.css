@@ -23,7 +23,7 @@
                     background: var(--Neo-Blur-Color) !important;
                     backdrop-filter: var(--Neo-Blur) !important;
                     border-radius: var(--Neo-Border-Radius) !important;
-                    width: 90% !important;
+                    width: 80% !important;
                 }
             }
         }
