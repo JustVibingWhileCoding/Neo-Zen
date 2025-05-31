@@ -1,0 +1,23 @@
+@media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+    :root:not([zen-single-toolbar="true"]) body:has([zen-compact-mode="true"]) #browser::before {
+        position: absolute !important;
+        z-index: 0 !important;
+        content: "" !important;
+        opacity: 1;
+        background-color: light-dark(rgba(200, 200, 200, 1), rgba(20, 20, 20, 1)) !important;
+
+        max-width: 80% !important;
+        min-width: 80% !important;
+
+        margin-top: calc(var(--zen-element-separation) * 1) !important;
+        margin-bottom: calc(var(--zen-element-separation) * 1.2) !important;
+        height: 50px !important;
+        top: auto !important;
+        bottom: auto !important;
+
+        border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+
+        visibility: visible !important;
+        transition: opacity 0.2s ease;
+    }
+}
