@@ -1,0 +1,28 @@
+@media not (-moz-bool-pref: "neo-features-better-bottom-disabled") {
+    #zen-workspaces-button {
+        z-index: 9999 !important;
+
+        flex-shrink: 0 !important;
+        top: 0% !important;
+
+        grid-column: 1 / -1 !important;
+        grid-row: 1 !important;
+        order: -1 !important;
+
+        overflow-x: unset !important;
+    }
+
+    :root[zen-sidebar-expanded="true"] {
+        #zen-workspaces-button {
+            position: sticky !important;
+            height: 35px !important;
+        }
+    }
+
+    :root:not([zen-sidebar-expanded="true"]) {
+        #zen-workspaces-button {
+            position: absolute !important;
+            padding: 8px 0px !important;
+        }
+    }
+}
