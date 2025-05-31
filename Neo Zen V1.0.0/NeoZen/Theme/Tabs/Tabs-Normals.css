@@ -1,37 +1,44 @@
-@media not (-moz-bool-pref: "Neo-style-tabs-disabled") {
-    @media not (-moz-bool-pref: "Neo-style-tabs-normals-disabled") {
-      .tabbrowser-tab:not([pinned]):not([zen-essential]){
-        & .tab-background{
-          border-radius: var(--Neo-Border-Radius) !important;
-          border: 1px solid transparent;
-          transition: background 1.6s ease, box-shadow 0.2s ease, border 0.6s ease;
-        }
+@media not (-moz-bool-pref: "neo-style-tabs-disabled") {
+  @media not (-moz-bool-pref: "neo-style-tabs-normals-disabled") {
+    .tabbrowser-tab:not([pinned]):not([zen-essential]) {
+      & .tab-background {
+        border-radius: var(--Neo-Border-Radius) !important;
+        border: 1px solid transparent;
+        transition: background 1.6s ease, box-shadow 0.2s ease, border 0.6s ease;
+      }
+
+      @media not (-moz-bool-pref: "neo-features-better-containers-disabled") {
         &[selected][usercontextid] .tab-background {
           background: var(--Neo-Black-3) !important;
           border: 1px solid color-mix(in srgb, var(--identity-tab-color) 40%, white) !important;
           box-shadow: 0px 0px 4px color-mix(in srgb, var(--identity-tab-color) 70%, transparent) !important;
         }
+
         &[selected][usercontextid]:hover .tab-background {
           background: var(--Neo-Black-3) !important;
           border: 1px solid color-mix(in srgb, var(--identity-tab-color) 40%, white) !important;
           box-shadow: 0px 0px 4px color-mix(in srgb, var(--identity-tab-color) 70%, transparent) !important;
         }
-        &[selected]:hover .tab-background,
-        :not([selected]):hover .tab-background {
-          background: var(--Neo-Color-Dark) !important;
-          box-shadow: 0px 0px 4px var(--Neo-Glow-Color-3) !important;
-          border: 1px solid color-mix(in srgb, var(--zen-primary-color) 90%, transparent) !important;
-        }
-        &[selected="true"] .tab-background {
-          background: var(--Neo-Black-3) !important;
-          box-shadow: 0px 0px 4px var(--Neo-Glow-Color-3) !important;
-          border: 1px solid color-mix(in srgb, var(--zen-primary-color) 70%, transparent) !important;
-        }
-        &[multiselected="true"] .tab-background {
-          background: var(--Neo-Black-3) !important;
-          box-shadow: 0px 0px 4px var(--Neo-Glow-Color-3) !important;
-          border: 1px solid color-mix(in srgb, var(--zen-primary-color) 70%, transparent) !important;
-        }
       }
+
+      &[selected]:hover .tab-background,
+      :not([selected]):hover .tab-background {
+        background: var(--Neo-Color-Dark) !important;
+        box-shadow: 0px 0px 4px var(--Neo-Glow-Color-3) !important;
+        border: 1px solid color-mix(in srgb, var(--zen-primary-color) 90%, transparent) !important;
+      }
+
+      &[selected="true"] .tab-background {
+        background: var(--Neo-Black-3) !important;
+        box-shadow: 0px 0px 4px var(--Neo-Glow-Color-3) !important;
+        border: 1px solid color-mix(in srgb, var(--zen-primary-color) 70%, transparent) !important;
+      }
+
+      &[multiselected="true"] .tab-background {
+        background: var(--Neo-Black-3) !important;
+        box-shadow: 0px 0px 4px var(--Neo-Glow-Color-3) !important;
+        border: 1px solid color-mix(in srgb, var(--zen-primary-color) 70%, transparent) !important;
+      }
+    }
   }
 }

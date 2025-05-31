@@ -2,6 +2,7 @@
 @import "Tabs-NewTabButton.css";
 @import "Tabs-Normals.css";
 @import "Tabs-OverflowIndicators.css";
+@import "Tabs-Pinned.css";
 /* Tabs Containers */
 @import "TabsContainers/Tabs-Containers.css";
 @import "TabsContainers/Tabs-Containers-Transitions.css";
