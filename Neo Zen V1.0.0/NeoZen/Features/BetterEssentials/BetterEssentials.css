@@ -1,0 +1,93 @@
+@media not (-moz-bool-pref: "neo-features-better-essentials-disabled") {
+    #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
+        & .zen-essentials-container {
+            display: grid !important;
+
+            overflow-y: auto !important;
+            overflow-x: unset !important;
+            scrollbar-width: none !important;
+            scroll-behavior: smooth !important;
+
+            align-self: center !important;
+            justify-self: center !important;
+
+            @media not (-moz-bool-pref: "neo-features-better-essentials-keep-expanded") {
+                max-height: 40px !important;
+            }
+
+            @media (-moz-bool-pref: "neo-features-better-essentials-keep-expanded") {
+                max-height: 110px !important;
+            }
+
+            @media not (-moz-bool-pref: "neo-features-better-essentials-keep-expanded") {
+                & .tabbrowser-tab:not([selected]) {
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out !important;
+                }
+            }
+
+            /* Reorder selected tab to stay visible */
+            & .tabbrowser-tab[selected] {
+                /* Moves selected tab to the first position */
+                order: -1 !important;
+                /* Sticks selected tab to the top */
+                position: sticky !important;
+                top: 0 !important;
+                /* Mover selected tab over other tabs */
+                z-index: 9999 !important;
+
+            }
+        }
+
+        @media not (-moz-bool-pref: "neo-features-better-essentials-keep-expanded") {
+
+            /* Expands on hover */
+            & .zen-essentials-container:hover {
+                max-height: 257px !important;
+
+                & .tabbrowser-tab {
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                }
+            }
+        }
+    }
+}
+
+@media not (-moz-bool-pref: "neo-features-better-essentials-disabled") {
+    :root:not([zen-sidebar-expanded="true"]) {
+
+        /* Essentials pseudo element when no essential tab selected */
+        .zen-essentials-container::before {
+            content: "Neo\A Zen" !important;
+            white-space: pre-wrap !important;
+            text-align: center !important;
+            font-size: 11px !important;
+            color: color-mix(in srgb, var(--zen-primary-color) 90%, white) !important;
+            position: sticky !important;
+            top: 0% !important;
+            left: 0% !important;
+            height: 36px !important;
+
+            opacity: 0.0 !important;
+            transition-delay: 0.1s;
+            transition: opacity 0.4s ease-in-out;
+        }
+
+        .zen-essentials-container:not(:has(.tabbrowser-tab[selected])) {
+            &:not(:hover)::before {
+                opacity: 1.0 !important;
+                visibility: visible !important;
+                display: block !important;
+            }
+        }
+
+        /* Hide completely when a tab is selected */
+        .zen-essentials-container:has(.tabbrowser-tab[selected])::before {
+            opacity: 0 !important;
+            visibility: hidden !important;
+            display: none !important;
+        }
+    }
+}
