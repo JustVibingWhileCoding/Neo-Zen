@@ -1,0 +1,34 @@
+@media not (-moz-bool-pref: "unnamed-features-better-containers-disabled") {
+
+    /* Tab container indicator line */
+    .tab-context-line {
+        display: flex !important;
+        bottom: 10 !important;
+        opacity: 1.0 !important;
+        border-radius: 10px !important;
+        background: color-mix(in srgb, var(--identity-tab-color) 50%, white) !important;
+        box-shadow: 0 0px 3px color-mix(in srgb, var(--identity-tab-color) 60%, white) !important;
+        transition: width 0.5s ease;
+    }
+
+    /* Ensure container tabs have a relative position */
+    .tabbrowser-tab[usercontextid] .tab-background {
+        border-radius: var(--Neo-Border-Radius) !important;
+    }
+
+    /* Tab gradient color container */
+    .tabbrowser-tab:not([zen-essential]) .tab-background::after {
+        z-index: -1 !important;
+        content: "";
+        top: 0;
+        left: 0;
+        background-size: 100% 100% !important;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.0;
+        background: radial-gradient(color-mix(in srgb, var(--identity-tab-color) 40%, white) 20%, color-mix(in srgb, var(--identity-tab-color) 70%, white) 100%) !important;
+        transition: opacity 0.9s ease;
+    }
+
+}
