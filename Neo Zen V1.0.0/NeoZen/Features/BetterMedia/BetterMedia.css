@@ -4,22 +4,25 @@
 
         #zen-media-controls-toolbar,
         #zen-media-controls-toolbar>toolbaritem {
-           
+
             background: none !important;
             background-color: transparent !important;
             box-shadow: none !important;
             border: none !important;
             backdrop-filter: none !important;
         }
-        #zen-media-controls-toolbar{
+
+        #zen-media-controls-toolbar {
             flex-direction: column !important;
             max-height: 5px !important;
             flex-grow: 0 !important;
             flex-shrink: 1 !important;
             padding: 0px 0px !important;
+            margin-top: 10px !important;
             transition: height 1.0s ease;
         }
-        #zen-media-controls-toolbar>toolbaritem{
+
+        #zen-media-controls-toolbar>toolbaritem {
             display: flex !important;
             flex-direction: column !important;
             padding: 0px 0px !important;
@@ -28,7 +31,8 @@
 
         #zen-media-controls-toolbar:not([hidden]) {
             display: flex !important;
-            min-height: fit-content !important; /* Adapts based on content */
+            min-height: fit-content !important;
+            /* Adapts based on content */
             max-height: none !important;
             transition: height 1.0s ease;
 
@@ -41,7 +45,7 @@
             #zen-media-info-vbox {
                 display: none !important;
             }
-            
+
             /* Buttons of media sharing like discord */
             &[media-sharing] {
                 display: flex !important;
@@ -57,12 +61,14 @@
                 transform: none !important;
                 height: fit-content !important;
             }
+
             & #zen-media-controls-hbox {
                 display: flex !important;
                 flex-direction: column-reverse !important;
                 justify-items: center !important;
                 align-items: stretch !important;
             }
+
             & #zen-media-buttons-hbox {
                 display: flex !important;
                 position: relative !important;
@@ -76,14 +82,15 @@
                 height: max-content !important;
                 max-height: max-content !important;
             }
+
             & .show-on-hover:not(#zen-media-progress-hbox) {
                 display: flex !important;
                 flex-direction: column-reverse !important;
                 position: relative !important;
-                
+
                 justify-items: center !important;
                 align-items: stretch !important;
-                
+
                 max-height: unset !important;
                 opacity: 1 !important;
                 transform: none !important;

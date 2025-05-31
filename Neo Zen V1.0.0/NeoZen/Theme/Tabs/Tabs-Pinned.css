@@ -4,6 +4,7 @@
             & .tab-background {
                 border-radius: var(--Neo-Border-Radius) !important;
                 border: 1px solid transparent;
+                box-shadow: 0px 0px 3px var(--Neo-Shadow-Color-1) !important;
                 background: var(--Neo-Black-1) !important;
                 transition: background 1.6s ease, box-shadow 0.2s ease, border 0.6s ease;
             }
