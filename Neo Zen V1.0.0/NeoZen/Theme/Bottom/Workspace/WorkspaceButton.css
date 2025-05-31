@@ -1,0 +1,50 @@
+@media not (-moz-bool-pref: "neo-style-workspace-button-disabled") {
+    #zen-workspaces-button {
+        background: transparent !important;
+        box-shadow: 0 0px 0px transparent !important;
+        border: 1px solid transparent !important;
+    }
+
+    #zen-workspaces-button .subviewbutton {
+        display: flex !important;
+        filter: none !important;
+        background: transparent !important;
+        opacity: 1.0 !important;
+
+        height: 100% !important;
+        max-height: unset !important;
+        min-height: 20px !important;
+
+        min-width: 15px !important;
+
+        margin: 0px 0px !important;
+        padding: 0px 0px !important;
+    }
+
+    #zen-workspaces-button .subviewbutton .zen-workspace-icon {
+        border: none !important;
+        background-color: color-mix(in srgb, var(--Unnamed-Color) 20%, #f0f0f020) !important;
+        box-shadow: 0 0px 0px color-mix(in srgb, var(--Unnamed-Color) 0%, black) !important;
+
+        width: 10px;
+        max-width: unset !important;
+        height: 10px !important;
+
+        min-width: 10px !important;
+        min-height: 10px !important;
+
+        padding: 0px 0px !important;
+        margin: 0px 0px !important;
+
+        border-radius: 10px !important;
+
+        opacity: 1.0 !important;
+        content: none !important;
+        text-align: center !important;
+        text-justify: center !important;
+        font-size: 0px !important;
+
+        /* Removes the icons */
+        color: rgba(0, 0, 0, 0) !important;
+    }
+}
