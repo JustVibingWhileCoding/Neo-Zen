@@ -1,5 +1,5 @@
-@media not (-moz-bool-pref: "Neo-style-tabs-disabled") {
-    @media not (-moz-bool-pref: "Neo-style-tabs-essentials-disabled") {
+@media not (-moz-bool-pref: "neo-style-tabs-disabled") {
+    @media not (-moz-bool-pref: "neo-style-tabs-essentials-disabled") {
         .zen-essentials-container .tabbrowser-tab {
             .tab-background {
                 background: var(--Neo-Black-1) !important;
