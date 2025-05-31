@@ -1,0 +1,34 @@
+@media not (-moz-bool-pref: "Neo-features-better-containers-disabled") {
+    .tabbrowser-tab[usercontextid] {
+        &:hover[usercontextid]:not([selected]) {
+            .tab-context-line {
+                width: 40% !important;
+            }
+        }
+
+        &[selected][usercontextid] {
+            .tab-context-line {
+                width: 60% !important;
+            }
+        }
+
+        &:hover[usercontextid][selected] {
+            .tab-context-line {
+                width: 75% !important;
+            }
+        }
+    }
+
+
+    /* Tab gradient color container transition */
+    .tabbrowser-tab[usercontextid]:not([selected]) .tab-background::after {
+        opacity: 0.0;
+        transition: opacity 0.9s ease;
+    }
+
+    .tabbrowser-tab[usercontextid][selected] .tab-background::after {
+        opacity: 0.25;
+        background: radial-gradient(color-mix(in srgb, var(--identity-tab-color) 40%, white) 20%, color-mix(in srgb, var(--identity-tab-color) 70%, white) 100%) !important;
+        transition: opacity 0.9s ease;
+    }
+}

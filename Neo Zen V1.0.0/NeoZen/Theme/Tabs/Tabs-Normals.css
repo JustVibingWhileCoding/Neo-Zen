@@ -6,6 +6,11 @@
           border: 1px solid transparent;
           transition: background 1.6s ease, box-shadow 0.2s ease, border 0.6s ease;
         }
+        &[selected][usercontextid] .tab-background {
+          background: var(--Neo-Black-3) !important;
+          border: 1px solid color-mix(in srgb, var(--identity-tab-color) 40%, white) !important;
+          box-shadow: 0 0px 6px color-mix(in srgb, var(--identity-tab-color) 50%, transparent) !important;
+        }
         &[selected]:hover .tab-background,
         :not([selected]):hover .tab-background {
           background: var(--Neo-Color-Dark) !important;
