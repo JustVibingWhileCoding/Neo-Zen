@@ -1,2 +1,19 @@
 @import "CustomizationToolbar.css";
 @import "WindowButtons.css";
+
+
+/* Required for blur rendering */
+browser {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Remove new tab background color*/
+.browserStack browser {
+    background-color: transparent !important;
+}
+
+/* Remove shadow */
+hbox.browserSidebarContainer,
+#zen-tabbox-wrapper {
+    box-shadow: none !important;
+}
