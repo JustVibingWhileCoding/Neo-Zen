@@ -3,6 +3,6 @@
 @import "Tabs-Normals.css";
 @import "Tabs-OverflowIndicators.css";
 /* Tabs Containers */
-@import "Tabs-Containers.css";
-@import "Tabs-Containers-Transitions.css";
-@import "Tabs-Containers-Modes.css";
+@import "TabsContainers/Tabs-Containers.css";
+@import "TabsContainers/Tabs-Containers-Transitions.css";
+@import "TabsContainers/Tabs-Containers-Modes.css";
