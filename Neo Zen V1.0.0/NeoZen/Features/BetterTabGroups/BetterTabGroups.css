@@ -1,5 +1,5 @@
 @import "BetterTabGroups-Collapsed.css";
-@import "BetterTabGroups-Transition.css";
+@import "BetterTabGroups-Transitions.css";
 
 /* Tab Group General Styles */
 @media not (-moz-bool-pref: "neo-features-better-tab-groups-disabled") {
