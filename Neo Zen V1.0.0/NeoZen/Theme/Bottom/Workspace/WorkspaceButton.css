@@ -23,8 +23,8 @@
 
     #zen-workspaces-button .subviewbutton .zen-workspace-icon {
         border: none !important;
-        background-color: color-mix(in srgb, var(Neo-Color) 20%, #f0f0f020) !important;
-        box-shadow: 0 0px 0px color-mix(in srgb, var(Neo-Color) 0%, black) !important;
+        background-color: color-mix(in srgb, var(Neo-Glow-Color-1) 20%, #f0f0f020) !important;
+        box-shadow: 0 0px 0px color-mix(in srgb, var(Neo-Glow-Color-1) 0%, black) !important;
 
         width: 10px;
         max-width: unset !important;
