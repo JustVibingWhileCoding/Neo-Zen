@@ -1,0 +1,58 @@
+/* Bottom area general adjustments */
+@media not (-moz-bool-pref: "neo-features-better-bottom-disabled") {
+    #zen-sidebar-bottom-buttons {
+
+        /* Scroll settings */
+        overflow-y: auto !important;
+        scrollbar-width: none !important;
+        scroll-behavior: smooth !important;
+
+        justify-content: center !important;
+        /* Centers buttons */
+        align-items: center !important;
+        align-self: center !important;
+        justify-self: center !important;
+
+        transition-delay: 0.4s !important;
+
+        transition: max-height 0.5s cubic-bezier(0.175, 1.385, 0.62, 1);
+    }
+
+    /* Keep Sidebar Expanded When Customization is Active */
+    body:has(#customization-container:not([hidden])) #zen-sidebar-bottom-buttons {
+        max-height: unset !important;
+    }
+
+    body:has(#customization-container:not([hidden])) {
+        #zen-sidebar-bottom-buttons>*:not(#zen-workspaces-button) {
+            opacity: 1 !important;
+            pointer-events: all !important;
+        }
+    }
+}
+
+@media not (-moz-bool-pref: "neo-bottom-button-at-bottom") {
+    #zen-sidebar-bottom-buttons {
+        order: -1 !important;
+    }
+
+    :root:not([zen-sidebar-expanded="true"]) {
+        #zen-workspaces-button {
+            top: 0.5% !important;
+            bottom: unset !important;
+        }
+    }
+}
+
+@media (-moz-bool-pref: "neo-bottom-button-at-bottom") {
+    :root:not([zen-sidebar-expanded="true"]) {
+        #zen-workspaces-button {
+            top: unset !important;
+            bottom: 0% !important;
+        }
+
+        #zen-sidebar-bottom-buttons {
+            margin-bottom: 5px !important;
+        }
+    }
+}
