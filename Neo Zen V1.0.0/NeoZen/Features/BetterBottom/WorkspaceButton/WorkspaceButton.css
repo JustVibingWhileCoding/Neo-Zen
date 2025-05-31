@@ -23,6 +23,7 @@
         #zen-workspaces-button {
             position: absolute !important;
             padding: 8px 0px !important;
+            min-height: 158px !important;
         }
     }
 }
