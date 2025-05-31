@@ -1,5 +1,7 @@
 :root {
-
+  --Neo-Color-Dark: color-mix(in srgb, var(--zen-primary-color) 10%, #000000c0);
+  --Neo-Color-Light: color-mix(in srgb, var(--zen-primary-color) 25%, white);
+  
   /* Black colors*/
   --Neo-Black-1: light-dark(color-mix(in srgb, #ffffff 40%, transparent), color-mix(in srgb, #000000 35%, transparent));
   --Neo-Black-2: light-dark(color-mix(in srgb, #ffffff 100%, transparent), color-mix(in srgb, #000000 35%, transparent));
@@ -26,5 +28,5 @@
   --Neo-Blur-Color: color-mix(in srgb, var(--zen-primary-color) 5%, #000000a0);
 
   /* Width Compact Mode */
-  --Neo-Width-Compact-Expanded: 20em;
+  --Neo-Width-Compact-Expanded: 19em;
 }
