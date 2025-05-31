@@ -1,4 +1,4 @@
-@media not (-moz-bool-pref: "unnamed-features-better-tab-groups-disabled") {
+@media not (-moz-bool-pref: "neo-features-better-tab-groups-disabled") {
     tab-group:not([split-view-group]) {
         &[collapsed] {
             & .tab-group-label-container>label::before {
@@ -24,8 +24,8 @@
             }
 
             & .tab-group-label-container:not([collapsed]) {
-                background: color-mix(in srgb, color-mix(in srgb, var(--tab-group-color) 9%, var(--Unnamed-Black-3)), white 3%) !important;
-                backdrop-filter: var(--Unnamed-Blur-Simple) !important;
+                background: color-mix(in srgb, color-mix(in srgb, var(--tab-group-color) 9%, var(--Neo-Black-3)), white 3%) !important;
+                backdrop-filter: var(--Neo-Blur-Simple) !important;
                 border: 1px solid color-mix(in srgb, var(--tab-group-color) 70%, white) !important;
                 box-shadow: 0 0px 3px color-mix(in srgb, var(--tab-group-color) 80%, white 50%);
 
