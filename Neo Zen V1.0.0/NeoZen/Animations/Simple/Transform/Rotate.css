@@ -1,0 +1,52 @@
+/* rotate jumpy icon */
+
+@keyframes iconAnimation-open {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(360deg) scale(1.2);
+        /* Jumpy scaling */
+    }
+
+    75% {
+        transform: rotate(360deg) scale(0.9);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+/* rotate jumpy icon inverted */
+
+@keyframes iconAnimation-close {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(-360deg) scale(1.2);
+        /* Jumpy scaling */
+    }
+
+    75% {
+        transform: rotate(-360deg) scale(0.9);
+    }
+
+    100% {
+        transform: rotate(-360deg) scale(1);
+    }
+}
+
+/* animation for rotating icons on hover */
+@keyframes icon-rotate-hover {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
