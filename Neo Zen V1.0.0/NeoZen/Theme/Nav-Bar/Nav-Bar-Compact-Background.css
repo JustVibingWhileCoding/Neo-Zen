@@ -1,23 +1,38 @@
 @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
     :root:not([zen-single-toolbar="true"]) body:has([zen-compact-mode="true"]) #browser::before {
+        display: flex !important;
         position: absolute !important;
         z-index: 0 !important;
         content: "" !important;
-        opacity: 1;
-        background-color: light-dark(rgba(200, 200, 200, 1), rgba(20, 20, 20, 1)) !important;
+        opacity: 0;
+        background-color: light-dark(rgba(200, 200, 200, 1), rgba(28, 28, 28, 1)) !important;
 
-        max-width: 80% !important;
-        min-width: 80% !important;
 
-        margin-top: calc(var(--zen-element-separation) * 1) !important;
+        width: 80% !important;
+        margin-top: calc(var(--zen-element-separation) + 3px) !important;
         margin-bottom: calc(var(--zen-element-separation) * 1.2) !important;
-        height: 50px !important;
+        margin-left: calc(var(--zen-element-separation) * 2.2) !important;
+        margin-right: calc(var(--zen-element-separation) * 1) !important;
+        height: 45px !important;
         top: auto !important;
         bottom: auto !important;
+        right: auto !important;
 
-        border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+        border-radius: var(--Neo-Border-Radius) !important;
 
         visibility: visible !important;
-        transition: opacity 0.2s ease;
+        transition: opacity 0.1s ease, top 0.2s ease;
     }
+
+    body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"] #zen-appcontent-navbar-wrapper[zen-has-hover="true"]) #browser::before {
+        opacity: 1;
+    }
+
+}
+
+/*I don't know if this rule can lead to issues, is used to justify
+to the center the pseudo element for the nav-bar*/
+#browser {
+    display: flex !important;
+    justify-content: center !important;
 }
