@@ -1,0 +1,39 @@
+:root[zen-sidebar-expanded="true"] {
+    #tabs-newtab-button {
+        display: flex !important;
+        background: var(--Neo-Black-1) !important;
+        border-radius: var(--Neo-Border-Radius) !important;
+        box-shadow: 0px 0px 0px var(--Neo-Glow-Color-3) !important;
+        border: 1px solid color-mix(in srgb, var(--zen-primary-color) 70%, transparent) !important;
+        transition: opacity 0.3s ease, box-shadow 0.3s ease !important;
+        margin: 10px 0px !important;
+        justify-content: center !important;
+
+        & .toolbarbutton-text::before {
+            justify-self: center !important;
+            align-self: center !important;
+            display: flex !important;
+            left: auto !important;
+            right: auto !important;
+            transition: margin-left 0.3s !important;
+        }
+
+        & .toolbarbutton-icon {
+            transition: scale 0.3s ease !important;
+        }
+    }
+
+    #tabs-newtab-button:hover {
+        display: flex !important;
+        opacity: 1.0 !important;
+        box-shadow: 0px 0px 4px var(--Neo-Glow-Color-3) !important;
+
+        & .toolbarbutton-text::before {
+            margin-left: 8px !important;
+        }
+
+        & .toolbarbutton-icon {
+            scale: 1.2 !important;
+        }
+    }
+}
