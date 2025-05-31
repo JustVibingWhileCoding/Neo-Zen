@@ -1,4 +1,4 @@
-@media not (-moz-bool-pref: "unnamed-features-better-containers-disabled") {
+@media not (-moz-bool-pref: "Neo-features-better-containers-disabled") {
 
     /* Tab container indicator line */
     .tab-context-line {
@@ -13,6 +13,8 @@
 
     /* Ensure container tabs have a relative position */
     .tabbrowser-tab[usercontextid] .tab-background {
+        position: relative !important;
+        justify-content: left !important;
         border-radius: var(--Neo-Border-Radius) !important;
     }
 
