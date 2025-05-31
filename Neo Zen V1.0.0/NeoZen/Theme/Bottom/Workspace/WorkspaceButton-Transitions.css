@@ -1,9 +1,9 @@
 @media not (-moz-bool-pref: "neo-style-workspace-button-disabled") {
   :root[zen-sidebar-expanded="true"] {
     #zen-sidebar-bottom-buttons:hover #zen-workspaces-button {
-      background: color-mix(in srgb, var(Neo-Glow-Color-3) 10%, #000000) !important;
-      border: 1px solid var(Neo-Glow-Color-3) !important;
-      box-shadow: 0 0px 4px var(Neo-Glow-Color-3) !important;
+      background: color-mix(in srgb, var(--Neo-Glow-Color-3) 10%, #000000) !important;
+      border: 1px solid var(--Neo-Glow-Color-3) !important;
+      box-shadow: 0 0px 4px var(--Neo-Glow-Color-3) !important;
     }
   }
 
@@ -13,8 +13,8 @@
 
   /* Expand only when active */
   #zen-workspaces-button toolbarbutton[active="true"] .zen-workspace-icon {
-    background-color: var(Neo-Glow-Color-3) !important;
-    box-shadow: 0 0px 10px var(Neo-Glow-Color-3) !important;
+    background-color: var(--Neo-Glow-Color-3) !important;
+    box-shadow: 0 0px 10px var(--Neo-Glow-Color-3) !important;
     animation: iconExpand 0.6s ease forwards !important;
     transition: opacity 0.5s ease, background-color 0.5s ease, box-shadow 0.7s ease, scale 0.5s ease, width 0.5s ease !important;
   }
@@ -23,8 +23,8 @@
 
   /* Hover effect */
   #zen-workspaces-button toolbarbutton:not([active="true"]):hover .zen-workspace-icon {
-    background-color: var(Neo-Glow-Color-3) !important;
-    box-shadow: 0 0px 6px var(Neo-Glow-Color-3) !important;
+    background-color: var(--Neo-Glow-Color-3) !important;
+    box-shadow: 0 0px 6px var(--Neo-Glow-Color-3) !important;
     opacity: 1.0 !important;
   }
 
