@@ -1,0 +1,95 @@
+/* Media controls available in collapsed mode */
+@media not (-moz-bool-pref: "neo-features-better-media-disabled") {
+    :root:not([zen-sidebar-expanded="true"]) {
+
+        #zen-media-controls-toolbar,
+        #zen-media-controls-toolbar>toolbaritem {
+           
+            background: none !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border: none !important;
+            backdrop-filter: none !important;
+        }
+        #zen-media-controls-toolbar{
+            flex-direction: column !important;
+            max-height: 5px !important;
+            flex-grow: 0 !important;
+            flex-shrink: 1 !important;
+            padding: 0px 0px !important;
+            transition: height 1.0s ease;
+        }
+        #zen-media-controls-toolbar>toolbaritem{
+            display: flex !important;
+            flex-direction: column !important;
+            padding: 0px 0px !important;
+            margin: 0px 0px 0px 0px !important;
+        }
+
+        #zen-media-controls-toolbar:not([hidden]) {
+            display: flex !important;
+            min-height: fit-content !important; /* Adapts based on content */
+            max-height: none !important;
+            transition: height 1.0s ease;
+
+            /* Hide media progress bar */
+            #zen-media-progress-hbox {
+                display: none !important;
+            }
+
+            /* Hide media info */
+            #zen-media-info-vbox {
+                display: none !important;
+            }
+            
+            /* Buttons of media sharing like discord */
+            &[media-sharing] {
+                display: flex !important;
+                flex-direction: column-reverse !important;
+                position: relative !important;
+                /* Centering media sharing buttons */
+                justify-items: center !important;
+                align-items: stretch !important;
+                /* Ensure media sharing buttons are visible */
+                opacity: 1.0 !important;
+                visibility: visible !important;
+                /* No transform */
+                transform: none !important;
+                height: fit-content !important;
+            }
+            & #zen-media-controls-hbox {
+                display: flex !important;
+                flex-direction: column-reverse !important;
+                justify-items: center !important;
+                align-items: stretch !important;
+            }
+            & #zen-media-buttons-hbox {
+                display: flex !important;
+                position: relative !important;
+                flex-direction: column-reverse !important;
+                justify-items: center !important;
+                align-items: stretch !important;
+                justify-self: center !important;
+                align-self: center !important;
+                background: transparent !important;
+                margin: 0px 0px !important;
+                height: max-content !important;
+                max-height: max-content !important;
+            }
+            & .show-on-hover:not(#zen-media-progress-hbox) {
+                display: flex !important;
+                flex-direction: column-reverse !important;
+                position: relative !important;
+                
+                justify-items: center !important;
+                align-items: stretch !important;
+                
+                max-height: unset !important;
+                opacity: 1 !important;
+                transform: none !important;
+                padding: 0px 0px !important;
+                pointer-events: none;
+            }
+        }
+    }
+}

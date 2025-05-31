@@ -1,0 +1,36 @@
+:root[zen-sidebar-expanded="true"] {
+
+    #zen-media-controls-toolbar,
+    #zen-media-controls-toolbar>toolbaritem {
+        padding: 4px 6px !important;
+        background: none !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        backdrop-filter: none !important;
+        z-index: 9999 !important;
+    }
+
+    #zen-media-controls-toolbar>toolbaritem {
+        background: var(--Unnamed-Black-1) !important;
+        backdrop-filter: var(--Unnamed-Blur-Simple) !important;
+        box-shadow: var(--Unnamed-Shadow-Color-1) !important;
+        border: none !important;
+        border-radius: var(--Unnamed-Border-Radius) !important;
+    }
+
+    #zen-media-controls-toolbar {
+        margin: 5px 4px !important;
+        height: 38px !important;
+
+        & #zen-media-progress-bar {
+            &::-moz-range-progress {
+                box-shadow: 0 0px 5px color-mix(in srgb, var(--zen-primary-color) 100%, black) !important;
+            }
+
+            &::-moz-range-thumb {
+                box-shadow: 0 0px 5px color-mix(in srgb, var(--zen-primary-color) 100%, black) !important;
+            }
+        }
+    }
+}
