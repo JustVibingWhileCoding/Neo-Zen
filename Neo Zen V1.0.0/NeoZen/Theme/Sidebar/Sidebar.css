@@ -5,3 +5,10 @@
 @import "Compact/Sidebar-Background-Collapsed.css";
 @import "Compact/Sidebar-Background-Expanded.css";
 @import "WorkspaceIndicator/WorkspaceIndicator.css";
+
+
+/* Animations Smooth transition for all the sidebar */
+.zen-essentials-container,
+zen-workspace[active]:not([hidden]) {
+    transition: all 0.3s cubic-bezier(0.175, 1.385, 0.62, 1) !important;
+}

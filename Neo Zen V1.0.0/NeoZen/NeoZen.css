@@ -2,8 +2,3 @@
 @import "Features/Features.css";
 @import "Theme/Theme.css";
 @import "Variables/Variables.css";
-
-/* Required for blur rendering */
-browser {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
