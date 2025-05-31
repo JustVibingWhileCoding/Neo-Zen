@@ -4,6 +4,11 @@
   --Neo-Black-1: light-dark(color-mix(in srgb, #ffffff 40%, transparent), color-mix(in srgb, #000000 35%, transparent));
   --Neo-Black-2: light-dark(color-mix(in srgb, #ffffff 100%, transparent), color-mix(in srgb, #000000 35%, transparent));
   --Neo-Black-3: light-dark(color-mix(in srgb, #ffffff 25%, transparent), color-mix(in srgb, #000000 60%, transparent));
+  
+  /* Shadow */
+  --Neo-Shadow-Color-1: light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4));
+  --Neo-Shadow-Color-2: light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.8));
+  --Neo-Shadow-Color-3: light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 1.0));
 
   /*Glow Colors*/
   --Neo-Glow-Color-1: color-mix(in srgb, var(--zen-primary-color) 90%, white);
