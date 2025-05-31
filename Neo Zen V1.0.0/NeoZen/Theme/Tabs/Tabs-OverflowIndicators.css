@@ -14,8 +14,6 @@ zen-workspace {
   }
 }
 
-
-
 zen-workspace {
   &>arrowscrollbox {
     &[overflowing] {
@@ -39,7 +37,7 @@ zen-workspace {
     align-self: center !important;
     justify-self: center !important;
     background: var(--Neo-Glow-Color-3) !important;
-    box-shadow: 0px 0px 2px var(--Neo-Glow-Color-3) !important;
+    box-shadow: 0px 0px 4px var(--Neo-Glow-Color-3) !important;
     transition: opacity 0.3s ease !important;
   }
 }
@@ -54,7 +52,7 @@ zen-workspace {
     align-self: center !important;
     justify-self: center !important;
     background: var(--Neo-Glow-Color-3) !important;
-    box-shadow: 0px 0px 2px var(--Neo-Glow-Color-3) !important;
+    box-shadow: 0px 0px 4px var(--Neo-Glow-Color-3) !important;
     transition: opacity 0.3s ease !important;
   }
 }

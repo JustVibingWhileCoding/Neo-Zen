@@ -1,14 +1,14 @@
-@media not (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
-    :root:not([zen-single-toolbar="true"]) {
-        #zen-appcontent-navbar-container{            
-            & #nav-bar {
-                padding-top: 2px !important;
-                height: 50px !important;
-                max-height: 50px !important;
+:root:not([zen-single-toolbar="true"]) {
+    #zen-appcontent-navbar-container{            
+        & #nav-bar {
+            padding-top: 2px !important;
+            height: 50px !important;
+            max-height: 50px !important;
             
-                align-content: center !important;
-            }
+            align-content: center !important;
         }
+    }
+    @media not (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
         #zen-sidebar-top-buttons{
             min-height: 50px !important;
             height: 50px !important;
