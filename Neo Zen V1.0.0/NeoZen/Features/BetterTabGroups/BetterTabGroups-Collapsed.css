@@ -1,0 +1,40 @@
+/* Tab group adjustments for collapsed mode */
+
+@media not (-moz-bool-pref: "unnamed-features-better-tab-groups-disabled") {
+    :root:not([zen-sidebar-expanded="true"]) {
+
+        /*HIDE A FUCKING PSEUDO ELEMENT THAT IS COMPLETELY USELESS*/
+
+        .tab-group-label-container {
+            #tabbrowser-tabs[orient="vertical"] tab-group:not([collapsed])>&::after {
+                width: var(--tab-group-line-thickness);
+                inset-block: unset !important;
+                inset-inline: unset !important;
+                border-start-start-radius: unset !important;
+                border-start-end-radius: unset !important;
+            }
+        }
+
+        tab-group:not([split-view-group]) {
+            display: flex !important;
+            flex-direction: column !important;
+            align-content: center !important;
+            padding: 3px 5px 3px 5px !important;
+            width: fit-content !important;
+            align-self: center !important;
+        }
+
+        .tab-group-label-container>label {
+            /* Makes text invisible */
+            font-weight: 0 !important;
+            font-size: 0px !important;
+            align-self: center !important;
+            text-align: center !important;
+            padding-left: 0px !important;
+        }
+
+        .tab-group-label-container>label::before {
+            left: 7px !important;
+        }
+    }
+}
