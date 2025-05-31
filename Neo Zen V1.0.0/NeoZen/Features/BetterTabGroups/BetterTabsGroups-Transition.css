@@ -9,7 +9,7 @@
 
         &:not([collapsed]) {
             & .tab-group-label-container>label::before {
-                top: 18.5% !important;
+                top: 17.5% !important;
                 left: 7px !important;
                 animation: iconAnimation-open 1s ease-in-out forwards !important;
                 animation-fill-mode: forwards !important;

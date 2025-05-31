@@ -42,6 +42,7 @@
     #tabs-newtab-button {
         display: flex !important;
         margin-top: 5px !important;
+        margin-bottom: 5px !important;
         min-width: 38px !important;
         justify-self: center !important;
         background: var(--Neo-Black-1) !important;

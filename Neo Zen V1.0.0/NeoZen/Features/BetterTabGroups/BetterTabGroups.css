@@ -18,9 +18,9 @@
         position: sticky !important;
         z-index: 9999 !important;
         top: 0 !important;
-        height: 36px !important;
-        min-height: 36px !important;
-        max-height: 36px !important;
+        height: 38px !important;
+        min-height: 38px !important;
+        max-height: 38px !important;
         margin: 0px 0px !important;
         padding: 2px 2px 5px 0px !important;
         border-radius: var(--Neo-Border-Radius) !important;
@@ -42,7 +42,7 @@
         padding-left: 38px !important;
         width: 80% !important;
         margin: 0 !important;
-        max-height: 36px !important;
+        max-height: 38px !important;
         transition: padding-left 0.3s ease !important;
 
     }
@@ -53,14 +53,14 @@
         content: "" !important;
         position: absolute !important;
         left: 5px !important;
-        top: 15.3% !important;
+        top: 12.5% !important;
         width: 20px !important;
         height: 20px !important;
         mask-size: contain;
         mask-repeat: no-repeat;
         background-size: contain !important;
         background-repeat: no-repeat !important;
-        max-height: 36px !important;
+        max-height: 38px !important;
         transition: scale 0.4s ease !important;
 
         @media (-moz-bool-pref: "tab.groups.theme-folders") {
@@ -87,7 +87,7 @@
 
     /* Collapsed State */
     tab-group:not([split-view-group])[collapsed] {
-        max-height: 36px !important;
+        max-height: 38px !important;
     }
 
     tab-group:not([split-view-group])[collapsed] tab {
@@ -113,7 +113,7 @@
     }
 
     .tab-group-label {
-        max-height: 36px !important;
+        max-height: 38px !important;
         background-color: transparent !important;
         outline: none !important;
     }
