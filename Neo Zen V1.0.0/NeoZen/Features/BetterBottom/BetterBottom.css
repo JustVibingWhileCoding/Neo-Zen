@@ -1,3 +1,7 @@
+@import "BetterBottom-Modes.css";
+@import "BetterBottom-Indicator.css";
+@import "BetterBottom-Transitions.css";
+@import "WorkspaceButton/WorkspaceButton.css";
 /* Bottom area general adjustments */
 @media not (-moz-bool-pref: "neo-features-better-bottom-disabled") {
     #zen-sidebar-bottom-buttons {
