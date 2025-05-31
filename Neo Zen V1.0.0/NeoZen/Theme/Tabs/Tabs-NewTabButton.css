@@ -37,3 +37,35 @@
         }
     }
 }
+
+:root:not([zen-sidebar-expanded="true"]) {
+    #tabs-newtab-button {
+        display: flex !important;
+        margin-top: 5px !important;
+        min-width: 38px !important;
+        justify-self: center !important;
+        background: var(--Neo-Black-1) !important;
+        border-radius: var(--Neo-Border-Radius) !important;
+        box-shadow: 0px 0px 0px var(--Neo-Glow-Color-3) !important;
+        border: 1px solid color-mix(in srgb, var(--zen-primary-color) 70%, transparent) !important;
+        transition: opacity 0.3s ease, box-shadow 0.3s ease !important;
+
+        & .toolbarbutton-icon {
+            background: none !important;
+            transition: scale 0.3s ease !important;
+        }
+    }
+
+    #tabs-newtab-button:hover {
+        opacity: 1.0 !important;
+        box-shadow: 0px 0px 4px var(--Neo-Glow-Color-3) !important;
+
+        & .toolbarbutton-text::before {
+            margin-left: 8px !important;
+        }
+
+        & .toolbarbutton-icon {
+            scale: 1.3 !important;
+        }
+    }
+}
