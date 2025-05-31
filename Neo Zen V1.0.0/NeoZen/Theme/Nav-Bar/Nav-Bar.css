@@ -1,3 +1,6 @@
+@import "Nav-Bar-Compact.css";
+@import "Nav-Bar-Compact-Background.css";
+
 :root:not([zen-single-toolbar="true"]):not([zen-compact-mode="true"]) {
     #zen-appcontent-navbar-container {
         & #nav-bar {
