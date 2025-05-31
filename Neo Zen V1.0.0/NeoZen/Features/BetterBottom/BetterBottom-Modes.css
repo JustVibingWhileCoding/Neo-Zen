@@ -14,8 +14,10 @@
                 height: fit-content !important;
                 max-height: 115px !important;
             }
+            @media not (-moz-bool-pref: "neo-features-better-bottom-keep-expanded") {
+                max-height: 45px !important;
+            }
 
-            max-height: 45px !important;
             padding: 5px 5px 0px 5px !important;
             margin: 0px 0px 5px 0px !important;
 

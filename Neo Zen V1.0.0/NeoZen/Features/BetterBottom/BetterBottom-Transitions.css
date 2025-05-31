@@ -5,7 +5,7 @@
 
     @media (-moz-bool-pref: "neo-features-better-bottom-keep-expanded") {
         #zen-workspaces-button {
-            background: color-mix(in srgb, var(--Unnamed-Glow-Color-3) 12%, #000000) !important;
+            background: color-mix(in srgb, var(--Neo-Glow-Color-3) 12%, #000000) !important;
             border: 1px solid color-mix(in srgb, var(--zen-primary-color) 70%, transparent) !important;
         }
     }
@@ -14,18 +14,18 @@
         #zen-sidebar-bottom-buttons:hover {
             height: fit-content !important;
             max-height: 115px !important;
-            transition-delay: var(--Unnamed-Delay) !important;
+            transition-delay: var(--Neo-Delay) !important;
             transition: max-height 0.7s ease;
 
             & #zen-workspaces-button {
-                background: color-mix(in srgb, var(--Unnamed-Glow-Color-3) 12%, #000000) !important;
+                background: color-mix(in srgb, var(--Neo-Glow-Color-3) 12%, #000000) !important;
             }
 
             & #zen-workspaces-button::after {
                 opacity: 1.0;
                 width: 30%;
 
-                transition-delay: var(--Unnamed-Delay-Expanding-Indicator) !important;
+                transition-delay: var(--Neo-Delay-Expanding-Indicator) !important;
             }
         }
 
@@ -44,7 +44,7 @@
         #zen-sidebar-bottom-buttons:hover>.toolbaritem-combined-buttons {
             opacity: 1 !important;
             pointer-events: all !important;
-            transition: opacity 1.0s ease var(--Unnamed-Delay);
+            transition: opacity 1.0s ease var(--Neo-Delay);
         }
     }
 }
@@ -57,20 +57,20 @@
     #zen-sidebar-bottom-buttons:hover {
         height: fit-content !important;
         max-height: 160px !important;
-        transition: max-height 0.3s ease var(--Unnamed-Delay);
+        transition: max-height 0.3s ease var(--Neo-Delay);
 
         & #zen-workspaces-button {
             opacity: 0.0 !important;
-            transition: top 4.5s ease var(--Unnamed-Delay), bottom 1.5s ease var(--Unnamed-Delay), opacity 1.5s ease var(--Unnamed-Delay) !important;
+            transition: top 4.5s ease var(--Neo-Delay), bottom 1.5s ease var(--Neo-Delay), opacity 1.5s ease var(--Neo-Delay) !important;
         }
 
-        @media not (-moz-bool-pref: "unnamed-bottom-button-at-bottom") {
+        @media not (-moz-bool-pref: "neo-bottom-button-at-bottom") {
             #zen-workspaces-button {
                 top: -100% !important;
             }
         }
 
-        @media (-moz-bool-pref: "unnamed-bottom-button-at-bottom") {
+        @media (-moz-bool-pref: "neo-bottom-button-at-bottom") {
             #zen-workspaces-button {
                 bottom: -100% !important;
             }
@@ -80,7 +80,7 @@
             opacity: 1.0;
             width: 30%;
 
-            transition-delay: var(--Unnamed-Delay-Expanding-Indicator) !important;
+            transition-delay: var(--Neo-Delay-Expanding-Indicator) !important;
         }
     }
 
@@ -98,6 +98,6 @@
     #zen-sidebar-bottom-buttons:hover>.toolbaritem-combined-buttons {
         opacity: 1 !important;
         pointer-events: all !important;
-        transition: opacity 1.0s ease var(--Unnamed-Delay);
+        transition: opacity 1.0s ease var(--Neo-Delay);
     }
 }

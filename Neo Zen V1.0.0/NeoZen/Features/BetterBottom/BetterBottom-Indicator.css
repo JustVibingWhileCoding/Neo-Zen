@@ -15,8 +15,8 @@
         opacity: 0.0;
 
         border-radius: 10px !important;
-        box-shadow: 0 0px 6px var(--Unnamed-Glow-Color-3) !important;
-        background: radial-gradient(color-mix(in srgb, var(--Unnamed-Glow-Color-1) 90%, white) 90%, color-mix(in srgb, var(--Unnamed-Glow-Color-1) 100%, white) 100%) !important;
+        box-shadow: 0 0px 6px var(--Neo-Glow-Color-3) !important;
+        background: radial-gradient(color-mix(in srgb, var(--Neo-Glow-Color-1) 90%, white) 90%, color-mix(in srgb, var(--Neo-Glow-Color-1) 100%, white) 100%) !important;
         transition-delay: 0.2s !important;
         transition: opacity 0.4s ease, width 0.4s ease;
     }
