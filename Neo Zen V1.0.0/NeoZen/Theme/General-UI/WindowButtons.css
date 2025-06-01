@@ -62,3 +62,12 @@
 .titlebar-button>image {
     visibility: collapse !important;
 }
+
+/* Adjustment for the location of the window buttons when collapsed mode */
+:root:not([zen-compact-mode="true"]) {
+  &:not([zen-right-side="true"]):not([zen-sidebar-expanded="true"])[zen-window-buttons-reversed="true"] {
+    & .titlebar-buttonbox-container {
+      margin-left: calc(-1 * var(--zen-toolbox-max-width) + var(--zen-toolbox-padding) - 1em) !important;
+    }
+  }
+}
