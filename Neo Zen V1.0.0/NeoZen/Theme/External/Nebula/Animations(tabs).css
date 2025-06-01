@@ -1,6 +1,5 @@
-/* Of course, I stole the animations tabs from nebula.... I mean I added to the external folder the animations from nebula, as I said before, 
-I don't want to break anything, however this can be enabled or disabled using the advanced options in "about:config"
-Understand please that if this part of the theme is broken, I won't try to fix it since is part of an external theme */
+/* Of course, I stole the animations tabs from nebula.... I mean I added to the external folder the animations from nebula, 
+this can be enabled or disabled using the advanced options in "about:config" */
 
 @media (-moz-bool-pref: "neo-external-nebula-animations-tabs-enabled") {
 
