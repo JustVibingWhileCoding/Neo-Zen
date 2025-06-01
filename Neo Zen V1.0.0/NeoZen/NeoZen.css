@@ -13,6 +13,9 @@ take a look at the variables folder and animations folder, those ones are requir
 Also, I addapted the pseudo background for the compact mode from nebula to work with Neo Zen in multiple modes, 
 if you don't like it, you can disable it in the advanced options of zen in about:config*/
 
+/* Otherwise, I don't know what I'm doing too :D so please tell me if I did something wrong, if you have any suggestions to improve the theme, please let me know,
+I'm always open to suggestions and feedback. */
+
 @import "Animations/Animations.css";
 @import "Features/Features.css";
 @import "Theme/Theme.css";
