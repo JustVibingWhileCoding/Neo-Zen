@@ -1,3 +1,18 @@
+/* Neo Zen V1.0.0*/
+
+/* Hi, I'm Neo Zen, I'm a theme that has new "features", animations, and a new design, I hope you like it, and I hope you find it useful. */
+
+/* Please considering that Zen browser is still in development, after an update please check if the issue you are experencing is due to a native browser issue. 
+If it is due to a native browser issue please report it to the developer of Zen browser.
+If it is not due to a native browser issue please report it to the developer of Neo Zen.*/
+
+/* As I stole the animations tabs from nebula, I mean... added the animations, yes, you can do the same with this theme, you can take any part of the code
+and add it to your own theme. For example, to add the features withouth the style of the theme, you can add the entire folder called Features to your own theme, just
+take a look at the variables folder and animations folder, those ones are required for some features to work.
+
+Also, I addapted the pseudo background for the compact mode from nebula to work with Neo Zen in multiple modes, 
+if you don't like it, you can disable it in the advanced options of zen in about:config*/
+
 @import "Animations/Animations.css";
 @import "Features/Features.css";
 @import "Theme/Theme.css";
