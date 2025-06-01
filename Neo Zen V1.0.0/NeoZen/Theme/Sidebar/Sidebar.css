@@ -17,3 +17,7 @@ zen-workspace[active]:not([hidden]) {
 #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
   padding-bottom: calc(var(--zen-toolbox-padding) + 5px) !important;
 }
+
+#navigator-toolbox{
+  border-top: transparent !important;
+}
