@@ -49,7 +49,7 @@
 
             /* Expands on hover */
             & .zen-essentials-container:hover {
-                max-height: 257px !important;
+                max-height: 263px !important;
 
                 & .tabbrowser-tab {
                     opacity: 1 !important;
