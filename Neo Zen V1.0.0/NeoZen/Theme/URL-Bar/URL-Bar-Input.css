@@ -7,6 +7,15 @@
     }
 }
 
+#urlbar-container:has(#urlbar:not([open])) {
+    display: flex !important;
+    justify-content: center !important;
+
+    & #urlbar:not([open]) {
+        max-width: 50% !important;
+    }
+}
+
 #urlbar:not([breakout-extend="true"]) {
     :root:not([supress-primary-adjustment]) & #urlbar-background {
         border-radius: var(--Neo-Border-Radius) !important;
