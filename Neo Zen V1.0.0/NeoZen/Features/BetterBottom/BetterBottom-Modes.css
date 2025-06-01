@@ -47,10 +47,11 @@
             bottom: 2% !important;
         }
 
-        #zen-sidebar-bottom-buttons>*:not(#zen-workspaces-button) {
+        #zen-sidebar-bottom-buttons>toolbarbutton {
             flex-grow: 1 !important;
             display: inline-flex !important;
-            justify-content: center !important;
+            justify-self: center !important;
+            align-self: stretch !important;
             width: 100% !important;
         }
     }
