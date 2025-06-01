@@ -2,6 +2,12 @@
 
 zen-workspace {
   &>arrowscrollbox {
+    margin-bottom: 3px !important;
+  }
+}
+
+zen-workspace {
+  &>arrowscrollbox {
     &[overflowing] {
       &::after {
         content: '';
