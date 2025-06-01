@@ -7,12 +7,15 @@
     }
 }
 
-#urlbar-container:has(#urlbar:not([open])) {
-    display: flex !important;
-    justify-content: center !important;
+/* Limit the width of the url bar when it's not open */
+:root:not([zen-single-toolbar="true"]){
+    #urlbar-container:has(#urlbar:not([open])) {
+        display: flex !important;
+        justify-content: center !important;
 
-    & #urlbar:not([open]) {
-        max-width: 50% !important;
+        & #urlbar:not([open]) {
+            max-width: 50% !important;
+        }
     }
 }
 
