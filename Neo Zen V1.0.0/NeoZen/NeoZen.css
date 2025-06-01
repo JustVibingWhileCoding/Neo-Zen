@@ -4,7 +4,7 @@
 
 /* Please considering that Zen browser is still in development, after an update please check if the issue you are experencing is due to a native browser issue. 
 If it is due to a native browser issue please report it to the developer of Zen browser.
-If it is not due to a native browser issue please report it to the developer of Neo Zen.*/
+If the issue only appears when using Neo Zen please report it to the developer of Neo Zen.*/
 
 /* As I stole the animations tabs from nebula, I mean... added the animations, yes, you can do the same with this theme, you can take any part of the code
 and add it to your own theme. For example, to add the features withouth the style of the theme, you can add the entire folder called Features to your own theme, just
@@ -15,6 +15,8 @@ if you don't like it, you can disable it in the advanced options of zen in about
 
 /* Otherwise, I don't know what I'm doing too :D so please tell me if I did something wrong, if you have any suggestions to improve the theme, please let me know,
 I'm always open to suggestions and feedback. */
+
+/* Neo Zen V1.0.0*/
 
 @import "Animations/Animations.css";
 @import "Features/Features.css";
