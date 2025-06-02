@@ -1,4 +1,4 @@
-@media not (-moz-bool-pref: "neo-features-better-essentials-disabled") {
+@media not (-moz-pref("neo-features-better-essentials-disabled")) {
     #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
         & #zen-essentials {
             margin-bottom: 10px !important;
@@ -15,16 +15,16 @@
             align-self: center !important;
             justify-self: center !important;
 
-            @media not (-moz-bool-pref: "neo-features-better-essentials-keep-expanded") {
+            @media not (-moz-pref("neo-features-better-essentials-keep-expanded")) {
                 max-height: 40px !important;
             }
 
-            @media (-moz-bool-pref: "neo-features-better-essentials-keep-expanded") {
+            @media (-moz-pref("neo-features-better-essentials-keep-expanded")) {
                 height: 129px !important;
                 max-height: 129px !important;
             }
 
-            @media not (-moz-bool-pref: "neo-features-better-essentials-keep-expanded") {
+            @media not (-moz-pref("neo-features-better-essentials-keep-expanded")) {
                 & .tabbrowser-tab:not([selected]) {
                     opacity: 0 !important;
                     visibility: hidden !important;
@@ -45,7 +45,7 @@
             }
         }
 
-        @media not (-moz-bool-pref: "neo-features-better-essentials-keep-expanded") {
+        @media not (-moz-pref("neo-features-better-essentials-keep-expanded")) {
 
             /* Expands on hover */
             & .zen-essentials-container:hover {
@@ -60,8 +60,8 @@
     }
 }
 
-@media not (-moz-bool-pref: "neo-features-better-essentials-disabled") {
-    @media not (-moz-bool-pref: "neo-features-better-essentials-keep-expanded") {
+@media not (-moz-pref("neo-features-better-essentials-disabled")) {
+    @media not (-moz-pref("neo-features-better-essentials-keep-expanded")) {
         :root:not([zen-sidebar-expanded="true"]) {
 
             /* Essentials pseudo element when no essential tab selected */
