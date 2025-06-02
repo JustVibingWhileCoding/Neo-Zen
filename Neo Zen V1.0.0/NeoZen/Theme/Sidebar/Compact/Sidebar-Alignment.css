@@ -1,4 +1,4 @@
-@media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
+@media (-moz-pref("zen.view.compact.hide-tabbar")) {
   /* Positioning for compact sidebar at the left */
   :root:not([zen-right-side="true"]) body:has([zen-compact-mode="true"]) #titlebar {
     left: calc(var(--zen-element-separation) / 1.5) !important;
@@ -22,7 +22,7 @@
   margin-top: calc(var(--zen-element-separation) * 0.5) !important;
 }
 
-@media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+@media (-moz-pref("zen.view.compact.hide-toolbar")) {
   /* Height adjustment when toolbar is hidden */
   :root body:has([zen-compact-mode="true"]) #titlebar {
     height: calc(100% - (var(--zen-element-separation) * 1.8)) !important;
@@ -30,7 +30,7 @@
   }
 }
 
-@media not (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+@media not (-moz-pref("zen.view.compact.hide-toolbar")) {
   /* Height adjustment when toolbar is not hidden */
   :root:not([zen-single-toolbar="true"]) body:has([zen-compact-mode="true"]) #titlebar {
     height: calc(100% - (var(--zen-element-separation) * 2.5)) !important;

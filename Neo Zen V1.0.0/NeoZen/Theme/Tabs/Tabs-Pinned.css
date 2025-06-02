@@ -1,5 +1,5 @@
-@media not (-moz-bool-pref: "neo-style-tabs-disabled") {
-    @media not (-moz-bool-pref: "neo-style-tabs-pinned-disabled") {
+@media not (-moz-pref("neo-style-tabs-disabled")) {
+    @media not (-moz-pref("neo-style-tabs-pinned-disabled")) {
         .tabbrowser-tab[pinned]:not([zen-essential]) {
             & .tab-background {
                 border-radius: var(--Neo-Border-Radius) !important;

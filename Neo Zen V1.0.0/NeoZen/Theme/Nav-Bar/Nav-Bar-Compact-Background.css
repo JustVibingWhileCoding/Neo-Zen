@@ -1,4 +1,4 @@
-@media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+@media (-moz-pref("zen.view.compact.hide-toolbar")) {
     :root:not([zen-single-toolbar="true"]) body:has([zen-compact-mode="true"]) #browser::before {
         display: flex !important;
         position: absolute !important;

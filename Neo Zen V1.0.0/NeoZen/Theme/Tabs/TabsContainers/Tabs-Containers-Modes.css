@@ -1,5 +1,5 @@
 /* Tab container indicator line adjustments for expanded mode */
-@media not (-moz-bool-pref: "neo-features-better-containers-disabled") {
+@media not (-moz-pref("neo-features-better-containers-disabled")) {
     :root[zen-sidebar-expanded="true"] {
         .tab-context-line {
             margin: 29px 2px 2px 7px !important;
@@ -10,7 +10,7 @@
 }
 
 /* Tab container indicator line adjustments for collapsed mode */
-@media not (-moz-bool-pref: "neo-features-better-containers-disabled") {
+@media not (-moz-pref("neo-features-better-containers-disabled")) {
     :root:not([zen-sidebar-expanded="true"]) {
         .tab-context-line {
             margin: 29px 0px 2px 0px !important;

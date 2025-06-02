@@ -13,8 +13,10 @@ browser {
     background-color: transparent !important;
 }
 
-/* Remove shadow */
-hbox.browserSidebarContainer,
-#zen-tabbox-wrapper {
-    box-shadow: none !important;
+@media not (-moz-pref("neo-style-shadow-enabled")) {
+    /* Remove shadow */
+    hbox.browserSidebarContainer,
+    #zen-tabbox-wrapper {
+        box-shadow: none !important;
+    }
 }

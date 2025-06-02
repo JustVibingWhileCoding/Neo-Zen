@@ -1,4 +1,4 @@
-@media not (-moz-bool-pref: "neo-style-media-disabled") {
+@media not (-moz-pref("neo-style-media-disabled")) {
     :root[zen-sidebar-expanded="true"] {
 
         #zen-media-controls-toolbar,
