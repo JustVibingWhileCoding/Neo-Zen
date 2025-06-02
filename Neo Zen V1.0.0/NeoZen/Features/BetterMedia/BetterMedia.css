@@ -111,8 +111,8 @@
             }
         }
 
-        @media (-moz-bool-pref: "neo-features-better-media-expand-on-hover") {
-            #zen-media-controls-toolbar:not([hidden]):not(:hover) {
+        #zen-media-controls-toolbar:not([hidden]):not(:hover) {
+            @media (-moz-bool-pref: "neo-features-better-media-expand-on-hover") {
                 height: 35px !important;
             }
         }
