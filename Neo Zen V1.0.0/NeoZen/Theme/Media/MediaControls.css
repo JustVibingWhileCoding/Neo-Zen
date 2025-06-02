@@ -3,7 +3,6 @@
 
         #zen-media-controls-toolbar,
         #zen-media-controls-toolbar>toolbaritem {
-            padding: 4px 6px !important;
             background: none !important;
             background-color: transparent !important;
             box-shadow: none !important;
@@ -33,6 +32,27 @@
                     box-shadow: 0 0px 5px color-mix(in srgb, var(--zen-primary-color) 100%, black) !important;
                 }
             }
+        }
+    }
+    
+    :root:not([zen-sidebar-expanded="true"]) {
+        
+        #zen-media-controls-toolbar>toolbaritem {
+            backdrop-filter: none !important;
+            background: transparent !important;
+            border: 1px solid transparent !important;
+            box-shadow: 0 0px 0px transparent !important;
+            border-radius: calc(var(--Neo-Border-Radius)) !important;
+            transition: backdrop-filter 1s ease, background 1s ease, border 0.3s ease, box-shadow 0.3s ease !important;
+        }
+
+        #zen-media-controls-toolbar:hover>toolbaritem {
+            backdrop-filter: var(--Neo-Blur-Simple) !important;
+            background: color-mix(in srgb, var(--Neo-Glow-Color-3) 7%, #00000060) !important;
+            border: 1px solid var(--Neo-Glow-Color-3) !important;
+            box-shadow: 0 0px 5px var(--Neo-Glow-Color-3) !important;
+            border-radius: calc(var(--Neo-Border-Radius)) !important;
+            transition: backdrop-filter 1s ease, background 1s ease, border 0.3s ease, box-shadow 0.3s ease !important;
         }
     }
 }
