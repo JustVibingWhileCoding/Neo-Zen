@@ -3,15 +3,21 @@
         :root:not([zen-sidebar-expanded="true"]) {
             #zen-media-controls-toolbar {
                 align-content: center !important;
-                padding-top: 10px !important;
-                padding-bottom: 15px !important;
                 margin-top: 10px !important;
-                margin-bottom: 0px !important;
-                margin-left: 10px !important;
-                margin-right: 10px !important;
-                min-width: fit-content !important;
-                width: auto !important;
+
+                min-height: fit-content !important;
+                max-height: unset !important;
                 transition: min-height 1s ease, max-height 1s ease, height 1s ease, background-color 1s ease !important;
+            }
+
+            #zen-media-controls-toolbar>toolbaritem {
+                align-self: center !important;
+                justify-self: center !important;
+                margin: 0px 11px 10px 11px !important;
+                padding: 2px 3px !important;
+                width: auto !important;
+                height: auto !important;
+                bottom: auto !important;
             }
 
 
@@ -106,26 +112,8 @@
                 }
             }
 
-            #zen-media-focus-button {
-                margin-bottom: 8px !important;
-
-                &:hover {
-                    background: none !important;
-                }
-            }
-
             #zen-media-controls-toolbar:not([hidden]):not(:hover) {
-                height: 37px !important;
-            }
-
-            :has(#zen-media-controls-toolbar:not([hidden]):not(:hover)) #zen-media-controls-toolbar>toolbaritem {
-                top: 5% !important;
-                bottom: auto !important;
-            }
-
-            :has(#zen-media-controls-toolbar:not([hidden]):hover) #zen-media-controls-toolbar>toolbaritem {
-                top: 0% !important;
-                bottom: auto !important;
+                height: 35px !important;
             }
         }
     }
