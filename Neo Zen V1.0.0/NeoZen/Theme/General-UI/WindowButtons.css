@@ -8,11 +8,6 @@
     }
 
     @media (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
-        .titlebar-buttonbox {
-            margin-right: 1px !important;
-            transform: translate(-2px, -1px) !important;
-        }
-
         .titlebar-buttonbox-container {
             order: 0 !important;
         }
@@ -22,6 +17,22 @@
         @media not (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
             .titlebar-buttonbox {
                 margin: 0 10px 0 2px;
+            }
+        }
+    }
+    
+    :root[zen-sidebar-expanded="true"]:not([zen-right-side="true"]) {
+        @media (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
+            .titlebar-buttonbox {
+                margin: 0px 0px 2px -3px;
+            }
+        }
+    }
+    
+    :root[zen-sidebar-expanded="true"][zen-right-side="true"] {
+        @media (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
+            .titlebar-buttonbox {
+                margin: 4px 0px 2px 6px;
             }
         }
     }
@@ -40,8 +51,8 @@
     
     @media (-moz-pref("neo-style-window-buttons-colorful-enabled")) {
         .titlebar-min {
-            background-color: color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
-            box-shadow: 0 0px 4px color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
+            background-color: color-mix(in srgb, var(--zen-primary-color) 90%, white) !important;
+            box-shadow: 0 0px 4px color-mix(in srgb, var(--zen-primary-color) 90%, white) !important;
         }
 
         .titlebar-restore {
@@ -64,8 +75,8 @@
         min-height: 20px !important;
 
         &.titlebar-min:hover {
-            background-color: color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
-            box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
+            background-color: color-mix(in srgb, var(--zen-primary-color) 90%, white) !important;
+            box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 90%, white) !important;
         }
 
         &.titlebar-restore:hover {
@@ -92,14 +103,28 @@
     :root:not([zen-compact-mode="true"]) {
         &:not([zen-right-side="true"]):not([zen-sidebar-expanded="true"])[zen-window-buttons-reversed="true"] {
             & .titlebar-buttonbox-container {
-                margin-left: calc(-1 * var(--zen-toolbox-max-width) + var(--zen-toolbox-padding) - 1em) !important;
+                margin-left: calc(-1 * var(--zen-toolbox-max-width) + var(--zen-toolbox-padding) - 1em - 2px) !important;
             }
         }
     }
     :root:not([zen-compact-mode="true"]):not([zen-sidebar-expanded="true"]) {
         &[zen-right-side="true"]:not([zen-sidebar-expanded="true"]):not([zen-window-buttons-reversed="true"]) {
             & .titlebar-buttonbox-container {
-                margin-right: calc(-1 * var(--zen-toolbox-max-width) + var(--zen-toolbox-padding) - 4px) !important;
+                margin-right: calc(-1 * var(--zen-toolbox-max-width) + var(--zen-toolbox-padding) - 5px) !important;
+            }
+        }
+    }
+    :root:not([zen-compact-mode="true"]):not([zen-sidebar-expanded="true"]) {
+        &:not([zen-right-side="true"]):not([zen-sidebar-expanded="true"]):not([zen-window-buttons-reversed="true"]) {
+            & .titlebar-buttonbox-container {
+                margin-right: calc(var(--zen-toolbox-padding) + 4px) !important;
+            }
+        }
+    }
+    :root:not([zen-compact-mode="true"]):not([zen-sidebar-expanded="true"]) {
+        &[zen-right-side="true"]:not([zen-sidebar-expanded="true"])[zen-window-buttons-reversed="true"] {
+            & .titlebar-buttonbox-container {
+                margin-left: calc(var(--zen-toolbox-padding) + 4px) !important;
             }
         }
     }
