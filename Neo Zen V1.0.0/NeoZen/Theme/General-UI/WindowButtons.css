@@ -55,8 +55,8 @@
         }
 
         .titlebar-close {
-            background-color: color-mix(in srgb, var(--zen-primary-color) 40%, rgb(255, 90, 100)) !important;
-            box-shadow: 0 0px 4px color-mix(in srgb, var(--zen-primary-color) 40%, rgb(255, 90, 100)) !important;
+            background-color: color-mix(in srgb, var(--zen-primary-color) 20%, rgb(255, 90, 100)) !important;
+            box-shadow: 0 0px 4px color-mix(in srgb, var(--zen-primary-color) 20%, rgb(255, 90, 100)) !important;
         }
     }
     
@@ -79,8 +79,8 @@
         }
 
         &.titlebar-close:hover {
-            background-color: color-mix(in srgb, var(--zen-primary-color) 40%, rgb(255, 90, 100)) !important;
-            box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 40%, rgb(255, 90, 100)) !important;
+            background-color: color-mix(in srgb, var(--zen-primary-color) 20%, rgb(255, 90, 100)) !important;
+            box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 20%, rgb(255, 90, 100)) !important;
         }
     }
 
