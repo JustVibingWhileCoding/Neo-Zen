@@ -1,5 +1,5 @@
-@media not (-moz-bool-pref: "neo-hide-workspace-indicator") {
-  @media not (-moz-bool-pref: "neo-style-workspace-indicator-disabled") {
+@media not (-moz-pref("neo-hide-workspace-indicator")) {
+  @media not (-moz-pref("neo-style-workspace-indicator-disabled")) {
 
     /* Better workspace indicator */
     .zen-current-workspace-indicator {
@@ -106,7 +106,7 @@
   }
 }
 
-@media (-moz-bool-pref: "neo-hide-workspace-indicator") {
+@media (-moz-pref("neo-hide-workspace-indicator")) {
   .zen-current-workspace-indicator {
     display: none !important;
   }

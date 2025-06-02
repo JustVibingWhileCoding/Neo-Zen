@@ -1,7 +1,7 @@
 /* Of course, I stole the animations tabs from nebula.... [I asked to do it] I mean I added to the external folder the animations from nebula, 
 this can be enabled or disabled using the advanced options in "about:config" */
 
-@media not (-moz-bool-pref: "neo-external-nebula-animations-tabs-disabled") {
+@media not (-moz-pref("neo-external-nebula-animations-tabs-disabled")) {
 
   /* ------------------------ Glance Animation ----------------------- */
   .browserSidebarContainer.zen-glance-background.deck-selected {

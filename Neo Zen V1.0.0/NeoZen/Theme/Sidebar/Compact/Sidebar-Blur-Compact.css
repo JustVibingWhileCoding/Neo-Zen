@@ -30,7 +30,7 @@
 }
 
 /* Base blurred transparent background for compact sidebar */
-@media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
+@media (-moz-pref("zen.view.compact.hide-tabbar")) {
     body:has([zen-compact-mode="true"]) #titlebar {
         border: 0px solid transparent !important;
         outline: none !important;

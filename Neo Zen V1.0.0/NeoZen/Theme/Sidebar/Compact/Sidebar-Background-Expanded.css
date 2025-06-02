@@ -1,6 +1,6 @@
 /* Expanded Sidebar Background */
-@media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") {
-    @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
+@media (-moz-pref("browser.tabs.allow_transparent_browser")) {
+    @media (-moz-pref("zen.view.compact.hide-tabbar")) {
         :root[zen-sidebar-expanded="true"] body:has([zen-compact-mode="true"]) #browser::after {
             position: absolute !important;
             z-index: 0 !important;
@@ -10,14 +10,14 @@
 
             max-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
             min-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
-            @media not (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+            @media not (-moz-pref("zen.view.compact.hide-toolbar")) {
                 align-self: center !important;
                 top: auto !important;
                 margin-top: calc(var(--zen-element-separation) * 6.712) !important;
                 margin-bottom: calc(var(--zen-element-separation) * 1.5) !important;
                 height: calc(100% - (var(--zen-element-separation) * 7.3)) !important;
             }
-            @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+            @media (-moz-pref("zen.view.compact.hide-toolbar")) {
                 margin-top: calc(var(--zen-element-separation) * 1) !important;
                 margin-bottom: calc(var(--zen-element-separation) * 1.2) !important;
                 height: calc(100% - (var(--zen-element-separation) * 2.0)) !important;
