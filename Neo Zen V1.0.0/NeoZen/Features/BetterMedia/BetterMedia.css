@@ -1,103 +1,119 @@
-/* Media controls available in collapsed mode */
 @media not (-moz-bool-pref: "neo-features-better-media-disabled") {
-    @media not (-moz-bool-pref: "neo-features-experimental-better-media-enabled") {
-        :root:not([zen-sidebar-expanded="true"]) {
+    :root:not([zen-sidebar-expanded="true"]) {
+        #zen-media-controls-toolbar {
+            align-content: center !important;
+            margin-top: 10px !important;
 
-            #zen-media-controls-toolbar,
-            #zen-media-controls-toolbar>toolbaritem {
+            min-height: fit-content !important;
+            max-height: unset !important;
+            transition: min-height 1s ease, max-height 1s ease, height 1s ease, background-color 1s ease !important;
+        }
 
-                background: none !important;
-                background-color: transparent !important;
-                box-shadow: none !important;
-                border: none !important;
-                backdrop-filter: none !important;
+        #zen-media-controls-toolbar>toolbaritem {
+            align-self: center !important;
+            justify-self: center !important;
+            margin: 0px 11px 10px 11px !important;
+            padding: 2px 3px !important;
+            width: auto !important;
+            height: auto !important;
+            bottom: auto !important;
+        }
+
+
+        #zen-media-controls-toolbar,
+        #zen-media-controls-toolbar>toolbaritem {
+            z-index: 0 !important;
+            flex-direction: column !important;
+            flex-grow: 0 !important;
+            flex-shrink: 1 !important;
+            background: transparent !important;
+            background-color: transparent !important;
+            backdrop-filter: none !important;
+            box-shadow: none !important;
+        }
+
+        #zen-media-controls-toolbar:not([hidden]),
+        #zen-media-controls-toolbar:not([hidden])>toolbaritem {
+            display: flex !important;
+
+            /* Hide media progress bar */
+            & #zen-media-progress-hbox {
+                display: none !important;
             }
 
-            #zen-media-controls-toolbar {
-                flex-direction: column !important;
-                max-height: 5px !important;
-                flex-grow: 0 !important;
-                flex-shrink: 1 !important;
-                padding: 0px 0px !important;
-                margin-top: 10px !important;
-                transition: height 1.0s ease;
+            /* Hide media info */
+            & #zen-media-info-vbox {
+                display: none !important;
             }
 
-            #zen-media-controls-toolbar>toolbaritem {
+            & .show-on-hover:not(#zen-media-progress-hbox) {
                 display: flex !important;
                 flex-direction: column !important;
-                padding: 0px 0px !important;
-                margin: 0px 0px 0px 0px !important;
-            }
+                position: relative !important;
 
-            #zen-media-controls-toolbar:not([hidden]) {
-                display: flex !important;
+                justify-items: center !important;
+                align-items: stretch !important;
+
                 min-height: fit-content !important;
-                /* Adapts based on content */
-                max-height: none !important;
-                transition: height 1.0s ease;
+                max-height: unset !important;
+                opacity: 1 !important;
+                transform: none !important;
+                padding: 0px 0px !important;
+                pointer-events: none;
+            }
 
-                /* Hide media progress bar */
-                #zen-media-progress-hbox {
-                    display: none !important;
-                }
+            & #zen-media-controls-hbox {
+                order: -1 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-items: center !important;
+                align-items: stretch !important;
+            }
 
-                /* Hide media info */
-                #zen-media-info-vbox {
-                    display: none !important;
-                }
+            & #zen-media-buttons-hbox {
+                display: flex !important;
+                position: relative !important;
+                flex-direction: column !important;
+                justify-items: center !important;
+                align-items: stretch !important;
+                justify-self: center !important;
+                align-self: center !important;
+                background: transparent !important;
+                margin: 0px 0px !important;
+                height: max-content !important;
+                max-height: max-content !important;
+            }
 
-                /* Buttons of media sharing like discord */
-                &[media-sharing] {
+            &[media-sharing] {
+                & #media-device-buttons {
                     display: flex !important;
                     flex-direction: column-reverse !important;
                     position: relative !important;
                     /* Centering media sharing buttons */
                     justify-items: center !important;
                     align-items: stretch !important;
-                    /* Ensure media sharing buttons are visible */
-                    opacity: 1.0 !important;
-                    visibility: visible !important;
-                    /* No transform */
-                    transform: none !important;
                     height: fit-content !important;
                 }
+            }
 
-                & #zen-media-controls-hbox {
-                    display: flex !important;
-                    flex-direction: column-reverse !important;
-                    justify-items: center !important;
-                    align-items: stretch !important;
+            & .toolbarbutton-1 {
+                scale: 1.0 !important;
+                transition: scale 0.8s ease !important;
+
+                &:hover {
+                    scale: 1.5 !important;
+                    transition: scale 0.3s ease !important;
+
+                    & .toolbarbutton-icon {
+                        background: transparent !important;
+                    }
                 }
+            }
+        }
 
-                & #zen-media-buttons-hbox {
-                    display: flex !important;
-                    position: relative !important;
-                    flex-direction: column-reverse !important;
-                    justify-items: center !important;
-                    align-items: stretch !important;
-                    justify-self: center !important;
-                    align-self: center !important;
-                    background: transparent !important;
-                    margin: 0px 0px !important;
-                    height: max-content !important;
-                    max-height: max-content !important;
-                }
-
-                & .show-on-hover:not(#zen-media-progress-hbox) {
-                    display: flex !important;
-                    flex-direction: column-reverse !important;
-                    position: relative !important;
-
-                    justify-items: center !important;
-                    align-items: stretch !important;
-
-                    max-height: unset !important;
-                    opacity: 1 !important;
-                    transform: none !important;
-                    padding: 0px 0px !important;
-                    pointer-events: none;
-                }
+        @media (-moz-bool-pref: "neo-features-better-media-expand-on-hover") {
+            #zen-media-controls-toolbar:not([hidden]):not(:hover) {
+                height: 35px !important;
             }
         }
     }
