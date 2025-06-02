@@ -32,7 +32,7 @@
     :root[zen-sidebar-expanded="true"][zen-right-side="true"] {
         @media (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
             .titlebar-buttonbox {
-                margin: 4px 0px 2px 6px;
+                margin: 4px 3px 3px 6px;
             }
         }
     }
