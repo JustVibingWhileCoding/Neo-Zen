@@ -9,7 +9,7 @@
                 transition: background 1.6s ease, box-shadow 0.2s ease, border 0.6s ease;
             }
 
-            @media not (-moz-bool-pref: "neo-features-better-containers-disabled") {
+            @media not (-moz-bool-pref: "neo-style-tabs-containers-disabled") {
                 &[selected][usercontextid] .tab-background {
                     background: var(--Neo-Black-3) !important;
                     border: 1px solid color-mix(in srgb, var(--identity-tab-color) 40%, white) !important;
