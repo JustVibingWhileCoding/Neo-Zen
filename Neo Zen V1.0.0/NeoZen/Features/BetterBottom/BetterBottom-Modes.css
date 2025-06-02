@@ -1,4 +1,4 @@
-@media not (-moz-bool-pref: "neo-features-better-bottom-disabled") {
+@media not (-moz-pref("neo-features-better-bottom-disabled")) {
     :root[zen-sidebar-expanded="true"] {
         #zen-sidebar-bottom-buttons {
             display: grid !important;

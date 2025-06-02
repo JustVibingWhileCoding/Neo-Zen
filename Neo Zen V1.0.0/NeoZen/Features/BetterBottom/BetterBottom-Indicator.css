@@ -1,5 +1,5 @@
 /* Indicator when button is hovered and is close to being expanded */
-@media not (-moz-bool-pref: "neo-features-better-bottom-disabled") {
+@media not (-moz-pref("neo-features-better-bottom-disabled")){
     #zen-workspaces-button::after {
         position: absolute !important;
         z-index: -1 !important;

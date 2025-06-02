@@ -1,6 +1,6 @@
 /* Tab group adjustments for collapsed mode */
 
-@media not (-moz-bool-pref: "neo-features-better-tab-groups-disabled") {
+@media not (-moz-pref("neo-features-better-tab-groups-disabled")) {
     :root:not([zen-sidebar-expanded="true"]) {
         tab-group:not([split-view-group]) {
             &:not([collapsed]) {
