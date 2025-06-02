@@ -17,10 +17,12 @@
             order: 0 !important;
         }
     }
-
-    @media not (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
-        .titlebar-buttonbox {
-            margin: 0 10px 0 2px;
+    
+    :root[zen-sidebar-expanded="true"] {
+        @media not (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
+            .titlebar-buttonbox {
+                margin: 0 10px 0 2px;
+            }
         }
     }
 
@@ -35,7 +37,29 @@
         transition: all 200ms ease-in-out;
         background-color: rgba(200, 200, 200, 0.3) !important;
     }
+    
+    @media (-moz-pref("neo-style-window-buttons-colorful-enabled")) {
+        .titlebar-min {
+            background-color: color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
+            box-shadow: 0 0px 4px color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
+        }
 
+        .titlebar-restore {
+            background-color: color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
+            box-shadow: 0 0px 4px color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
+        }
+
+        .titlebar-max {
+            background-color: color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
+            box-shadow: 0 0px 4px color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
+        }
+
+        .titlebar-close {
+            background-color: color-mix(in srgb, var(--zen-primary-color) 40%, rgb(255, 90, 100)) !important;
+            box-shadow: 0 0px 4px color-mix(in srgb, var(--zen-primary-color) 40%, rgb(255, 90, 100)) !important;
+        }
+    }
+    
     .titlebar-button:hover {
         min-height: 20px !important;
 
@@ -49,7 +73,7 @@
             box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
         }
 
-        &.titlebar-max {
+        &.titlebar-max:hover {
             background-color: color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
             box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
         }
@@ -69,6 +93,13 @@
         &:not([zen-right-side="true"]):not([zen-sidebar-expanded="true"])[zen-window-buttons-reversed="true"] {
             & .titlebar-buttonbox-container {
                 margin-left: calc(-1 * var(--zen-toolbox-max-width) + var(--zen-toolbox-padding) - 1em) !important;
+            }
+        }
+    }
+    :root:not([zen-compact-mode="true"]):not([zen-sidebar-expanded="true"]) {
+        &[zen-right-side="true"]:not([zen-sidebar-expanded="true"]):not([zen-window-buttons-reversed="true"]) {
+            & .titlebar-buttonbox-container {
+                margin-right: calc(-1 * var(--zen-toolbox-max-width) + var(--zen-toolbox-padding) - 4px) !important;
             }
         }
     }
