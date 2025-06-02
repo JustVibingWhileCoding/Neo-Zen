@@ -1,4 +1,4 @@
-@media not (-moz-pref("neo-features-better-containers-disabled")) {
+@media not (-moz-pref("neo-style-tabs-containers-disabled")) {
 
     /* Tab container indicator line */
     .tab-context-line {
