@@ -5,6 +5,30 @@ Welcome to Neo Zen – a sleek, futuristic theme for Zen Browser that merges mod
 ## 📌 Project Overview
 Welcome to the first release of **Neo Zen**, a refined UI and animation experience.
 
+## Neo Zen V1.0.0 – Keep Your Browser Clean & Functional 🚀  
+
+Neo Zen introduces powerful new features designed to **maximize space and improve usability**.  
+This update brings **three major enhancements**, plus additional refinements.
+
+### 🔹 Better Essentials  
+In **collapsed mode**, a new **scrollable hidden area** keeps your tabs uncluttered.  
+- **Default:** Expands on hover.  
+- **Options:** Choose between **always expanded** or **always collapsed** for greater control.
+
+### 🔹 Better Bottom / Workspace Button  
+Organize your **extensions and buttons** all in one place with a **scrollable behavior**.  
+- **Default:** Hidden until hovered for 3 seconds.  
+- **Options:** Choose between **expanded** or **hidden mode**.
+
+### 🔹 Better Media Control  
+Enjoy **media management** even in collapsed mode.  
+- **Default:** Media controls remain disabled.  
+- **Options:** Enable **expand on hover** for quick access.
+
+### ⚙️ Customization Made Easy  
+Modify Neo Zen’s behavior via **"about:config"**.  
+For detailed settings and adjustments, see the **Settings.md** file.
+
 ## 🌟 Screenshots & Visuals
 Here are some **preview images** showcasing the Neo Zen interface:
 
