@@ -1,98 +1,84 @@
+# **Neo Zen – Settings & Customization Guide** 🚀  
 
-## Features
-### Better Bottom Section
+## **🔹 Features**  
 
-- Disable features for the bottom area returning to the default behaviors without losing styling
-	`neo-features-better-bottom-disabled`
-- Keep the bottom section expanded with the scrollable functionality, it will let you have 2 rows extra before being scrollable
-	`neo-features-better-bottom-keep-expanded`
-- Change the bottom section between the top and the bottom, by default the section has been changed to the top, so this will turn it back to the bottom
-	`neo-bottom-button-at-bottom`
+### **Better Bottom Section**  
+- **Disable bottom section features** and return to default behaviors while retaining styling.  
+  `neo-features-better-bottom-disabled`  
+- **Keep the bottom section expanded** with scrollable functionality, allowing two additional rows before scrolling is required.  
+  `neo-features-better-bottom-keep-expanded`  
+- **Move the bottom section** between the top and bottom. By default, it is positioned at the top—enable this setting to revert it back to the bottom.  
+  `neo-bottom-button-at-bottom`  
 
-### Better Essentials - Collapsed Mode
+### **Better Essentials – Collapsed Mode**  
+- **Disable scrolling for the essentials area** to maintain a static layout.  
+  `neo-features-better-essentials-disabled`  
+- **Keep the essentials area expanded** while preserving scrollable functionality.  
+  `neo-features-better-essentials-keep-expanded`  
 
-- Disabled the feature that makes the essentials area scrollable
-	`neo-features-better-essentials-disabled`
-- Keep the area expanded without removing the scrollable behavior
-  `neo-features-better-essentials-keep-expanded`
+### **Better Media – Collapsed Mode**  
+- **Prevent media from displaying in collapsed mode.**  
+  `neo-features-better-media-disabled`  
+- **Enable expand on hover**—media controls remain hidden until hovered over, reducing visual clutter.  
+  `neo-features-better-media-expand-on-hover`  
 
-### Better Media - Collapsed Mode
+### **Better Tab Groups**  
+- **Disable styling and scrolling behavior** for expanded tab groups.  
+  `neo-features-better-tab-groups-disabled`  
 
-- Disable media from being displayed in collapsed mode
-	`neo-features-better-essentials-keep-expanded`
-- Enable expand on hover, this makes the area smaller until you hover the area with your mouse
-	`neo-features-better-media-expand-on-hover`
+---
 
-Better Tab Groups
+## **🎨 Theme & UI Customization**  
 
-- Disable the styling and the scrollable behavior when expanded for tab groups
-	`neo-features-better-tab-groups-disabled`
+### **Workspace Button**  
+- **Disable workspace button styling.**  
+  `neo-style-workspace-button-disabled`  
 
-## Theme
+### **Workspace Indicator**  
+- **Hide the workspace indicator.**  
+  `neo-hide-workspace-indicator`  
+- **Disable workspace indicator styling.**  
+  `neo-style-workspace-indicator-disabled`  
 
-### Workspace Button
+### **Nebula Animations for Tabs**  
+- **Disable tab animations from Nebula.**  
+  `neo-external-nebula-animations-tabs-disabled`  
+📌 *More settings can be found in the Nebula documentation.*  
 
-- Disable workspace button style
-	`neo-style-workspace-button-disabled`
+### **Customization Mode**  
+- **Disable the customization toolbar.**  
+  `neo-style-customization-toolbar-disabled`  
 
-### Workspace Indicator
+### **General UI Enhancements**  
+- **Enable shadows for browser tabs.**  
+  `neo-style-shadow-enabled`  
 
-- Hide workspace indicator
-	`neo-hide-workspace-indicator`
-- Disable style for workspace indicator
-	`neo-style-workspace-indicator-disabled`
-### Animations for tabs from Nebula
+### **Window Buttons**  
+- **Disable window button customization.**  
+  `neo-style-window-buttons-disabled`  
+- **Retain colorful window buttons when unhovered.**  
+  `neo-style-window-buttons-colorful-enabled`  
 
-- Disable the animations in general for tabs
-	`neo-external-nebula-animations-tabs-disabled`
+### **Media Controls**  
+- **Disable styling for media controls.**  
+  `neo-style-media-disabled`  
 
-***More settings can be found in Nebula documentation***
+### **Tabs Customization**  
+- **Disable all tab styles globally.**  
+  `neo-style-tabs-disabled`  
+- **Disable close button styling.**  
+  `neo-style-close-button-disabled`  
+- **Disable styling for essentials, pinned tabs, new tab buttons, normal tabs, and container tabs.**  
+  - `neo-style-tabs-essentials-disabled`  
+  - `neo-style-tabs-pinned-disabled`  
+  - `neo-style-tabs-newtab-button-disabled`  
+  - `neo-style-tabs-normals-disabled`  
+  - `neo-style-tabs-containers-disabled`  
 
-### Customization Mode
+### **Overflow Indicators**  
+- **Disable styling for overflow indicators.**  
+  `neo-style-tabs-overflow-indicators-disabled`  
 
-- Disable customization for the customization toolbar
-	`neo-style-customization-toolbar-disabled`
-
-### General UI
-
-- Enable browser tabs shadow
-	`neo-style-shadow-enabled`
-
-Window Buttons
-
-- Disable window buttons customization
-	`neo-style-window-buttons-disabled`
-- Keep colors when unhovered
-	`neo-style-window-buttons-colorful-enabled`
-
-### Media Controls
-
-- Disable the style of the media controls
-	`neo-style-media-disabled`
-
-### Tabs
-
-- Disable the general style for all the types of tabs
-	`neo-style-tabs-disabled`
-- Disable close button style
-	`neo-style-close-button-disabled`
-- Disable style for essentials
-	`neo-style-tabs-essentials-disabled`
-- Disable style for pinned tabs
-	`neo-style-tabs-pinned-disabled`
-- Disable style for new tab buttons
-	`neo-style-tabs-newtab-button-disabled`
-- Disable style for the normal tabs
-	`neo-style-tabs-normals-disabled`
-- Disable style for contained tabs
-	`neo-style-tabs-containers-disabled`
-
-### Overflow Indicators
-
-- Disable overflow indicators style
-	`neo-style-tabs-overflow-indicators-disabled`
-
-### URL Bar
-
-- Disable URL Bar style
-	`neo-style-urlbar-disabled`
+### **URL Bar**  
+- **Disable URL bar styling.**  
+  `neo-style-urlbar-disabled`  
