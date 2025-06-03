@@ -1,0 +1,15 @@
+/* Fix issue from nebula when sidebar is at the right side not taking the correct position due to the navigator-toolbox width */
+:root[zen-right-side="true"][zen-compact-mode="true"] #navigator-toolbox{
+    width: var(--Neo-Width-Compact-Expanded) !important;
+}
+
+/* Adjustments for compact sidebar expanded mode */
+:root[zen-compact-mode="true"][zen-sidebar-expanded="true"] #sidebar {
+    width: var(--Neo-Width-Compact-Expanded) !important;
+    min-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
+}
+/* Adjustments for compact sidebar expanded mode */
+:root[zen-sidebar-expanded="true"] body:has([zen-compact-mode="true"]) #titlebar{
+    width: var(--Neo-Width-Compact-Expanded) !important;
+    min-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
+}

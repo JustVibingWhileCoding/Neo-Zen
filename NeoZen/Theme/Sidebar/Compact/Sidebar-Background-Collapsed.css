@@ -28,7 +28,7 @@
             border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
 
             visibility: visible !important;
-            transition: opacity 0.1s ease;
+            transition: opacity 0.3s ease;
         }
         
 

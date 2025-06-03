@@ -10,35 +10,47 @@
 
             max-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
             min-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
-            @media not (-moz-pref("zen.view.compact.hide-toolbar")) {
-                align-self: center !important;
-                top: auto !important;
-                margin-top: calc(var(--zen-element-separation) * 6.712) !important;
-                margin-bottom: calc(var(--zen-element-separation) * 1.5) !important;
-                height: calc(100% - (var(--zen-element-separation) * 7.3)) !important;
+            &:not([zen-single-toolbar="true"]){
+                @media not (-moz-pref("zen.view.compact.hide-toolbar")) {
+                    align-self: center !important;
+                    top: auto !important;
+                    margin-top: calc(var(--zen-element-separation) * 6.712) !important;
+                    margin-bottom: calc(var(--zen-element-separation) * 1.5) !important;
+                    height: calc(100% - (var(--zen-element-separation) * 7.3)) !important;
+                }
+                @media (-moz-pref("zen.view.compact.hide-toolbar")) {
+                    margin-top: calc(var(--zen-element-separation) * 1) !important;
+                    margin-bottom: calc(var(--zen-element-separation) * 1.2) !important;
+                    height: calc(100% - (var(--zen-element-separation) * 2.0)) !important;
+                    top: auto !important;
+                    bottom: auto !important;
+                }
             }
-            @media (-moz-pref("zen.view.compact.hide-toolbar")) {
-                margin-top: calc(var(--zen-element-separation) * 1) !important;
-                margin-bottom: calc(var(--zen-element-separation) * 1.2) !important;
-                height: calc(100% - (var(--zen-element-separation) * 2.0)) !important;
-                top: auto !important;
-                bottom: auto !important;
-            }
+            
 
             border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
 
             visibility: visible !important;
-            transition: opacity 0.2s ease;
+            transition: opacity 0.1s ease;
+        }
+        :root[zen-single-toolbar="true"] body:has([zen-compact-mode="true"]) #browser::after {
+            align-self: center !important;
+            top: auto !important;
+            margin-top: calc(var(--zen-element-separation) * 1) !important;
+            margin-bottom: calc(var(--zen-element-separation) * 1) !important;
+            height: calc(100% - (var(--zen-element-separation) * 2)) !important;
         }
 
 
         /* Show pseudo background when active/hovered */
         :root:not([zen-right-side="true"])[zen-sidebar-expanded="true"] {
             body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"]) #browser::after {
-              opacity: 1;
+                opacity: 1;
 
-              left: calc(var(--zen-element-separation) / 1) !important;
-              right: auto !important;
+                left: calc(var(--zen-element-separation) / 1) !important;
+                right: auto !important;
+                
+                transition: opacity 0.5s ease;
             }
         }
 
@@ -57,6 +69,8 @@
 
                 left: auto !important;
                 right: calc(var(--zen-element-separation) / 0.999) !important;
+                
+                transition: opacity 0.5s ease;
             }
         }
 
