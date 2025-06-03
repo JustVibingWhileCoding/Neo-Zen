@@ -43,7 +43,7 @@
             border: 1px solid transparent !important;
             box-shadow: 0 0px 0px transparent !important;
             border-radius: calc(var(--Neo-Border-Radius)) !important;
-            transition: backdrop-filter 1s ease, background 1s ease, border 0.3s ease, box-shadow 0.3s ease !important;
+            transition: backdrop-filter 1s ease, background 1s ease, border 0.3s ease, box-shadow 0.3s ease, top 1s ease, bottom 1s ease !important;
         }
 
         #zen-media-controls-toolbar:hover>toolbaritem {
@@ -52,7 +52,7 @@
             border: 1px solid var(--Neo-Glow-Color-1) !important;
             box-shadow: 0 0px 5px var(--Neo-Glow-Color-1) !important;
             border-radius: calc(var(--Neo-Border-Radius)) !important;
-            transition: backdrop-filter 1s ease, background 1s ease, border 0.3s ease, box-shadow 0.3s ease !important;
+            transition: backdrop-filter 1s ease, background 1s ease, border 0.3s ease, box-shadow 0.3s ease, top 1s ease, bottom 1s ease  !important;
         }
     }
 }

@@ -2,7 +2,9 @@
     :root:not([zen-sidebar-expanded="true"]) {
         #zen-media-controls-toolbar {
             align-content: center !important;
+            justify-content: center !important;
             margin-top: 10px !important;
+            padding: 10px 10px 5px 10px !important;
 
             min-height: fit-content !important;
             max-height: unset !important;
@@ -10,13 +12,14 @@
         }
 
         #zen-media-controls-toolbar>toolbaritem {
+            position: relative !important;
             align-self: center !important;
             justify-self: center !important;
-            margin: 0px 11px 10px 11px !important;
+            margin: 0px auto 10px auto !important;
             padding: 2px 3px !important;
             width: auto !important;
             height: auto !important;
-            bottom: auto !important;
+            top: 0% !important;
         }
 
 
@@ -113,7 +116,10 @@
 
         #zen-media-controls-toolbar:not([hidden]):not(:hover) {
             @media (-moz-pref("neo-features-better-media-expand-on-hover")) {
-                height: 35px !important;
+                height: 30px !important;
+                &>toolbaritem {
+                    top: 7em !important;
+                }
             }
         }
     }
