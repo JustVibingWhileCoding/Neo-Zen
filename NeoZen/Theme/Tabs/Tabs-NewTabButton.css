@@ -10,7 +10,9 @@
                 transition: opacity 0.3s ease, box-shadow 0.3s ease !important;
                 margin: 10px 0px !important;
                 justify-content: center !important;
-
+                & .toolbarbutton-text{
+                  padding: 0px 10px 0px 10px !important;
+                }
                 & .toolbarbutton-text::before {
                     justify-self: center !important;
                     align-self: center !important;
