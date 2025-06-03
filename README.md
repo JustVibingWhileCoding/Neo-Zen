@@ -1,11 +1,10 @@
 # Neo-Zen
 Welcome to Neo Zen – a sleek, futuristic theme for Zen Browser that merges modern design with mindful simplicity. Inspired by the harmony of Zen philosophy and the dynamism of innovation, Neo Zen offers a distraction-free, elegant browsing experience.
 
-
 ## 📌 Project Overview
 Welcome to the first release of **Neo Zen**, a refined UI and animation experience.
 
-## Neo Zen V1.0.0 – Keep Your Browser Clean & Functional 🚀  
+## Neo Zen – Keep Your Browser Clean & Functional 🚀  
 
 Neo Zen introduces powerful new features designed to **maximize space and improve usability**.  
 This update brings **three major enhancements**, plus additional refinements.
@@ -27,11 +26,10 @@ Enjoy **media management** even in collapsed mode.
 
 ### ⚙️ Customization Made Easy  
 Modify Neo Zen’s behavior via **"about:config"**.  
-For detailed settings and adjustments, see the **Settings.md** file.
+For detailed settings and adjustments, check out the [Settings Wiki](https://github.com/JustVibingWhileCoding/Neo-Zen/wiki/Settings).
 
 ## 🌟 Screenshots & Visuals
 Here are some **preview images** showcasing the Neo Zen interface:
-
 
 ![Image 1](https://drive.google.com/uc?id=1QcMFWcpneqL5X4HysCSpISftTTeqFpCN)
 
