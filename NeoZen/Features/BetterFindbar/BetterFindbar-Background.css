@@ -1,36 +1,48 @@
 @media not (-moz-pref("neo-features-better-findbar-disabled")) {
-    :has(findbar:not([hidden="true"])) {
-        #zen-appcontent-wrapper::before {
+    #zen-appcontent-wrapper::before {
         position: absolute !important;
         z-index: 0 !important;
         content: "" !important;
-        opacity: 1;
         background-color: light-dark(rgba(220, 220, 220, 1), rgba(40, 40, 40, 1)) !important;
 
         max-width: 600px !important;
         min-width: 600px !important;
         align-self: center !important;
-
+        opacity: 0;
         margin-top: 0px !important;
         margin-bottom: 0px !important;
         height: 95px !important;
         top: auto !important;
-        bottom: 1% !important;
         margin-right: var(--zen-element-separation) !important;
+        bottom: -9%;
 
         border-radius: var(--Neo-Border-Radius) !important;
 
-        visibility: visible !important;
-        transition: opacity 0.3s ease, bottom 0.6s ease !important;
+        visibility: hidden !important;
+        transition: opacity 0.3s ease, bottom 0.6s ease;
     }
-    
-    @media not (-moz-pref("neo-features-better-findbar-hover-disabled")) {
-        :has(findbar:not(:hover)){
-            #zen-appcontent-wrapper::before{
-                opacity: 0 !important;
-                bottom: -8% !important;
-            }
+}
+
+@media not (-moz-pref("neo-features-better-findbar-hover-disabled")) {
+    :has(.browserSidebarContainer.deck-selected > .browserContainer > findbar:not([hidden="true"]):hover) {
+
+        #zen-appcontent-wrapper::before {
+            visibility: visible !important;
+            opacity: 1 !important;
+            bottom: 1% !important;
+            transition: opacity 0.3s ease, bottom 0.6s ease;
         }
     }
+}
+
+@media (-moz-pref("neo-features-better-findbar-hover-disabled")) {
+    :has(.browserSidebarContainer.deck-selected > .browserContainer > findbar:not([hidden="true"])) {
+
+        #zen-appcontent-wrapper::before {
+            visibility: visible !important;
+            opacity: 1 !important;
+            bottom: 1% !important;
+            transition: opacity 0.3s ease, bottom 0.6s ease;
+        }
     }
 }
