@@ -3,7 +3,7 @@
         position: absolute !important;
         z-index: 0 !important;
         content: "" !important;
-        background-color: light-dark(rgba(220, 220, 220, 1), rgba(40, 40, 40, 1)) !important;
+        background-color: light-dark(rgba(255, 255, 255, 1), rgba(60, 60, 60, 1)) !important;
 
         max-width: 600px !important;
         min-width: 600px !important;
