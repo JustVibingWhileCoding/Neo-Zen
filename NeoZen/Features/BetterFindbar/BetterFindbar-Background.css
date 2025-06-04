@@ -46,3 +46,12 @@
         }
     }
 }
+
+/* Something that could be useful because this is not easy to find
+.browserSidebarContainer.deck-selected{
+    > .browserContainer{
+        > findbar:not([hidden="true"]){
+            
+        }
+    }
+}*/
