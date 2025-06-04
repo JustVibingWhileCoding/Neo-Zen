@@ -37,10 +37,13 @@
 
         opacity: 1.0 !important;
 
-        transition: bottom 0.5s ease, opacity 0.5s ease !important;
+        transition: bottom 0.5s ease, opacity 0.5s ease, border-radius 0.5s ease !important;
+
 
         & .findbar-container {
             justify-content: center !important;
+            opacity: 1.0 !important;
+            transition: opacity 0.5s ease !important;
         }
 
         & .findbar-container> :first-child {
@@ -86,9 +89,14 @@
 
     @media not (-moz-pref("neo-features-better-findbar-hover-disabled")) {
         findbar:not(:hover) {
-            bottom: -8% !important;
-            opacity: 0.1 !important;
-            transition: bottom 0.5s ease, opacity 0.5s ease !important;
+            bottom: -9% !important;
+            opacity: 0.8 !important;
+            border-radius: calc(var(--Neo-Border-Radius) + 20px) !important;
+            transition: bottom 0.5s ease, opacity 0.5s ease, border-radius 0.5s ease !important;
+        
+            & .findbar-container {
+                opacity: 0.0 !important;
+            }
         }
     }
 }
