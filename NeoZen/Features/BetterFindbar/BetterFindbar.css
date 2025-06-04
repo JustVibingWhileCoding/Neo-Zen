@@ -1,0 +1,93 @@
+@import "BetterFindbar-Background.css";
+
+@media not (-moz-pref("neo-features-better-findbar-disabled")) {
+    findbar .findbar-container {
+        display: flex !important;
+        flex-wrap: wrap;
+        /* Allows items to move to a new row */
+        justify-content: space-between !important;
+        /* Spreads out elements */
+        align-items: center;
+        gap: 5px;
+
+        min-height: fit-content !important;
+        height: auto !important;
+        max-height: unset !important;
+    }
+
+    /* Ensure first child and .found-matches stay in the first row */
+    findbar .findbar-container> :first-child,
+    findbar .found-matches {
+        flex-basis: 100% !important;
+        /* Makes them span the full width */
+        order: -2 !important;
+        /* Forces them to stay at the top */
+    }
+
+    findbar {
+        position: absolute !important;
+        align-self: center !important;
+
+        bottom: 0% !important;
+        top: auto !important;
+
+        width: 80% !important;
+        padding-left: 25px !important;
+
+        opacity: 1.0 !important;
+
+        transition: bottom 0.5s ease, opacity 0.5s ease !important;
+
+        & .findbar-container {
+            justify-content: center !important;
+        }
+
+        & .findbar-container> :first-child {
+            display: flex !important;
+            margin: 0px 0px !important;
+            overflow-x: hidden !important;
+            order: -2 !important;
+            padding: 5px 5px !important;
+
+            & .findbar-textbox {
+                flex-grow: 1 !important;
+                /* Allows it to take all available space */
+                width: auto !important;
+                max-width: 100% !important;
+                min-width: 0 !important;
+                /* Ensures it doesn't overflow */
+                margin-right: 10px !important;
+            }
+
+            & .findbar-find-previous {
+                order: -2 !important;
+            }
+
+            & .findbar-find-next {
+                order: -1 !important;
+                align-self: self-end !important;
+            }
+        }
+
+        & .findbar-closebutton {
+            height: 25px !important;
+            justify-self: center !important;
+            align-self: center !important;
+        }
+
+        & .found-matches {
+            order: -1 !important;
+            justify-content: center !important;
+            text-align: center !important;
+        }
+
+    }
+
+    @media not (-moz-pref("neo-features-better-findbar-hover-disabled")) {
+        findbar:not(:hover) {
+            bottom: -8% !important;
+            opacity: 0.3 !important;
+            transition: bottom 0.5s ease, opacity 0.5s ease !important;
+        }
+    }
+}
