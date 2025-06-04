@@ -28,11 +28,12 @@
         position: absolute !important;
         align-self: center !important;
 
-        bottom: 0% !important;
+        bottom: 0.1% !important;
         top: auto !important;
 
-        width: 80% !important;
+        width: 600px !important;
         padding-left: 25px !important;
+        min-height: 96px !important;
 
         opacity: 1.0 !important;
 
@@ -86,7 +87,7 @@
     @media not (-moz-pref("neo-features-better-findbar-hover-disabled")) {
         findbar:not(:hover) {
             bottom: -8% !important;
-            opacity: 0.3 !important;
+            opacity: 0.1 !important;
             transition: bottom 0.5s ease, opacity 0.5s ease !important;
         }
     }
