@@ -8,11 +8,11 @@
         background-color: light-dark(rgba(200, 200, 200, 1), rgba(28, 28, 28, 1)) !important;
 
 
-        width: 80% !important;
+        width: 80.1% !important;
         margin-top: calc(var(--zen-element-separation) + 3px) !important;
         margin-bottom: calc(var(--zen-element-separation) * 1.2) !important;
-        margin-left: calc(var(--zen-element-separation) * 2.2) !important;
-        margin-right: calc(var(--zen-element-separation) * 1) !important;
+        margin-left: calc(var(--zen-element-separation) * 1.1) !important;
+        margin-right: calc(var(--zen-element-separation) * 1.5) !important;
         height: 45px !important;
         top: auto !important;
         bottom: auto !important;
