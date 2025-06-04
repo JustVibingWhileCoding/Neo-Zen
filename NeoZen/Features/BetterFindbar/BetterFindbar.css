@@ -28,7 +28,7 @@
         position: absolute !important;
         align-self: center !important;
 
-        bottom: 0.1% !important;
+        bottom: 1px !important;
         top: auto !important;
 
         width: 600px !important;
@@ -89,7 +89,7 @@
 
     @media not (-moz-pref("neo-features-better-findbar-hover-disabled")) {
         findbar:not(:hover) {
-            bottom: -9% !important;
+            bottom: -80px !important;
             opacity: 0.8 !important;
             border-radius: calc(var(--Neo-Border-Radius) + 20px) !important;
             transition: bottom 0.5s ease, opacity 0.5s ease, border-radius 0.5s ease !important;

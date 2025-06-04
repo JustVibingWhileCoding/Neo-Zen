@@ -14,7 +14,7 @@
         margin-right: var(--zen-element-separation);
         height: 95px !important;
         top: auto !important;
-        bottom: -9%;
+        bottom: -80px;
 
         border-radius: var(--Neo-Border-Radius) !important;
         visibility: visible !important;
@@ -34,7 +34,7 @@
 
         #zen-appcontent-wrapper::before {
             opacity: 1 !important;
-            bottom: 1% !important;
+            bottom: calc(var(--zen-element-separation) + 2px) !important;
         }
     }
 }
@@ -45,7 +45,7 @@
         #zen-appcontent-wrapper::before {
             visibility: visible !important;
             opacity: 1 !important;
-            bottom: 1% !important;
+            bottom: calc(var(--zen-element-separation) + 2px) !important;
         }
     }
 }
