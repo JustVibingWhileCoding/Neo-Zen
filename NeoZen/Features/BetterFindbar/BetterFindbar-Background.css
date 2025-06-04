@@ -1,5 +1,6 @@
 @media not (-moz-pref("neo-features-better-findbar-disabled")) {
-    #zen-appcontent-wrapper::before {
+    :has(findbar:not([hidden="true"])) {
+        #zen-appcontent-wrapper::before {
         position: absolute !important;
         z-index: 0 !important;
         content: "" !important;
@@ -30,5 +31,6 @@
                 bottom: -8% !important;
             }
         }
+    }
     }
 }
