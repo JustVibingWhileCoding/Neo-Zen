@@ -1,29 +1,26 @@
 @import "BetterFindbar-Background.css";
-@import "BetterFindbar-Hover.css";
 
 @media not (-moz-pref("neo-features-better-findbar-disabled")) {
-    @media not (-moz-pref("neo-features-better-findbar-hover-enabled")) {
+    @media (-moz-pref("neo-features-better-findbar-hover-enabled")) {
         findbar {
             position: absolute !important;
             align-self: center !important;
 
-            width: 70% !important;
-            height: 75px !important;
             bottom: 10px !important;
-            opacity: 1 !important;
-            border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
-
             top: auto !important;
+            border-radius: 40px !important;
 
+            width: 90px !important;
             padding-left: 5px !important;
+            height: 25px !important;
 
             opacity: 0.6 !important;
             transition: bottom 0.5s ease, opacity 0.5s ease, border-radius 0.5s ease, height 0.5s ease, width 0.5s ease !important;
 
             & .findbar-container {
-                display: flex !important;
-                opacity: 1.0 !important;
+                display: none !important;
                 position: relative !important;
+                opacity: 0.0 !important;
                 flex-wrap: wrap;
                 justify-content: space-between !important;
                 align-items: center;
@@ -70,16 +67,36 @@
             }
 
             & .findbar-closebutton {
-                display: flex !important;
-                height: 25px !important;
-                justify-self: center !important;
-                align-self: center !important;
+                display: none !important;
             }
 
             & .found-matches {
                 order: -1 !important;
                 justify-content: center !important;
                 text-align: center !important;
+            }
+        }
+
+        @media (-moz-pref("neo-features-better-findbar-hover-enabled")) {
+            findbar:hover {
+                width: 70% !important;
+                height: 75px !important;
+                bottom: 10px !important;
+                opacity: 1 !important;
+                border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+                transition: bottom 0.5s ease, opacity 0.5s ease, border-radius 0.5s ease, height 0.5s ease, width 0.5s ease !important;
+
+                & .findbar-container {
+                    display: flex !important;
+                    opacity: 1.0 !important;
+                }
+
+                & .findbar-closebutton {
+                    display: flex !important;
+                    height: 25px !important;
+                    justify-self: center !important;
+                    align-self: center !important;
+                }
             }
         }
     }

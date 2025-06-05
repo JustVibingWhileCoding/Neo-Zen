@@ -1,60 +1,72 @@
 @media not (-moz-pref("neo-features-better-findbar-disabled")) {
-    #zen-appcontent-wrapper::before {
-        position: absolute !important;
-        z-index: 0 !important;
-        content: "" !important;
-        background-color: light-dark(rgba(255, 255, 255, 1), rgba(60, 60, 60, 1)) !important;
-
-        max-width: 600px !important;
-        min-width: 600px !important;
-        align-self: center !important;
-        opacity: 0;
-        margin-top: 0px !important;
-        margin-bottom: 0px !important;
-        margin-right: var(--zen-element-separation);
-        height: 95px !important;
-        top: auto !important;
-        bottom: -80px;
-
-        border-radius: var(--Neo-Border-Radius) !important;
-        visibility: visible !important;
-        transition: opacity 0.8s ease, bottom 0.6s ease !important;
-    }
-}
-@media (-moz-pref("zen.view.compact.hide-tabbar")) {
-    :root[zen-compact-mode="true"]{
+    @media (-moz-pref("neo-features-better-findbar-hover-enabled")) {
         #zen-appcontent-wrapper::before {
-            margin-right: 0px !important;
-        }
-    }
-}
+            position: absolute !important;
+            z-index: 0 !important;
+            content: "" !important;
+            background-color: light-dark(rgba(255, 255, 255, 1), rgba(60, 60, 60, 1)) !important;
 
-@media not (-moz-pref("neo-features-better-findbar-hover-disabled")) {
-    :has(.browserSidebarContainer.deck-selected > .browserContainer > findbar:not([hidden="true"]):hover) {
+            width: 90px;
+            align-self: center !important;
+            opacity: 0;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+            margin-right: var(--zen-element-separation);
+            height: 25px !important;
+            top: auto !important;
+            bottom: calc(var(--zen-element-separation) + 10px) !important;
 
-        #zen-appcontent-wrapper::before {
-            opacity: 1 !important;
-            bottom: calc(var(--zen-element-separation) + 2px) !important;
-        }
-    }
-}
-
-@media (-moz-pref("neo-features-better-findbar-hover-disabled")) {
-    :has(.browserSidebarContainer.deck-selected > .browserContainer > findbar:not([hidden="true"])) {
-
-        #zen-appcontent-wrapper::before {
+            border-radius: var(--Neo-Border-Radius) !important;
             visibility: visible !important;
+            transition: opacity 0.0s ease, bottom 0.5s ease, width 0.5s ease, height 0.5s ease !important;
+        }
+
+        @media (-moz-pref("zen.view.compact.hide-tabbar")) {
+            :root[zen-compact-mode="true"]{
+                #zen-appcontent-wrapper::before {
+                    margin-right: 0px !important;
+                }
+            }
+        }
+
+        :has(.browserSidebarContainer.deck-selected > .browserContainer > findbar:not([hidden="true"]):hover) {
+            #zen-appcontent-wrapper::before {
+                width: calc(70% - var(--zen-element-separation) * 2) !important;
+                opacity: 1 !important;
+                bottom: calc(var(--zen-element-separation) + 10px) !important;
+                height: 75px !important;
+            }
+        }
+    }
+
+    @media not (-moz-pref("neo-features-better-findbar-hover-enabled")) {
+        #zen-appcontent-wrapper::before {
+            position: absolute !important;
+            z-index: 0 !important;
+            content: "" !important;
+            background-color: light-dark(rgba(255, 255, 255, 1), rgba(60, 60, 60, 1)) !important;
+
+            width: calc(70% - var(--zen-element-separation) * 2) !important;
+            align-self: center !important;
             opacity: 1 !important;
-            bottom: calc(var(--zen-element-separation) + 2px) !important;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+            margin-right: var(--zen-element-separation);
+            height: 75px !important;
+            top: auto !important;
+            bottom: calc(var(--zen-element-separation) + 10px) !important;
+
+            border-radius: var(--Neo-Border-Radius) !important;
+            visibility: visible !important;
+            transition: opacity 0.0s ease, bottom 0.5s ease, width 0.5s ease, height 0.5s ease !important;
+        }
+
+        @media (-moz-pref("zen.view.compact.hide-tabbar")) {
+            :root[zen-compact-mode="true"]{
+                #zen-appcontent-wrapper::before {
+                    margin-right: 0px !important;
+                }
+            }
         }
     }
 }
-
-/* Something that could be useful because this is not easy to find
-.browserSidebarContainer.deck-selected{
-    > .browserContainer{
-        > findbar:not([hidden="true"]){
-            
-        }
-    }
-}*/
