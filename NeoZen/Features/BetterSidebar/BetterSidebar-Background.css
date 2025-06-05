@@ -14,7 +14,7 @@
             height: auto;
 
             visibility: visible !important;
-            transition: opacity 0.3s ease !important;
+            transition: opacity 1s ease, left 0.12s ease, right 0.12s ease !important;
         }
         
         /*Width for compact mode - expanded*/
@@ -29,7 +29,7 @@
         }
 
         /* Show pseudo background when active/hovered */
-        body:has([zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"],[zen-compact-mode="true"] #navigator-toolbox[zen-user-show=""]) #browser::after {
+        body:has([zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"], [zen-compact-mode="true"] #navigator-toolbox[zen-user-show=""]) #browser::after {
             opacity: 1;
         }
     }

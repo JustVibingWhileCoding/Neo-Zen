@@ -2,14 +2,28 @@
     @media (-moz-pref("zen.view.compact.hide-tabbar")) {
         /* Positioning for compact sidebar at the left */
         :root:not([zen-right-side="true"]):not([zen-sidebar-expanded="true"]) {
-            body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"]) #browser::after {
-                left: calc(var(--zen-element-separation) / 1) !important;
+            body:has([zen-compact-mode="true"]) #browser::after {
+                left: calc(-2% + var(--zen-element-separation)) !important;
                 right: auto !important;
             }
         }
         /* Positioning for compact sidebar at the right */
         :root[zen-right-side="true"]:not([zen-sidebar-expanded="true"]) {
-            body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"]) #browser::after {
+            body:has([zen-compact-mode="true"]) #browser::after {
+                left: auto !important;
+                right: calc(-2% + var(--zen-element-separation)) !important;
+            }
+        }
+        /* Positioning for compact sidebar at the left on hover/active */
+        :root:not([zen-right-side="true"]):not([zen-sidebar-expanded="true"]) {
+            body:has([zen-compact-mode="true"] #navigator-toolbox[zen-user-show=""], [zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"]) #browser::after {
+                left: calc(var(--zen-element-separation) / 1) !important;
+                right: auto !important;
+            }
+        }
+        /* Positioning for compact sidebar at the right on hover/active */
+        :root[zen-right-side="true"]:not([zen-sidebar-expanded="true"]) {
+            body:has([zen-compact-mode="true"] #navigator-toolbox[zen-user-show=""], [zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"]) #browser::after {
                 left: auto !important;
                 right: calc(var(--zen-element-separation) / 1) !important;
             }

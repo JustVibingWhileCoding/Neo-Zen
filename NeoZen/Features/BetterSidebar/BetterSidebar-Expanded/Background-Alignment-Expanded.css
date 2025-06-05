@@ -1,15 +1,31 @@
 @media (-moz-pref("browser.tabs.allow_transparent_browser")) {
     @media (-moz-pref("zen.view.compact.hide-tabbar")) {
-        /* Positioning for compact sidebar at the left */
+        
+        /* Positioning for compact sidebar at the left on hover/active */
         :root:not([zen-right-side="true"])[zen-sidebar-expanded="true"] {
-            body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"]) #browser::after {
-                left: calc(var(--zen-element-separation) / 1.5) !important;
+            body:has([zen-compact-mode="true"]) #browser::after {
+                left: -30% !important;
                 right: auto !important;
             }
         }
-        /* Positioning for compact sidebar at the right */
+        /* Positioning for compact sidebar at the right on hover/active */
         :root[zen-right-side="true"][zen-sidebar-expanded="true"] {
-            body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"]) #browser::after {
+            body:has([zen-compact-mode="true"]) #browser::after {
+                left: auto !important;
+                right: -30% !important;
+            }
+        }
+        
+        /* Positioning for compact sidebar at the left on hover/active */
+        :root:not([zen-right-side="true"])[zen-sidebar-expanded="true"] {
+            body:has([zen-compact-mode="true"] #navigator-toolbox[zen-user-show=""], [zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"]) #browser::after {
+                left: calc(var(--zen-element-separation) / 1) !important;
+                right: auto !important;
+            }
+        }
+        /* Positioning for compact sidebar at the right on hover/active */
+        :root[zen-right-side="true"][zen-sidebar-expanded="true"] {
+            body:has([zen-compact-mode="true"] #navigator-toolbox[zen-user-show=""], [zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"]) #browser::after {
                 left: auto !important;
                 right: calc(var(--zen-element-separation) / 0.999) !important;
             }
@@ -25,14 +41,14 @@
         /* Height adjustment for compact mode - expanded - multiple toolbar - hide both */
         @media (-moz-pref("zen.view.compact.hide-toolbar")) {
             :root:not([zen-single-toolbar="true"])[zen-sidebar-expanded="true"] body:has([zen-compact-mode="true"]) #browser::after {
-                top: calc(var(--zen-element-separation) * 0.5) !important;
-                height: calc(100% - (var(--zen-element-separation) * 1)) !important;
+                top: calc(var(--zen-element-separation) * 1) !important;
+                height: calc(100% - (var(--zen-element-separation) * 2.4)) !important;
             }
         }
         /* Height adjustment for compact mode - expanded - single toolbar - only hidden tab bar */
         :root[zen-single-toolbar="true"][zen-sidebar-expanded="true"] body:has([zen-compact-mode="true"]) #browser::after {
             top: calc(var(--zen-element-separation) * 1) !important;
-            height: calc(100% - (var(--zen-element-separation) * 1)) !important;
+            height: calc(100% - (var(--zen-element-separation) * 2.2)) !important;
         }
     }
 }
