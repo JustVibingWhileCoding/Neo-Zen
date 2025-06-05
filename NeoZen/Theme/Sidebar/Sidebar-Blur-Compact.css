@@ -10,7 +10,8 @@
             border: 0px solid transparent !important;
             outline: none !important;
             border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
-            background: transparent !important;
+            opacity: 1 !important;
+            background: var(--Neo-Blur-Color) !important;
             content: '';
             position: absolute;
             pointer-events: none;
@@ -41,7 +42,7 @@
         outline: none !important;
         border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
 
-        background: var(--Neo-Blur-Color) !important;
+        background: transparent !important;
         backdrop-filter: var(--Neo-Blur) !important;
     }
 }
