@@ -14,7 +14,7 @@
             height: auto;
 
             visibility: visible !important;
-            transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease !important;
         }
         
         /*Width for compact mode - expanded*/
@@ -23,13 +23,13 @@
             min-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
         }
         /*Width for compact mode - collapsed*/
-        :root[zen-sidebar-expanded="false"] body:has([zen-compact-mode="true"]) #browser::after {
+        :root:not([zen-sidebar-expanded="true"]) body:has([zen-compact-mode="true"]) #browser::after {
             max-width: 67px !important;
             min-width: 67px !important;
         }
 
         /* Show pseudo background when active/hovered */
-        body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"]) #browser::after {
+        body:has([zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"],[zen-compact-mode="true"] #navigator-toolbox[zen-user-show=""]) #browser::after {
             opacity: 1;
         }
     }

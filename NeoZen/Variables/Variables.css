@@ -21,7 +21,7 @@
   --Neo-Border-Radius: 4px;
 
   /* Blur */
-  --Neo-Blur: blur(32px) saturate(140%) brightness(110%);
+  --Neo-Blur: blur(32px) saturate(160%) brightness(120%);
   --Neo-Blur-Simple: blur(10px);
 
   /* Blur colors */

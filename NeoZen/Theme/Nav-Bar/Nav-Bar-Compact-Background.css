@@ -24,7 +24,7 @@
         transition: opacity 0.1s ease, top 0.2s ease;
     }
 
-    body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"] #zen-appcontent-navbar-wrapper[zen-has-hover="true"]) #browser::before {
+    body:has([zen-compact-mode="true"] #zen-appcontent-navbar-wrapper[zen-has-hover="true"], [zen-compact-mode="true"] #zen-appcontent-navbar-wrapper[zen-user-show=""]) #browser::before {
         opacity: 1;
     }
 
