@@ -75,9 +75,11 @@
             }
         }
 
+
         @media (-moz-pref("neo-features-better-findbar-hover-enabled")) {
             findbar:hover {
                 width: 70% !important;
+                flex: 1 1 70% !important; /* Allows them to grow/shrink evenly */
                 height: 75px !important;
                 bottom: 10px !important;
                 opacity: 1 !important;
