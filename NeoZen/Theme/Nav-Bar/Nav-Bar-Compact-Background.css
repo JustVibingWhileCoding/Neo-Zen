@@ -14,7 +14,7 @@
         margin-left: calc(var(--zen-element-separation) * 1.1) !important;
         margin-right: calc(var(--zen-element-separation) * 1.5) !important;
         height: 45px !important;
-        top: auto !important;
+        top: -5% !important;
         bottom: auto !important;
         right: auto !important;
 
@@ -26,6 +26,8 @@
 
     body:has([zen-compact-mode="true"] #zen-appcontent-navbar-wrapper[zen-has-hover="true"], [zen-compact-mode="true"] #zen-appcontent-navbar-wrapper[zen-user-show=""]) #browser::before {
         opacity: 1;
+        top: 0% !important;
+        opacity 0.5s ease, top 0.2s ease;
     }
 
 }
