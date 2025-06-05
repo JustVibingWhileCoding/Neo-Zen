@@ -1,0 +1,33 @@
+@import "BetterSidebar-Background.css";
+@import "BetterSidebar-Collapsed/Background-Alignment-Collapsed.css";
+@import "BetterSidebar-Collapsed/Alignment-Collapsed.css";
+@import "BetterSidebar-Expanded/Background-Alignment-Expanded.css";
+@import "BetterSidebar-Expanded/Alignment-Expanded.css";
+
+@media (-moz-pref("browser.tabs.allow_transparent_browser")) {
+    /* Adjustments for compact sidebar expanded mode */
+    :root[zen-sidebar-expanded="true"] body:has([zen-compact-mode="true"]) #titlebar{
+        width: var(--Neo-Width-Compact-Expanded) !important;
+        min-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
+    }
+    /* Fix issue from nebula when sidebar is at the right side not taking the correct position due to the navigator-toolbox width */
+    :root[zen-right-side="true"][zen-compact-mode="true"] #navigator-toolbox{
+        width: var(--Neo-Width-Compact-Expanded) !important;
+    }
+}
+
+/* Bigger sidebar when collapsed */
+#navigator-toolbox:not([zen-sidebar-expanded="true"]) {
+  max-width: calc(var(--zen-toolbox-max-width) + 12px) !important;
+  min-width: calc(var(--zen-toolbox-max-width) + 12px) !important;
+  padding-bottom: var(--zen-toolbox-padding);
+}
+
+/* Adjust tabs width to the new width of the sidebar */
+#tabbrowser-tabs[orient="vertical"] {
+  &:not([expanded]) {
+    & .tab-background {
+      width: calc(var(--tab-collapsed-background-width) + 2px) !important;
+    }
+  }
+}

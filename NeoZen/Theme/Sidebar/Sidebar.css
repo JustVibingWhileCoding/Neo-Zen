@@ -1,9 +1,4 @@
-@import "Sidebar-Collapsed.css";
-@import "Sidebar-Expanded.css";
-@import "Compact/Sidebar-Blur-Compact.css";
-@import "Compact/Sidebar-Alignment.css";
-@import "Compact/Sidebar-Background-Collapsed.css";
-@import "Compact/Sidebar-Background-Expanded.css";
+@import "Sidebar-Blur-Compact.css";
 @import "WorkspaceIndicator/WorkspaceIndicator.css";
 
 

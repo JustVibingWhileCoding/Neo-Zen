@@ -1,0 +1,40 @@
+/* Height adjustments for compact mode collapsed */
+
+/* Fixes height alignment for compact mode - collapsed - multiple toolbar - only hidden tab bar */
+
+@media not (-moz-pref("zen.view.compact.hide-toolbar")) {
+  @media (-moz-pref("zen.view.compact.hide-tabbar")) {
+    :root:not([zen-single-toolbar="true"]):not([zen-sidebar-expanded="true"]) body:has([zen-compact-mode="true"]) #titlebar {
+      height: calc(100% - (var(--zen-element-separation) * 1.2))  !important;
+      max-height: unset !important;
+      top: calc(var(--zen-element-separation) * 2) !important;
+    }
+  }
+}
+
+/* Fixes height alignment for compact mode - collapsed - multiple toolbar - hide both */
+
+@media (-moz-pref("zen.view.compact.hide-toolbar")) {
+  @media (-moz-pref("zen.view.compact.hide-tabbar")) {
+    :root:not([zen-single-toolbar="true"]):not([zen-sidebar-expanded="true"]) body:has([zen-compact-mode="true"]) #titlebar {
+      height: calc(100% - (var(--zen-element-separation) * 0.5))  !important;
+      max-height: unset !important;
+      top: calc(var(--zen-element-separation) * 0.5) !important;
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+/* Side alignment */
+@media (-moz-pref("zen.view.compact.hide-tabbar")) {
+    /* Positioning for compact sidebar at the left when collapsed mode*/
+    :root:not([zen-right-side="true"]):not([zen-sidebar-expanded="true"]) body:has([zen-compact-mode="true"]) #titlebar {
+        left: calc(var(--zen-element-separation) / 1.5) !important;
+        right: auto !important;
+    }
+    /* Positioning for compact sidebar at the right when collapsed mode*/
+    :root[zen-right-side="true"]:not([zen-sidebar-expanded="true"]) body:has([zen-compact-mode="true"]) #titlebar {
+        left: auto !important;
+        right: calc(var(--zen-element-separation) / 0.8) !important;
+    }
+}

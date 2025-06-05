@@ -1,0 +1,36 @@
+@media (-moz-pref("browser.tabs.allow_transparent_browser")){
+    @media (-moz-pref("zen.view.compact.hide-tabbar")) {
+        body:has([zen-compact-mode="true"]) #browser::after {
+            position: absolute !important;
+            align-self: center !important;
+            z-index: 0 !important;
+            content: "" !important;
+            opacity: 0;
+
+            background-color: light-dark(rgba(200, 200, 200, 1), rgba(20, 20, 20, 1)) !important;
+            border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+
+            width: auto;
+            height: auto;
+
+            visibility: visible !important;
+            transition: opacity 0.3s ease;
+        }
+        
+        /*Width for compact mode - expanded*/
+        :root[zen-sidebar-expanded="true"] body:has([zen-compact-mode="true"]) #browser::after {
+            max-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
+            min-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
+        }
+        /*Width for compact mode - collapsed*/
+        :root[zen-sidebar-expanded="false"] body:has([zen-compact-mode="true"]) #browser::after {
+            max-width: 67px !important;
+            min-width: 67px !important;
+        }
+
+        /* Show pseudo background when active/hovered */
+        body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"] #navigator-toolbox[zen-has-hover="true"]) #browser::after {
+            opacity: 1;
+        }
+    }
+}
