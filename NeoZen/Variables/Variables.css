@@ -25,7 +25,7 @@
   --Neo-Blur-Simple: blur(10px);
 
   /* Blur colors */
-  --Neo-Blur-Color: color-mix(in srgb, var(--zen-primary-color) 5%, #000000a0);
+  --Neo-Blur-Color: color-mix(in srgb, var(--zen-primary-color) 2%, #000000a0);
 
   /* Width Compact Mode */
   --Neo-Width-Compact-Expanded: 19em;

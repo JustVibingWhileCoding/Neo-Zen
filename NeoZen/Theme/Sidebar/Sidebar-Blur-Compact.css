@@ -1,33 +1,38 @@
 /* -------------------------- COMPACT SIDEBAR -------------------------- */
+@media (-moz-pref("zen.view.compact.hide-tabbar")) {
+    :root body:has([zen-compact-mode="true"]){
+        /* Fix for twilight acrylic */
+        #navigator-toolbox:not([animate='true']) #titlebar {
+            position: relative;
+        }
 
-/* Fix for twilight acrylic */
-#navigator-toolbox:not([animate='true']) #titlebar {
-    position: relative;
+        #navigator-toolbox:not([animate='true']) #titlebar::before {
+            border: 0px solid transparent !important;
+            outline: none !important;
+            border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+            background: transparent !important;
+            content: '';
+            position: absolute;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        #navigator-toolbox:not([animate='true']) #titlebar::after {
+            border: 0px solid transparent !important;
+            outline: none !important;
+            border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+            content: '';
+            position: absolute;
+            background: var(--zen-main-browser-background) !important;
+            opacity: var(--zen-background-opacity) !important;
+            pointer-events: none;
+            z-index: 0;
+            
+            mix-blend-mode: overlay;
+        }
+    }
 }
 
-#navigator-toolbox:not([animate='true']) #titlebar::before {
-    border: 0px solid transparent !important;
-    outline: none !important;
-    border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
-    background: transparent !important;
-    content: '';
-    position: absolute;
-    pointer-events: none;
-    z-index: -1;
-}
-
-#navigator-toolbox:not([animate='true']) #titlebar::after {
-    border: 0px solid transparent !important;
-    outline: none !important;
-    border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
-    content: '';
-    position: absolute;
-    background: transparent !important;
-    pointer-events: none;
-    z-index: 0;
-    opacity: var(--zen-grainy-background-opacity, 0);
-    mix-blend-mode: overlay;
-}
 
 /* Base blurred transparent background for compact sidebar */
 @media (-moz-pref("zen.view.compact.hide-tabbar")) {
