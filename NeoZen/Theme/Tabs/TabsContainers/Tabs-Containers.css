@@ -1,3 +1,7 @@
+@import "Tabs-Containers-Essentials.css";
+@import "Tabs-Containers-Normals.css";
+@import "Tabs-Containers-Transitions.css";
+
 @media not (-moz-pref("neo-style-tabs-containers-disabled")) {
 
     /* Tab container indicator line */
