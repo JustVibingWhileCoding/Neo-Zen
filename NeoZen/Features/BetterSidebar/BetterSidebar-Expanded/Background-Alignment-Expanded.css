@@ -41,8 +41,8 @@
         /* Height adjustment for compact mode - expanded - multiple toolbar - hide both */
         @media (-moz-pref("zen.view.compact.hide-toolbar")) {
             :root:not([zen-single-toolbar="true"])[zen-sidebar-expanded="true"] body:has([zen-compact-mode="true"]) #browser::after {
-                top: calc(var(--zen-element-separation) * 1) !important;
-                height: calc(100% - (var(--zen-element-separation) * 2.4)) !important;
+                top: calc(var(--zen-element-separation) * 8.5) !important;
+                height: calc(100% - (var(--zen-element-separation) * 11)) !important;
             }
         }
         /* Height adjustment for compact mode - expanded - single toolbar - only hidden tab bar */

@@ -17,9 +17,9 @@
   @media (-moz-pref("zen.view.compact.hide-tabbar")) {
     /* Height adjustment when toolbar is not hidden */
     :root:not([zen-single-toolbar="true"])[zen-sidebar-expanded="true"] body:has([zen-compact-mode="true"]) #titlebar {
-      height: calc(100% - (var(--zen-element-separation) * 2))  !important;
+      height: calc(100% - (var(--zen-element-separation) * 11))  !important;
       max-height: unset !important;
-      top: calc(var(--zen-element-separation) * 0.5) !important;
+      top: calc(var(--zen-element-separation) * 8) !important;
     }
   }
 }
