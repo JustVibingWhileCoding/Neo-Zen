@@ -1,16 +1,17 @@
 @media not (-moz-pref("neo-style-sidebar-panel-disabled")) {
 
-    /* Transparent Sidebar Items */
-    .sidebar-panel {
-        background: transparent !important;
-        font-weight: 600 !important;
-        opacity: 0.7 !important;
-    }
-
-    /* Clean & Transparent Sidebar Box */
     #sidebar-box {
         background-color: light-dark(rgba(255, 255, 255, 0.11), rgba(0, 0, 0, 0.2)) !important;
         border: 1px solid color-mix(in srgb, var(--zen-primary-color) 90%, #000000ff) !important;
+        box-shadow: 0px 0px 3px var(--Neo-Glow-Color-1) !important;
+
+        & #sidebar {
+            background: transparent !important;
+        }
+    }
+
+    .sidebar-panel {
+        background: transparent !important;
     }
 
     #sidebar-box #sidebar-header {
@@ -32,6 +33,7 @@
     #sidebar-search-container>#search-box:active,
     #viewButton:active {
         background-color: transparent !important;
+        border-radius: var(--Neo-Border-Radius) !important;
         transition: background-color 0.5s ease !important;
     }
 
@@ -39,53 +41,16 @@
     #viewButton:hover,
     #sidebar-search-container>#search-box:active,
     #viewButton:active {
+        border-radius: var(--Neo-Border-Radius) !important;
         background-color: light-dark(rgba(255, 255, 255, 0.11), rgba(0, 0, 0, 0.2)) !important;
         transition: background-color 0.5s ease !important;
     }
 
-    .sidebar-placesTreechildren {
-        background: transparent !important;
-        display: none !important;
-    }
-
-    #sidebar {
-        background: transparent !important;
-        --newtab-background-color: transparent !important;
-    }
-
-    .sidebar-placesTree {
-        appearance: none;
-        background-color: transparent !important;
-        color: white;
-        border: 0;
-        display: none !important;
-        margin: 0;
-    }
-
-    .sidebar-panel {
-        background: transparent !important;
-    }
-
-    .content-container {
-        background: transparent !important;
-    }
-
-    #template-container {
-        background: transparent !important;
-    }
-
-
-    :root[lwt-sidebar] {
+    body[role="application"] {
         --lwt-sidebar-background-color: transparent !important;
-        color: transparent !important;
-        scrollbar-color: light-dark(rgba(204, 204, 204, .5), rgba(249, 249, 250, .4)) light-dark(rgba(230, 230, 235, .5), rgba(20, 20, 25, .3));
-        color-scheme: light;
-    }
 
-    #viewButton {
-        appearance: none;
-        border-radius: 4px;
-        padding: 2px 4px;
-        color: white !important;
+        & .content-container {
+            background: transparent !important;
+        }
     }
 }
