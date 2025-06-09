@@ -1,5 +1,6 @@
 @media not (-moz-bool-pref: "neo-features-better-bottom-disabled") {
     #zen-workspaces-button {
+        display: flex !important;
         z-index: 9999 !important;
 
         flex-shrink: 0 !important;
