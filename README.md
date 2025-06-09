@@ -56,6 +56,13 @@ You can check out **Nebula** here: [Zen Nebula](https://github.com/JustAdumbPrsn
 Versions prior to 1.2.3 remain under the MIT License.
 
 
+## 🏆 Credits  
+
+Neo Zen's **tab transitions and animations** come directly from the **Nebula** theme, thanks to the generosity of its developer.  
+A huge thanks to **[JustAdumbPrsn](https://github.com/JustAdumbPrsn)**, the creator of **Nebula**, for allowing the use of their code and contributing to a smoother browsing experience!  
+
+You can check out **Nebula** here: [Zen Nebula](https://github.com/JustAdumbPrsn/Zen-Nebula)  
+
 ## 🌟 Screenshots & Visuals
 Here are some **preview images** showcasing the Neo Zen interface:
 
