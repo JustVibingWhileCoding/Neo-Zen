@@ -49,6 +49,12 @@ For detailed settings and adjustments, check out the [Settings Wiki](https://git
 >  
 > If you have insights or solutions to improve compatibility, feel free to contribute—your help is invaluable in refining Neo Zen for all users. Fixes for reported issues will be included in future releases.
 
+## 🏆 Credits  
+
+Neo Zen's **tab transitions and animations** come directly from the **Nebula** theme, thanks to the generosity of its developer.  
+A huge thanks to **[JustAdumbPrsn](https://github.com/JustAdumbPrsn)**, the creator of **Nebula**, for allowing the use of their code and contributing to a smoother browsing experience!  
+
+You can check out **Nebula** here: [Zen Nebula](https://github.com/JustAdumbPrsn/Zen-Nebula)  
 
 ## 🌟 Screenshots & Visuals
 Here are some **preview images** showcasing the Neo Zen interface:
