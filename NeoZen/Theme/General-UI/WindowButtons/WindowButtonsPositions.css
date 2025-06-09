@@ -5,7 +5,7 @@
 }
 
 @media -moz-pref("zen.tabs.vertical") {
-  :root:not([zen-single-toolbar="true"]):not([zen-right-side="true"])[zen-window-buttons-reversed="true"]:not([zen-sidebar-expanded="true"]) {
+  :root:not([zen-single-toolbar="true"]):not([zen-right-side="true"])[zen-window-buttons-reversed="true"]:not([zen-sidebar-expanded="true"]):not([zen-compact-mode="true"]) {
     .titlebar-buttonbox{
       left: auto !important;
       right: 18px !important;
