@@ -48,6 +48,10 @@ For detailed settings and adjustments, check out the [Settings Wiki](https://git
 > **Note:** Neo Zen is continuously evolving, but I can only test it on Windows 11. If you encounter any issues on Linux, macOS, or other systems, please report them—I greatly appreciate your feedback!  
 >  
 > If you have insights or solutions to improve compatibility, feel free to contribute—your help is invaluable in refining Neo Zen for all users. Fixes for reported issues will be included in future releases.
+>
+> **License Update:** Starting from version 1.2.3, this project is licensed under GPL-3.0.
+Versions prior to 1.2.3 remain under the MIT License.
+
 
 ## 🏆 Credits  
 
