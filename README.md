@@ -50,24 +50,20 @@ You can check out **Nebula** here: [Zen Nebula](https://github.com/JustAdumbPrsn
 
 > **Note:** Neo Zen is continuously evolving, but I can only test it on Windows 11. If you encounter any issues on Linux, macOS, or other systems, please report them—I greatly appreciate your feedback!  
 >  
-> If you have insights or solutions to improve compatibility, feel free to contribute—your help is invaluable in refining Neo Zen for all users. Fixes for reported issues will be included in future releases.  
->  
-> **Need Help?** If you run into any issues, **don’t hesitate to open an issue**—your reports help make Neo Zen even better!  
+> If you have insights or solutions to improve compatibility, feel free to contribute—your help is invaluable in refining Neo Zen for all users. Fixes for reported issues will be included in future releases.
+>
+> **License Update:** Starting from version 1.2.3, this project is licensed under GPL-3.0.
+Versions prior to 1.2.3 remain under the MIT License.
 
-## 🌟 Screenshots & Visuals  
-Here are some **preview images** showcasing the Neo Zen interface:  
 
-### **Collapsed Mode (Not Compact Mode)**  
-![image](https://github.com/user-attachments/assets/7dea3009-db26-4330-957f-07958fe7f1e7)  
+## 🌟 Screenshots & Visuals
+Here are some **preview images** showcasing the Neo Zen interface:
 
-### **Collapsed Mode (Compact Mode)**  
-![image](https://github.com/user-attachments/assets/cbd20fca-a7ac-4208-a4da-1e10a435751a)  
-
-### **Expanded Mode (Compact Mode, Multiple Toolbar)**  
-![image](https://github.com/user-attachments/assets/9c4bc610-48c8-4554-9d70-48ab72b824db)  
-
-### **Expanded Mode (Not Compact Mode, Multiple Toolbar)**  
-![image](https://github.com/user-attachments/assets/eee9e2e6-3174-4e3e-b716-328531030d93)  
-
-### **Single Toolbar**  
-![image](https://github.com/user-attachments/assets/5680748a-2010-4af1-9656-3d1f1c2cf46e)  
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7dea3009-db26-4330-957f-07958fe7f1e7" width="400">
+  <img src="https://github.com/user-attachments/assets/cbd20fca-a7ac-4208-a4da-1e10a435751a" width="400">
+  <img src="https://github.com/user-attachments/assets/9c4bc610-48c8-4554-9d70-48ab72b824db" width="400">
+  <img src="https://github.com/user-attachments/assets/eee9e2e6-3174-4e3e-b716-328531030d93" width="400">
+  <img src="https://github.com/user-attachments/assets/5680748a-2010-4af1-9656-3d1f1c2cf46e" width="400">
+  <img src="https://github.com/user-attachments/assets/5b04cebf-2776-4d8b-ad6c-5e2b602e3ed7" width="400">
+</div>
