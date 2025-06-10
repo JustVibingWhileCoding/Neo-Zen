@@ -1,43 +1,55 @@
 /* Tab container indicator line adjustments for essentials in expanded mode */
-@media not (-moz-pref("neo-style-tabs-containers-disabled")) {
-    @media not (-moz-pref("neo-style-tabs-containers-essentials-disabled")) {
-        :root[zen-sidebar-expanded="true"] {
-            .zen-essentials-container .tabbrowser-tab[usercontextid] {
-                & .tab-background {
-                    justify-content: center !important;
-                    align-content: center !important;
-
-                    & .tab-context-line {
-                        z-index: 999 !important;
-                        margin: 25px 0px 0px 0px !important;
-                        width: 18px !important;
-                        height: 4px !important;
-                        align-self: center !important;
-                    }
-                }
-
-                &:hover[usercontextid]:not([selected]) {
-                    .tab-context-line {
-                        width: 50% !important;
-                    }
-                }
-
-                &[selected][usercontextid] {
-                    .tab-context-line {
-                        width: 60% !important;
-                    }
-                }
-
-                &:hover[usercontextid][selected] {
-                    .tab-context-line {
-                        width: 75% !important;
-                    }
-                }
+.zen-essentials-container.zen-workspace-tabs-section[hidden="true"]{
+    & .tabbrowser-tab[usercontextid] {
+        & .tab-background {
+            justify-content: center !important;
+            align-content: center !important;
+            
+            & .tab-context-line {
+                z-index: 9 !important;
+                margin: 25px 0px 0px 0px !important;
+                width: 18px !important;
+                height: 3px !important;
+                align-self: center !important;
+                transition: width 0.5s ease !important;
             }
         }
     }
 }
-
+.zen-essentials-container.zen-workspace-tabs-section:not([hidden="true"]){
+    & .tabbrowser-tab[usercontextid] {
+        & .tab-background {
+            justify-content: center !important;
+            align-content: center !important;
+            
+            & .tab-context-line {
+                z-index: 9 !important;
+                margin: 25px 0px 0px 0px !important;
+                width: 18px !important;
+                height: 3px !important;
+                align-self: center !important;
+                transition: width 0.5s ease !important;
+            }
+        }
+        
+        &:hover[usercontextid]:not([selected]) {
+            & .tab-context-line {
+                width: 50% !important;
+            }
+        }
+        
+        &[selected][usercontextid] {
+            & .tab-context-line {
+                width: 60% !important;
+            }
+        }
+        &:hover[usercontextid][selected] {
+            & .tab-context-line {
+                width: 75% !important;
+            }
+        }
+    }
+}
 
 /* Tab container indicator line adjustments for essentials in collapsed mode */
 @media not (-moz-pref("neo-style-tabs-containers-disabled")) {

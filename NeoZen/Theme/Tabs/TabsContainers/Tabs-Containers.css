@@ -7,8 +7,6 @@
     /* Tab container indicator line */
     .tab-context-line {
         display: flex !important;
-        bottom: 10 !important;
-        opacity: 1.0 !important;
         border-radius: 10px !important;
         background: color-mix(in srgb, var(--identity-tab-color) 50%, white) !important;
         box-shadow: 0 0px 3px color-mix(in srgb, var(--identity-tab-color) 60%, white) !important;
@@ -16,7 +14,7 @@
     }
 
     /* Ensure container tabs have a relative position */
-    .tabbrowser-tab[usercontextid] .tab-background {
+    .tabbrowser-tab[usercontextid]:not([zen-essential]) .tab-background {
         position: relative !important;
         justify-content: left !important;
         border-radius: var(--Neo-Border-Radius) !important;
