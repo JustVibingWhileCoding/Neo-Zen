@@ -11,7 +11,7 @@
     "chrome": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/main/userChrome.css",
     "content": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/main/userContent.css"
   },
-  "preferences": "",
+  "preferences": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/main/preferences.json",
   "readme": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/main/README.md",
   "image": "https://github.com/user-attachments/assets/c37e9f4e-1ab1-43ec-945e-2be1592351a4",
   "tags": [
