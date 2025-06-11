@@ -1,5 +1,6 @@
 @import "Sidebar-Blur-Compact.css";
-@import "WorkspaceIndicator/WorkspaceIndicator.css";
+@import "Workspace/WorkspaceIndicator.css";
+@import "Workspace/WorkspaceCreate.css";
 
 
 /* Animations Smooth transition for all the sidebar */
