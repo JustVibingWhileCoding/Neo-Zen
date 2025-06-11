@@ -4,7 +4,7 @@
 @import "WorkspaceButton/WorkspaceButton.css";
 /* Bottom area general adjustments */
 @media not (-moz-pref("neo-features-better-bottom-disabled")) {
-    #zen-sidebar-bottom-buttons {
+    #zen-sidebar-foot-buttons {
 
         /* Scroll settings */
         overflow-y: auto !important;
@@ -23,12 +23,12 @@
     }
 
     /* Keep Sidebar Expanded When Customization is Active */
-    body:has(#customization-container:not([hidden])) #zen-sidebar-bottom-buttons {
+    body:has(#customization-container:not([hidden])) #zen-sidebar-foot-buttons {
         max-height: unset !important;
     }
 
     body:has(#customization-container:not([hidden])) {
-        #zen-sidebar-bottom-buttons>*:not(#zen-workspaces-button) {
+        #zen-sidebar-foot-buttons>*:not(#zen-workspaces-button) {
             opacity: 1 !important;
             pointer-events: all !important;
         }
@@ -36,7 +36,7 @@
 }
 
 @media not (-moz-bool-pref: "neo-bottom-button-at-bottom") {
-    #zen-sidebar-bottom-buttons {
+    #zen-sidebar-foot-buttons {
         order: -1 !important;
     }
 
@@ -55,7 +55,7 @@
             bottom: 0% !important;
         }
 
-        #zen-sidebar-bottom-buttons {
+        #zen-sidebar-foot-buttons {
             margin-bottom: 5px !important;
         }
     }
