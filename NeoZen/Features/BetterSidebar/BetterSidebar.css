@@ -18,16 +18,40 @@
 
 /* Bigger sidebar when collapsed */
 #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
-  max-width: calc(var(--zen-toolbox-max-width) + 12px) !important;
-  min-width: calc(var(--zen-toolbox-max-width) + 12px) !important;
+  max-width: calc(var(--zen-toolbox-max-width) + 0px) !important;
+  min-width: calc(var(--zen-toolbox-max-width) + 0px) !important;
   padding-bottom: var(--zen-toolbox-padding);
+  padding-left: 4px !important;
+  padding-right: 4px !important; 
 }
 
 /* Adjust tabs width to the new width of the sidebar */
 #tabbrowser-tabs[orient="vertical"] {
   &:not([expanded]) {
     & .tab-background {
-      width: calc(var(--tab-collapsed-background-width) + 2px) !important;
+      width: calc(var(--tab-collapsed-background-width) - 12px) !important;
     }
   }
+}
+
+
+#navigator-toolbox:not([zen-sidebar-expanded="true"]) {
+    & #tabbrowser-tabs {
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: hidden !important; /* Prevents overflow */
+      align-content: center !important;
+        
+        & .tabbrowser-tab {
+            display: flex !important;
+            flex-shrink: 1 !important;
+            box-sizing: border-box !important; /* Includes padding in width */
+            
+            & .tab-stack {
+                
+                & .tab-content {
+                }
+            }
+        }
+    }
 }
