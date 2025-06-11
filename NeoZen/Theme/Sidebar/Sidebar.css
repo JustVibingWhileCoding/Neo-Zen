@@ -17,3 +17,14 @@ zen-workspace[active]:not([hidden]) {
 #navigator-toolbox{
   border-top: transparent !important;
 }
+
+/*Fix for the elements "zen-foot", and "#urlbar" being displayed in create space mode*/
+
+:root[zen-creating-workspace="true"]{
+  #zen-sidebar-foot-buttons{
+    display: none !important;
+  }
+  #urlbar{
+    display: none !important;
+  }
+}
