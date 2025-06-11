@@ -12,7 +12,7 @@
         }
 
         @media not (-moz-pref("neo-features-better-bottom-keep-expanded")) {
-            #zen-sidebar-bottom-buttons:hover {
+            #zen-sidebar-foot-buttons:hover {
                 height: fit-content !important;
                 max-height: 115px !important;
                 transition-delay: var(--Neo-Delay) !important;
@@ -32,8 +32,8 @@
 
 
             /* Hide all buttons except `#zen-workspaces-button` when NOT hovered */
-            #zen-sidebar-bottom-buttons:not(:hover)>.toolbarbutton-1:not(#zen-workspaces-button),
-            #zen-sidebar-bottom-buttons:not(:hover)>.toolbaritem-combined-buttons {
+            #zen-sidebar-foot-buttons:not(:hover)>.toolbarbutton-1:not(#zen-workspaces-button),
+            #zen-sidebar-foot-buttons:not(:hover)>.toolbaritem-combined-buttons {
                 opacity: 0 !important;
                 pointer-events: none !important;
 
@@ -41,8 +41,8 @@
             }
 
             /* Show all elements when hovered */
-            #zen-sidebar-bottom-buttons:hover>.toolbarbutton-1,
-            #zen-sidebar-bottom-buttons:hover>.toolbaritem-combined-buttons {
+            #zen-sidebar-foot-buttons:hover>.toolbarbutton-1,
+            #zen-sidebar-foot-buttons:hover>.toolbaritem-combined-buttons {
                 opacity: 1 !important;
                 pointer-events: all !important;
                 transition: opacity 1.0s ease var(--Neo-Delay);
@@ -55,7 +55,7 @@
             transition: top 1.5s ease, bottom 1.5s ease, opacity 1.0s ease 0.3s !important;
         }
 
-        #zen-sidebar-bottom-buttons:hover {
+        #zen-sidebar-foot-buttons:hover {
             height: fit-content !important;
             max-height: 160px !important;
             transition: max-height 0.3s ease var(--Neo-Delay);
@@ -86,8 +86,8 @@
         }
 
         /* Hide all buttons except `#zen-workspaces-button` when NOT hovered */
-        #zen-sidebar-bottom-buttons:not(:hover)>.toolbarbutton-1:not(#zen-workspaces-button),
-        #zen-sidebar-bottom-buttons:not(:hover)>.toolbaritem-combined-buttons {
+        #zen-sidebar-foot-buttons:not(:hover)>.toolbarbutton-1:not(#zen-workspaces-button),
+        #zen-sidebar-foot-buttons:not(:hover)>.toolbaritem-combined-buttons {
             opacity: 0 !important;
             pointer-events: none !important;
 
@@ -95,8 +95,8 @@
         }
 
         /* Show all elements when hovered */
-        #zen-sidebar-bottom-buttons:hover>.toolbarbutton-1,
-        #zen-sidebar-bottom-buttons:hover>.toolbaritem-combined-buttons {
+        #zen-sidebar-foot-buttons:hover>.toolbarbutton-1,
+        #zen-sidebar-foot-buttons:hover>.toolbaritem-combined-buttons {
             opacity: 1 !important;
             pointer-events: all !important;
             transition: opacity 1.0s ease var(--Neo-Delay);
