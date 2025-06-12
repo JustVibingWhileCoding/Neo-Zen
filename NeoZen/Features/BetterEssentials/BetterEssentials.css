@@ -20,8 +20,8 @@
             }
 
             @media (-moz-pref("neo-features-better-essentials-keep-expanded")) {
-                height: 129px !important;
-                max-height: 129px !important;
+                height: 136px !important;
+                max-height: 136px !important;
             }
 
             @media not (-moz-pref("neo-features-better-essentials-keep-expanded")) {
@@ -49,7 +49,7 @@
 
             /* Expands on hover */
             & .zen-essentials-container:hover {
-                max-height: 263px !important;
+                max-height: 227px !important;
 
                 & .tabbrowser-tab {
                     opacity: 1 !important;
