@@ -59,7 +59,12 @@
 zen-workspace-creation {
   & .zen-workspace-creation {
     & form {
+        min-height: fit-content !important;
+        height: fit-content !important;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
       & .zen-workspace-creation-buttons {
+          margin-top: 0px !important;
           transition: color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, height 0.3s ease !important;
           & .zen-workspace-creation-create-button {
               color: transparent !important;
