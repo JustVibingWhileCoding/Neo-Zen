@@ -15,43 +15,20 @@
         width: var(--Neo-Width-Compact-Expanded) !important;
     }
 }
-
-/* Bigger sidebar when collapsed */
-#navigator-toolbox:not([zen-sidebar-expanded="true"]) {
-  max-width: calc(var(--zen-toolbox-max-width) + 0px) !important;
-  min-width: calc(var(--zen-toolbox-max-width) + 0px) !important;
-  padding-bottom: var(--zen-toolbox-padding);
-  padding-left: 4px !important;
-  padding-right: 4px !important; 
-}
-
-/* Adjust tabs width to the new width of the sidebar */
-#tabbrowser-tabs[orient="vertical"] {
-  &:not([expanded]) {
-    & .tab-background {
-      width: calc(var(--tab-collapsed-background-width) - 12px) !important;
+:root:not([zen-sidebar-expanded="true"]){
+  .zen-workspace-tabs-section {
+    &:not(.zen-current-workspace-indicator):not(.zen-essentials-container) {
+      padding: 0 calc(var(--zen-toolbox-padding) + 3px) !important;
+      width: 100%;
     }
   }
 }
 
-
-#navigator-toolbox:not([zen-sidebar-expanded="true"]) {
-    & #tabbrowser-tabs {
-        display: flex !important;
-        flex-direction: column !important;
-        overflow: hidden !important; /* Prevents overflow */
-      align-content: center !important;
-        
-        & .tabbrowser-tab {
-            display: flex !important;
-            flex-shrink: 1 !important;
-            box-sizing: border-box !important; /* Includes padding in width */
-            
-            & .tab-stack {
-                
-                & .tab-content {
-                }
-            }
-        }
+#tabbrowser-tabs[orient="vertical"] {
+  &:not([expanded]) {
+    & .tab-background {
+      width: calc(var(--tab-collapsed-background-width) - 9px) !important;
+      height: 38.5px !important;
     }
+  }
 }
