@@ -1,6 +1,6 @@
 @media not (-moz-pref("neo-features-better-bottom-disabled")) {
     :root[zen-sidebar-expanded="true"] {
-        #zen-sidebar-bottom-buttons {
+        #zen-sidebar-foot-buttons {
             display: grid !important;
 
             grid-auto-rows: auto;
@@ -27,7 +27,7 @@
     }
 
     :root:not([zen-sidebar-expanded="true"]) {
-        #zen-sidebar-bottom-buttons {
+        #zen-sidebar-foot-buttons {
             display: flex !important;
             flex-direction: row !important;
             /* Ensures buttons stay in a row */
@@ -47,7 +47,7 @@
             bottom: 2% !important;
         }
 
-        #zen-sidebar-bottom-buttons>toolbarbutton {
+        #zen-sidebar-foot-buttons>toolbarbutton {
             flex-grow: 1 !important;
             display: inline-flex !important;
             justify-self: center !important;

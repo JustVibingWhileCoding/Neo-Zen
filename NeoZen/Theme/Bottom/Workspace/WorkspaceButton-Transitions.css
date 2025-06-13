@@ -1,6 +1,6 @@
 @media not (-moz-pref("neo-style-workspace-button-disabled")) {
   :root[zen-sidebar-expanded="true"] {
-    #zen-sidebar-bottom-buttons:hover #zen-workspaces-button {
+    #zen-sidebar-foot-buttons:hover #zen-workspaces-button {
       background: color-mix(in srgb, var(--Neo-Glow-Color-3) 10%, #000000) !important;
       border: 1px solid var(--Neo-Glow-Color-3) !important;
       box-shadow: 0 0px 4px var(--Neo-Glow-Color-3) !important;

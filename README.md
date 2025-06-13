@@ -15,7 +15,9 @@
 
 # Neo Zen  
 
-Welcome to **Neo Zen** – a sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity. With **innovative features, refined UI enhancements, and adaptive styling**, Neo Zen creates a seamless, distraction-free browsing experience.  
+Welcome to **Neo Zen** – a sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity. With **innovative features, refined UI enhancements, and adaptive styling**, Neo Zen creates a seamless, distraction-free browsing experience.
+
+*Neo Zen works best when installed with [Sine](https://github.com/CosmoCreeper/Sine).*
 
 ## 🚀 Features  
 
@@ -38,7 +40,7 @@ Welcome to **Neo Zen** – a sleek, futuristic theme for Zen Browser that blends
 
 
 ### ⚙️ **Customization Made Easy**  
-Modify Neo Zen’s behavior via **"about:config"**.  
+Modify Neo Zen’s behavior via the settings page (if you installed this through [Sine](https://github.com/CosmoCreeper/Sine)) or **"about:config"** if you did not.  
 For detailed settings and adjustments, check out the [Settings Wiki](https://github.com/JustVibingWhileCoding/Neo-Zen/wiki/Settings).  
 
 

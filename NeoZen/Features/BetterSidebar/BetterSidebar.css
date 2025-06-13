@@ -15,19 +15,20 @@
         width: var(--Neo-Width-Compact-Expanded) !important;
     }
 }
-
-/* Bigger sidebar when collapsed */
-#navigator-toolbox:not([zen-sidebar-expanded="true"]) {
-  max-width: calc(var(--zen-toolbox-max-width) + 12px) !important;
-  min-width: calc(var(--zen-toolbox-max-width) + 12px) !important;
-  padding-bottom: var(--zen-toolbox-padding);
+:root:not([zen-sidebar-expanded="true"]){
+  .zen-workspace-tabs-section {
+    &:not(.zen-current-workspace-indicator):not(.zen-essentials-container) {
+      padding: 0 calc(var(--zen-toolbox-padding) + 3px) !important;
+      width: 100%;
+    }
+  }
 }
 
-/* Adjust tabs width to the new width of the sidebar */
 #tabbrowser-tabs[orient="vertical"] {
   &:not([expanded]) {
     & .tab-background {
-      width: calc(var(--tab-collapsed-background-width) + 2px) !important;
+      width: calc(var(--tab-collapsed-background-width) - 9px) !important;
+      height: 38.5px !important;
     }
   }
 }

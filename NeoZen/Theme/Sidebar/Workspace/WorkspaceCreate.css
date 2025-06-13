@@ -1,0 +1,179 @@
+.zen-workspace-creation{
+    & .zen-workspace-creation-title{
+        text-align: center !important;
+    }
+    
+    & .zen-workspace-creation-label{
+        margin-top: 10px !important;
+        text-align: center !important;
+    }
+    
+    & .zen-workspace-creation-name-wrapper{
+        background: var(--Neo-Black-1) !important;
+        border-radius: var(--Neo-Border-Radius) !important;
+        
+        & .zen-workspace-creation-icon-label:not([label=""]){
+        }
+    }
+    
+    & .zen-workspace-creation-profile-wrapper{
+        background: var(--Neo-Black-1) !important;
+        border-radius: var(--Neo-Border-Radius) !important;
+        
+        & .zen-workspace-creation-profile-label{
+        }
+        
+        & .zen-workspace-creation-profile{
+            background: var(--Neo-Black-1) !important;
+            border-radius: var(--Neo-Border-Radius) !important;
+            box-shadow: 0px 0px 0px transparent;
+            transition: box-shadow 0.5s ease, border 0.5s ease !important;
+            border: 1px solid transparent !important;
+            
+            &:hover{
+                border: 1px solid var(--Neo-Glow-Color-2) !important;
+                box-shadow: 0px 0px 8px var(--Neo-Glow-Color-2);
+            }
+        }
+    }
+    
+    & .zen-workspace-creation-edit-theme-button{
+        background: var(--Neo-Black-3) !important;
+        border-radius: var(--Neo-Border-Radius) !important;
+        
+        box-shadow: 0px 0px 0px transparent;
+        transition: box-shadow 0.5s ease, border 0.5s ease !important;
+        border: 1px solid transparent !important;
+        
+        &:hover{
+                border: 1px solid var(--Neo-Glow-Color-2) !important;
+                box-shadow: 0px 0px 8px var(--Neo-Glow-Color-2);
+        }
+    }
+    
+    & .zen-workspace-creation-buttons{
+    }
+}
+
+
+zen-workspace-creation {
+  & .zen-workspace-creation {
+    & form {
+        min-height: fit-content !important;
+        height: fit-content !important;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+      & .zen-workspace-creation-buttons {
+          margin-top: 0px !important;
+          transition: color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, height 0.3s ease !important;
+          & .zen-workspace-creation-create-button {
+              color: transparent !important;
+              background: transparent !important;
+              border-radius: var(--Neo-Border-Radius) !important;
+              width: 100%;
+              min-height: 0px !important;
+              height: 50px !important;
+              max-height: 50px !important;
+              justify-content: center !important;
+              flex-direction: column !important;
+              transition: color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, height 0.3s ease !important;
+ 
+              &::before{
+                  display: flex !important;
+                  position: relative !important;
+                  align-self: center !important;
+                  justify-self: center !important;
+                  z-index: 0 !important;
+                  content: "" !important;
+                  background-color: transparent;
+                  box-shadow: 0px 0px 0px transparent;
+
+                  width: 0%;
+                  align-self: center !important;
+                  opacity: 1;
+  
+                  height: 0px;
+                  left: auto !important;
+                  right: auto !important;
+                  bottom: 10%;
+                  margin-top: 0px;
+                  order: 1;
+
+                  border-radius: calc(var(--Neo-Border-Radius) + 3px) !important;
+                  visibility: visible !important;
+                  transition: color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, width 0.5s ease, height 0.3s ease, margin-top 0.3s ease !important;
+              }
+              &:not([disabled="true"]){
+                  background: transparent !important;
+                  color: color-mix(in srgb, var(--zen-primary-color) 50%, white) !important;
+                  /*height: 50px !important;*/
+                  transition: color 0.5s ease, background 0.3s ease, box-shadow 0.3s ease, height 0.3s ease !important;
+                  &::before{
+                    width: 70%;
+                    opacity: 1;
+                    background: var(--Neo-Glow-Color-2);
+                    margin-top: 3px;
+                    height: 4px;
+                    box-shadow: 0px 0px 15px var(--Neo-Glow-Color-2);
+                  }
+                
+                  &:hover{
+                    color: color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
+                      &::before{
+                        width: 90% !important;
+                        box-shadow: 0px 0px 30px var(--Neo-Glow-Color-2);
+                      }
+                  }
+              }
+          }
+          
+          & .zen-workspace-creation-cancel-button.footer-button{
+              height: 40px !important;
+              max-height: 40px !important;
+              justify-content: center !important;
+              flex-direction: column !important;
+              transition: color 0.7s ease, background 0.3s ease, box-shadow 0.3s ease, height 0.3s ease !important;
+              
+              &::before{
+                  display: flex !important;
+                  position: relative !important;
+                  align-self: center !important;
+                  justify-self: center !important;
+                  z-index: 0 !important;
+                  content: "" !important;
+                  background-color: transparent;
+                  box-shadow: 0px 0px 0px transparent;
+
+                  width: 0%;
+                  align-self: center !important;
+                  opacity: 1;
+  
+                  height: 4px;
+                  left: auto !important;
+                  right: auto !important;
+                  bottom: 10%;
+                  margin-top: 0px;
+                  order: 1;
+
+                  border-radius: calc(var(--Neo-Border-Radius) + 3px) !important;
+                  visibility: visible !important;
+                  transition: color 0.6s ease, background 0.3s ease, box-shadow 0.3s ease, width 0.5s ease, height 0.3s ease, margin-top 0.3s ease !important;
+              }
+              &:hover{
+                  color: color-mix(in srgb, #ff0d5d 100%, white) !important;
+                  background: transparent !important;
+                  &::before{
+                      
+                      width: 40% !important;
+                      box-shadow: 0px 0px 25px  #ff0d5d ;
+                      background: #ff0d5d;
+                  }
+              }
+          }
+      }
+    }
+  }
+}
+
+
+
