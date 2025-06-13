@@ -69,7 +69,7 @@
 
             /* Essentials pseudo element when no essential tab selected */
             .zen-essentials-container::before {
-                content: "Neo" !important;
+                content: "Neo\A Zen" !important;
                 white-space: pre-wrap !important;
                 text-align: center !important;
                 text-justify: center !important;
