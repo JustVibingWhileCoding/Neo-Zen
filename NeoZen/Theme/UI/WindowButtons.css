@@ -1,5 +1,3 @@
-@import "WindowButtonsPositions.css";
-
 @media not (-moz-bool-pref: "neo-style-window-buttons-disabled") {
     @media not (-moz-bool-pref: "zen.view.experimental-no-window-controls") {
         .titlebar-button {
