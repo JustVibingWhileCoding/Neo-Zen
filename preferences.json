@@ -1,0 +1,237 @@
+[
+    {
+        "type": "text",
+        "label": "**Features**",
+        "margin": "10px 0 15px 0",
+        "size": "20px"
+    },
+    {
+        "type": "separator",
+        "label": "Better Bottom"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-better-bottom-disabled",
+        "label": "Disable better bottom section."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-better-bottom-keep-expanded",
+        "label": "Keep better bottom section expanded."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-bottom-button-at-bottom",
+        "label": "Move the better bottom section to the bottom."
+    },
+    {
+        "type": "separator",
+        "label": "Better Essentials"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-better-essentials-disabled",
+        "label": "Disable better essentials styling."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-better-essentials-keep-expanded",
+        "label": "Keep better essentials area expanded."
+    },
+    {
+        "type": "separator",
+        "label": "Better Media"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-better-media-disabled",
+        "label": "Disable better media styling."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-better-media-expand-on-hover",
+        "label": "Show media controls on hover."
+    },
+    {
+        "type": "separator",
+        "label": "Better Tab Groups"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-better-tab-groups-disabled",
+        "label": "Disable better tab groups styling."
+    },
+    {
+        "type": "separator",
+        "label": "Better Findbar"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-better-findbar-disabled",
+        "label": "Disable better findbar styling."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-better-findbar-hover-enabled",
+        "label": "Enable show on hover for the better findbar."
+    },
+    {
+        "type": "text",
+        "label": "**Theme &  UI**",
+        "margin": "10px 0 15px 0",
+        "size": "20px"
+    },
+    {
+        "type": "separator",
+        "label": "Workspace Button"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-workspace-button-disabled",
+        "label": "Disable workspace button styling."
+    },
+    {
+        "type": "separator",
+        "label": "Workspace Button"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-workspace-button-disabled",
+        "label": "Disable workspace button styling."
+    },
+    {
+        "type": "separator",
+        "label": "Workspace Indicator"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-hide-workspace-indicator",
+        "label": "Hide the workspace indicator."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-workspace-indicator-disabled",
+        "label": "Disable workspace indicator styling."
+    },
+    {
+        "type": "separator",
+        "label": "Nebula Tab Animations"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-external-nebula-animations-tabs-disabled",
+        "label": "Disable tab animations from Nebula."
+    },
+    {
+        "type": "separator",
+        "label": "Customization Mode"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-customization-toolbar-disabled",
+        "label": "Disable the customization toolbar."
+    },
+    {
+        "type": "separator",
+        "label": "General UI"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-shadow-enabled",
+        "label": "Enable shadows for browser tabs."
+    },
+    {
+        "type": "separator",
+        "label": "Window Buttons"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-window-buttons-disabled",
+        "label": "Disable window button styling."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-window-buttons-colorful-enabled",
+        "label": "Keep window buttons colorful while unhovered."
+    },
+    {
+        "type": "separator",
+        "label": "Media Controls"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-media-disabled",
+        "label": "Disable styling for media controls."
+    },
+    {
+        "type": "separator",
+        "label": "Tab Customization"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-tabs-disabled",
+        "label": "Disable styling for all tab styles."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-close-button-disabled",
+        "label": "Disable tab close button styling."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-tabs-essentials-disabled",
+        "label": "Disable styling for essentials."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-tabs-pinned-disabled",
+        "label": "Disable styling for pinned tabs."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-tabs-newtab-button-disabled",
+        "label": "Disable styling for new tab buttons."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-tabs-normals-disabled",
+        "label": "Disable styling for normal tabs."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-tabs-containers-disabled",
+        "label": "Disable styling for container tabs."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-tabs-containers-essentials-disabled",
+        "label": "Disable styling for container-specific essentials."
+    },
+    {
+        "type": "separator",
+        "label": "Overflow Indicators"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-tabs-overflow-indicators-disabled",
+        "label": "Disable styling for overflow indicators."
+    },
+    {
+        "type": "separator",
+        "label": "Findbar"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-findbar-disabled",
+        "label": "Disable findbar styling."
+    },
+    {
+        "type": "separator",
+        "label": "URL Bar"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-style-urlbar-disabled",
+        "label": "Disable urlbar styling."
+    }
+]

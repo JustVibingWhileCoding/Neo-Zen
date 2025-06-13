@@ -1,5 +1,6 @@
 @import "Sidebar-Blur-Compact.css";
-@import "WorkspaceIndicator/WorkspaceIndicator.css";
+@import "Workspace/WorkspaceIndicator.css";
+@import "Workspace/WorkspaceCreate.css";
 
 
 /* Animations Smooth transition for all the sidebar */
@@ -15,4 +16,15 @@ zen-workspace[active]:not([hidden]) {
 
 #navigator-toolbox{
   border-top: transparent !important;
+}
+
+/*Fix for the elements "zen-foot", and "#urlbar" being displayed in create space mode*/
+
+:root[zen-creating-workspace="true"]{
+  #zen-sidebar-foot-buttons{
+    display: none !important;
+  }
+  #urlbar{
+    display: none !important;
+  }
 }
