@@ -1,18 +1,17 @@
 {
-  "id": "Neo-Zen",
-  "homepage": "https://github.com/JustVibingWhileCoding/Neo-Zen",
+  "id": "Neo-Zen-Twilight",
+  "homepage": "https://github.com/JustVibingWhileCoding/Neo-Zen/tree/Twilight",
   "author": "JustVibingWhileCoding",
-  "name": "Neo Zen",
+  "name": "Neo Zen - Twilight",
   "description": "A sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity",
-  "version": "1.2.5",
   "createdAt": "2025-05-31",
   "updatedAt": "2025-06-11",
   "style": {
-    "chrome": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/main/userChrome.css",
-    "content": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/main/userContent.css"
+    "chrome": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/Twilight/userChrome.css",
+    "content": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/Twilight/userContent.css"
   },
-  "preferences": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/main/preferences.json",
-  "readme": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/main/README.md",
+  "preferences": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/Twilight/preferences.json",
+  "readme": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/refs/heads/Twilight/README.md",
   "image": "https://github.com/user-attachments/assets/c37e9f4e-1ab1-43ec-945e-2be1592351a4",
   "tags": [
     "content",
