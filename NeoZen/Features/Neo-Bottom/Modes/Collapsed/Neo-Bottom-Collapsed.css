@@ -24,7 +24,6 @@
             flex-grow: 1 !important;
             display: inline-flex !important;
             justify-self: center !important;
-            align-self: stretch !important;
             width: 100% !important;
         }
     }
