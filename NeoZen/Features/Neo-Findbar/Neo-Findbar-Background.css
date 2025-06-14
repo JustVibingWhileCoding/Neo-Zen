@@ -1,5 +1,5 @@
-@media not (-moz-pref("neo-features-better-findbar-disabled")) {
-    @media (-moz-pref("neo-features-better-findbar-hover-enabled")) {
+@media not (-moz-pref("neo-features-findbar-disabled")) {
+    @media (-moz-pref("neo-features-findbar-hover-enabled")) {
         #zen-appcontent-wrapper::before {
             position: absolute !important;
             z-index: 0 !important;
@@ -48,7 +48,7 @@
         }
     }
 
-    @media not (-moz-pref("neo-features-better-findbar-hover-enabled")) {
+    @media not (-moz-pref("neo-features-findbar-hover-enabled")) {
         :has(.browserSidebarContainer.deck-selected > .browserContainer > findbar:not([hidden="true"])){
             #zen-appcontent-wrapper::before {
                 position: absolute !important;

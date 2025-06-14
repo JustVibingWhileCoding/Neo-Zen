@@ -1,5 +1,5 @@
-@media not (-moz-pref("neo-features-better-findbar-disabled")) {
-    @media (-moz-pref("neo-features-better-findbar-hover-enabled")) {
+@media not (-moz-pref("neo-features-findbar-disabled")) {
+    @media (-moz-pref("neo-features-findbar-hover-enabled")) {
         findbar {
             position: absolute !important;
             align-self: center !important;
@@ -79,7 +79,7 @@
         }
 
 
-        @media (-moz-pref("neo-features-better-findbar-hover-enabled")) {
+        @media (-moz-pref("neo-features-findbar-hover-enabled")) {
             findbar:hover {
                 width: 70% !important;
                 flex: 1 1 70% !important; /* Allows them to grow/shrink evenly */
