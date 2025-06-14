@@ -1,0 +1,87 @@
+@media not (-moz-pref("neo-features-better-findbar-disabled")) {
+    @media (-moz-pref("neo-features-better-findbar-hover-enabled")) {
+        #zen-appcontent-wrapper::before {
+            position: absolute !important;
+            z-index: 0 !important;
+            content: "" !important;
+            background-color: light-dark(rgba(255, 255, 255, 1), rgba(40, 40, 40, 1)) !important;
+
+            width: 92px;
+            flex: 1 1 70% !important; /* Allows them to grow/shrink evenly */
+            align-self: center !important;
+            opacity: 0;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+            margin-right: calc(var(--zen-element-separation) - 1px);
+            height: 26px !important;
+            top: auto !important;
+            bottom: calc(var(--zen-element-separation) + 10px) !important;
+
+            border-radius: 30px;
+            visibility: visible !important;
+            transition: opacity 0.0s ease, bottom 0.5s ease, width 0.5s ease, height 0.5s ease !important;
+        }
+
+        @media (-moz-pref("zen.view.compact.hide-tabbar")) {
+            :root[zen-compact-mode="true"]{
+                #zen-appcontent-wrapper::before {
+                    margin-right: 0px !important;
+                }
+            }
+        }
+        :has(.browserSidebarContainer.deck-selected > .browserContainer > findbar:not([hidden="true"])){
+            #zen-appcontent-wrapper::before {
+                opacity: 1 !important;
+                border-radius: 30px;
+                width: 90px;
+            }
+        }
+
+        :has(.browserSidebarContainer.deck-selected > .browserContainer > findbar:not([hidden="true"]):hover) {
+            #zen-appcontent-wrapper::before {
+                opacity: 1 !important;
+                bottom: calc(var(--zen-element-separation) + 10px) !important;
+                height: 75px !important;
+                border-radius: var(--Neo-Border-Radius);
+                width: calc(70% - var(--zen-element-separation) * 1) !important;
+            }
+        }
+    }
+
+    @media not (-moz-pref("neo-features-better-findbar-hover-enabled")) {
+        :has(.browserSidebarContainer.deck-selected > .browserContainer > findbar:not([hidden="true"])){
+            #zen-appcontent-wrapper::before {
+                position: absolute !important;
+                align-self: center !important;
+                z-index: 0 !important;
+                content: "" !important;
+                background-color: light-dark(rgba(255, 255, 255, 1), rgba(40, 40, 40, 1)) !important;
+                
+                top: auto !important;
+                width: calc(70% - var(--zen-element-separation) * 2) !important;
+                opacity: 1 !important;
+                bottom: calc(var(--zen-element-separation) + 10px) !important;
+                height: 75px !important;
+                
+                margin-top: 0px !important;
+                margin-bottom: 0px !important;
+                margin-right: var(--zen-element-separation);
+                visibility: visible !important;
+                
+                border-radius: var(--Neo-Border-Radius) !important;
+            }
+            @media (-moz-pref("zen.view.compact.hide-tabbar")) {
+                :root[zen-compact-mode="true"]{
+                    #zen-appcontent-wrapper::before {
+                        margin-right: 0px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Fix the sizing of the pseudobackground */
+#zen-appcontent-wrapper{
+     position: relative !important;
+}
