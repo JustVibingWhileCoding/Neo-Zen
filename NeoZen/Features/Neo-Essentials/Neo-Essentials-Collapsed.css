@@ -1,7 +1,7 @@
 @media not (-moz-pref("neo-features-essentials-disabled")) {
     #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
         & #zen-essentials {
-            
+            margin-bottom: 10px !important;
         }
 
         & .zen-essentials-container {
@@ -14,7 +14,7 @@
 
             align-self: center !important;
             justify-self: center !important;
-            margin-bottom: 10px !important;
+           
 
             @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
                 max-height: 45px !important;
