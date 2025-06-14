@@ -1,5 +1,6 @@
 @import "BrowserBackground.css";
 @import "WindowButtons.css";
+@import "Findbar.css";
 
 /* Required for blur rendering */
 browser {
