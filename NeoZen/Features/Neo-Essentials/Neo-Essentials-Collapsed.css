@@ -14,9 +14,10 @@
 
             align-self: center !important;
             justify-self: center !important;
+            margin-bottom: 10px !important;
 
             @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
-                max-height: 40px !important;
+                max-height: 45px !important;
             }
 
             @media (-moz-pref("neo-features-essentials-keep-expanded")) {
@@ -74,12 +75,12 @@
                 text-align: center !important;
                 text-justify: center !important;
                 align-content: center !important;
-                font-size: 14px !important;
+                font-size: 13px !important;
                 color: color-mix(in srgb, var(--zen-primary-color) 20%, white) !important;
                 position: sticky !important;
                 top: 0% !important;
                 left: 0% !important;
-                height: 40px !important;
+                height: 42px !important;
             }
             .zen-essentials-container[hidden="true"]::before {
                 opacity: 1.0 !important;
