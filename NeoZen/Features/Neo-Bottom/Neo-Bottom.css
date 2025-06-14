@@ -1,4 +1,4 @@
-@import "Modes/Neo-Bottom-Collapsed.css";
-@import "Modes/Neo-Bottom-Collapsed-Transitions.css";
-@import "Modes/Neo-Bottom-Expanded.css";
-@import "Modes/Neo-Bottom-Expanded-Transitions.css";
+@import "Modes/Collapsed/Neo-Bottom-Collapsed.css";
+@import "Modes/Collapsed/Neo-Bottom-Collapsed-Transitions.css";
+@import "Modes/Expanded/Neo-Bottom-Expanded.css";
+@import "Modes/Expanded/Neo-Bottom-Expanded-Transitions.css";
