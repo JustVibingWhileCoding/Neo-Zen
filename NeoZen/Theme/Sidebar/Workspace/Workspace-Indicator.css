@@ -126,6 +126,10 @@
         & .zen-current-workspace-indicator-icon {
           margin-left: 1px !important;
           margin-bottom: 3px !important;
+          display: flex !important;
+          
+          &:hover{
+          }
         }
 
       }
