@@ -55,17 +55,17 @@
                 align-self: center !important;
                 z-index: 0 !important;
                 content: "" !important;
-                background-color: light-dark(rgba(255, 255, 255, 1), rgba(40, 40, 40, 1)) !important;
+                background-color: light-dark(rgba(255, 255, 255, 1), rgba(60, 60, 60, 1)) !important;
                 
                 top: auto !important;
-                width: calc(70% - var(--zen-element-separation) * 2) !important;
+                width: calc(70% - var(--zen-element-separation)) !important;
                 opacity: 1 !important;
                 bottom: calc(var(--zen-element-separation) + 10px) !important;
                 height: 75px !important;
                 
                 margin-top: 0px !important;
                 margin-bottom: 0px !important;
-                margin-right: var(--zen-element-separation);
+                margin-right: calc(var(--zen-element-separation) + 0px);
                 visibility: visible !important;
                 
                 border-radius: var(--Neo-Border-Radius) !important;

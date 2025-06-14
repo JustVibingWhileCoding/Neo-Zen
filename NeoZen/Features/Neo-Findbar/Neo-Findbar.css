@@ -12,6 +12,8 @@
             bottom: 10px !important;
             opacity: 1 !important;
             border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+            background: var(--Neo-Blur-Color) !important;
+            backdrop-filter: var(--Neo-Blur-Simple);
 
             top: auto !important;
 
