@@ -4,3 +4,7 @@
 @import "Sidebar/Sidebar.css";
 @import "External/External.css";
 @import "Media/Media.css";
+
+/* Old stuff */
+@import "Nav-Bar/Nav-Bar.css";
+@import "URL-Bar/URL-Bar.css";
