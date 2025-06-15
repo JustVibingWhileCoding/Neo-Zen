@@ -46,5 +46,7 @@
 
         /* Removes the icons */
         color: rgba(0, 0, 0, 0) !important;
+        
+        transition: opacity 0.5s ease, background-color 0.5s ease, box-shadow 0.7s ease, scale 0.5s ease, width 0.3s ease !important;
     }
 }
