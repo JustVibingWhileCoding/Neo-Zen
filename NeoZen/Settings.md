@@ -1,3 +1,6 @@
+Welcome to the Neo-Zen wiki!
+
+
 # **Neo Zen – Settings & Customization Guide** 🚀  
 
 ## **🔹 Features**  
@@ -25,6 +28,22 @@
 ### **Better Tab Groups**  
 - **Disable styling and scrolling behavior** for expanded tab groups.  
   `neo-features-tab-groups-disabled`  
+
+### **Better Findbar**
+- **Disable feature**  
+  `neo-features-findbar-disabled`
+- **Enable show on hover**   
+  `neo-features-findbar-hover-enabled`
+
+### **Better SplitGroups**
+
+### **Better Sidebar**
+
+### **Better URL-Bar**
+
+### **Better Navigation-Bar**
+
+
 
 ---
 
@@ -73,11 +92,19 @@
   - `neo-style-tabs-pinned-disabled`  
   - `neo-style-tabs-newtab-button-disabled`  
   - `neo-style-tabs-normals-disabled`  
-  - `neo-style-tabs-containers-disabled`  
+  - `neo-style-tabs-containers-disabled`
+- **Hide containers indicator for essential tabs.**  
+  `neo-style-tabs-containers-essentials-disabled`
+
+
 
 ### **Overflow Indicators**  
 - **Disable styling for overflow indicators.**  
   `neo-style-tabs-overflow-indicators-disabled`  
+
+### **Findbar**
+- **Disable Findbar styling**  
+  `neo-style-findbar-disabled`
 
 ### **URL Bar**  
 - **Disable URL bar styling.**  
