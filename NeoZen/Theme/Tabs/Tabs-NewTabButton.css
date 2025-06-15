@@ -7,7 +7,7 @@
                 box-shadow: 0px 0px 0px var(--Neo-Glow-Color-3) !important;
                 border: 1px solid color-mix(in srgb, var(--zen-primary-color) 70%, transparent) !important;
                 transition: opacity 0.3s ease, box-shadow 0.3s ease !important;
-                margin: 10px 4px !important;
+                margin: 10px 1px !important;
                 justify-content: center !important;
                 & .toolbarbutton-text{
                   padding: 0px 10px 0px 10px !important;
@@ -42,7 +42,7 @@
 
         :root:not([zen-sidebar-expanded="true"]) {
             #tabs-newtab-button {
-                margin: 10px 4px !important;
+                margin: 10px 1px !important;
                 justify-self: center !important;
                 background: var(--Neo-Black-1) !important;
                 border-radius: var(--Neo-Border-Radius) !important;
