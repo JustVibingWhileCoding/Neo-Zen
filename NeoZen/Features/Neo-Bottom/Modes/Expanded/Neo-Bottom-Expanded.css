@@ -1,4 +1,4 @@
-@media not (-moz-pref("neo-features-better-bottom-disabled")) {
+@media not (-moz-pref("neo-features-bottom-disabled")) {
     :root[zen-sidebar-expanded="true"] {
         #zen-sidebar-foot-buttons {
             display: grid !important;
@@ -10,11 +10,11 @@
 
             background: transparent !important;
 
-            @media (-moz-bool-pref: "neo-features-better-bottom-keep-expanded") {
+            @media (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
                 height: fit-content !important;
                 max-height: 115px !important;
             }
-            @media not (-moz-bool-pref: "neo-features-better-bottom-keep-expanded") {
+            @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
                 max-height: 45px !important;
             }
 

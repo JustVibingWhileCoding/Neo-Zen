@@ -6,7 +6,7 @@
 
 
 /* Bottom area general adjustments */
-@media not (-moz-pref("neo-features-better-bottom-disabled")) {
+@media not (-moz-pref("neo-features-bottom-disabled")) {
     #zen-sidebar-foot-buttons {
 
         /* Scroll settings */

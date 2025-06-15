@@ -2,7 +2,7 @@
 @import "BetterTabGroups-Transitions.css";
 
 /* Tab Group General Styles */
-@media not (-moz-pref("neo-features-better-tab-groups-disabled")) {
+@media not (-moz-pref("neo-features-tab-groups-disabled")) {
     tab-group:not([split-view-group]) {
         display: flex !important;
         flex-direction: column !important;

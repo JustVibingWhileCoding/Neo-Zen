@@ -1,4 +1,4 @@
-@media not (-moz-pref("neo-features-better-bottom-disabled")) {
+@media not (-moz-pref("neo-features-bottom-disabled")) {
     :root:not([zen-sidebar-expanded="true"]) {
         #zen-sidebar-foot-buttons {
             display: flex !important;

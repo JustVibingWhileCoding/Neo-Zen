@@ -1,4 +1,4 @@
-@media not (-moz-pref("neo-features-better-media-disabled")) {
+@media not (-moz-pref("neo-features-media-disabled")) {
     :root:not([zen-sidebar-expanded="true"]) {
         #zen-media-controls-toolbar {
             align-content: center !important;
@@ -115,7 +115,7 @@
         }
 
         #zen-media-controls-toolbar:not([hidden]):not(:hover) {
-            @media (-moz-pref("neo-features-better-media-expand-on-hover")) {
+            @media (-moz-pref("neo-features-media-expand-on-hover")) {
                 height: 30px !important;
                 &>toolbaritem {
                     top: 7em !important;

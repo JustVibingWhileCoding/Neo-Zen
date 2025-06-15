@@ -1,4 +1,4 @@
-@media not (-moz-pref("neo-features-better-tab-groups-disabled")) {
+@media not (-moz-pref("neo-features-tab-groups-disabled")) {
     tab-group:not([split-view-group]) {
         &[collapsed] {
             & .tab-group-label-container>label::before {

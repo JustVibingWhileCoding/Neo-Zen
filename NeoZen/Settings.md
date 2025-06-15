@@ -4,27 +4,27 @@
 
 ### **Better Bottom Section**  
 - **Disable bottom section features** and return to default behaviors while retaining styling.  
-  `neo-features-better-bottom-disabled`  
+  `neo-features-bottom-disabled`  
 - **Keep the bottom section expanded** with scrollable functionality, allowing two additional rows before scrolling is required.  
-  `neo-features-better-bottom-keep-expanded`  
+  `neo-features-bottom-keep-expanded`  
 - **Move the bottom section** between the top and bottom. By default, it is positioned at the top—enable this setting to revert it back to the bottom.  
   `neo-bottom-button-at-bottom`  
 
 ### **Better Essentials – Collapsed Mode**  
 - **Disable scrolling for the essentials area** to maintain a static layout.  
-  `neo-features-better-essentials-disabled`  
+  `neo-features-essentials-disabled`  
 - **Keep the essentials area expanded** while preserving scrollable functionality.  
-  `neo-features-better-essentials-keep-expanded`  
+  `neo-features-essentials-keep-expanded`  
 
 ### **Better Media – Collapsed Mode**  
 - **Prevent media from displaying in collapsed mode.**  
-  `neo-features-better-media-disabled`  
+  `neo-features-media-disabled`  
 - **Enable expand on hover**—media controls remain hidden until hovered over, reducing visual clutter.  
-  `neo-features-better-media-expand-on-hover`  
+  `neo-features-media-expand-on-hover`  
 
 ### **Better Tab Groups**  
 - **Disable styling and scrolling behavior** for expanded tab groups.  
-  `neo-features-better-tab-groups-disabled`  
+  `neo-features-tab-groups-disabled`  
 
 ---
 

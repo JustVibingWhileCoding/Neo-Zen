@@ -11,12 +11,12 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-features-better-bottom-disabled",
+        "property": "neo-features-bottom-disabled",
         "label": "Disable better bottom section."
     },
     {
         "type": "checkbox",
-        "property": "neo-features-better-bottom-keep-expanded",
+        "property": "neo-features-bottom-keep-expanded",
         "label": "Keep better bottom section expanded."
     },
     {
@@ -30,12 +30,12 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-features-better-essentials-disabled",
+        "property": "neo-features-essentials-disabled",
         "label": "Disable better essentials styling."
     },
     {
         "type": "checkbox",
-        "property": "neo-features-better-essentials-keep-expanded",
+        "property": "neo-features-essentials-keep-expanded",
         "label": "Keep better essentials area expanded."
     },
     {
@@ -44,12 +44,12 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-features-better-media-disabled",
+        "property": "neo-features-media-disabled",
         "label": "Disable better media styling."
     },
     {
         "type": "checkbox",
-        "property": "neo-features-better-media-expand-on-hover",
+        "property": "neo-features-media-expand-on-hover",
         "label": "Show media controls on hover."
     },
     {
@@ -58,7 +58,7 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-features-better-tab-groups-disabled",
+        "property": "neo-features-tab-groups-disabled",
         "label": "Disable better tab groups styling."
     },
     {
@@ -67,12 +67,12 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-features-better-findbar-disabled",
+        "property": "neo-features-findbar-disabled",
         "label": "Disable better findbar styling."
     },
     {
         "type": "checkbox",
-        "property": "neo-features-better-findbar-hover-enabled",
+        "property": "neo-features-findbar-hover-enabled",
         "label": "Enable show on hover for the better findbar."
     },
     {
