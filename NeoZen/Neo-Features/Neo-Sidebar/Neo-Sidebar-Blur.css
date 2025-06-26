@@ -1,0 +1,58 @@
+@media not (-moz-pref("neo-features-sidebar-disabled")) {
+
+    :root body:has([zen-compact-mode="true"]) {
+        #navigator-toolbox:not([animate='true']) #titlebar::before {
+            border: 0px solid transparent !important;
+            outline: none !important;
+            border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+            background: var(--zen-main-browser-background) !important;
+            opacity: var(--zen-background-opacity) !important;
+            content: '';
+            position: absolute;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        #navigator-toolbox:not([animate='true']) #titlebar::after {
+            border: 0px solid transparent !important;
+            outline: none !important;
+            border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+            content: '';
+            position: absolute;
+            pointer-events: none;
+            z-index: 0;
+
+            mix-blend-mode: overlay;
+        }
+    }
+
+    @media (-moz-pref("zen.view.compact.hide-tabbar")) {
+
+        /* Blur for compact mode */
+        body:has([zen-compact-mode="true"]) #titlebar {
+            border: 0px solid transparent !important;
+            outline: none !important;
+            border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+
+            background: var(--Neo-Blur-Color) !important;
+            backdrop-filter: var(--Neo-Blur) !important;
+            box-shadow: 0px 0px 5px var(--Neo-Shadow-Color-3) !important;
+            opacity: 1.0 !important;
+        }
+    }
+
+    :root[zen-single-toolbar="true"] {
+
+        /* Blur for compact mode */
+        body:has([zen-compact-mode="true"]) #titlebar {
+            border: 0px solid transparent !important;
+            outline: none !important;
+            border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+
+            background: var(--Neo-Blur-Color) !important;
+            backdrop-filter: var(--Neo-Blur) !important;
+            box-shadow: 0px 0px 5px var(--Neo-Shadow-Color-3) !important;
+            opacity: 1.0 !important;
+        }
+    }
+}
