@@ -1,0 +1,12 @@
+@media not (-moz-pref("neo-theme-disabled")) {
+    @media not (-moz-pref("neo-theme-tab-groups-disabled")) {
+        #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
+            tab-group:not([split-view-group]) {
+                & .tab-group-label-container>label::before {
+                    top: 5px !important;
+                    left: calc(50% - 10px) !important;
+                }
+            }
+        }
+    }
+}

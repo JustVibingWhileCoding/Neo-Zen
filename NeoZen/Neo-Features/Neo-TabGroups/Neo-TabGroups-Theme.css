@@ -1,0 +1,76 @@
+@media not (-moz-pref("neo-theme-disabled")) {
+    @media not (-moz-pref("neo-theme-tab-groups-disabled")) {
+        tab-group:not([split-view-group]) {
+            background: transparent !important;
+            border-radius: var(--Neo-Border-Radius);
+            border: 1px solid transparent !important;
+
+            filter: drop-shadow(0px 0px 10px color-mix(in srgb, var(--tab-group-color) 60%, white 50%)) brightness(1.0) !important;
+
+            transition: max-height 0.75s cubic-bezier(0.4, 0, 0.2, 1),
+                background 1s ease,
+                border 1s ease,
+                filter 1s ease !important;
+        }
+
+        tab-group:not([split-view-group]) .tab-group-label-container>label {
+            background: transparent !important;
+            outline: none !important;
+            outline-width: unset !important;
+            outline-offset: unset !important;
+
+            filter: drop-shadow(0px 0px 4px color-mix(in srgb, var(--tab-group-color) 30%, white 30%)) brightness(1.0) !important;
+
+
+            transition: max-height 0.75s cubic-bezier(0.4, 0, 0.2, 1),
+                background 0.5s ease,
+                border 1s ease,
+                filter 0.5s ease,
+                padding-left 0.3s ease,
+                color 0.7s ease,
+                scale 0.4s ease !important;
+        }
+
+        tab-group:not([split-view-group]) .tab-group-label-container {
+            background: transparent !important;
+            border-radius: 0px !important;
+
+
+            transition: max-height 0.75s cubic-bezier(0.4, 0, 0.2, 1),
+                background 0.5s ease,
+                border 1s ease,
+                filter 1s ease !important;
+        }
+
+        /* Folder Icon */
+        tab-group:not([split-view-group]) .tab-group-label-container>label::before {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: scale 0.4s ease;
+            opacity: 1 !important;
+
+            @media (-moz-pref("tab.groups.theme-folders")) {
+                background-color: color-mix(in srgb, var(--tab-group-color-invert) 100%, transparent) !important;
+            }
+
+            @media not (-moz-pref("tab.groups.theme-folders")) {
+                background-color: color-mix(in srgb, var(--tab-group-color) 60%, white) !important;
+            }
+
+            @media not (-moz-pref("tab.groups.fill-folders")) {
+                mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC4yMDcgNGMuNDYgMCAuOTA4LjE0MSAxLjI4NC40MDJsLjE1Ni4xMkwxMi4wMjIgNi41aDcuNzI4YTIuMjUgMi4yNSAwIDAgMSAyLjIyOSAxLjkzOGwuMDE2LjE1OC4wMDUuMTU0djlhMi4yNSAyLjI1IDAgMCAxLTIuMDk2IDIuMjQ1TDE5Ljc1IDIwSDQuMjVhMi4yNSAyLjI1IDAgMCAxLTIuMjQ1LTIuMDk2TDIgMTcuNzVWNi4yNWEyLjI1IDIuMjUgMCAwIDEgMi4wOTYtMi4yNDVMNC4yNSA0aDMuOTU3Wm0xLjQ0IDUuOTc5YTIuMjUgMi4yNSAwIDAgMS0xLjI0NC45MTJsLS4xOTYuMDA5LTQuNzA3LS4wMDF2Ny4yNTFjMCAuMzguMjgyLjY5NC42NDguNzQzbC4xMDIuMDA3aDE1LjVhLjc1Ljc1IDAgMCAwIC43NDMtLjY0OGwuMDA3LS4xMDJ2LTlhLjc1Ljc1IDAgMCAwLS42NDgtLjc0M0wxOS43NSA4aC03LjcyOUw5LjY0NyA5Ljk3OVpNOC4yMDcgNS41SDQuMjVhLjc1Ljc1IDAgMCAwLS43NDMuNjQ4TDMuNSA2LjI1djIuNzQ5TDguMjA3IDlhLjc1Ljc1IDAgMCAwIC4zOTUtLjExM2wuMDg1LS4wNiAxLjg5MS0xLjU3OC0xLjg5LTEuNTc1YS43NS43NSAwIDAgMC0uMzc3LS4xNjdMOC4yMDcgNS41WiIgZmlsbD0iIzAwMDAwMCIvPjwvc3ZnPg==");
+            }
+
+            @media (-moz-pref("tab.groups.fill-folders")) {
+                mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIEVudGlyZSBmb2xkZXIgZmlsbGVkIC0tPgogIDxwYXRoIGQ9Ik0yIDYuMjVDMiA1LjAwNyAzLjAwNyA0IDQuMjUgNGgzLjk1N2MuNDYgMCAuOTA4LjE0MSAxLjI4NC40MDJsLjE1Ni4xMiAyLjM3NSAxLjk3OGg3LjcyOGMxLjE5IDAgMi4xOC44NzcgMi4yNDUgMi4wMzNMMjIgOC4yNXY5YzAgMS4yNDMtMS4wMDcgMi4yNS0yLjI1IDIuMjVINC4yNUMzLjAwNyAxOS41IDIgMTguNDkzIDIgMTcuMjV2LTExeiIgZmlsbD0iI0ZGRDcwMCIgLz4KPC9zdmc+");
+            }
+        }
+    }
+}

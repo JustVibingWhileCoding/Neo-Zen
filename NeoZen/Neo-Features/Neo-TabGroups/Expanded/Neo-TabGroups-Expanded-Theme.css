@@ -1,0 +1,18 @@
+@media not (-moz-pref("neo-theme-disabled")) {
+    @media not (-moz-pref("neo-theme-tab-groups-disabled")) {
+        #navigator-toolbox[zen-sidebar-expanded="true"] {
+            tab-group:not([split-view-group]) {
+                & .tab-group-label-container>label::before {
+                    left: 5.5px;
+                }
+            }
+
+            tab-group:not([split-view-group])[collapsed]:hover {
+                & .tab-group-label-container>label {
+                    padding-left: 43px !important;
+                    color: color-mix(in srgb, var(--tab-group-color) 70%, white) !important;
+                }
+            }
+        }
+    }
+}
