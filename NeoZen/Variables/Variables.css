@@ -1,36 +1,6 @@
-:root {
-  --Neo-Color-Dark: color-mix(in srgb, var(--zen-primary-color) 10%, #000000c0);
-  --Neo-Color-Light: color-mix(in srgb, var(--zen-primary-color) 25%, white);
-  
-  /* Black colors*/
-  --Neo-Black-1: light-dark(color-mix(in srgb, #ffffff 40%, transparent), color-mix(in srgb, #000000 35%, transparent));
-  --Neo-Black-2: light-dark(color-mix(in srgb, #ffffff 100%, transparent), color-mix(in srgb, #000000 35%, transparent));
-  --Neo-Black-3: light-dark(color-mix(in srgb, #ffffff 25%, transparent), color-mix(in srgb, #000000 60%, transparent));
-  
-  /* Shadow */
-  --Neo-Shadow-Color-1: light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4));
-  --Neo-Shadow-Color-2: light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.8));
-  --Neo-Shadow-Color-3: light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 1.0));
+@import "Neo-Variables.css";
+@import "Neo-Variables-Bottom.css";
+@import "Neo-Variables-Essentials.css";
 
-  /*Glow Colors*/
-  --Neo-Glow-Color-1: color-mix(in srgb, var(--zen-primary-color) 90%, white);
-  --Neo-Glow-Color-2: color-mix(in srgb, var(--zen-primary-color) 80%, white);
-  --Neo-Glow-Color-3: color-mix(in srgb, var(--zen-primary-color) 70%, white);
-
-  /* Border radius */
-  --Neo-Border-Radius: 4px;
-
-  /* Blur */
-  --Neo-Blur: blur(52px) saturate(160%) brightness(140%);
-  --Neo-Blur-Simple: blur(10px);
-
-  /* Blur colors */
-  --Neo-Blur-Color: color-mix(in srgb, var(--zen-primary-color) 4%, #00000080);
-
-  /* Width Compact Mode */
-  --Neo-Width-Compact-Expanded: 19em;
-  
-  /* Delays */
-  --Neo-Delay: 4s;
-  --Neo-Delay-Expanding-Indicator: 2.5s;
-}
+/* Test variables */
+@import "Test-Variables.css";

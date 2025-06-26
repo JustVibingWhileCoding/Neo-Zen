@@ -1,0 +1,22 @@
+:root {
+  /* Test variable colors */
+
+  /* Standard black, good for checking contrasts */
+  --test-color-black: #000000;
+  /* Bright red, stands out immediately */
+  --test-color-red: #FF0000;
+  /* Standard blue, good for checking contrasts */
+  --test-color-blue: #0000FF;
+  /* Neon green, very noticeable on dark backgrounds */
+  --test-color-green: #00FF00;
+  /* High-visibility yellow, perfect for testing highlights */
+  --test-color-yellow: #FFFF00;
+  /* Strong orange, ideal for mid-tone contrast */
+  --test-color-orange: #FFA500;
+  /* Bright cyan, balances between cool and warm tones */
+  --test-color-cyan: #00FFFF;
+  /* Bright magenta, excellent for testing sharp edges */
+  --test-color-magenta: #FF00FF;
+  /* Dark purple, useful for more subtle contrasts */
+  --test-color-purple: #800080;
+}

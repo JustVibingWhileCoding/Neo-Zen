@@ -1,0 +1,87 @@
+:root{
+  --Neo-Bottom-Height: 220px;
+
+  @media (-moz-pref("neo-features-bottom-height", 0)) {
+    --Neo-Bottom-Height: 120px;
+  }
+  
+  @media (-moz-pref("neo-features-bottom-height", 1)) {
+    --Neo-Bottom-Height: 140px;
+  }
+  
+  @media (-moz-pref("neo-features-bottom-height", 2)) {
+    --Neo-Bottom-Height: 160px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 3)) {
+    --Neo-Bottom-Height: 180px;
+  }
+  
+  @media (-moz-pref("neo-features-bottom-height", 4)) {
+    --Neo-Bottom-Height: 200px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 5)) {
+    --Neo-Bottom-Height: 220px;
+  }
+  
+  @media (-moz-pref("neo-features-bottom-height", 6)) {
+    --Neo-Bottom-Height: 240px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 7)) {
+    --Neo-Bottom-Height: 260px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 8)) {
+    --Neo-Bottom-Height: 280px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 9)) {
+    --Neo-Bottom-Height: 300px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 10)) {
+    --Neo-Bottom-Height: 320px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 11)) {
+    --Neo-Bottom-Height: 340px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 12)) {
+    --Neo-Bottom-Height: 360px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 13)) {
+    --Neo-Bottom-Height: 380px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 14)) {
+    --Neo-Bottom-Height: 400px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 15)) {
+    --Neo-Bottom-Height: 420px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 16)) {
+    --Neo-Bottom-Height: 440px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 17)) {
+    --Neo-Bottom-Height: 460px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 18)) {
+    --Neo-Bottom-Height: 480px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 19)) {
+    --Neo-Bottom-Height: 500px;
+  }
+
+  @media (-moz-pref("neo-features-bottom-height", 20)) {
+    --Neo-Bottom-Height: 520px;
+  }
+}
