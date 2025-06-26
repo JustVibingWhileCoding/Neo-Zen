@@ -1,0 +1,58 @@
+@media not (-moz-pref("neo-theme-disabled")) {
+  @media not (-moz-pref("neo-theme-workspace-button-disabled")) {
+    #zen-workspaces-button {
+      background: transparent !important;
+      box-shadow: 0 0px 0px transparent !important;
+      filter: drop-shadow(0px 0px 5px var(--zen-primary-color)) brightness(1) !important;
+    }
+
+    #zen-workspaces-button .subviewbutton {
+      filter: none !important;
+      background: transparent !important;
+      opacity: 1.0 !important;
+      max-height: unset !important;
+      height: auto !important;
+      min-height: 25px !important;
+
+      min-width: 30px !important;
+
+      margin: 0px 0px !important;
+      padding: 0px 0px !important;
+    }
+
+    :root:not([zen-sidebar-expanded="true"]) {
+      #zen-workspaces-button .subviewbutton {
+        min-width: 100% !important;
+      }
+    }
+
+    #zen-workspaces-button .subviewbutton .zen-workspace-icon {
+      border: none !important;
+      background-color: color-mix(in srgb, var(--Neo-Glow-Color-1) 20%, #f0f0f020) !important;
+      box-shadow: 0 0px 0px color-mix(in srgb, var(--Neo-Glow-Color-1) 0%, black) !important;
+
+      width: 10px;
+      min-width: 10px !important;
+      max-width: unset !important;
+
+      height: 10px !important;
+      min-height: 10px !important;
+
+      padding: 0px 0px !important;
+      margin: 0px 0px !important;
+
+      border-radius: 10px !important;
+
+      opacity: 1.0 !important;
+      content: none !important;
+      text-align: center !important;
+      text-justify: center !important;
+
+      /* Removes the icons */
+      color: rgba(0, 0, 0, 0) !important;
+      font-size: 0px !important;
+
+      transition: opacity 0.5s ease, background-color 0.5s ease, box-shadow 0.7s ease, scale 0.5s ease, width 0.3s ease !important;
+    }
+  }
+}
