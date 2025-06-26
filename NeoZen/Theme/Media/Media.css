@@ -1,99 +1,55 @@
-@media not (-moz-pref("neo-style-media-disabled")) {
+@media not (-moz-pref("neo-theme-media-disabled")) {
     :root[zen-sidebar-expanded="true"] {
-
-        #zen-media-controls-toolbar,
-        #zen-media-controls-toolbar>toolbaritem {
-            background: none !important;
-            background-color: transparent !important;
-            box-shadow: none !important;
-            border: none !important;
-            backdrop-filter: none !important;
-            z-index: 9999 !important;
+        #zen-media-info-vbox {
+            &::before{
+                display: none !important;
+            }
         }
-
-        #zen-media-controls-toolbar>toolbaritem {
-            background: var(--Neo-Blur-Color) !important;
-            backdrop-filter: var(--Neo-Blur-Simple) !important;
-            box-shadow: 0px 0px 5px var(--Neo-Shadow-Color-2) !important;
-            border: none !important;
-            border-radius: var(--Neo-Border-Radius) !important;
-        }
-
         #zen-media-controls-toolbar {
-            align-self: center !important;
-            width: calc(100% - var(--zen-element-separation)) !important;
-            position: relative !important;
-            margin: 5px 0px !important;
-            height: 38px !important;
-
             & #zen-media-progress-bar {
                 &::-moz-range-progress {
-                    box-shadow: 0 0px 5px color-mix(in srgb, var(--zen-primary-color) 100%, black) !important;
+                    background: color-mix(in srgb, var(--zen-primary-color) 70%, white) !important;
+                    filter: drop-shadow(0px 0px 15px color-mix(in srgb, var(--zen-primary-color) 70%, white)) !important;
+                    box-shadow: 0 0px 15px color-mix(in srgb, var(--zen-primary-color) 70%, white) !important;
                 }
 
                 &::-moz-range-thumb {
-                    box-shadow: 0 0px 5px color-mix(in srgb, var(--zen-primary-color) 100%, black) !important;
+                    background: color-mix(in srgb, var(--zen-primary-color) 70%, white) !important;
+                    filter: drop-shadow(0px 0px 5px color-mix(in srgb, var(--zen-primary-color) 70%, white)) !important;
+                    box-shadow: 0 0px 5px color-mix(in srgb, var(--zen-primary-color) 70%, white) !important;
                 }
             }
         }
     }
+}
+
+#zen-media-controls-toolbar>toolbaritem{
+    & #zen-media-info-vbox{
+        padding: 3px !important;
+        box-shadow: none !important;
+        filter: drop-shadow(0px 0px 2px color-mix(in srgb, var(--zen-primary-color) 20%, white)) brightness(1.6);
+    }
     
-    :root:not([zen-sidebar-expanded="true"]) {
+    & .toolbarbutton-1{
+        & .toolbarbutton-icon{
+            border-radius: 0px !important;
+            transition: background 0.5s ease, scale 1.3s ease, filter 0.3s ease, fill 0.3s ease !important;
+        }
         
-        #zen-media-controls-toolbar>toolbaritem {
-            left: auto !important;
-            right: auto !important;
-            backdrop-filter: none !important;
-            background: transparent !important;
-            border: 1px solid transparent !important;
-            box-shadow: 0 0px 0px transparent !important;
-            border-radius: calc(var(--Neo-Border-Radius)) !important;
-            transition: backdrop-filter 1s ease, background 1s ease, border 0.3s ease, box-shadow 0.3s ease, top 1s ease, bottom 1s ease !important;
+        &:not(#zen-media-focus-button) .toolbarbutton-icon{
+            fill: color-mix(in srgb, var(--zen-primary-color) 0%, white 70%);
+            filter: drop-shadow(0px 0px 3px color-mix(in srgb, var(--zen-primary-color) 0%, white 50%)) brightness(1.0);
         }
-
-        #zen-media-controls-toolbar:hover>toolbaritem {
-            backdrop-filter: none !important;
-            background: color-mix(in srgb, var(--Neo-Glow-Color-1) 4%, #00000040) !important;
-            border: 1px solid var(--Neo-Glow-Color-1) !important;
-            box-shadow: 0 0px 5px var(--Neo-Glow-Color-1) !important;
-            border-radius: calc(var(--Neo-Border-Radius)) !important;
-            transition: backdrop-filter 1s ease, background 1s ease, border 0.3s ease, box-shadow 0.3s ease, top 1s ease, bottom 1s ease  !important;
+        
+        &:not([disabled="true"]):hover{
+            & .toolbarbutton-icon{
+                fill: color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
+                background: transparent !important;
+                scale: 1.6 !important;
+                filter: drop-shadow(0px 0px 5px color-mix(in srgb, var(--zen-primary-color) 60%, white)) brightness(1.0) !important;
+                transition: background 0.5s ease, scale 0.4s ease, filter 0.3s ease, fill 0.3s ease !important;
+            }
         }
     }
 }
 
-
-
-
-/* Pseudo background for media player */
-#TabsToolbar::before{
-  align-self: center !important;
-  justify-self: center !important;
-  position: absolute !important;
-  align-self: center !important;
-  justify-self: center !important;
-  z-index: -1 !important;
-  content: "" !important;
-  background-color: light-dark(rgba(225, 225, 225, 1), rgba(30, 30, 30, 1));
-
-  width: calc(100% - var(--zen-element-separation) * 2 + 3px);
-  align-self: center !important;
-  opacity: 0;
-  
-  height: 34px;
-  top: auto;
-  left: auto !important;
-  right: auto !important;
-  bottom: var(--zen-element-separation);
-
-  border-radius: var(--Neo-Border-Radius) !important;
-  visibility: visible !important;
-  transition: height 0.3s ease, opacity 0.3s ease;
-}
-
-:has(#zen-media-controls-toolbar:hover){
-    #TabsToolbar::before{
-        height: 108px;
-        opacity: 1;
-    }
-}
