@@ -1,12 +1,18 @@
-/* Remove new tab background color*/
-.browserStack browser {
-    background-color: transparent !important;
-}
+@media not (-moz-pref("neo-theme-disabled")) {
+    @media not (-moz-pref("neo-theme-background-enabled")) {
 
-@media not (-moz-pref("neo-style-shadow-enabled")) {
-    /* Remove shadow */
-    hbox.browserSidebarContainer,
-    #zen-tabbox-wrapper {
-        box-shadow: none !important;
+        /* Remove new tab background color*/
+        .browserStack browser {
+            background-color: transparent !important;
+        }
+    }
+
+    @media not (-moz-pref("neo-theme-shadow-enabled")) {
+
+        /* Remove shadow */
+        hbox.browserSidebarContainer,
+        #zen-tabbox-wrapper {
+            box-shadow: none !important;
+        }
     }
 }
