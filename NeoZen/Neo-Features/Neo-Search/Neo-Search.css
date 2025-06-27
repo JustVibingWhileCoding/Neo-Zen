@@ -1,0 +1,15 @@
+@import "Neo-Search-Background.css";
+
+:root {
+    --Auxiliar-Row-Height: calc(var(--Neo-Rows-Height) + var(--Neo-Margin-Height) + 4px) !important;
+}
+
+:root {
+    --urlbar-container-height: 55px !important;
+}
+
+#urlbar[open] #urlbar-background {
+    background: var(--Neo-Blur-Color) !important;
+    backdrop-filter: var(--Neo-Blur) !important;
+    border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+}

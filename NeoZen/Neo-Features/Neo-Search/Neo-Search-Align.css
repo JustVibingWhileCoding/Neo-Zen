@@ -1,0 +1,33 @@
+@media not (-moz-pref("neo-features-search-disabled")) {
+    :root:not([animating-background="true"]):has(#urlbar[open=""][focused=""][zen-floating-urlbar='true']) {
+        @media (-moz-pref("browser.urlbar.maxRichResults", 7)) {
+            #urlbar {
+                top: 28% !important;
+            }
+        }
+
+        @media (-moz-pref("browser.urlbar.maxRichResults", 6)) {
+            #urlbar {
+                top: 30% !important;
+            }
+        }
+
+        @media (-moz-pref("browser.urlbar.maxRichResults", 5)) {
+            #urlbar {
+                top: 32% !important;
+            }
+        }
+
+        @media (-moz-pref("browser.urlbar.maxRichResults", 4)) {
+            #urlbar {
+                top: 34% !important;
+            }
+        }
+
+        @media (-moz-pref("browser.urlbar.maxRichResults", 3)) {
+            #urlbar {
+                top: 36% !important;
+            }
+        }
+    }
+}
