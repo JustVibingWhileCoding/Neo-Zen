@@ -58,6 +58,15 @@
     },
     {
         "type": "separator",
+        "label": "Neo Split Groups"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-split-groups-disabled",
+        "label": "Disable Neo Split Groups feature"
+    },
+    {
+        "type": "separator",
         "label": "Neo Tab Groups"
     },
     {
