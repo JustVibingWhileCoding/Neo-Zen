@@ -66,6 +66,14 @@ A customizable suite of features and UI enhancements for browser theming, intera
 
 ---
 
+### **Neo Search**
+- **Disable the Neo Search feature**, reverting to the browser’s native search behavior.  
+  `neo-features-search-disabled`
+
+📌 *Disabling Neo Search will restore default layout and functionality for in-page search and navigation.*  
+  
+---
+
 ## 🎨 Theme & UI Customization
 
 ### **General Theme Settings**

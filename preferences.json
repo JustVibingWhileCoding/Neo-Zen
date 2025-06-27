@@ -94,6 +94,15 @@
         "label": "Enable show on hover for the better findbar."
     },
     {
+        "type": "separator",
+        "label": "Neo Search"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-search-disabled",
+        "label": "Disable Neo Search feature."
+    },
+    {
         "type": "text",
         "label": "**Theme &  UI**",
         "margin": "10px 0 15px 0",
