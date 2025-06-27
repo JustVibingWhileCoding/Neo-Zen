@@ -8,12 +8,13 @@
 @media not (-moz-pref("neo-features-disabled")) {
 @media not (-moz-pref("neo-features-search-disabled")) {
     :root {
-        --Neo-Zen-URL-Height: 45px;
+        --Neo-Zen-URL-Height: 50px;
         --urlbar-container-height: var(--Neo-Zen-URL-Height) !important;
     }
 
     #urlbar {
-        transition: top 0.5s ease;
+        transition: top 0.5s ease, 
+            width 0.5s ease;
     }
 
     #urlbar[open] #urlbar-background {
