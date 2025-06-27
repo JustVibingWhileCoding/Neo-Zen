@@ -1,15 +1,58 @@
+@import "Neo-Search-Align.css";
 @import "Neo-Search-Background.css";
+@import "Neo-Search-Background-Align.css";
 
 :root {
     --Auxiliar-Row-Height: calc(var(--Neo-Rows-Height) + var(--Neo-Margin-Height) + 4px) !important;
 }
+@media not (-moz-pref("neo-features-disabled")) {
+@media not (-moz-pref("neo-features-search-disabled")) {
+    :root {
+        --Neo-Zen-URL-Height: 45px;
+        --urlbar-container-height: var(--Neo-Zen-URL-Height) !important;
+    }
 
-:root {
-    --urlbar-container-height: 55px !important;
+    #urlbar {
+        transition: top 0.5s ease;
+    }
+
+    #urlbar[open] #urlbar-background {
+        background: var(--Neo-Blur-Color) !important;
+        backdrop-filter: var(--Neo-Blur) !important;
+        border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+    }
+
+    #urlbar[open] {
+        top: 45% !important;
+        width: min(90%, 65rem) !important;
+    }
+
+
+    #urlbar[open][zen-floating-urlbar="true"] {
+        --urlbar-container-height: var(--Neo-Zen-URL-Height) !important;
+
+        & .urlbarView {
+            min-height: 0px !important;
+            max-height: 0px !important;
+            opacity: 0 !important;
+            transition: min-height 0.5s ease, opacity 0.1s ease !important;
+
+            & #urlbar-results {
+                display: flex !important;
+                flex-direction: column !important;
+                overflow: auto !important;
+                padding: 10px 10px 0px 10px !important;
+                justify-content: center !important;
+
+                & .urlbarView-row {
+                    height: var(--Neo-Rows-Height) !important;
+                    min-height: var(--Neo-Rows-Height) !important;
+                    max-height: var(--Neo-Rows-Height) !important;
+                    margin-top: 0px !important;
+                    margin-bottom: var(--Neo-Margin-Height) !important;
+                }
+            }
+        }
+    }
 }
-
-#urlbar[open] #urlbar-background {
-    background: var(--Neo-Blur-Color) !important;
-    backdrop-filter: var(--Neo-Blur) !important;
-    border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
 }

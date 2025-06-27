@@ -1,68 +1,68 @@
-
 /* Top alignment for fixed position */
-@media not (-moz-pref("neo-features-search-disabled")) {
-    :root:not([animating-background="true"]):has(#urlbar[open=""][focused=""][zen-floating-urlbar='true']) {
-        @media (-moz-pref("browser.urlbar.maxRichResults", 7)) {
-            #zen-main-app-wrapper::after {
-                top: calc(28% + var(--zen-neo-theme-separation) / 2) !important;
-            }
-        }
-
-        @media (-moz-pref("browser.urlbar.maxRichResults", 6)) {
-            #zen-main-app-wrapper::after {
-                top: calc(30% + var(--zen-neo-theme-separation) / 2) !important;
-            }
-        }
-
-        @media (-moz-pref("browser.urlbar.maxRichResults", 5)) {
-            #zen-main-app-wrapper::after {
-                top: calc(32% + var(--zen-neo-theme-separation) / 2) !important;
-            }
-        }
-
-        @media (-moz-pref("browser.urlbar.maxRichResults", 4)) {
-            #zen-main-app-wrapper::after {
-                top: calc(34% + var(--zen-neo-theme-separation) / 2) !important;
-            }
-        }
-
-        @media (-moz-pref("browser.urlbar.maxRichResults", 3)) {
-            #zen-main-app-wrapper::after {
-                top: calc(36% + var(--zen-neo-theme-separation) / 2) !important;
-            }
-        }
-    }
-
-
-    @media not (-moz-pref("neo-features-ultra-search-enabled")) {
-        :root:not([animating-background="true"]):has(#urlbar[open=""][focused=""][zen-floating-urlbar='true']) {
+@media not (-moz-pref("neo-features-disabled")) {
+    @media not (-moz-pref("neo-features-search-disabled")) {
+        :root:not([animating-background="true"]):has(#urlbar[open=""][focused=""][zen-floating-urlbar='true'][usertyping=""]) {
             @media (-moz-pref("browser.urlbar.maxRichResults", 7)) {
                 #zen-main-app-wrapper::after {
-                    height: calc(2px + 10px + var(--urlbar-container-height) + var(--Auxiliar-Row-Height) * 7) !important;
+                    top: calc(28% + var(--zen-element-separation) / 4) !important;
                 }
             }
 
             @media (-moz-pref("browser.urlbar.maxRichResults", 6)) {
                 #zen-main-app-wrapper::after {
-                    height: calc(2px + 10px + var(--urlbar-container-height) + var(--Auxiliar-Row-Height) * 6) !important;
+                    top: calc(30% + var(--zen-element-separation) / 4) !important;
                 }
             }
 
             @media (-moz-pref("browser.urlbar.maxRichResults", 5)) {
                 #zen-main-app-wrapper::after {
-                    height: calc(2px + 10px + var(--urlbar-container-height) + var(--Auxiliar-Row-Height) * 5) !important;
+                    top: calc(32% + var(--zen-element-separation) / 4) !important;
                 }
             }
 
             @media (-moz-pref("browser.urlbar.maxRichResults", 4)) {
                 #zen-main-app-wrapper::after {
-                    height: calc(2px + 10px + var(--urlbar-container-height) + var(--Auxiliar-Row-Height) * 4) !important;
+                    top: calc(34% + var(--zen-element-separation) / 4) !important;
                 }
             }
 
             @media (-moz-pref("browser.urlbar.maxRichResults", 3)) {
                 #zen-main-app-wrapper::after {
-                    height: calc(2px + 10px + var(--urlbar-container-height) + var(--Auxiliar-Row-Height) * 3) !important;
+                    top: calc(36% + var(--zen-element-separation) /4) !important;
+                }
+            }
+
+
+
+            @media not (-moz-pref("neo-features-ultra-search-enabled")) {
+                @media (-moz-pref("browser.urlbar.maxRichResults", 7)) {
+                    #zen-main-app-wrapper::after {
+                        height: calc(2px + 10px + var(--urlbar-container-height) + var(--Auxiliar-Row-Height) * 7) !important;
+                    }
+                }
+
+                @media (-moz-pref("browser.urlbar.maxRichResults", 6)) {
+                    #zen-main-app-wrapper::after {
+                        height: calc(2px + 10px + var(--urlbar-container-height) + var(--Auxiliar-Row-Height) * 6) !important;
+                    }
+                }
+
+                @media (-moz-pref("browser.urlbar.maxRichResults", 5)) {
+                    #zen-main-app-wrapper::after {
+                        height: calc(2px + 10px + var(--urlbar-container-height) + var(--Auxiliar-Row-Height) * 5) !important;
+                    }
+                }
+
+                @media (-moz-pref("browser.urlbar.maxRichResults", 4)) {
+                    #zen-main-app-wrapper::after {
+                        height: calc(2px + 10px + var(--urlbar-container-height) + var(--Auxiliar-Row-Height) * 4) !important;
+                    }
+                }
+
+                @media (-moz-pref("browser.urlbar.maxRichResults", 3)) {
+                    #zen-main-app-wrapper::after {
+                        height: calc(2px + 10px + var(--urlbar-container-height) + var(--Auxiliar-Row-Height) * 3) !important;
+                    }
                 }
             }
         }
