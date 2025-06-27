@@ -50,8 +50,6 @@
         }
 
         &:hover {
-
-          min-height: 154px !important;
           max-height: 154px !important;
 
           border: 1px solid var(--Neo-Glow-Color-1) !important;
