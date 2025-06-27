@@ -51,13 +51,13 @@ Welcome to the Neo-Zen wiki!
 
 ### **Workspace Button**  
 - **Disable workspace button styling.**  
-  `neo-style-workspace-button-disabled`  
+  `neo-theme-workspace-button-disabled`  
 
 ### **Workspace Indicator**  
 - **Hide the workspace indicator.**  
   `neo-hide-workspace-indicator`  
 - **Disable workspace indicator styling.**  
-  `neo-style-workspace-indicator-disabled`  
+  `neo-theme-workspace-indicator-disabled`  
 
 ### **Nebula Animations for Tabs**  
 - **Disable tab animations from Nebula.**  
@@ -66,46 +66,46 @@ Welcome to the Neo-Zen wiki!
 
 ### **Customization Mode**  
 - **Disable the customization toolbar.**  
-  `neo-style-customization-toolbar-disabled`  
+  `neo-theme-customization-toolbar-disabled`  
 
 ### **General UI Enhancements**  
 - **Enable shadows for browser tabs.**  
-  `neo-style-shadow-enabled`  
+  `neo-theme-shadow-enabled`  
 
 ### **Window Buttons**  
 - **Disable window button customization.**  
-  `neo-style-window-buttons-disabled`  
+  `neo-theme-window-buttons-disabled`  
 - **Retain colorful window buttons when unhovered.**  
-  `neo-style-window-buttons-colorful-enabled`  
+  `neo-theme-window-buttons-colorful-enabled`  
 
 ### **Media Controls**  
 - **Disable styling for media controls.**  
-  `neo-style-media-disabled`  
+  `neo-theme-media-disabled`  
 
 ### **Tabs Customization**  
 - **Disable all tab styles globally.**  
-  `neo-style-tabs-disabled`  
+  `neo-theme-tabs-disabled`  
 - **Disable close button styling.**  
-  `neo-style-close-button-disabled`  
+  `neo-theme-close-button-disabled`  
 - **Disable styling for essentials, pinned tabs, new tab buttons, normal tabs, and container tabs.**  
-  - `neo-style-tabs-essentials-disabled`  
-  - `neo-style-tabs-pinned-disabled`  
-  - `neo-style-tabs-newtab-button-disabled`  
-  - `neo-style-tabs-normals-disabled`  
-  - `neo-style-tabs-containers-disabled`
+  - `neo-theme-tabs-essentials-disabled`  
+  - `neo-theme-tabs-pinned-disabled`  
+  - `neo-theme-tabs-newtab-button-disabled`  
+  - `neo-theme-tabs-normals-disabled`  
+  - `neo-theme-tabs-containers-disabled`
 - **Hide containers indicator for essential tabs.**  
-  `neo-style-tabs-containers-essentials-disabled`
+  `neo-theme-tabs-containers-essentials-disabled`
 
 
 
 ### **Overflow Indicators**  
 - **Disable styling for overflow indicators.**  
-  `neo-style-tabs-overflow-indicators-disabled`  
+  `neo-theme-tabs-overflow-indicators-disabled`  
 
 ### **Findbar**
 - **Disable Findbar styling**  
-  `neo-style-findbar-disabled`
+  `neo-theme-findbar-disabled`
 
 ### **URL Bar**  
 - **Disable URL bar styling.**  
-  `neo-style-urlbar-disabled`  
+  `neo-theme-urlbar-disabled`  

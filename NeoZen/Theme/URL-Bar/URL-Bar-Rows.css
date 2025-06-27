@@ -1,4 +1,4 @@
-@media not (-moz-pref("neo-style-urlbar-disabled")) {
+@media not (-moz-pref("neo-theme-urlbar-disabled")) {
     #urlbar[open] {
         .urlbarView-row {
             margin-left: 10px !important;
