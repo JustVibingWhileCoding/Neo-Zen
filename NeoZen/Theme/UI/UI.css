@@ -9,7 +9,7 @@ browser {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-@media not (-moz-pref("neo-theme-shadow-enabled")) {
+@media not (-moz-pref("neo-theme-disabled")) {
     @media not (-moz-pref("neo-theme-scrollbar-enabled")) {
         scrollbox {
             scrollbar-width: none !important;
