@@ -26,7 +26,7 @@
 
                 & tab {
                     display: flex !important;
-                    margin: 2px 2px 0px 2px !important;
+                    margin: 2px 2px 0px 8px !important;
                     transition: opacity 0.5s ease !important;
                 }
 
