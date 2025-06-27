@@ -49,6 +49,9 @@ For detailed settings and adjustments, check out the [Settings Wiki](https://git
 >  
 > If you have insights or solutions to improve compatibility, feel free to contribute—your help is invaluable in refining Neo Zen for all users. Fixes for reported issues will be included in future releases.
 >
+> **🛠️ Note:**  
+> Neo Zen V2 has been temporarily delayed due to ongoing performance refinements. Each feature is being rigorously tested to ensure smooth integration and optimal stability. As a result, new enhancements will be rolled out **gradually** in upcoming updates.
+>   
 > **License Update:** Starting from version 1.2.3, this project is licensed under GPL-3.0.
 Versions prior to 1.2.3 remain under the MIT License.
 
