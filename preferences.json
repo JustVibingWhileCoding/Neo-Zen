@@ -1,9 +1,18 @@
 [
     {
         "type": "text",
-        "label": "**Features**",
+        "label": "**Neo Features**",
         "margin": "10px 0 15px 0",
         "size": "20px"
+    },
+    {
+        "type": "separator",
+        "label": "General"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-disabled",
+        "label": "Disable all the Neo features."
     },
     {
         "type": "separator",
@@ -26,12 +35,12 @@
     },
     {
         "type": "separator",
-        "label": "Better Essentials"
+        "label": "Neo Essentials"
     },
     {
         "type": "checkbox",
         "property": "neo-features-essentials-disabled",
-        "label": "Disable better essentials styling."
+        "label": "Disable Neo Essentials feature."
     },
     {
         "type": "checkbox",
@@ -40,35 +49,35 @@
     },
     {
         "type": "separator",
-        "label": "Better Media"
+        "label": "Neo Media"
     },
     {
         "type": "checkbox",
         "property": "neo-features-media-disabled",
-        "label": "Disable better media styling."
-    },
-    {
-        "type": "checkbox",
-        "property": "neo-features-media-expand-on-hover",
-        "label": "Show media controls on hover."
+        "label": "Disable Neo Media features, if disabled, the media controls will be hidden in collapsed mode."
     },
     {
         "type": "separator",
-        "label": "Better Tab Groups"
+        "label": "Neo Tab Groups"
     },
     {
         "type": "checkbox",
         "property": "neo-features-tab-groups-disabled",
-        "label": "Disable better tab groups styling."
+        "label": "Disable Neo Tab Groups feature without disabling styling."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-theme-tab-groups-disabled",
+        "label": "Disable tab groups styling, but keep feature functionality."
     },
     {
         "type": "separator",
-        "label": "Better Findbar"
+        "label": "Neo Findbar"
     },
     {
         "type": "checkbox",
         "property": "neo-features-findbar-disabled",
-        "label": "Disable better findbar styling."
+        "label": "Disable Neo Findbar feature."
     },
     {
         "type": "checkbox",
@@ -83,12 +92,50 @@
     },
     {
         "type": "separator",
-        "label": "Workspace Button"
+        "label": "General"
     },
     {
         "type": "checkbox",
-        "property": "neo-style-workspace-button-disabled",
-        "label": "Disable workspace button styling."
+        "property": "neo-theme-disabled",
+        "label": "Disable Neo theme without disabling features."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-theme-background-enabled",
+        "label": "Enable tab background"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-theme-shadow-enabled",
+        "label": "Enable shadow around the tab background area."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-theme-scrollbar-enabled",
+        "label": "Enable sidebar scrollbar."
+    },
+    {
+        "type": "separator",
+        "label": "Customization Screen"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-theme-customization-toolbar-disabled",
+        "label": "Disable theme styling for the customization screen when the browser is in customization mode."
+    },
+    {
+        "type": "separator",
+        "label": "Window Buttons"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-theme-window-buttons-disabled",
+        "label": "Disable window button styling."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-theme-window-buttons-colorful-enabled",
+        "label": "Keep window buttons colorful while unhovered."
     },
     {
         "type": "separator",
@@ -96,7 +143,7 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-style-workspace-button-disabled",
+        "property": "neo-theme-workspace-button-disabled",
         "label": "Disable workspace button styling."
     },
     {
@@ -110,7 +157,7 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-style-workspace-indicator-disabled",
+        "property": "neo-theme-workspace-indicator-disabled",
         "label": "Disable workspace indicator styling."
     },
     {
@@ -128,40 +175,18 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-style-customization-toolbar-disabled",
+        "property": "neo-theme-customization-toolbar-disabled",
         "label": "Disable the customization toolbar."
     },
-    {
-        "type": "separator",
-        "label": "General UI"
-    },
-    {
-        "type": "checkbox",
-        "property": "neo-style-shadow-enabled",
-        "label": "Enable shadows for browser tabs."
-    },
-    {
-        "type": "separator",
-        "label": "Window Buttons"
-    },
-    {
-        "type": "checkbox",
-        "property": "neo-style-window-buttons-disabled",
-        "label": "Disable window button styling."
-    },
-    {
-        "type": "checkbox",
-        "property": "neo-style-window-buttons-colorful-enabled",
-        "label": "Keep window buttons colorful while unhovered."
-    },
+    
     {
         "type": "separator",
         "label": "Media Controls"
     },
     {
         "type": "checkbox",
-        "property": "neo-style-media-disabled",
-        "label": "Disable styling for media controls."
+        "property": "neo-theme-media-disabled",
+        "label": "Disable styling for media controls / disable glow effects and hover effects."
     },
     {
         "type": "separator",
@@ -169,42 +194,42 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-style-tabs-disabled",
+        "property": "neo-theme-tabs-disabled",
         "label": "Disable styling for all tab styles."
     },
     {
         "type": "checkbox",
-        "property": "neo-style-close-button-disabled",
+        "property": "neo-theme-close-button-disabled",
         "label": "Disable tab close button styling."
     },
     {
         "type": "checkbox",
-        "property": "neo-style-tabs-essentials-disabled",
+        "property": "neo-theme-tabs-essentials-disabled",
         "label": "Disable styling for essentials."
     },
     {
         "type": "checkbox",
-        "property": "neo-style-tabs-pinned-disabled",
+        "property": "neo-theme-tabs-pinned-disabled",
         "label": "Disable styling for pinned tabs."
     },
     {
         "type": "checkbox",
-        "property": "neo-style-tabs-newtab-button-disabled",
+        "property": "neo-theme-tabs-newtab-button-disabled",
         "label": "Disable styling for new tab buttons."
     },
     {
         "type": "checkbox",
-        "property": "neo-style-tabs-normals-disabled",
+        "property": "neo-theme-tabs-normals-disabled",
         "label": "Disable styling for normal tabs."
     },
     {
         "type": "checkbox",
-        "property": "neo-style-tabs-containers-disabled",
+        "property": "neo-theme-tabs-containers-disabled",
         "label": "Disable styling for container tabs."
     },
     {
         "type": "checkbox",
-        "property": "neo-style-tabs-containers-essentials-disabled",
+        "property": "neo-theme-tabs-containers-essentials-disabled",
         "label": "Disable styling for container-specific essentials."
     },
     {
@@ -213,7 +238,7 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-style-tabs-overflow-indicators-disabled",
+        "property": "neo-theme-tabs-overflow-indicators-disabled",
         "label": "Disable styling for overflow indicators."
     },
     {
@@ -222,7 +247,7 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-style-findbar-disabled",
+        "property": "neo-theme-findbar-disabled",
         "label": "Disable findbar styling."
     },
     {
@@ -231,7 +256,7 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-style-urlbar-disabled",
+        "property": "neo-theme-urlbar-disabled",
         "label": "Disable urlbar styling."
     }
 ]
