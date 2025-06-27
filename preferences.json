@@ -169,15 +169,6 @@
         "property": "neo-external-nebula-animations-tabs-disabled",
         "label": "Disable tab animations from Nebula."
     },
-    {
-        "type": "separator",
-        "label": "Customization Mode"
-    },
-    {
-        "type": "checkbox",
-        "property": "neo-theme-customization-toolbar-disabled",
-        "label": "Disable the customization toolbar."
-    },
     
     {
         "type": "separator",
