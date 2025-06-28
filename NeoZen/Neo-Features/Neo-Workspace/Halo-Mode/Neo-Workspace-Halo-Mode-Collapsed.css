@@ -2,7 +2,7 @@
 @media not (-moz-pref("neo-features-disabled")) {
     @media not (-moz-bool-pref: "neo-features-workspace-disabled") {
         @media not (-moz-bool-pref: "neo-features-workspace-halo-mode-disabled") {
-            @media not (-moz-bool-pref: "neo-features-workspace-halo-mode-expanded-disabled") {
+            @media not (-moz-bool-pref: "neo-features-workspace-halo-mode-collapsed-disabled") {
                 :root:not([zen-sidebar-expanded="true"]) {
                     #zen-workspaces-button .subviewbutton {
                         display: none !important;
