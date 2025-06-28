@@ -1,59 +1,62 @@
 @media not (-moz-pref("neo-features-disabled")) {
     @media not (-moz-pref("neo-features-search-disabled")) {
-        :root:not([animating-background="true"]) #urlbar[open=""][focused=""][zen-floating-urlbar='true'][usertyping=""] {
-            @media (-moz-pref("browser.urlbar.maxRichResults", 7)) {
-                top: 28% !important;
+        @media (-moz-pref("zen.urlbar.behavior", "float")) {
 
-                & .urlbarView {
-                    min-height: calc((10px + 10px + var(--Auxiliar-Row-Height) * 7)) !important;
+            :root:not([animating-background="true"]) #urlbar[open=""][focused=""][zen-floating-urlbar='true'][usertyping=""] {
+                @media (-moz-pref("browser.urlbar.maxRichResults", 7)) {
+                    top: 28% !important;
+
+                    & .urlbarView {
+                        min-height: calc((10px + 10px + var(--Auxiliar-Row-Height) * 7)) !important;
+                    }
+
                 }
 
-            }
+                @media (-moz-pref("browser.urlbar.maxRichResults", 6)) {
 
-            @media (-moz-pref("browser.urlbar.maxRichResults", 6)) {
+                    top: 30% !important;
 
-                top: 30% !important;
 
+                    & .urlbarView {
+                        min-height: calc((10px + 10px + var(--Auxiliar-Row-Height) * 6)) !important;
+                    }
+                }
+
+                @media (-moz-pref("browser.urlbar.maxRichResults", 5)) {
+
+                    top: 32% !important;
+
+
+                    & .urlbarView {
+                        min-height: calc((10px + 10px + var(--Auxiliar-Row-Height) * 5)) !important;
+                    }
+                }
+
+                @media (-moz-pref("browser.urlbar.maxRichResults", 4)) {
+
+                    top: 34% !important;
+
+
+                    & .urlbarView {
+                        min-height: calc((10px + 10px + var(--Auxiliar-Row-Height) * 4)) !important;
+                    }
+                }
+
+                @media (-moz-pref("browser.urlbar.maxRichResults", 3)) {
+
+                    top: 36% !important;
+
+
+                    & .urlbarView {
+                        min-height: calc((10px + 10px + var(--Auxiliar-Row-Height) * 3)) !important;
+                    }
+                }
 
                 & .urlbarView {
-                    min-height: calc((10px + 10px + var(--Auxiliar-Row-Height) * 6)) !important;
+                    opacity: 1 !important;
+
+                    transition: min-height 0.5s ease, opacity 0.5s ease 100ms !important;
                 }
-            }
-
-            @media (-moz-pref("browser.urlbar.maxRichResults", 5)) {
-
-                top: 32% !important;
-
-
-                & .urlbarView {
-                    min-height: calc((10px + 10px + var(--Auxiliar-Row-Height) * 5)) !important;
-                }
-            }
-
-            @media (-moz-pref("browser.urlbar.maxRichResults", 4)) {
-
-                top: 34% !important;
-
-
-                & .urlbarView {
-                    min-height: calc((10px + 10px + var(--Auxiliar-Row-Height) * 4)) !important;
-                }
-            }
-
-            @media (-moz-pref("browser.urlbar.maxRichResults", 3)) {
-
-                top: 36% !important;
-
-
-                & .urlbarView {
-                    min-height: calc((10px + 10px + var(--Auxiliar-Row-Height) * 3)) !important;
-                }
-            }
-
-            & .urlbarView {
-                opacity: 1 !important;
-
-                transition: min-height 0.5s ease, opacity 0.5s ease 100ms !important;
             }
         }
     }
