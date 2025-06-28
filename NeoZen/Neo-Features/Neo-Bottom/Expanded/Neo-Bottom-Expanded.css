@@ -25,10 +25,14 @@
       }
 
       &>.toolbarbutton-1:not(#zen-workspaces-button),
-      &>.toolbaritem-combined-buttons {
+      &>.toolbaritem-combined-buttons{
+        justify-self: center !important;
         opacity: 0 !important;
         pointer-events: none !important;
-        transition: opacity 0.5s ease 100ms;
+        
+        transition: opacity 0.5s ease 100ms, 
+          color 0.3s ease, 
+          fill 0.3s ease !important;
       }
     }
   }

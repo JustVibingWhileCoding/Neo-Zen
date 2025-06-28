@@ -1,13 +1,13 @@
 :root{
   --Neo-Bottom-Position-Aux: calc(var(--Neo-Bottom-Height) - 27px + var(--Neo-Bottom-Media-Height));
   --Neo-Bottom-Position-Aux-Open: calc(var(--Neo-Bottom-Height) - 40px + var(--Neo-Bottom-Media-Height) + 36px);
-  --Neo-Bottom-Media-Height: 30px;
-}
-:has(#zen-media-controls-toolbar:not([hidden])){
+  --Neo-Bottom-Media-Height: 0px;
+  
   @media (-moz-bool-pref: "neo-bottom-at-bottom") {
     --Neo-Bottom-Media-Height: 30px;
   }
 }
+
 
 @media not (-moz-bool-pref: "neo-bottom-at-bottom") {
   :root:not([zen-sidebar-expanded="true"]) {

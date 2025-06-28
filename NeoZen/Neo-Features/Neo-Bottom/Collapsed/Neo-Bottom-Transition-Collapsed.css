@@ -8,11 +8,11 @@
       #zen-sidebar-foot-buttons {
         & #zen-workspaces-button {
           @media not (-moz-bool-pref: "neo-bottom-at-bottom") {
-            top: calc((var(--Neo-Bottom-Height) + 10px) * -1) !important;
+            top: calc((var(--Neo-Bottom-Height) + 11px) * -1) !important;
           }
 
           @media (-moz-bool-pref: "neo-bottom-at-bottom") {
-            bottom: calc((var(--Neo-Bottom-Height) + 10px) * -1) !important;
+            bottom: calc((var(--Neo-Bottom-Height) + 11px) * -1) !important;
           }
 
           transition: width 0.3s 0ms ease,
