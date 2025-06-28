@@ -1,106 +1,114 @@
-@media not (-moz-pref("neo-features-essentials-disabled")) {
-    #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
-        & #zen-essentials {
-            margin-bottom: 10px !important;
-        }
-
-        & .zen-essentials-container {
-            display: grid !important;
-
-            overflow-y: auto !important;
-            overflow-x: unset !important;
-            scrollbar-width: none !important;
-            scroll-behavior: smooth !important;
-
-            align-self: center !important;
-            justify-self: center !important;
-
-            @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
-                max-height: 45px !important;
+@media not (-moz-pref("neo-features-disabled")) {
+    @media not (-moz-pref("neo-features-essentials-disabled")) {
+        #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
+            & #zen-essentials {
+                margin-bottom: 10px !important;
             }
 
-            @media (-moz-pref("neo-features-essentials-keep-expanded")) {
-                height: fit-content !important;
-                max-height: calc((var(--tab-min-height) + 7px) * 4) !important;
+            & .zen-essentials-container {
+                display: grid !important;
+
+                overflow-y: auto !important;
+                overflow-x: unset !important;
+                scrollbar-width: none !important;
+                scroll-behavior: smooth !important;
+
+                align-self: center !important;
+                justify-self: center !important;
+
+                @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
+                    max-height: 45px !important;
+                }
+
+                @media (-moz-pref("neo-features-essentials-keep-expanded")) {
+                    height: fit-content !important;
+                    max-height: calc((var(--tab-min-height) + 7px) * 4) !important;
+                }
+
+                @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
+                    & .tabbrowser-tab:not([selected]) {
+                        opacity: 0 !important;
+                        visibility: hidden !important;
+                        transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out !important;
+                    }
+                }
+
+                /* Reorder selected tab to stay visible */
+                & .tabbrowser-tab[selected] {
+                    /* Moves selected tab to the first position */
+                    order: -1 !important;
+                    /* Sticks selected tab to the top */
+                    position: sticky !important;
+                    top: 0 !important;
+                    /* Mover selected tab over other tabs */
+                    z-index: 9999 !important;
+
+                }
+
+                transition: height 0.4s cubic-bezier(0.175, 1.385, 0.62, 1),
+                min-height 0.5s cubic-bezier(0.175, 1.385, 0.62, 1),
+                max-height 0.5s cubic-bezier(0.175, 1.385, 0.62, 1),
+                top 0.5s cubic-bezier(0.175, 1.385, 0.62, 1),
+                margin 0.5s cubic-bezier(0.175, 1.385, 0.62, 1) !important;
+
             }
 
             @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
-                & .tabbrowser-tab:not([selected]) {
-                    opacity: 0 !important;
-                    visibility: hidden !important;
-                    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out !important;
+
+                /* Expands on hover */
+                & .zen-essentials-container:hover {
+                    max-height: calc((var(--tab-min-height) + 7px) * 5) !important;
+
+                    & .tabbrowser-tab {
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                    }
                 }
             }
-
-            /* Reorder selected tab to stay visible */
-            & .tabbrowser-tab[selected] {
-                /* Moves selected tab to the first position */
-                order: -1 !important;
-                /* Sticks selected tab to the top */
-                position: sticky !important;
-                top: 0 !important;
-                /* Mover selected tab over other tabs */
-                z-index: 9999 !important;
-
-            }
-            
-            transition: height 0.4s cubic-bezier(0.175, 1.385, 0.62, 1), min-height 0.5s cubic-bezier(0.175, 1.385, 0.62, 1), max-height 0.5s cubic-bezier(0.175, 1.385, 0.62, 1), top 0.5s cubic-bezier(0.175, 1.385, 0.62, 1), margin 0.5s cubic-bezier(0.175, 1.385, 0.62, 1) !important;
-
         }
+
 
         @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
+            :root:not([zen-sidebar-expanded="true"]) {
 
-            /* Expands on hover */
-            & .zen-essentials-container:hover {
-                max-height: calc((var(--tab-min-height) + 7px) * 5) !important;
+                /* Essentials pseudo element when no essential tab selected */
+                .zen-essentials-container::before {
+                    content: "Neo\A Zen" !important;
+                    white-space: pre-wrap !important;
+                    text-align: center !important;
+                    text-justify: center !important;
+                    align-content: center !important;
+                    font-size: 14px !important;
+                    color: color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
+                    position: sticky !important;
+                    top: 0% !important;
+                    left: 0% !important;
+                    height: 42px !important;
+                    filter: drop-shadow(0px 0px 3px var(--zen-primary-color)) brightness(1.05) !important;
 
-                & .tabbrowser-tab {
-                    opacity: 1 !important;
-                    visibility: visible !important;
                 }
-            }
-        }
-    }
-}
 
-@media not (-moz-pref("neo-features-essentials-disabled")) {
-    @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
-        :root:not([zen-sidebar-expanded="true"]) {
+                .zen-essentials-container[hidden="true"]::before {
+                    opacity: 1.0 !important;
+                }
 
-            /* Essentials pseudo element when no essential tab selected */
-            .zen-essentials-container::before {
-                content: "Neo\A Zen" !important;
-                white-space: pre-wrap !important;
-                text-align: center !important;
-                text-justify: center !important;
-                align-content: center !important;
-                font-size: 14px !important;
-                color: color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
-                position: sticky !important;
-                top: 0% !important;
-                left: 0% !important;
-                height: 42px !important;
-                filter: drop-shadow(0px 0px 3px var(--zen-primary-color)) brightness(1.05) !important;
-
-            }
-            .zen-essentials-container[hidden="true"]::before {
-                opacity: 1.0 !important;
-            }
-            .zen-essentials-container:not([hidden="true"]) {
-                &:not(:has(.tabbrowser-tab[selected])):not(:hover)::before {
+                .zen-essentials-container:not([hidden="true"]) {
+                    &:not(:has(.tabbrowser-tab[selected])):not(:hover)::before {
                         opacity: 1.0 !important;
                         visibility: visible !important;
                         display: block !important;
-                }
-                
-                &:has(.tabbrowser-tab[selected])::before {
-                    opacity: 0 !important;
-                    visibility: hidden !important;
-                    display: none !important;
-                }
-                &::before{
-                    opacity: 0.0;
-                    transition: opacity 0.4s ease !important;
+                    }
+
+                    &:has(.tabbrowser-tab[selected])::before {
+                        opacity: 0 !important;
+                        visibility: hidden !important;
+                        display: none !important;
+                    }
+
+                    &::before {
+                        opacity: 0.0;
+                        transition: opacity 0.4s ease !important;
+                    }
                 }
             }
         }

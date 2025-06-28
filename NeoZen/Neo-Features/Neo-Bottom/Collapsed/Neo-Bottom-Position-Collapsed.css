@@ -1,57 +1,58 @@
-:root{
+:root {
   --Neo-Bottom-Position-Aux: calc(var(--Neo-Bottom-Height) - 27px + var(--Neo-Bottom-Media-Height));
   --Neo-Bottom-Position-Aux-Open: calc(var(--Neo-Bottom-Height) - 40px + var(--Neo-Bottom-Media-Height) + 36px);
   --Neo-Bottom-Media-Height: 0px;
-  
+
   @media (-moz-bool-pref: "neo-bottom-at-bottom") {
     --Neo-Bottom-Media-Height: 30px;
   }
 }
 
+@media not (-moz-pref("neo-features-disabled")) {
+  @media not (-moz-bool-pref: "neo-bottom-at-bottom") {
+    :root:not([zen-sidebar-expanded="true"]) {
+      #zen-sidebar-foot-buttons {
+        order: -1 !important;
+        padding-top: 0px !important;
+        padding-bottom: 10px !important;
+        margin-top: 0px !important;
+        margin-bottom: 15px !important;
 
-@media not (-moz-bool-pref: "neo-bottom-at-bottom") {
-  :root:not([zen-sidebar-expanded="true"]) {
-    #zen-sidebar-foot-buttons {
-      order: -1 !important;
-      padding-top: 0px !important;
-      padding-bottom: 10px !important;
-      margin-top: 0px !important;
-      margin-bottom: 15px !important;
-      
-      & #zen-workspaces-button {
-        top: 0px !important;
-        bottom: unset !important;
+        & #zen-workspaces-button {
+          top: 0px !important;
+          bottom: unset !important;
+        }
       }
-    }
-    
-    
-    #zen-sidebar-foot-buttons::after {
-      top: var(--Neo-Bottom-Position-Aux) !important;
+
+
+      #zen-sidebar-foot-buttons::after {
+        top: var(--Neo-Bottom-Position-Aux) !important;
+      }
     }
   }
-}
 
-@media (-moz-bool-pref: "neo-bottom-at-bottom") {
-  :root:not([zen-sidebar-expanded="true"]) {
-    #zen-sidebar-foot-buttons {
-      padding-top: 10px !important;
-      padding-bottom: 10px !important;
-      margin-top: 10px !important;
-      margin-bottom: 30px !important;
-      
-      & #zen-workspaces-button {
-        top: unset !important;
-        bottom: var(--Neo-Bottom-Media-Height) !important;
-      }
-    }
-    
-    #zen-sidebar-foot-buttons::after {
-      bottom: var(--Neo-Bottom-Position-Aux);
-    }
-    
-    :has(#zen-media-controls-toolbar:not([hidden])){
+  @media (-moz-bool-pref: "neo-bottom-at-bottom") {
+    :root:not([zen-sidebar-expanded="true"]) {
       #zen-sidebar-foot-buttons {
-        margin-bottom: 0px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        margin-top: 10px !important;
+        margin-bottom: 30px !important;
+
+        & #zen-workspaces-button {
+          top: unset !important;
+          bottom: var(--Neo-Bottom-Media-Height) !important;
+        }
+      }
+
+      #zen-sidebar-foot-buttons::after {
+        bottom: var(--Neo-Bottom-Position-Aux);
+      }
+
+      :has(#zen-media-controls-toolbar:not([hidden])) {
+        #zen-sidebar-foot-buttons {
+          margin-bottom: 0px !important;
+        }
       }
     }
   }

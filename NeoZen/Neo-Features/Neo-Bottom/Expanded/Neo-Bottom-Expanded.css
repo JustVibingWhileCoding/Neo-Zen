@@ -1,38 +1,40 @@
 @import "Neo-Bottom-Position-Expanded.css";
 @import "Neo-Bottom-Transition-Expanded.css";
 
-@media not (-moz-pref("neo-features-bottom-disabled")) {
-  :root[zen-sidebar-expanded="true"] {
-    #zen-sidebar-foot-buttons {
-      display: grid !important;
-      position: relative !important;
+@media not (-moz-pref("neo-features-disabled")) {
+  @media not (-moz-pref("neo-features-bottom-disabled")) {
+    :root[zen-sidebar-expanded="true"] {
+      #zen-sidebar-foot-buttons {
+        display: grid !important;
+        position: relative !important;
 
-      /* Allows automatic row creation */
-      grid-auto-rows: auto !important;
-      /* Ensures columns resize */
-      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) !important;
-      gap: 6px !important;
-      padding-top: 0px !important;
+        /* Allows automatic row creation */
+        grid-auto-rows: auto !important;
+        /* Ensures columns resize */
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) !important;
+        gap: 6px !important;
+        padding-top: 0px !important;
 
-      transition: margin-top 0.3s ease 100ms, width 0.3s 100ms ease, height 0.3s 100ms ease, top 0.5s ease 100ms, bottom 0.5s ease 100ms, opacity 1s ease 100ms !important;
+        transition: margin-top 0.3s ease 100ms, width 0.3s 100ms ease, height 0.3s 100ms ease, top 0.5s ease 100ms, bottom 0.5s ease 100ms, opacity 1s ease 100ms !important;
 
-      @media (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
-        height: 115px !important;
-      }
+        @media (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
+          height: 115px !important;
+        }
 
-      @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
-        height: 50px !important;
-      }
+        @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
+          height: 50px !important;
+        }
 
-      &>.toolbarbutton-1:not(#zen-workspaces-button),
-      &>.toolbaritem-combined-buttons{
-        justify-self: center !important;
-        opacity: 0 !important;
-        pointer-events: none !important;
-        
-        transition: opacity 0.5s ease 100ms, 
-          color 0.3s ease, 
-          fill 0.3s ease !important;
+        &>.toolbarbutton-1:not(#zen-workspaces-button),
+        &>.toolbaritem-combined-buttons {
+          justify-self: center !important;
+          opacity: 0 !important;
+          pointer-events: none !important;
+
+          transition: opacity 0.5s ease 100ms,
+            color 0.3s ease,
+            fill 0.3s ease !important;
+        }
       }
     }
   }

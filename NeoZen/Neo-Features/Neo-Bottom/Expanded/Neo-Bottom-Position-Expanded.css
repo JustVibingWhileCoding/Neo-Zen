@@ -1,17 +1,19 @@
-@media not (-moz-pref("neo-bottom-at-bottom")) {
-  :root[zen-sidebar-expanded="true"]:not([customizing=""]) {
-    #zen-sidebar-foot-buttons {
-      order: -1 !important;
-      margin-top: 10px !important;
-      margin-bottom: 0px !important;
+@media not (-moz-pref("neo-features-disabled")) {
+  @media not (-moz-pref("neo-bottom-at-bottom")) {
+    :root[zen-sidebar-expanded="true"]:not([customizing=""]) {
+      #zen-sidebar-foot-buttons {
+        order: -1 !important;
+        margin-top: 10px !important;
+        margin-bottom: 0px !important;
+      }
     }
   }
-}
 
-@media (-moz-pref("neo-bottom-at-bottom")) {
-  :root[zen-sidebar-expanded="true"]:not([customizing=""]) {
-    #zen-sidebar-foot-buttons {
-      margin-top: 5px !important;
+  @media (-moz-pref("neo-bottom-at-bottom")) {
+    :root[zen-sidebar-expanded="true"]:not([customizing=""]) {
+      #zen-sidebar-foot-buttons {
+        margin-top: 5px !important;
+      }
     }
   }
 }
