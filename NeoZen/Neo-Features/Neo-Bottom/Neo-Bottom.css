@@ -1,80 +1,45 @@
-@import "Modes/Collapsed/Neo-Bottom-Collapsed.css";
-@import "Modes/Collapsed/Neo-Bottom-Collapsed-Transition.css";
-@import "Modes/Expanded/Neo-Bottom-Expanded.css";
-@import "Modes/Expanded/Neo-Bottom-Expanded-Transition.css";
-@import "Neo-Workspace/Neo-Workspace.css";
+@import "Collapsed/Neo-Bottom-Collapsed.css";
+@import "Expanded/Neo-Bottom-Expanded.css";
+@import "Neo-Bottom-Transition.css";
 
+@import "Neo-Bottom-Workspace/Neo-Bottom-Workspace.css";
+@import "Neo-Bottom-Workspace/Neo-Bottom-Workspace-Collapsed.css";
+@import "Neo-Bottom-Workspace/Neo-Bottom-Workspace-Expanded.css";
 
 /* Bottom area general adjustments */
 @media not (-moz-pref("neo-features-bottom-disabled")) {
-    #zen-sidebar-foot-buttons {
+  #zen-sidebar-foot-buttons {
+    overflow-y: auto !important;
+    scrollbar-width: none !important;
+    scroll-behavior: smooth !important;
 
-        /* Scroll settings */
-        overflow-y: auto !important;
-        scrollbar-width: none !important;
-        scroll-behavior: smooth !important;
+    justify-content: center !important;
+  }
 
-        justify-content: center !important;
-        /* Centers buttons */
-        align-items: center !important;
-        align-self: center !important;
-        justify-self: center !important;
+  /* Keep Sidebar Expanded When Customization is Active */
+  body:has(#customization-container:not([hidden])) #zen-sidebar-foot-buttons {
+    height: auto !important;
+  }
 
-        transition-delay: 0.4s !important;
-
-        transition: max-height 0.5s cubic-bezier(0.175, 1.385, 0.62, 1);
+  body:has(#customization-container:not([hidden])) {
+    #zen-sidebar-foot-buttons>*:not(#zen-workspaces-button) {
+      opacity: 1 !important;
+      pointer-events: all !important;
     }
-
-    /* Keep Sidebar Expanded When Customization is Active */
-    body:has(#customization-container:not([hidden])) #zen-sidebar-foot-buttons {
-        max-height: unset !important;
-    }
-
-    body:has(#customization-container:not([hidden])) {
-        #zen-sidebar-foot-buttons>*:not(#zen-workspaces-button) {
-            opacity: 1 !important;
-            pointer-events: all !important;
-        }
-    }
+  }
 }
 
-@media not (-moz-bool-pref: "neo-bottom-button-at-bottom") {
-    #zen-sidebar-foot-buttons {
-        order: -1 !important;
-    }
+/* Adjustments to remove the top-buttons area in collapsed mode */
+:root:not([zen-single-toolbar="true"]) {
+  &[zen-sidebar-expanded="true"] #zen-sidebar-top-buttons {
+    min-height: var(--zen-toolbar-height) !important;
+    height: var(--zen-toolbar-height) !important;
+    max-height: var(--zen-toolbar-height) !important;
+  }
 
-    :root:not([zen-sidebar-expanded="true"]) {
-        #zen-workspaces-button {
-            top: 0.5% !important;
-            bottom: unset !important;
-        }
-    }
-}
-
-@media (-moz-bool-pref: "neo-bottom-button-at-bottom") {
-    :root:not([zen-sidebar-expanded="true"]) {
-        #zen-workspaces-button {
-            top: unset !important;
-            bottom: 0% !important;
-        }
-
-        #zen-sidebar-foot-buttons {
-            margin-bottom: 5px !important;
-        }
-    }
-}
-
-/* Adjustments to remove the top-buttons area */
-:root:not([zen-single-toolbar="true"]):not([zen-compact-mode="true"]) {
-    &[zen-sidebar-expanded="true"] #zen-sidebar-top-buttons {
-        min-height: 50px !important;
-        height: 50px !important;
-        max-height: 50px !important;
-    }
-
-    &:not([zen-sidebar-expanded="true"]) #zen-sidebar-top-buttons {
-        min-height: 9px !important;
-        height: 9px !important;
-        max-height: 9px !important;
-    }
+  &:not([zen-sidebar-expanded="true"]) #zen-sidebar-top-buttons {
+    min-height: 0px !important;
+    height: 0px !important;
+    max-height: 0px !important;
+  }
 }
