@@ -23,6 +23,18 @@
               margin-top: 5px !important;
             }
 
+            &::after {
+              opacity: 0 !important;
+              width: 0px !important;
+              top: 30px !important;
+
+              transition: width 0.2s 0ms ease,
+                height 0.3s 0ms ease,
+                top 0.2s ease 0ms,
+                bottom 0.2s ease 0ms,
+                opacity 0.2s ease 0ms !important;
+            }
+
             transition: margin-top 0.3s ease 0ms,
             width 0.3s 0ms ease,
             height 0.3s 0ms ease,
