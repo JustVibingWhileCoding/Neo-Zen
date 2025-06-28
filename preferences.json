@@ -16,7 +16,7 @@
     },
     {
         "type": "separator",
-        "label": "Better Bottom"
+        "label": "Neo Bottom V2"
     },
     {
         "type": "checkbox",
@@ -26,12 +26,43 @@
     {
         "type": "checkbox",
         "property": "neo-features-bottom-keep-expanded",
-        "label": "Keep better bottom section expanded."
+        "label": "Keep better bottom section expanded in expanded mode."
     },
     {
         "type": "checkbox",
-        "property": "neo-bottom-button-at-bottom",
-        "label": "Move the better bottom section to the bottom."
+        "property": "neo-bottom-at-bottom",
+        "label": "Move the Neo bottom section to the bottom."
+    },
+    {
+        "type": "dropdown",
+        "property": "neo-features-bottom-height",
+        "label": "Change the height of the Neo bottom section in collapsed mode. Default: 220px",
+        "value": "number",
+        "default": 5,
+        "options": [
+            {"Value": 0, "Label": "120px"},
+            {"Value": 1, "Label": "140px"},
+            {"Value": 2, "Label": "160px"},
+            {"Value": 3, "Label": "180px"},
+            {"Value": 4, "Label": "200px"},
+            {"Value": 5, "Label": "220px"},
+            {"Value": 6, "Label": "240px"},
+            {"Value": 7, "Label": "260px"},
+            {"Value": 8, "Label": "280px"},
+            {"Value": 9, "Label": "300px"},
+            {"Value": 10, "Label": "320px"},
+            {"Value": 11, "Label": "340px"},
+            {"Value": 12, "Label": "360px"},
+            {"Value": 13, "Label": "380px"},
+            {"Value": 14, "Label": "400px"},
+            {"Value": 15, "Label": "420px"},
+            {"Value": 16, "Label": "440px"},
+            {"Value": 17, "Label": "460px"},
+            {"Value": 18, "Label": "480px"},
+            {"Value": 19, "Label": "500px"},
+            {"Value": 20, "Label": "520px"}
+        ]
+        
     },
     {
         "type": "separator",
