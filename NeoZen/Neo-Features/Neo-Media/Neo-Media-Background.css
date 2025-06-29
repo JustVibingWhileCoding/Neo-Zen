@@ -26,7 +26,7 @@
         :root[zen-sidebar-expanded="true"] {
             :has(#zen-media-controls-toolbar[media-position-hidden="true"]:hover) {
                 #TabsToolbar::before {
-                    height: 66px;
+                    height: 69px;
                 }
             }
 
@@ -34,11 +34,11 @@
                 #TabsToolbar::before {
                     height: 107px;
                 }
-                
-                :has(#zen-media-artist:empty){
+
+                :has(#zen-media-artist:empty) {
                     #TabsToolbar::before {
                         height: 93px;
-                    } 
+                    }
                 }
             }
 
