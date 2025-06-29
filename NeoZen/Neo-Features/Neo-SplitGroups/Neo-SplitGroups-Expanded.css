@@ -1,6 +1,16 @@
 @media not (-moz-pref("neo-features-disabled")) {
   @media not (-moz-pref("neo-features-split-groups-disabled")) {
     :root[zen-sidebar-expanded="true"] {
+      &[zen-compact-mode="true"]{
+        tab-group[split-view-group] {
+          @media not (-moz-pref("neo-features-split-groups-expanded")) {
+            @media (-moz-pref("neo-features-split-groups-expanded-compact")) {
+              max-height: 154px !important;
+              margin: 10px 2px !important;
+            }
+          }
+        }
+      }
       tab-group[split-view-group] {
         display: flex !important;
         flex-direction: column !important;
@@ -12,11 +22,17 @@
 
         height: fit-content !important;
         max-height: 45px !important;
+        margin: 5px 2px !important;
+        
+        @media (-moz-pref("neo-features-split-groups-expanded")) {
+            max-height: 154px !important;
+            margin: 10px 2px !important;
+        }
+        
         overflow-y: hidden !important;
         padding-top: 4px !important;
         padding-bottom: 4px !important;
-        margin-top: 4px !important;
-        margin-bottom: 4px !important;
+        
 
         transition: box-shadow 0.3s ease 100ms,
           scale 0.5s ease 100ms,
