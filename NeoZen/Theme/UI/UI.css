@@ -4,10 +4,6 @@
 @import "Sidebar-Panel.css";
 @import "CustomizationScreen.css";
 
-/* Required for blur rendering */
-browser {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
 
 @media not (-moz-pref("neo-theme-disabled")) {
     @media not (-moz-pref("neo-theme-scrollbar-enabled")) {
