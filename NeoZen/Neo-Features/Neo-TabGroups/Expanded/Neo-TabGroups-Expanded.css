@@ -26,7 +26,13 @@
 
                 & tab {
                     display: flex !important;
-                    margin: 2px 2px 0px 8px !important;
+                    @media (-moz-pref("neo-features-tab-groups-tabs-centered")) {
+                        margin: 2px 2px 0px 2px !important;
+                    }
+                    @media not (-moz-pref("neo-features-tab-groups-tabs-centered")) {
+                        margin: 2px 2px 0px 8px !important;
+                    }
+                    
                     transition: opacity 0.5s ease !important;
                 }
 
