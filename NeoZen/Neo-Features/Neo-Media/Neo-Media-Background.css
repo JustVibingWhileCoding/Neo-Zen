@@ -32,14 +32,20 @@
 
             :has(#zen-media-controls-toolbar:not([media-position-hidden="true"]):hover) {
                 #TabsToolbar::before {
-                    height: 108px;
+                    height: 107px;
+                }
+                
+                :has(#zen-media-artist:empty){
+                    #TabsToolbar::before {
+                        height: 93px;
+                    } 
                 }
             }
 
             @media not (-moz-pref("neo-features-bottom-disabled")) {
                 @media (-moz-bool-pref: "neo-bottom-at-bottom") {
                     #TabsToolbar::before {
-                        bottom: calc(var(--zen-toolbox-padding) + 54px);
+                        bottom: calc(var(--zen-toolbox-padding) * 2 + 50px);
                     }
 
                     &:has(#zen-sidebar-foot-buttons:hover) {
