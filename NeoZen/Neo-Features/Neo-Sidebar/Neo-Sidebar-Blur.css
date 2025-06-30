@@ -6,6 +6,7 @@
             outline: none !important;
             border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
             background: var(--zen-main-browser-background) !important;
+            opacity: var(--zen-background-opacity) !important;
             content: '';
             position: absolute;
             pointer-events: none;
