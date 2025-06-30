@@ -15,4 +15,25 @@
             box-shadow: none !important;
         }
     }
+
+    /* Remove the gradient when the slider is set at the lowest opacity available 
+       in the default zen browser slider */
+    @media not (-moz-pref("neo-theme-gradient-opacity-control-disabled")) {
+        :has(#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+            #zen-browser-background {
+                @media -moz-pref("zen.theme.gradient") {
+                    &::after {
+                        background: var(--zen-main-browser-background);
+                        opacity: 0 !important;
+                        transition: 0s;
+                    }
+                }
+            }
+        }
+    }
 }
+
+    /*#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]{
+    background: red !important;
+
+*/

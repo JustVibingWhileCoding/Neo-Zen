@@ -21,3 +21,15 @@
         margin-top: calc(var(--zen-element-separation) + 0px) !important;
     }
 }
+
+@media not (-moz-pref("neo-theme-gradient-opacity-control-disabled")) {
+    body:has([zen-compact-mode="true"]):has(#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+        #navigator-toolbox:not([animate='true']) #titlebar::before {
+            @media -moz-pref("zen.theme.gradient") {
+                &::after {
+                    opacity: 0 !important;
+                }
+            }
+        }
+    }
+}
