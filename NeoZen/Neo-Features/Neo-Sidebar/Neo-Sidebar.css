@@ -2,17 +2,26 @@
 @import "Neo-Sidebar-Compact-Fix.css";
 
 @import "Background/Neo-Sidebar-Background.css";
+@import "Background/Neo-Sidebar-Background-Align.css";
 
 /* This fixes an issue with the position of the elements inside the navigator-toolbox 
    so this might not be removed, Neo-Bottom feature needs this to work properly*/
 
 #navigator-toolbox #titlebar {
     position: relative;
+    transition: width 0.2s ease;
 }
 
 @media not (-moz-pref("neo-features-disabled")) {
     @media not (-moz-pref("neo-features-sidebar-disabled")) {
-        @media (-moz-pref("browser.tabs.allow_transparent_browser")) {}
+        @media (-moz-pref("browser.tabs.allow_transparent_browser")) {
+            
+            :root[zen-compact-mode="true"][zen-sidebar-expanded="true"] #navigator-toolbox {
+                width: 100% !important;
+                min-width: calc(var(--Neo-Width-Compact-Expanded) + var(--zen-toolbox-padding) * 3 + var(--zen-element-separation) * 1) !important;
+                max-width: calc(var(--Neo-Width-Compact-Expanded) + var(--zen-toolbox-padding) * 3 + var(--zen-element-separation) * 1) !important;
+            }
+        }
     }
 
     /* This fixes the position of some elements inside the navigator-toolbox when the sidebar is not expanded 
