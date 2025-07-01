@@ -24,23 +24,39 @@
         }
 
         :root[zen-sidebar-expanded="true"] {
-            :has(#zen-media-controls-toolbar[media-position-hidden="true"]:hover) {
+            :has(#zen-media-controls-toolbar[media-sharing=""]:hover) {
+                #TabsToolbar::before {
+                    height: 69px !important;
+                }
+            }
+
+            :has(#zen-media-controls-toolbar:not([media-sharing=""])[media-position-hidden]:hover) {
                 #TabsToolbar::before {
                     height: 69px;
                 }
             }
 
-            :has(#zen-media-controls-toolbar:not([media-position-hidden="true"]):hover) {
+            :has(#zen-media-controls-toolbar:not([media-sharing=""]):not([media-position-hidden]):hover) {
                 #TabsToolbar::before {
                     height: 107px;
                 }
 
+                :has(#zen-media-controls-toolbar[media-position-hidden]) {
+                    #TabsToolbar::before {
+                        height: 69px;
+                    }
+                }
+            }
+
+
+            :has(#zen-media-controls-toolbar:not([media-position-hidden])) {
                 :has(#zen-media-artist:empty) {
                     #TabsToolbar::before {
                         height: 93px;
                     }
                 }
             }
+
 
             @media not (-moz-pref("neo-features-bottom-disabled")) {
                 @media (-moz-bool-pref: "neo-bottom-at-bottom") {
