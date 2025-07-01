@@ -12,13 +12,22 @@ A customizable suite of features and UI enhancements for browser theming, intera
 
 ---
 
+### **Neo Sidebar**
+- **Disable Neo Sidebar**, including its custom background and alignment features.  
+  `neo-features-sidebar-disabled`
+
+---
+
 ### **Neo Bottom Section**
 - **Disable the Neo Bottom section**, returning to default extension and toolbar behavior.  
-  `neo-features-bottom-disabled`
+  `neo-features-bottom-disabled`  
 - **Keep the bottom section expanded** with scrollable behavior — allows up to two extra rows before scrolling is required.  
-  `neo-features-bottom-keep-expanded`
+  `neo-features-bottom-keep-expanded`  
 - **Move the bottom section to the bottom** (default is top).  
-  `neo-bottom-button-at-bottom`
+  `neo-bottom-at-bottom`  
+- **Customize the height of the Neo Bottom in collapsed mode**  
+  `neo-features-bottom-height`  
+  Options: `120px` to `520px` (Default: `220px`)
 
 ---
 
@@ -30,39 +39,59 @@ A customizable suite of features and UI enhancements for browser theming, intera
 
 ---
 
+### **Neo Workspace**
+- **Disable Workspace features** entirely.  
+  `neo-features-workspace-disabled`  
+- **Disable Halo Mode in both modes**, revealing all subbuttons.  
+  `neo-features-workspace-halo-mode-disabled`  
+- **Disable Halo Mode only in collapsed mode**, enabling scrollable subbuttons.  
+  `neo-features-workspace-halo-mode-collapsed-disabled`  
+- **Disable Halo Mode only in expanded mode**, displaying all subbuttons persistently.  
+  `neo-features-workspace-halo-mode-expanded-disabled`  
+- **Hide the Workspace button**, auto-expanding the bottom section and displaying all subbuttons.  
+  `neo-features-workspace-button-hidden`
+
+---
+
 ### **Neo Media**
-- **Disable Neo Media**, If Neo media is disabled media controls will be hidden in collapsed mode.  
+- **Disable Neo Media**, removing controls from collapsed mode.  
   `neo-features-media-disabled`
 
-ℹ️ *When disabled, the media controls will not appear unless expanded manually.*
+ℹ️ *When disabled, media controls will not appear unless expanded manually.*
 
 ---
 
 ### **Neo Split Groups**
-- **Disable Neo Split Groups**, reverting tab group behavior to a static collapsed style.  
-  `neo-features-split-groups-disabled`
+- **Disable Neo Split Groups**, reverting to static collapsed tabs.  
+  `neo-features-split-groups-disabled`  
+- **Keep SplitGroups expanded across all modes**  
+  `neo-features-split-groups-expanded`  
+- **Keep SplitGroups expanded only in compact mode**  
+  `neo-features-split-groups-expanded-compact`
 
-📌 *When disabled, split groups won't expand on hover and will always keep the maximum height possible.*
+📌 *Expanded visibility ensures smoother navigation and workspace management.*
 
 ---
 
 ### **Neo Tab Groups**
-- **Disable Neo Tab Groups functionality**, reverting group behavior to the default layout without affecting styling.  
-  `neo-features-tab-groups-disabled`
-- **Disable Neo Tab Groups styling**, keeping the grouping behavior but removing scrollable behavior and visual enhancements.  
-  `neo-theme-tab-groups-disabled`
+- **Disable Tab Group logic**, reverting to native tab layout.  
+  `neo-features-tab-groups-disabled`  
+- **Disable Tab Group styling**, but preserve behavior.  
+  `neo-theme-tab-groups-disabled`  
+- **Center tabs within Tab Groups** for better alignment.  
+  `neo-features-tab-groups-tabs-centered`
 
-📌 *Use both settings together if you want to fully revert to native tab grouping logic and styling.*
+📌 *Combine settings for full control over function and visuals.*
 
 ---
 
 ### **Neo Findbar**
 - **Disable the Neo floating Findbar**, reverting to the default browser search bar.  
   `neo-features-findbar-disabled`  
-- **Enable show-on-hover behavior** for the Neo floating Findbar (disabled by default).  
+- **Enable hover-to-show behavior** for Neo Findbar.  
   `neo-features-findbar-hover-enabled`
 
-📌 *Disabling the floating Findbar restores the native search layout. Hover interaction can be added independently.*
+📌 *Disabling restores native layout; hover can be used independently.*
 
 ---
 
@@ -70,103 +99,96 @@ A customizable suite of features and UI enhancements for browser theming, intera
 - **Disable the Neo Search feature**, reverting to the browser’s native search behavior.  
   `neo-features-search-disabled`
 
-📌 *Disabling Neo Search will restore default layout and functionality for in-page search and navigation.*  
-  
+📌 *Disabling Neo Search will restore default layout and functionality for in-page search.*
+
 ---
 
 ## 🎨 Theme & UI Customization
 
 ### **General Theme Settings**
 - **Disable Neo Zen’s theme styling**, restoring native visuals while keeping feature logic intact.  
-  `neo-theme-disabled`
-- **Enable the original Zen browser background** in the tab browser area (Neo Zen disables it by default for a cleaner aesthetic).  
-  `neo-theme-background-enabled`
-- **Enable a subtle shadow around the tab background**, enhancing depth perception.  
-  `neo-theme-shadow-enabled`
-- **Enable a visible scrollbar inside the sidebar**, for improved accessibility and visibility.  
+  `neo-theme-disabled`  
+- **Restore original Zen background**  
+  `neo-theme-background-enabled`  
+- **Enable tab background shadow**  
+  `neo-theme-shadow-enabled`  
+- **Enable sidebar scrollbar**  
   `neo-theme-scrollbar-enabled`
 
 ---
 
 ### **Customization Screen**
-- **Disable Neo Zen’s styling for the customization toolbar** when the browser is in customization mode.  
+- **Disable styling in customization mode**  
   `neo-theme-customization-toolbar-disabled`
 
 ---
 
 ### **Window Buttons**
-- **Disable Neo Zen’s custom styling for window buttons**, reverting to the browser’s default look and behavior.  
-  `neo-theme-window-buttons-disabled`
-- **Keep window buttons colorful while unhovered**, instead of muting them when not focused.  
+- **Disable custom window button styling**  
+  `neo-theme-window-buttons-disabled`  
+- **Keep window buttons colorful when inactive**  
   `neo-theme-window-buttons-colorful-enabled`
 
 ---
 
 ### **Workspace Button**
-- **Disable Neo Zen’s styling for the workspace button**, reverting to the browser’s default button layout and appearance.  
+- **Disable Workspace button styling**  
   `neo-theme-workspace-button-disabled`
 
 ---
 
 ### **Workspace Indicator**
-- **Hide the workspace indicator**, removing it from the interface while retaining all workspace functionality.  
+- **Hide the Workspace indicator**  
   `neo-hide-workspace-indicator`  
-- **Disable Neo Zen’s styling for the workspace indicator**, reverting to its native appearance.  
+- **Disable its styling**  
   `neo-theme-workspace-indicator-disabled`
 
 ---
 
 ### **Nebula Tab Animations**
-- **Disable tab animations provided by the Nebula extension**, restoring a static visual experience across all tab interactions.  
+- **Disable animations from Nebula extension**  
   `neo-external-nebula-animations-tabs-disabled`
 
-📌 *For more information, read the [Nebula documentation](https://github.com/JustAdumbPrsn/Zen-Nebula).*
+📌 *See [Nebula documentation](https://github.com/JustAdumbPrsn/Zen-Nebula) for details.*
 
 ---
 
 ### **Media Controls**
-- **Disable Neo Zen’s media control styling**, removing glow and hover effects for a cleaner, distraction-free interface.  
+- **Disable styling for media controls** (removes glow and hover effects)  
   `neo-theme-media-disabled`
 
-📌 *This affects visual styling only; media functionality remains unchanged.*
+📌 *Affects visuals only — media functionality remains.*
 
 ---
 
 ### **Tab Customization**
-- **Disable Neo Zen’s styling for all tabs**, reverting to default browser tab appearance.  
-  `neo-theme-tabs-disabled`
-- **Disable styling for tab close buttons**, restoring their default look and spacing.  
-  `neo-theme-close-button-disabled`
-- **Disable styling for specific tab types**:  
-  - **Essentials**: `neo-theme-tabs-essentials-disabled`  
-  - **Pinned Tabs**: `neo-theme-tabs-pinned-disabled`  
-  - **New Tab Button**: `neo-theme-tabs-newtab-button-disabled`  
-  - **Normal Tabs**: `neo-theme-tabs-normals-disabled`  
-  - **Container Tabs**: `neo-theme-tabs-containers-disabled`  
-  - **Essentials with Containers**: `neo-theme-tabs-containers-essentials-disabled`
-
-📌 *Each toggle gives you modular control over how different tab categories appear and behave.*
+- **Disable styling for all tabs**  
+  `neo-theme-tabs-disabled`  
+- **Disable close button styling**  
+  `neo-theme-close-button-disabled`  
+- **Disable styling by category**:  
+  - Essentials → `neo-theme-tabs-essentials-disabled`  
+  - Pinned Tabs → `neo-theme-tabs-pinned-disabled`  
+  - New Tab Button → `neo-theme-tabs-newtab-button-disabled`  
+  - Normal Tabs → `neo-theme-tabs-normals-disabled`  
+  - Containers → `neo-theme-tabs-containers-disabled`  
+  - Essentials in Containers → `neo-theme-tabs-containers-essentials-disabled`
 
 ---
 
 ### **Overflow Indicators**
-- **Disable Neo Zen’s styling for tab overflow indicators**, restoring the browser’s default visual cues for hidden tabs.  
+- **Disable styling for overflow indicators**  
   `neo-theme-tabs-overflow-indicators-disabled`
-
-📌 *This only affects styling. Overflow logic and behavior remain unchanged.*
 
 ---
 
 ### **Findbar**
-- **Disable Neo Zen’s styling for the Findbar**, restoring its default appearance and spacing.  
+- **Disable Findbar styling**  
   `neo-theme-findbar-disabled`
-
-📌 *This does not affect Findbar functionality—only its visual design.*
 
 ---
 
 ### **URL Bar**
-- **Disable Neo Zen’s styling for the URL bar**, restoring the native address field design and interactions.  
+- **Disable URL bar styling**  
   `neo-theme-urlbar-disabled`
 
-📌 *This affects only the appearance of the URL bar. Functionality remains unchanged.*
