@@ -19,12 +19,12 @@
 
         @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
           @media (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
-            height: 115px !important;
+            height: 110px !important;
           }
 
           @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
             height: 50px !important;
-          }
+          
 
           &>.toolbarbutton-1:not(#zen-workspaces-button),
           &>.toolbaritem-combined-buttons {
@@ -36,6 +36,7 @@
               color 0.3s ease,
               fill 0.3s ease !important;
           }
+          }
         }
 
         @media (-moz-bool-pref: "neo-features-workspace-button-hidden") {
@@ -44,6 +45,7 @@
       }
 
       @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+        @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
         &:not([customizing=""]) #zen-sidebar-foot-buttons::after {
           position: sticky;
           top: 42px;
@@ -69,6 +71,7 @@
             top 0.2s ease 100ms,
             bottom 0.2s ease 100ms,
             opacity 1s ease 100ms !important;
+        }
         }
       }
     }
