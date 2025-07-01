@@ -1,0 +1,70 @@
+@media not (-moz-pref("neo-features-disabled")) {
+    @media not (-moz-pref("neo-features-sidebar-disabled")) {
+        @media (-moz-pref("browser.tabs.allow_transparent_browser")) {
+            body:has([zen-compact-mode="true"]) #browser::after {
+                position: absolute !important;
+                z-index: 0 !important;
+                content: "" !important;
+                opacity: 1;
+
+                background-color: var(--Neo-Background-Color);
+                border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+
+                width: auto;
+                height: auto;
+
+                visibility: visible !important;
+                transition: opacity 0.3s ease, left 0.4s ease, right 0.4s ease;
+            }
+
+            /*Width for compact mode - expanded*/
+            :root[zen-sidebar-expanded="true"] body:has([zen-compact-mode="true"]) #browser::after {
+                min-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
+                max-width: calc(var(--Neo-Width-Compact-Expanded)) !important;
+            }
+
+            /*Width for compact mode - collapsed*/
+            :root:not([zen-sidebar-expanded="true"]) body:has([zen-compact-mode="true"]) #browser::after {
+                max-width: calc(var(--zen-toolbox-max-width) + var(--zen-toolbox-padding)) !important;
+                min-width: calc(var(--zen-toolbox-max-width) + var(--zen-toolbox-padding)) !important;
+            }
+
+            /* Show pseudo background when active/hovered */
+            :root:has(#navigator-toolbox:not([zen-has-empty-tab=""])) {
+                body:has([zen-compact-mode="true"]) {
+
+                    &:has(#navigator-toolbox[zen-has-hover="true"],
+                        #navigator-toolbox[zen-user-show=""],
+                        #navigator-toolbox[has-popup-menu=""],
+                        #PanelUI-zen-gradient-generator[panelopen="true"],
+                        #downloadsPanel-mainView[visible="true"],
+                        .zen-current-workspace-indicator #tab-label-input,
+                        #zen-sidebar-foot-buttons #customizationui-widget-panel) #browser::after {
+                        opacity: 1;
+                    }
+                }
+
+                &:not([zen-single-toolbar="true"])[zen-compact-mode="true"] {
+                    @media not (-moz-pref("zen.view.compact.hide-tabbar")) {
+                        #browser::after {
+                            opacity: 0 !important;
+                        }
+                    }
+                }
+            }
+
+            &:has(#navigator-toolbox[zen-has-empty-tab=""]) {
+                body:has([zen-compact-mode="true"]) {
+                    #browser::after {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            /* Test for the background when changing workspace name 
+            :has(.zen-current-workspace-indicator #tab-label-input) #browser::after {
+                background: red !important;
+            }*/
+        }
+    }
+}
