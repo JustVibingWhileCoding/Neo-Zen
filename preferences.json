@@ -16,6 +16,15 @@
     },
     {
         "type": "separator",
+        "label": "Neo Sidebar"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-sidebar-disabled",
+        "label": "Disable Neo sidebar, this will also disable the sidebar background and align features."
+    },
+    {
+        "type": "separator",
         "label": "Neo Bottom V2"
     },
     {
