@@ -63,6 +63,7 @@
                 --zen-toolbox-max-width: calc(74px + var(--zen-element-separation) * 2) !important;
                 --zen-compact-float: var(--zen-element-separation);
 
+
                 /* Initial padding for when we are animating */
                 padding: 0 0 0 var(--zen-toolbox-padding) !important;
 
@@ -78,16 +79,17 @@
                     padding: 0 calc(var(--zen-compact-float) + var(--zen-element-separation) / 2 + 0px) !important;
 
                     :root[zen-single-toolbar='true'] & {
-                        top: calc(var(--zen-element-separation) / 2);
-                        height: calc(100% - var(--zen-element-separation));
+                        top: calc(var(--zen-element-separation)) !important;
+                        height: calc(100% - var(--zen-element-separation) * 2) !important;
                     }
 
                     :root:not([zen-single-toolbar='true']) & {
-                        top: calc(var(--zen-element-separation) / -2);
-                        height: calc(100% - var(--zen-toolbar-height));
+                        top: calc(var(--zen-element-separation) / 2) !important;
+                        height: calc(100% - var(--zen-toolbar-height) - var(--zen-element-separation) * 2) !important;
 
                         @media -moz-pref('zen.view.compact.hide-toolbar') {
-                            height: 100%;
+                            top: calc(var(--zen-toolbar-height) + var(--zen-element-separation)) !important;
+                            height: calc(100% - var(--zen-toolbar-height) - var(--zen-element-separation) * 2) !important;
                         }
                     }
 
@@ -148,6 +150,14 @@
 
                 :root[zen-sidebar-expanded='true'] & {
                     width: calc(var(--zen-sidebar-width) + var(--zen-toolbox-padding));
+
+                    @media not (-moz-pref("neo-features-disabled")) {
+                        @media not (-moz-pref("neo-features-sidebar-disabled")) {
+                            @media (-moz-pref("browser.tabs.allow_transparent_browser")) {
+                                width: calc(var(--Neo-Width-Compact-Expanded)) !important;
+                            }
+                        }
+                    }
                 }
 
                 :root[zen-single-toolbar='true'] {
@@ -157,7 +167,7 @@
 
                 &::before {
                     content: '';
-                    position: absolute;
+                    position: absolute !important;
                     top: 0;
                     left: 0;
                     right: 0;
@@ -169,6 +179,8 @@
                     pointer-events: none;
                     z-index: -1;
                     opacity: var(--zen-background-opacity) !important;
+
+                    width: 100% !important;
 
                     border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
 
@@ -183,7 +195,7 @@
 
                 &::after {
                     content: '';
-                    position: absolute;
+                    position: absolute !important;
                     top: 0;
                     left: 0;
                     right: 0;
@@ -193,6 +205,7 @@
                     z-index: 0;
                     opacity: 0 !important;
                     mix-blend-mode: overlay;
+                    width: 100% !important;
 
                     border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
 
@@ -211,7 +224,7 @@
             #navigator-toolbox:has(*:is([panelopen='true'], [open='true'], #urlbar:focus-within, [breakout-extend='true']):not(#urlbar[zen-floating-urlbar='true']):not(tab):not(.zen-compact-mode-ignore)) {
                 &:not([animate='true']) {
                     --zen-compact-mode-func: ease !important;
-                    --zen-compact-mode-time: 0.4s;
+                    --zen-compact-mode-time: 0.4s !important;
 
                     :root[zen-no-padding='true'] & {
                         --zen-compact-mode-func: ease !important;
@@ -228,11 +241,11 @@
                         }
 
                         &:not([zen-right-side='true']) {
-                            left: calc(var(--zen-element-separation) / -2 + 0px) !important;
+                            left: var(--Neo-Separation-Sidebar) !important;
                         }
 
                         :root[zen-right-side='true'] & {
-                            right: calc(var(--zen-element-separation) / -2 + 0px) !important;
+                            right: var(--Neo-Separation-Sidebar) !important;
                             left: auto;
                         }
                     }
@@ -240,4 +253,8 @@
             }
         }
     }
+}
+
+:root {
+    --Neo-Separation-Sidebar: calc(var(--zen-element-separation) / -2 + 0px);
 }
