@@ -1,12 +1,6 @@
 @import "Nav-Bar-Compact.css";
 @import "Nav-Bar-Compact-Background.css";
 
-#zen-appcontent-navbar-container {
-    & #nav-bar {
-        padding-top: 2px !important;
-        height: 50px !important;
-        max-height: 50px !important;
-
-        align-content: center !important;
-    }
+:root:not([zen-single-toolbar="true"]) {
+  --zen-toolbar-height: 50px !important;
 }
