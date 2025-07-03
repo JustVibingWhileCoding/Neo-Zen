@@ -12,7 +12,7 @@
                 margin: 3px 1px 3px 1px !important;
                 padding: 0px 0px 0px 0px !important;
 
-                overflow: hidden !important;
+                overflow: unset !important;
                 scrollbar-width: none !important;
 
                 &[collapsed] {
@@ -68,6 +68,9 @@
             /* Display tabs when tab group is collapsed */
             tab-group:not([split-view-group])[collapsed] tab {
                 opacity: 0 !important;
+                pointer-events: none !important;
+                z-index: -999 !important;
+                display: none !important;
             }
 
             /* Hide bar that shows to the side of the tabs */
