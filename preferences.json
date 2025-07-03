@@ -336,5 +336,20 @@
         "type": "checkbox",
         "property": "neo-theme-urlbar-disabled",
         "label": "Disable urlbar styling."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-theme-urlbar-glow-border-disabled",
+        "label": "Disable glow border around the floating urlbar."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-theme-urlbar-glow-disabled",
+        "label": "Disable glow effect around the floating urlbar without disabling the border."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-theme-urlbar-border-disabled",
+        "label": "Disable border around the floating urlbar without disabling the glow."
     }
 ]

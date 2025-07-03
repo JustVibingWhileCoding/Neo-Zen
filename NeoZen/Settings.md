@@ -189,6 +189,13 @@ A customizable suite of features and UI enhancements for browser theming, intera
 ---
 
 ### **URL Bar**
-- **Disable URL bar styling**  
-  `neo-theme-urlbar-disabled`
+- **Disable URL bar styling**, restoring the native address field design and interactions.  
+  `neo-theme-urlbar-disabled`  
+- **Disable both glow and border** styling for the floating URL bar.  
+  `neo-theme-urlbar-glow-border-disabled`  
+- **Disable only the glow effect** around the floating URL bar, while preserving the border.  
+  `neo-theme-urlbar-glow-disabled`  
+- **Disable only the border** around the floating URL bar, while keeping the glow.  
+  `neo-theme-urlbar-border-disabled`
 
+📌 *Each toggle gives precise control over visual layering. Combine for full minimalism or hybrid styling.*
