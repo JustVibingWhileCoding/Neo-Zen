@@ -5,23 +5,6 @@
   @media not (-moz-pref("neo-features-bottom-disabled")) {
 
     :root[zen-sidebar-expanded="true"] {
-      :has(#zen-workspaces-button> .subviewbutton:only-child) {
-        #zen-sidebar-foot-buttons {
-          height: 100px !important;
-
-          &>.toolbarbutton-1:not(#zen-workspaces-button),
-          &>.toolbaritem-combined-buttons {
-            justify-self: center !important;
-            opacity: 1 !important;
-            pointer-events: all !important;
-
-            transition: opacity 0.5s ease 100ms,
-              color 0.3s ease,
-              fill 0.3s ease !important;
-          }
-        }
-      }
-
       #zen-sidebar-foot-buttons {
         display: grid !important;
         position: relative !important;
@@ -32,40 +15,32 @@
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) !important;
         gap: 6px !important;
         padding-top: 0px !important;
+        height: 100px !important;
 
-        transition: margin-top 0.3s ease 100ms, width 0.3s 100ms ease, height 0.3s 100ms ease, top 0.5s ease 100ms, bottom 0.5s ease 100ms, opacity 1s ease 100ms !important;
+        @media (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+          height: 95px !important;
+        }
 
         @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
           @media (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
             height: 110px !important;
           }
-
-          @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
-            height: 50px !important;
-
-
-            &>.toolbarbutton-1:not(#zen-workspaces-button),
-            &>.toolbaritem-combined-buttons {
-              justify-self: center !important;
-              opacity: 0 !important;
-              pointer-events: none !important;
-
-              transition: opacity 0.5s ease 100ms,
-                color 0.3s ease,
-                fill 0.3s ease !important;
-            }
-          }
         }
 
-        @media (-moz-bool-pref: "neo-features-workspace-button-hidden") {
-          height: 95px !important;
-        }
+        transition: margin-top 0.3s ease 100ms,
+        width 0.3s 100ms ease,
+        height 0.3s 100ms ease,
+        top 0.5s ease 100ms,
+        bottom 0.5s ease 100ms,
+        opacity 1s ease 100ms !important;
       }
 
       @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
         @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
-          :not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
-            &:not([customizing=""]) #zen-sidebar-foot-buttons::after {
+          &:not([customizing=""]) #zen-sidebar-foot-buttons:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
+            height: 50px !important;
+
+            &::after {
               position: sticky;
               top: 42px;
               z-index: 9999;
@@ -90,6 +65,17 @@
                 top 0.2s ease 100ms,
                 bottom 0.2s ease 100ms,
                 opacity 1s ease 100ms !important;
+            }
+
+            &>.toolbarbutton-1:not(#zen-workspaces-button),
+            &>.toolbaritem-combined-buttons {
+              justify-self: center !important;
+              opacity: 0 !important;
+              pointer-events: none !important;
+
+              transition: opacity 0.5s ease 100ms,
+                color 0.3s ease,
+                fill 0.3s ease !important;
             }
           }
         }

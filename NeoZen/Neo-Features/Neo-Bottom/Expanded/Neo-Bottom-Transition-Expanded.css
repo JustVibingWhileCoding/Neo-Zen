@@ -1,48 +1,38 @@
 @media not (-moz-pref("neo-features-disabled")) {
   @media not (-moz-pref("neo-features-bottom-disabled")) {
-    @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
+    :root[zen-sidebar-expanded="true"]:not([animating-background="true"]):not([customizing=""]) {
       @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
-        :root[zen-sidebar-expanded="true"]:not([customizing=""]) {
-          :not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
+        #zen-sidebar-foot-buttons:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
 
+          &:hover:not(:has(#zen-workspaces-button:hover)),
+          &:has(toolbarbutton[open="true"]) {
+            @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
+              height: 110px !important;
 
-            :has(#zen-sidebar-foot-buttons:hover) :not(:has(#zen-workspaces-button:hover)),
-            :has(#zen-sidebar-foot-buttons #customizationui-widget-panel,
-              #zen-sidebar-foot-buttons #downloads-button[open="true"],
-              #zen-sidebar-foot-buttons toolbarbutton[open="true"]) {
-              #zen-sidebar-foot-buttons {
-                & #zen-workspaces-button {
-                  height: 0px !important;
-                  transition: height 0.3s 0ms ease, top 0.5s ease 0ms, bottom 0.5s ease 0ms, opacity 1s ease 0ms !important;
-                }
+              &::after {
+                opacity: 0 !important;
+                width: 0px !important;
+                top: 0px !important;
+                height: 0px !important;
 
-                height: 110px !important;
+                transition: width 0.2s 0ms ease,
+                  height 0.3s 0ms ease,
+                  top 0.2s ease 0ms,
+                  bottom 0.2s ease 0ms,
+                  opacity 0.2s ease 0ms !important;
+              }
 
-                &::after {
-                  opacity: 0 !important;
-                  width: 0px !important;
-                  top: 30px !important;
+              & #zen-workspaces-button {
+                height: 0px !important;
+                margin-top: 0px !important;
+                margin-bottom: 0px !important;
+                transition: height 0.3s 0ms ease, top 0.5s ease 0ms, bottom 0.5s ease 0ms, opacity 1s ease 0ms !important;
+              }
 
-                  transition: width 0.2s 0ms ease,
-                    height 0.3s 0ms ease,
-                    top 0.2s ease 0ms,
-                    bottom 0.2s ease 0ms,
-                    opacity 0.2s ease 0ms !important;
-                }
-
-                transition: margin-top 0.3s ease 0ms,
-                width 0.3s 0ms ease,
-                height 0.3s 0ms ease,
-                top 0.5s ease 0ms,
-                bottom 0.5s ease 0ms,
-                opacity 1s ease 0ms !important;
-
-                &>.toolbarbutton-1:not(#zen-workspaces-button),
-                &>.toolbaritem-combined-buttons {
-                  opacity: 1 !important;
-                  pointer-events: all !important;
-                  transition: opacity 0.5s ease 0ms !important;
-                }
+              &>.toolbarbutton-1:not(#zen-workspaces-button),
+              &>.toolbaritem-combined-buttons {
+                opacity: 1 !important;
+                pointer-events: all !important;
               }
             }
           }
