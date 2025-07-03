@@ -1,0 +1,11 @@
+@import "Neo-Workspace-Collapsed.css";
+
+@import "Halo-Mode/Neo-Workspace-Halo-Mode-Expanded.css";
+@import "Halo-Mode/Neo-Workspace-Halo-Mode-Collapsed.css";
+
+
+@media (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+    #zen-workspaces-button {
+        display: none !important;
+    }
+}

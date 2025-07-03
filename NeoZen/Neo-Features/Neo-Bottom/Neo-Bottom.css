@@ -2,9 +2,7 @@
 @import "Expanded/Neo-Bottom-Expanded.css";
 @import "Neo-Bottom-Transition.css";
 
-@import "Neo-Bottom-Workspace/Neo-Bottom-Workspace.css";
-@import "Neo-Bottom-Workspace/Neo-Bottom-Workspace-Collapsed.css";
-@import "Neo-Bottom-Workspace/Neo-Bottom-Workspace-Expanded.css";
+@import "Neo-Bottom-Workspace.css";
 
 @media not (-moz-pref("neo-features-disabled")) {
   /* Bottom area general adjustments */

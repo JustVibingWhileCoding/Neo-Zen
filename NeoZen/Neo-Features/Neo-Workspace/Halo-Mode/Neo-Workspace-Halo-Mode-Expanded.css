@@ -1,0 +1,347 @@
+/* That's for you my psychopaths that uses more than 6 workspaces ! */
+@media not (-moz-pref("neo-features-disabled")) {
+    @media not (-moz-bool-pref: "neo-features-workspace-disabled") {
+        @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+            @media not (-moz-bool-pref: "neo-features-workspace-halo-mode-disabled") {
+                @media not (-moz-bool-pref: "neo-features-workspace-halo-mode-expanded-disabled") {
+                    :root[zen-sidebar-expanded="true"] {
+                        #zen-workspaces-button .subviewbutton {
+                            display: none !important;
+                        }
+
+                        #zen-workspaces-button[selected="0"] .subviewbutton:nth-child(0),
+                        #zen-workspaces-button[selected="0"] .subviewbutton:nth-child(1),
+                        #zen-workspaces-button[selected="0"] .subviewbutton:nth-child(2),
+                        #zen-workspaces-button[selected="0"] .subviewbutton:nth-child(3),
+                        #zen-workspaces-button[selected="0"] .subviewbutton:nth-child(4),
+                        #zen-workspaces-button[selected="0"] .subviewbutton:nth-child(5) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="1"] .subviewbutton:nth-child(0),
+                        #zen-workspaces-button[selected="1"] .subviewbutton:nth-child(1),
+                        #zen-workspaces-button[selected="1"] .subviewbutton:nth-child(2),
+                        #zen-workspaces-button[selected="1"] .subviewbutton:nth-child(3),
+                        #zen-workspaces-button[selected="1"] .subviewbutton:nth-child(4),
+                        #zen-workspaces-button[selected="1"] .subviewbutton:nth-child(5) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="2"] .subviewbutton:nth-child(0),
+                        #zen-workspaces-button[selected="2"] .subviewbutton:nth-child(1),
+                        #zen-workspaces-button[selected="2"] .subviewbutton:nth-child(2),
+                        #zen-workspaces-button[selected="2"] .subviewbutton:nth-child(3),
+                        #zen-workspaces-button[selected="2"] .subviewbutton:nth-child(4),
+                        #zen-workspaces-button[selected="2"] .subviewbutton:nth-child(5) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="3"] .subviewbutton:nth-child(2),
+                        #zen-workspaces-button[selected="3"] .subviewbutton:nth-child(3),
+                        #zen-workspaces-button[selected="3"] .subviewbutton:nth-child(4),
+                        #zen-workspaces-button[selected="3"] .subviewbutton:nth-child(5),
+                        #zen-workspaces-button[selected="3"] .subviewbutton:nth-child(6) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="4"] .subviewbutton:nth-child(3),
+                        #zen-workspaces-button[selected="4"] .subviewbutton:nth-child(4),
+                        #zen-workspaces-button[selected="4"] .subviewbutton:nth-child(5),
+                        #zen-workspaces-button[selected="4"] .subviewbutton:nth-child(6),
+                        #zen-workspaces-button[selected="4"] .subviewbutton:nth-child(7) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="5"] .subviewbutton:nth-child(4),
+                        #zen-workspaces-button[selected="5"] .subviewbutton:nth-child(5),
+                        #zen-workspaces-button[selected="5"] .subviewbutton:nth-child(6),
+                        #zen-workspaces-button[selected="5"] .subviewbutton:nth-child(7),
+                        #zen-workspaces-button[selected="5"] .subviewbutton:nth-child(8) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="6"] .subviewbutton:nth-child(5),
+                        #zen-workspaces-button[selected="6"] .subviewbutton:nth-child(6),
+                        #zen-workspaces-button[selected="6"] .subviewbutton:nth-child(7),
+                        #zen-workspaces-button[selected="6"] .subviewbutton:nth-child(8),
+                        #zen-workspaces-button[selected="6"] .subviewbutton:nth-child(9) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="7"] .subviewbutton:nth-child(6),
+                        #zen-workspaces-button[selected="7"] .subviewbutton:nth-child(7),
+                        #zen-workspaces-button[selected="7"] .subviewbutton:nth-child(8),
+                        #zen-workspaces-button[selected="7"] .subviewbutton:nth-child(9),
+                        #zen-workspaces-button[selected="7"] .subviewbutton:nth-child(10) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="8"] .subviewbutton:nth-child(7),
+                        #zen-workspaces-button[selected="8"] .subviewbutton:nth-child(8),
+                        #zen-workspaces-button[selected="8"] .subviewbutton:nth-child(9),
+                        #zen-workspaces-button[selected="8"] .subviewbutton:nth-child(10),
+                        #zen-workspaces-button[selected="8"] .subviewbutton:nth-child(11) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="9"] .subviewbutton:nth-child(8),
+                        #zen-workspaces-button[selected="9"] .subviewbutton:nth-child(9),
+                        #zen-workspaces-button[selected="9"] .subviewbutton:nth-child(10),
+                        #zen-workspaces-button[selected="9"] .subviewbutton:nth-child(11),
+                        #zen-workspaces-button[selected="9"] .subviewbutton:nth-child(12) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="10"] .subviewbutton:nth-child(9),
+                        #zen-workspaces-button[selected="10"] .subviewbutton:nth-child(10),
+                        #zen-workspaces-button[selected="10"] .subviewbutton:nth-child(11),
+                        #zen-workspaces-button[selected="10"] .subviewbutton:nth-child(12),
+                        #zen-workspaces-button[selected="10"] .subviewbutton:nth-child(13) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="11"] .subviewbutton:nth-child(10),
+                        #zen-workspaces-button[selected="11"] .subviewbutton:nth-child(11),
+                        #zen-workspaces-button[selected="11"] .subviewbutton:nth-child(12),
+                        #zen-workspaces-button[selected="11"] .subviewbutton:nth-child(13),
+                        #zen-workspaces-button[selected="11"] .subviewbutton:nth-child(14) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="12"] .subviewbutton:nth-child(11),
+                        #zen-workspaces-button[selected="12"] .subviewbutton:nth-child(12),
+                        #zen-workspaces-button[selected="12"] .subviewbutton:nth-child(13),
+                        #zen-workspaces-button[selected="12"] .subviewbutton:nth-child(14),
+                        #zen-workspaces-button[selected="12"] .subviewbutton:nth-child(15) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="13"] .subviewbutton:nth-child(12),
+                        #zen-workspaces-button[selected="13"] .subviewbutton:nth-child(13),
+                        #zen-workspaces-button[selected="13"] .subviewbutton:nth-child(14),
+                        #zen-workspaces-button[selected="13"] .subviewbutton:nth-child(15),
+                        #zen-workspaces-button[selected="13"] .subviewbutton:nth-child(16) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="14"] .subviewbutton:nth-child(13),
+                        #zen-workspaces-button[selected="14"] .subviewbutton:nth-child(14),
+                        #zen-workspaces-button[selected="14"] .subviewbutton:nth-child(15),
+                        #zen-workspaces-button[selected="14"] .subviewbutton:nth-child(16),
+                        #zen-workspaces-button[selected="14"] .subviewbutton:nth-child(17) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="15"] .subviewbutton:nth-child(14),
+                        #zen-workspaces-button[selected="15"] .subviewbutton:nth-child(15),
+                        #zen-workspaces-button[selected="15"] .subviewbutton:nth-child(16),
+                        #zen-workspaces-button[selected="15"] .subviewbutton:nth-child(17),
+                        #zen-workspaces-button[selected="15"] .subviewbutton:nth-child(18) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="16"] .subviewbutton:nth-child(15),
+                        #zen-workspaces-button[selected="16"] .subviewbutton:nth-child(16),
+                        #zen-workspaces-button[selected="16"] .subviewbutton:nth-child(17),
+                        #zen-workspaces-button[selected="16"] .subviewbutton:nth-child(18),
+                        #zen-workspaces-button[selected="16"] .subviewbutton:nth-child(19) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="17"] .subviewbutton:nth-child(16),
+                        #zen-workspaces-button[selected="17"] .subviewbutton:nth-child(17),
+                        #zen-workspaces-button[selected="17"] .subviewbutton:nth-child(18),
+                        #zen-workspaces-button[selected="17"] .subviewbutton:nth-child(19),
+                        #zen-workspaces-button[selected="17"] .subviewbutton:nth-child(20) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="18"] .subviewbutton:nth-child(17),
+                        #zen-workspaces-button[selected="18"] .subviewbutton:nth-child(18),
+                        #zen-workspaces-button[selected="18"] .subviewbutton:nth-child(19),
+                        #zen-workspaces-button[selected="18"] .subviewbutton:nth-child(20),
+                        #zen-workspaces-button[selected="18"] .subviewbutton:nth-child(21) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="19"] .subviewbutton:nth-child(18),
+                        #zen-workspaces-button[selected="19"] .subviewbutton:nth-child(19),
+                        #zen-workspaces-button[selected="19"] .subviewbutton:nth-child(20),
+                        #zen-workspaces-button[selected="19"] .subviewbutton:nth-child(21),
+                        #zen-workspaces-button[selected="19"] .subviewbutton:nth-child(22) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="20"] .subviewbutton:nth-child(19),
+                        #zen-workspaces-button[selected="20"] .subviewbutton:nth-child(20),
+                        #zen-workspaces-button[selected="20"] .subviewbutton:nth-child(21),
+                        #zen-workspaces-button[selected="20"] .subviewbutton:nth-child(22),
+                        #zen-workspaces-button[selected="20"] .subviewbutton:nth-child(23) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="21"] .subviewbutton:nth-child(20),
+                        #zen-workspaces-button[selected="21"] .subviewbutton:nth-child(21),
+                        #zen-workspaces-button[selected="21"] .subviewbutton:nth-child(22),
+                        #zen-workspaces-button[selected="21"] .subviewbutton:nth-child(23),
+                        #zen-workspaces-button[selected="21"] .subviewbutton:nth-child(24) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="22"] .subviewbutton:nth-child(21),
+                        #zen-workspaces-button[selected="22"] .subviewbutton:nth-child(22),
+                        #zen-workspaces-button[selected="22"] .subviewbutton:nth-child(23),
+                        #zen-workspaces-button[selected="22"] .subviewbutton:nth-child(24),
+                        #zen-workspaces-button[selected="22"] .subviewbutton:nth-child(25) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="23"] .subviewbutton:nth-child(22),
+                        #zen-workspaces-button[selected="23"] .subviewbutton:nth-child(23),
+                        #zen-workspaces-button[selected="23"] .subviewbutton:nth-child(24),
+                        #zen-workspaces-button[selected="23"] .subviewbutton:nth-child(25),
+                        #zen-workspaces-button[selected="23"] .subviewbutton:nth-child(26) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="24"] .subviewbutton:nth-child(23),
+                        #zen-workspaces-button[selected="24"] .subviewbutton:nth-child(24),
+                        #zen-workspaces-button[selected="24"] .subviewbutton:nth-child(25),
+                        #zen-workspaces-button[selected="24"] .subviewbutton:nth-child(26),
+                        #zen-workspaces-button[selected="24"] .subviewbutton:nth-child(27) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="25"] .subviewbutton:nth-child(24),
+                        #zen-workspaces-button[selected="25"] .subviewbutton:nth-child(25),
+                        #zen-workspaces-button[selected="25"] .subviewbutton:nth-child(26),
+                        #zen-workspaces-button[selected="25"] .subviewbutton:nth-child(27),
+                        #zen-workspaces-button[selected="25"] .subviewbutton:nth-child(28) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="26"] .subviewbutton:nth-child(25),
+                        #zen-workspaces-button[selected="26"] .subviewbutton:nth-child(26),
+                        #zen-workspaces-button[selected="26"] .subviewbutton:nth-child(27),
+                        #zen-workspaces-button[selected="26"] .subviewbutton:nth-child(28),
+                        #zen-workspaces-button[selected="26"] .subviewbutton:nth-child(29) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="27"] .subviewbutton:nth-child(26),
+                        #zen-workspaces-button[selected="27"] .subviewbutton:nth-child(27),
+                        #zen-workspaces-button[selected="27"] .subviewbutton:nth-child(28),
+                        #zen-workspaces-button[selected="27"] .subviewbutton:nth-child(29),
+                        #zen-workspaces-button[selected="27"] .subviewbutton:nth-child(30) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="28"] .subviewbutton:nth-child(27),
+                        #zen-workspaces-button[selected="28"] .subviewbutton:nth-child(28),
+                        #zen-workspaces-button[selected="28"] .subviewbutton:nth-child(29),
+                        #zen-workspaces-button[selected="28"] .subviewbutton:nth-child(30),
+                        #zen-workspaces-button[selected="28"] .subviewbutton:nth-child(31) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="29"] .subviewbutton:nth-child(28),
+                        #zen-workspaces-button[selected="29"] .subviewbutton:nth-child(29),
+                        #zen-workspaces-button[selected="29"] .subviewbutton:nth-child(30),
+                        #zen-workspaces-button[selected="29"] .subviewbutton:nth-child(31),
+                        #zen-workspaces-button[selected="29"] .subviewbutton:nth-child(32) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="30"] .subviewbutton:nth-child(29),
+                        #zen-workspaces-button[selected="30"] .subviewbutton:nth-child(30),
+                        #zen-workspaces-button[selected="30"] .subviewbutton:nth-child(31),
+                        #zen-workspaces-button[selected="30"] .subviewbutton:nth-child(32),
+                        #zen-workspaces-button[selected="30"] .subviewbutton:nth-child(33) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="31"] .subviewbutton:nth-child(30),
+                        #zen-workspaces-button[selected="31"] .subviewbutton:nth-child(31),
+                        #zen-workspaces-button[selected="31"] .subviewbutton:nth-child(32),
+                        #zen-workspaces-button[selected="31"] .subviewbutton:nth-child(33),
+                        #zen-workspaces-button[selected="31"] .subviewbutton:nth-child(34) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="32"] .subviewbutton:nth-child(31),
+                        #zen-workspaces-button[selected="32"] .subviewbutton:nth-child(32),
+                        #zen-workspaces-button[selected="32"] .subviewbutton:nth-child(33),
+                        #zen-workspaces-button[selected="32"] .subviewbutton:nth-child(34),
+                        #zen-workspaces-button[selected="32"] .subviewbutton:nth-child(35) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="33"] .subviewbutton:nth-child(32),
+                        #zen-workspaces-button[selected="33"] .subviewbutton:nth-child(33),
+                        #zen-workspaces-button[selected="33"] .subviewbutton:nth-child(34),
+                        #zen-workspaces-button[selected="33"] .subviewbutton:nth-child(35),
+                        #zen-workspaces-button[selected="33"] .subviewbutton:nth-child(36) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="34"] .subviewbutton:nth-child(33),
+                        #zen-workspaces-button[selected="34"] .subviewbutton:nth-child(34),
+                        #zen-workspaces-button[selected="34"] .subviewbutton:nth-child(35),
+                        #zen-workspaces-button[selected="34"] .subviewbutton:nth-child(36),
+                        #zen-workspaces-button[selected="34"] .subviewbutton:nth-child(37) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="35"] .subviewbutton:nth-child(34),
+                        #zen-workspaces-button[selected="35"] .subviewbutton:nth-child(35),
+                        #zen-workspaces-button[selected="35"] .subviewbutton:nth-child(36),
+                        #zen-workspaces-button[selected="35"] .subviewbutton:nth-child(37),
+                        #zen-workspaces-button[selected="35"] .subviewbutton:nth-child(38) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="36"] .subviewbutton:nth-child(35),
+                        #zen-workspaces-button[selected="36"] .subviewbutton:nth-child(36),
+                        #zen-workspaces-button[selected="36"] .subviewbutton:nth-child(37),
+                        #zen-workspaces-button[selected="36"] .subviewbutton:nth-child(38),
+                        #zen-workspaces-button[selected="36"] .subviewbutton:nth-child(39) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="37"] .subviewbutton:nth-child(36),
+                        #zen-workspaces-button[selected="37"] .subviewbutton:nth-child(37),
+                        #zen-workspaces-button[selected="37"] .subviewbutton:nth-child(38),
+                        #zen-workspaces-button[selected="37"] .subviewbutton:nth-child(39),
+                        #zen-workspaces-button[selected="37"] .subviewbutton:nth-child(40) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="38"] .subviewbutton:nth-child(37),
+                        #zen-workspaces-button[selected="38"] .subviewbutton:nth-child(38),
+                        #zen-workspaces-button[selected="38"] .subviewbutton:nth-child(39),
+                        #zen-workspaces-button[selected="38"] .subviewbutton:nth-child(40),
+                        #zen-workspaces-button[selected="38"] .subviewbutton:nth-child(41) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="39"] .subviewbutton:nth-child(38),
+                        #zen-workspaces-button[selected="39"] .subviewbutton:nth-child(39),
+                        #zen-workspaces-button[selected="39"] .subviewbutton:nth-child(40),
+                        #zen-workspaces-button[selected="39"] .subviewbutton:nth-child(41),
+                        #zen-workspaces-button[selected="39"] .subviewbutton:nth-child(42) {
+                            display: flex !important;
+                        }
+
+                        #zen-workspaces-button[selected="40"] .subviewbutton:nth-child(39),
+                        #zen-workspaces-button[selected="40"] .subviewbutton:nth-child(40),
+                        #zen-workspaces-button[selected="40"] .subviewbutton:nth-child(41),
+                        #zen-workspaces-button[selected="40"] .subviewbutton:nth-child(42),
+                        #zen-workspaces-button[selected="40"] .subviewbutton:nth-child(43) {
+                            display: flex !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

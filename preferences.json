@@ -25,6 +25,35 @@
     },
     {
         "type": "separator",
+        "label": "Neo Workspace"
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-workspace-disabled",
+        "label": "Disable Neo workspace features."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-workspace-halo-mode-disabled",
+        "label": "Disable Neo workspace halo mode, if disabled all the subbuttons will be displayed in both modes (expanded and collapsed)."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-workspace-halo-mode-collapsed-disabled",
+        "label": "Disable Neo workspace halo mode in collapsed mode, if disabled it will enable automatically the scrollable mode for collapsed mode."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-workspace-halo-mode-expanded-disabled",
+        "label": "Disable Neo workspace halo mode in expanded mode, if disabled it will display all the subbuttons in expanded mode."
+    },
+    {
+        "type": "checkbox",
+        "property": "neo-features-workspace-button-hidden",
+        "label": "Hide the Neo workspace button, This will expand the bottom section automatically in expanded mode, and display all the subbuttons for both modes."
+    },
+    {
+        "type": "separator",
         "label": "Neo Bottom V2"
     },
     {
