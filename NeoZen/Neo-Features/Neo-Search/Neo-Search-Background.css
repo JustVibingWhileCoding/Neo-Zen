@@ -15,16 +15,17 @@
                     opacity: 0;
                     margin-top: 0px !important;
                     margin-bottom: 0px !important;
-                    margin-left: 0.5px !important;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
 
 
-                    height: calc(var(--Neo-Zen-URL-Height) - 2px);
+                    height: calc(var(--Neo-Zen-URL-Height));
                     left: auto !important;
                     right: auto !important;
                     bottom: unset;
-                    top: calc(45% + 1px);
+                    top: calc(50% - var(--Neo-Zen-URL-Height));
 
-                    border-radius: 8px;
+                    border-radius: calc(var(--Neo-Zen-URL-Height) / 2);
                     visibility: visible !important;
 
                     transition: top 0.5s ease, height 0.5s ease, width 0.5s ease;
@@ -34,7 +35,7 @@
                 :has(#urlbar[open=""][focused=""][zen-floating-urlbar='true']) {
                     #zen-main-app-wrapper::after {
                         opacity: 1 !important;
-                        width: min(calc(90% - 2px), calc(65rem - var(--zen-element-separation) / 4)) !important;
+                        width: min(calc(90% + 1px), calc(65rem)) !important;
                     }
                 }
 

@@ -9,7 +9,6 @@
 @media not (-moz-pref("neo-features-disabled")) {
     @media not (-moz-pref("neo-features-search-disabled")) {
         :root {
-            --Neo-Zen-URL-Height: 50px;
             --urlbar-container-height: var(--Neo-Zen-URL-Height) !important;
         }
 
@@ -22,12 +21,14 @@
             #urlbar[open] #urlbar-background {
                 background: var(--Neo-Blur-Color) !important;
                 backdrop-filter: var(--Neo-Blur) !important;
-                border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
+                border-radius: calc(var(--Neo-Zen-URL-Height) / 2 + 1px) !important;
+                
+                transition: border-radius 0.4s ease !important;
             }
 
             #urlbar[open] {
                 @media (-moz-pref("zen.urlbar.behavior", "float")) {
-                    top: 45% !important;
+                    top: calc(50% - var(--Neo-Zen-URL-Height)) !important;
                 }
 
                 width: min(90%, 65rem) !important;
@@ -44,13 +45,15 @@
                     }
 
                     transition: min-height 0.5s ease,
-                    opacity 0.1s ease !important;
+                        max-height 0.5s ease,
+                        height 0.5s ease,
+                        opacity 0.1s ease !important;
 
                     & #urlbar-results {
                         display: flex !important;
                         flex-direction: column !important;
                         overflow: auto !important;
-                        padding: 10px 10px 0px 10px !important;
+                        padding: var(--Neo-Margin-Height) 10px 0px 10px !important;
                         justify-content: center !important;
 
                         & .urlbarView-row {
