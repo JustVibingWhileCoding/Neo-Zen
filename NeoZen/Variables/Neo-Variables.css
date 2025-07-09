@@ -22,7 +22,7 @@
 
   /* Blur */
   --Neo-Blur: blur(52px) saturate(180%) brightness(110%);
-  --Neo-Blur-Simple: blur(15px) brightness(110%) saturate(260%);
+  --Neo-Blur-Simple: blur(8px) brightness(110%) saturate(260%);
 
   /* Blur colors */
   --Neo-Blur-Color: color-mix(in srgb, var(--zen-primary-color) 1%, #000000a0);
@@ -40,5 +40,5 @@
   --Neo-Margin-Height: 10px;
   
   /* Background color */
-  --Neo-Background-Color: light-dark(rgba(215, 215, 215, 1), rgba(30, 30, 30, 1));
+  --Neo-Background-Color: light-dark(rgba(215, 215, 215, 1), rgba(10, 10, 10, 1));
 }
