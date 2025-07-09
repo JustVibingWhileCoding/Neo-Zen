@@ -17,8 +17,6 @@
         padding-top: 0px !important;
 
         &:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
-          height: 100px !important;
-
           @media (-moz-bool-pref: "neo-features-workspace-button-hidden") {
             height: 95px !important;
           }
