@@ -4,11 +4,12 @@
             height: 108px !important;
         }
     }
-    #navigator-toolbox:has(#zen-media-controls-toolbar[media-position-hidden="true"]:hover){
+    #navigator-toolbox:has(#zen-media-controls-toolbar[media-position-hidden="true"]:hover):has(#zen-media-artist:empty){
         #TabsToolbar::before {
             height: 68px !important;
         }
     }
+    #navigator-toolbox:has(#zen-media-controls-toolbar[media-position-hidden="true"]:hover),
     #navigator-toolbox:has(#zen-media-controls-toolbar:hover):has(#zen-media-artist:empty){
         #TabsToolbar::before {
             height: 92px !important;
