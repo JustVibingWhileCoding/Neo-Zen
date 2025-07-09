@@ -15,15 +15,18 @@
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) !important;
         gap: 6px !important;
         padding-top: 0px !important;
-        height: 100px !important;
 
-        @media (-moz-bool-pref: "neo-features-workspace-button-hidden") {
-          height: 95px !important;
-        }
+        &:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
+          height: 100px !important;
 
-        @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
-          @media (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
-            height: 110px !important;
+          @media (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+            height: 95px !important;
+          }
+
+          @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+            @media (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
+              height: 110px !important;
+            }
           }
         }
 
