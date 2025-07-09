@@ -7,7 +7,7 @@
             position: absolute !important;
             z-index: -1 !important;
             content: "" !important;
-            background: blue;
+            background: var(--Neo-Background-Color);
 
             width: calc(100%);
             opacity: 0;
@@ -16,7 +16,7 @@
             top: auto;
             left: auto;
             right: auto !important;
-            bottom: 0px;
+            bottom: var(--zen-toolbox-padding);
 
             border-radius: var(--Neo-Border-Radius) !important;
             visibility: visible !important;
