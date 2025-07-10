@@ -1,0 +1,6 @@
+@import "Neo-Toolbar-Fix.css";
+@import "Neo-Toolbar-Background.css";
+
+:root:not([zen-single-toolbar="true"]){
+  --zen-toolbar-height: 50px !important;
+}

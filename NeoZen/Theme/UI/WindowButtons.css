@@ -11,7 +11,7 @@
                 align-self: center;
 
                 border-radius: 50px;
-                margin: 0px 3px !important;
+                margin: auto 3px !important;
                 background-color: rgba(200, 200, 200, 0.3) !important;
                 transition: all 200ms ease-in-out;
             }
@@ -31,8 +31,9 @@
                 justify-self: center !important;
                 justify-content: center !important;
                 align-content: center !important;
-                margin-top: 10px !important;
-                margin-bottom: 10px !important;
+                margin-top: auto !important;
+                margin-bottom: auto !important;
+                padding-bottom: 1px !important;
             }
 
             .titlebar-button:hover {

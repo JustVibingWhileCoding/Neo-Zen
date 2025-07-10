@@ -1,6 +1,0 @@
-@import "Nav-Bar-Compact.css";
-@import "Nav-Bar-Compact-Background.css";
-
-:root:not([zen-single-toolbar="true"]) {
-  --zen-toolbar-height: 50px !important;
-}

@@ -1,0 +1,58 @@
+@media not (-moz-pref("neo-features-disabled")) {
+    @media not (-moz-pref("neo-features-toolbar-disabled")) {
+        @media (-moz-pref("browser.tabs.allow_transparent_browser")) {
+            @media (-moz-pref("zen.view.compact.hide-toolbar")) {
+                :root:not([zen-single-toolbar="true"]) body:has([zen-compact-mode="true"]) #browser::before {
+                    display: flex !important;
+                    position: absolute !important;
+                    z-index: 0 !important;
+                    content: "" !important;
+                    opacity: 1;
+                    background-color: light-dark(rgba(200, 200, 200, 1), rgba(28, 28, 28, 1)) !important;
+
+
+                    width: calc(85% - var(--zen-element-separation) * 2) !important;
+                    height: calc(var(--zen-toolbar-height));
+                    top: calc(var(--zen-toolbar-height) * -1 - 5px) !important;
+                    bottom: auto !important;
+                    right: auto !important;
+
+                    border-radius: calc(var(--Neo-Border-Radius) + 2px);
+
+                    visibility: visible !important;
+                    transition: top 0.35s ease 0.1s !important;
+                }
+
+
+
+                body:has([zen-compact-mode="true"]) {
+
+                    &:has(#zen-appcontent-navbar-wrapper:hover,
+                        #zen-appcontent-navbar-wrapper[zen-has-hover="true"],
+                        #zen-appcontent-navbar-wrapper[zen-user-show=""],
+                        #zen-appcontent-navbar-wrapper[has-popup-menu],
+                        #urlbar[open],
+                        #zen-appcontent-navbar-container:hover) #browser::before {
+                        top: calc(var(--zen-element-separation) + 0px) !important;
+                    }
+                }
+
+                &:has(#PersonalToolbar[collapsed="false"]) #browser::before {
+                    height: calc(var(--zen-toolbar-height) + 40px) !important;
+                    top: calc(var(--zen-toolbar-height) * -1 - 5px - 40px) !important;
+                }
+
+                &:has(#navigator-toolbox[zen-has-empty-tab=""]) #browser::before {
+                    opacity: 0 !important;
+                }
+            }
+        }
+    }
+
+    /*I don't know if this rule can lead to issues, is used to justify
+      to the center the pseudo element for the nav-bar*/
+    #browser {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
