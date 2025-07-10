@@ -6,6 +6,7 @@
   "description": "A sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity",
   "version": "1.9.6",
   "createdAt": "2025-05-31",
+  "updatedAt": "2025-07-09",
   "style": {
     "chrome": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/main/userChrome.css",
     "content": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/main/userContent.css"
