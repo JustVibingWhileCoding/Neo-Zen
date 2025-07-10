@@ -28,7 +28,7 @@
   --Neo-Blur-Color: color-mix(in srgb, var(--zen-primary-color) 1%, #000000a0);
 
   /* Width Compact Mode */
-  --Neo-Width-Compact-Expanded: 21em;
+  --Neo-Width-Compact-Expanded: 20em;
 
   /* Delays */
   --Neo-Delay: 4s;
