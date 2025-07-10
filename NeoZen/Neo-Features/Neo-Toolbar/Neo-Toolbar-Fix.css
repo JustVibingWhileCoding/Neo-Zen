@@ -12,7 +12,7 @@
 
                         &[zen-sidebar-expanded="true"]:not([zen-single-toolbar='true']) {
                             & #zen-appcontent-navbar-container {
-                                right: calc(7.5% + var(--Neo-Width-Compact-Expanded) - 3em + var(--zen-element-separation) * 2 - 3px)
+                                right: calc(7.5% + var(--Neo-Width-Compact-Expanded) + var(--zen-toolbox-padding) * 4 + var(--zen-element-separation) * 2) !important;
                             }
                         }
                     }
