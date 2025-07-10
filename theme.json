@@ -4,9 +4,9 @@
   "author": "JustVibingWhileCoding",
   "name": "Neo Zen",
   "description": "A sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity",
-  "version": "1.9.6",
+  "version": "1.9.7",
   "createdAt": "2025-05-31",
-  "updatedAt": "2025-07-09",
+  "updatedAt": "2025-07-10",
   "style": {
     "chrome": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/main/userChrome.css",
     "content": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/main/userContent.css"
