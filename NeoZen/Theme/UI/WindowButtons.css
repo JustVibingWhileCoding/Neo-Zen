@@ -89,7 +89,25 @@
         @media not (-moz-bool-pref: "zen.view.experimental-no-window-controls") {
             @media (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
                 .titlebar-buttonbox-container {
-                    order: 0 !important;
+                    order: -1 !important;
+                }
+
+                @media (-moz-bool-pref: "neo-theme-window-buttons-inverse") {
+                    :root[zen-single-toolbar="true"] {
+                        .titlebar-buttonbox-container {
+                            order: 9999 !important;
+                        }
+                    }
+                }
+            }
+
+            @media not (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
+                @media not (-moz-bool-pref: "neo-theme-window-buttons-inverse") {
+                    :root[zen-single-toolbar="true"] {
+                        .titlebar-buttonbox-container {
+                            order: -1 !important;
+                        }
+                    }
                 }
             }
 

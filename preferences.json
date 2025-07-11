@@ -225,6 +225,11 @@
         "label": "Keep window buttons colorful while unhovered."
     },
     {
+        "type": "checkbox",
+        "property": "neo-theme-window-buttons-inverse",
+        "label": "Invert window buttons position in expanded mode single toolbar mode."
+    },
+    {
         "type": "separator",
         "label": "Workspace Button"
     },
