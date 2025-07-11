@@ -39,13 +39,26 @@
             
             @media (-moz-pref("neo-features-bottom-disabled")) {
                 bottom: calc(var(--zen-toolbox-padding) + 40px);
+                
+                @media (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+                    bottom: calc(29px) !important;
+                }
             }
         }
-        #navigator-toolbox{
-            &:has(#zen-sidebar-foot-buttons:hover) {
-                &:not(:has(#zen-workspaces-button:hover)) {
-                    #TabsToolbar::before {
-                        bottom: calc(var(--zen-toolbox-padding) + 115px) !important;
+        @media not (-moz-pref("neo-features-bottom-disabled")) {
+            #navigator-toolbox{
+                &:has(#zen-sidebar-foot-buttons:hover) {
+                    &:not(:has(#zen-workspaces-button:hover)) {
+                        #TabsToolbar::before {
+                            bottom: calc(var(--zen-toolbox-padding) + 115px) !important;
+                        }
+                    }
+                }
+                &:has(#zen-workspaces-button:only-child){
+                    @media (-moz-bool-pref: "neo-features-workspace-button-hidden") {           
+                        #TabsToolbar::before {
+                            bottom: calc(var(--zen-toolbox-padding) + 5px) !important;
+                        }
                     }
                 }
             }

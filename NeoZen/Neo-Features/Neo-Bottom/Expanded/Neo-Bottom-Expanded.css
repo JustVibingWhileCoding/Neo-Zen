@@ -5,6 +5,9 @@
   @media not (-moz-pref("neo-features-bottom-disabled")) {
 
     :root[zen-sidebar-expanded="true"] {
+      &:not([customizing=""]) #zen-sidebar-foot-buttons{
+        min-height: 0px !important;
+      }
       #zen-sidebar-foot-buttons {
         display: grid !important;
         position: relative !important;
@@ -16,7 +19,7 @@
         gap: 6px !important;
         padding-top: 0px !important;
 
-        &:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
+        &:not(:has(#zen-workspaces-button:only-child)):not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
           @media (-moz-bool-pref: "neo-features-workspace-button-hidden") {
             height: 95px !important;
           }
