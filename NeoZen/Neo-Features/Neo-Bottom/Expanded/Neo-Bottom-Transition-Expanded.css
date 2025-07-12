@@ -2,12 +2,12 @@
   @media not (-moz-pref("neo-features-bottom-disabled")) {
     :root[zen-sidebar-expanded="true"]:not([animating-background="true"]):not([customizing=""]) {
       @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
-        #zen-sidebar-foot-buttons:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
+        #zen-sidebar-foot-buttons:not(:has(#zen-workspaces-button> .subviewbutton:only-child)):not(:has(#zen-workspaces-button:only-child)) {
 
           &:hover:not(:has(#zen-workspaces-button:hover)),
           &:has(toolbarbutton[open="true"]) {
             @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
-              height: 110px !important;
+              height: var(--Neo-Bottom-Height-Expanded) !important;
 
               &::after {
                 opacity: 0 !important;
