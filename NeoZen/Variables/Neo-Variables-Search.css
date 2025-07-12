@@ -1,6 +1,7 @@
 @media not (-moz-pref("neo-features-disabled")) {
     @media not (-moz-pref("neo-features-search-disabled")) {
         :root {
+            --urlbar-container-height: var(--Neo-Zen-URL-Height) !important;
             --Neo-Count-Rows: 0;
 
             &:not([animating-background="true"]) {
