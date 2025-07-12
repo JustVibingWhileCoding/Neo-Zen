@@ -29,7 +29,7 @@
 
     #navigator-toolbox:has(#zen-media-controls-toolbar:hover) {
         #TabsToolbar::before {
-            height: 190px;
+            height: 210px;
         }
     }
 }
