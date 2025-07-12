@@ -1,6 +1,5 @@
 @import "Neo-Search-Align.css";
 @import "Neo-Search-Background.css";
-@import "Neo-Search-Background-Align.css";
 
 @media not (-moz-pref("neo-features-disabled")) {
     @media not (-moz-pref("neo-features-search-disabled")) {

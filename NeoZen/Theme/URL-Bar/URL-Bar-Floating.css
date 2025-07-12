@@ -33,9 +33,5 @@
                 border-top: 1px solid color-mix(in srgb, var(--zen-primary-color) 0%, transparent 100%) !important;
             }
         }
-
-        #zen-main-app-wrapper::after {
-            border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
-        }
     }
 }

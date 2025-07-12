@@ -21,8 +21,9 @@
   --Neo-Border-Radius: 4px;
 
   /* Blur */
-  --Neo-Blur: blur(52px) saturate(180%) brightness(110%);
-  --Neo-Blur-Simple: blur(8px) brightness(110%) saturate(260%);
+  --Neo-Blur: blur(52px) saturate(180%) brightness(150%);
+  --Neo-Blur-Simple: blur(8px) brightness(110%) saturate(150%);
+  --Neo-Blur-Search: blur(20px) brightness(110%) saturate(150%);
 
   /* Blur colors */
   --Neo-Blur-Color: color-mix(in srgb, var(--zen-primary-color) 1%, #000000a0);
@@ -36,6 +37,7 @@
   
   /* URL-Bar */
   
+  --Neo-Zen-URL-Height: 50px;
   --Neo-Rows-Height: 45px;
   --Neo-Margin-Height: 10px;
   
