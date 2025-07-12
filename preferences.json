@@ -68,7 +68,7 @@
     },
     {
         "type": "checkbox",
-        "property": "neo-bottom-at-bottom",
+        "property": "neo-features-bottom-at-bottom",
         "label": "Move the Neo bottom section to the bottom."
     },
     {
