@@ -1,19 +1,28 @@
 @media not (-moz-pref("neo-features-disabled")) {
-  @media not (-moz-pref("neo-bottom-at-bottom")) {
-    :root[zen-sidebar-expanded="true"]:not([customizing=""]) {
-      #zen-sidebar-foot-buttons {
-        order: -1 !important;
-        margin-top: 10px !important;
-        margin-bottom: 10px !important;
-      }
-    }
-  }
+    @media not (-moz-pref("neo-features-bottom-disabled")) {
+        :root[zen-sidebar-expanded="true"]:not([customizing=""]) {
+            #zen-sidebar-foot-buttons {
+                &:has(#zen-workspaces-button):only-child {
+                    @media (-moz-pref("neo-features-workspace-button-hidden")) {
+                        display: none !important;
+                    }
+                }
 
-  @media (-moz-pref("neo-bottom-at-bottom")) {
-    :root[zen-sidebar-expanded="true"]:not([customizing=""]) {
-      #zen-sidebar-foot-buttons {
-        margin-top: 5px !important;
-      }
+                @media (-moz-pref("neo-featuresbottom-at-bottom")) {
+                    margin-top: var(--Neo-Bottom-Margin) !important;
+                    margin-bottom: 0px !important;
+                }
+
+                @media not (-moz-pref("neo-featuresbottom-at-bottom")) {
+                    order: -1 !important;
+                    margin-top: var(--Neo-Bottom-Margin) !important;
+                    margin-bottom: var(--Neo-Bottom-Margin) !important;
+                }
+            }
+        }
     }
-  }
+}
+
+:root {
+    --Neo-Bottom-Margin: 10px;
 }
