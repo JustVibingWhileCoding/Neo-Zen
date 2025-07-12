@@ -165,7 +165,6 @@
                             box-shadow: var(--zen-big-shadow);
                             pointer-events: none;
                             z-index: -1;
-                            opacity: var(--zen-background-opacity) !important;
 
                             width: 100% !important;
 
@@ -190,7 +189,6 @@
                             background-image: url(chrome://browser/content/zen-images/grain-bg.png);
                             pointer-events: none;
                             z-index: 0;
-                            opacity: 0 !important;
                             mix-blend-mode: overlay;
                             width: 100% !important;
 
