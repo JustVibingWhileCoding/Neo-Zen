@@ -9,26 +9,12 @@
                 grid-row: 1 !important;
                 order: -1 !important;
 
-
                 border-radius: 0px !important;
             }
 
             :root[zen-sidebar-expanded="true"] {
                 #zen-workspaces-button {
                     position: sticky !important;
-                    height: 36px !important;
-                    margin-top: 0px !important;
-                    /*border: 1px solid blue !important;*/
-
-                    /*display: flex !important;
-      
-            flex-direction: column !important;
-            flex-wrap: wrap !important;
-            white-space: nowrap !important;
-            
-            overflow-x: auto !important;
-            overflow-y: unset !important;*/
-
                     transition: height 0.3s 100ms ease, top 0.5s ease 100ms, bottom 0.5s ease 100ms, opacity 1s ease 100ms !important;
                 }
             }
@@ -38,14 +24,11 @@
                     position: absolute !important;
                     height: calc(var(--Neo-Bottom-Height) - 30px) !important;
 
-                    /*border: 1px solid blue !important;*/
-
                     transition: height 0.3s 100ms ease, top 0.5s ease 100ms, bottom 0.5s ease 100ms, opacity 1s ease 100ms !important;
 
                     & .subviewbutton {
                         width: 100% !important;
                     }
-
                 }
             }
         }
