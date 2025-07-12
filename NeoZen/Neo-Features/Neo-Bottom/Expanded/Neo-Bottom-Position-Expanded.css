@@ -108,9 +108,10 @@
             &:not(:has(#zen-workspaces-button>.subviewbutton:only-child)):not(:has(#zen-sidebar-foot-buttons #zen-workspaces-button:only-child)) {
                 --Neo-Bottom-Height-Aux: 33px;
             }
-
-            &:not(:has(#zen-workspaces-button>.subviewbutton:only-child)):has(#zen-sidebar-foot-buttons #zen-workspaces-button:only-child) {
-                --Neo-Bottom-Height-Aux: 33px;
+            @media not (-moz-pref("neo-features-workspace-button-hidden")) {
+                &:not(:has(#zen-workspaces-button>.subviewbutton:only-child)):has(#zen-sidebar-foot-buttons #zen-workspaces-button:only-child) {
+                    --Neo-Bottom-Height-Aux: 33px;
+                }
             }
 
             &:has(#zen-workspaces-button>.subviewbutton:only-child):not(:has(#zen-sidebar-foot-buttons #zen-workspaces-button:only-child)) {
