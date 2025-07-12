@@ -17,7 +17,7 @@
                         overflow-y: auto !important;
 
                         & .subviewbutton {
-                        width: 100% !important;
+                            width: 100% !important;
                         }
                     }
                 }

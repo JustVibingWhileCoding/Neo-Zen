@@ -1,0 +1,32 @@
+@media not (-moz-pref("neo-features-disabled")) {
+    @media not (-moz-pref("neo-features-bottom-disabled")) {
+        @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+            :root:not([zen-sidebar-expanded="true"]):not([customizing=""]) {
+                #zen-sidebar-foot-buttons:not(:has(#zen-workspaces-button> .subviewbutton:only-child)):not(:has(#zen-workspaces-button:only-child)) {
+                    &::after {
+                        display: flex !important;
+                        position: absolute;
+                        visibility: visible;
+                        opacity: 1;
+
+                        content: "";
+
+                        background: var(--Neo-Glow-Color-3);
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 3px;
+
+                        box-shadow: 0px 0px 3px var(--Neo-Glow-Color-3) !important;
+                        filter: drop-shadow(0px 0px 5px var(--zen-primary-color)) brightness(1) !important;
+
+                        transition: width 0.3s 200ms ease,
+                            height 0.3s 200ms ease,
+                            top 0.2s ease 100ms,
+                            bottom 0.2s ease 100ms,
+                            opacity 1s ease 100ms !important;
+                    }
+                }
+            }
+        }
+    }
+}

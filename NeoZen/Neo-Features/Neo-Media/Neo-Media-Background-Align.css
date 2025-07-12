@@ -4,13 +4,15 @@
             height: 108px !important;
         }
     }
-    #navigator-toolbox:has(#zen-media-controls-toolbar[media-position-hidden="true"]:hover):has(#zen-media-artist:empty){
+
+    #navigator-toolbox:has(#zen-media-controls-toolbar[media-position-hidden="true"]:hover):has(#zen-media-artist:empty) {
         #TabsToolbar::before {
             height: 68px !important;
         }
     }
+
     #navigator-toolbox:has(#zen-media-controls-toolbar[media-position-hidden="true"]:hover),
-    #navigator-toolbox:has(#zen-media-controls-toolbar:hover):has(#zen-media-artist:empty){
+    #navigator-toolbox:has(#zen-media-controls-toolbar:hover):has(#zen-media-artist:empty) {
         #TabsToolbar::before {
             height: 92px !important;
         }
@@ -24,44 +26,23 @@
         height: 0px;
         transition: height 1s ease, opacity 0.5s ease !important;
     }
-    #navigator-toolbox:has(#zen-media-controls-toolbar:hover){
+
+    #navigator-toolbox:has(#zen-media-controls-toolbar:hover) {
         #TabsToolbar::before {
-            height: 190px;
+            height: 210px;
         }
     }
 }
 
 /* Bottom alignment */
-@media (-moz-bool-pref: "neo-bottom-at-bottom") {
+@media (-moz-bool-pref: "neo-features-bottom-at-bottom") {
     :root[zen-sidebar-expanded="true"] {
-        #TabsToolbar::before {
-            bottom: calc(var(--zen-toolbox-padding) + 55px);
-            
-            @media (-moz-pref("neo-features-bottom-disabled")) {
-                bottom: calc(var(--zen-toolbox-padding) + 40px);
-                
-                @media (-moz-bool-pref: "neo-features-workspace-button-hidden") {
-                    bottom: calc(29px) !important;
-                }
+
+        #navigator-toolbox {
+            & #TabsToolbar::before {
+                bottom: calc(var(--zen-toolbox-padding) + var(--Neo-Bottom-Height-Aux) + var(--Neo-Bottom-Margin-Top)) !important;
             }
         }
-        @media not (-moz-pref("neo-features-bottom-disabled")) {
-            #navigator-toolbox{
-                &:has(#zen-sidebar-foot-buttons:hover) {
-                    &:not(:has(#zen-workspaces-button:hover)) {
-                        #TabsToolbar::before {
-                            bottom: calc(var(--zen-toolbox-padding) + 115px) !important;
-                        }
-                    }
-                }
-                &:has(#zen-workspaces-button:only-child){
-                    @media (-moz-bool-pref: "neo-features-workspace-button-hidden") {           
-                        #TabsToolbar::before {
-                            bottom: calc(var(--zen-toolbox-padding) + 5px) !important;
-                        }
-                    }
-                }
-            }
-        }
+
     }
 }

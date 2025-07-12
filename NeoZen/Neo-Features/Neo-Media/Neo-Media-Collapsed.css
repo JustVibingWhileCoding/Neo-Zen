@@ -83,6 +83,20 @@
                     transform: none !important;
                 }
 
+                & #zen-media-focus-button {
+                    display: flex !important;
+                }
+
+                & #zen-media-playback-buttons {
+                    display: flex !important;
+                    flex-direction: column !important;
+                    position: relative !important;
+
+                    margin: 0px 0px !important;
+                    padding: 0px 0px !important;
+                    transform: none !important;
+                }
+
                 & .show-on-hover {
                     display: flex !important;
                     position: relative !important;
@@ -101,7 +115,7 @@
 
             #zen-media-controls-toolbar:not([hidden]):hover {
                 &>toolbaritem {
-                    height: 190px !important;
+                    height: 210px !important;
                     background: var(--Neo-Blur-Color) !important;
                     backdrop-filter: var(--Neo-Blur-Simple) !important;
                     box-shadow: 0px 0px 5px var(--Neo-Shadow-Color-1) !important;
