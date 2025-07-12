@@ -4,7 +4,7 @@
 
 @media not (-moz-pref("neo-features-disabled")) {
     @media not (-moz-pref("neo-features-bottom-disabled")) {
-        :root[zen-sidebar-expanded="true"]:not([customizing=""]) {
+        :root[zen-sidebar-expanded="true"] {
             #zen-sidebar-foot-buttons {
                 display: grid !important;
                 position: relative !important;
@@ -15,34 +15,31 @@
 
                 padding-top: 0px !important;
 
-                @media (-moz-bool-pref: "neo-features-workspace-button-hidden") or (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
-                    height: var(--Neo-Bottom-Height-Expanded) !important;
-                }
+                height: var(--Neo-Bottom-Height-Aux);
 
                 transition: height 0.3s 100ms ease,
-                top 0.5s ease 100ms,
-                bottom 0.5s ease 100ms,
-                opacity 0.5s ease 100ms !important;
+                    top 0.5s ease 100ms,
+                    bottom 0.5s ease 100ms,
+                    opacity 0.5s ease 100ms !important;
 
                 @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
                     @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
-                        &>.toolbarbutton-1:not(#zen-workspaces-button),
-                        &>.toolbaritem-combined-buttons {
-                            justify-self: center !important;
-                            opacity: 0 !important;
-                            pointer-events: none !important;
+                        &:not([customizing=""]):not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
 
-                            transition: opacity 0.5s ease 100ms,
-                                color 0.3s ease,
-                                fill 0.3s ease !important;
+                            &>.toolbarbutton-1:not(#zen-workspaces-button),
+                            &>.toolbaritem-combined-buttons {
+                                justify-self: center !important;
+                                opacity: 0 !important;
+                                pointer-events: none !important;
+
+                                transition: opacity 0.5s ease 100ms,
+                                    color 0.3s ease,
+                                    fill 0.3s ease !important;
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
-
-:root {
-    --Neo-Bottom-Height-Expanded: 95px !important;
 }
