@@ -62,7 +62,21 @@ Versions prior to 1.2.3 remain under the MIT License.
 Neo Zen's **tab transitions and animations** come directly from the **Nebula** theme, thanks to the generosity of its developer.  
 A huge thanks to **[JustAdumbPrsn](https://github.com/JustAdumbPrsn)**, the creator of **Nebula**, for allowing the use of their code and contributing to a smoother browsing experience!  
 
-You can check out **Nebula** here: [Zen Nebula](https://github.com/JustAdumbPrsn/Zen-Nebula)  
+You can check out **Nebula** here: [Zen Nebula](https://github.com/JustAdumbPrsn/Zen-Nebula)
+
+Neo Zen has been shaped by countless small pieces — some experimental, some forgotten, but all appreciated. While this project is no longer actively maintained by me, it’s only right to acknowledge the creators whose work made an impact along the way:
+
+- **📄 PDF Viewer** – Integrated from the [Natsumi Browser](https://github.com/greeeen-dev/Natsumi-Browser), created by **greeeen-dev**.  
+  A clean and functional viewer that greatly enhanced document support in Neo Zen.
+
+- **🗂️ Tab Group System** – Based on code by [**Anoms12**](https://github.com/Anoms12).  
+  Their implementation helped lay the foundation for Neo Zen’s tab group styling and behavior.
+
+- **🧪 Miscellaneous Contributions** – Some features were added through collaboration, experimentation, or inherited code. If you recognize something you authored, thank you — even if it was forgotten in the shuffle.
+
+If anyone wants to pick up where this left off, contributions and community-led updates are welcomed 💡
+
+
 
 ## 🌟 Screenshots & Visuals
 Here are some **preview images** showcasing the Neo Zen interface:
