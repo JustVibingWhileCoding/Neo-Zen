@@ -15,11 +15,11 @@
 
 # Neo Zen  
 
-> ⚠️ Compatibility Notice: > Due to recent changes in Zen v1.14, Neo Zen currently maintains compatibility only with Zen v1.13.2. This is a temporary measure while we await updates from Zen developers to resolve or revise the new light/dark theme behavior introduced in v1.14.
+> ⚠️ Should I?
 
 Welcome to **Neo Zen** – a sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity. With **innovative features, refined UI enhancements, and adaptive styling**, Neo Zen creates a seamless, distraction-free browsing experience.
 
-*Neo Zen works with [Sine](https://github.com/CosmoCreeper/Sine).... sometimes*
+*Neo Zen works with [Sine](https://github.com/CosmoCreeper/Sine)*
 
 ## 🚀 Features  
 
