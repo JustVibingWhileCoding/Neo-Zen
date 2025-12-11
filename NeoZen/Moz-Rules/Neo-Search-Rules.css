@@ -1,0 +1,81 @@
+:root {
+    @media (-moz-pref("browser.urlbar.maxRichResults", 1)) {
+        --Neo-Max-Result-Number: 1;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 2)) {
+        --Neo-Max-Result-Number: 2;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 3)) {
+        --Neo-Max-Result-Number: 3;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 4)) {
+        --Neo-Max-Result-Number: 4;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 5)) {
+        --Neo-Max-Result-Number: 5;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 6)) {
+        --Neo-Max-Result-Number: 6;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 7)) {
+        --Neo-Max-Result-Number: 7;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 8)) {
+        --Neo-Max-Result-Number: 8;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 9)) {
+        --Neo-Max-Result-Number: 9;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 10)) {
+        --Neo-Max-Result-Number: 10;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 11)) {
+        --Neo-Max-Result-Number: 11;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 12)) {
+        --Neo-Max-Result-Number: 12;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 13)) {
+        --Neo-Max-Result-Number: 13;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 14)) {
+        --Neo-Max-Result-Number: 14;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 15)) {
+        --Neo-Max-Result-Number: 15;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 16)) {
+        --Neo-Max-Result-Number: 16;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 17)) {
+        --Neo-Max-Result-Number: 17;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 18)) {
+        --Neo-Max-Result-Number: 18;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 19)) {
+        --Neo-Max-Result-Number: 19;
+    }
+
+    @media (-moz-pref("browser.urlbar.maxRichResults", 20)) {
+        --Neo-Max-Result-Number: 20;
+    }
+}
