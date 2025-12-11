@@ -1,5 +1,3 @@
-@import "Neo-Variables-Essentials.css";
-
 :root {
   --Neo-Elements: light-dark(black,white);
   --Neo-Background: light-dark(white,black);
