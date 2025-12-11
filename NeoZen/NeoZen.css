@@ -28,6 +28,7 @@
 @import "Neo-Features/Neo-Features.css";
 @import "Theme/Theme.css";
 @import "Animations/Animations.css";
+@import "Moz-Rules/Moz-Rules.css";
 
 /* Required for blur rendering */
 browser {
