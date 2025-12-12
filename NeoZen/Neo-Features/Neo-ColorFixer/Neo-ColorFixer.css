@@ -11,6 +11,8 @@
         --Neo-Background: white !important;
         --zen-main-browser-background: #FFFFFF3A !important;
     }
+    
+    --zen-main-browser-background-toolbar: var(--Neo-Blur-Color) !important;
 }
 
 #zen-main-app-wrapper *:not(#urlbar){
