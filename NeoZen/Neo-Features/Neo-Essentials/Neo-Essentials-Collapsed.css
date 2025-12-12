@@ -1,6 +1,7 @@
 @media not (-moz-pref("neo-features-disabled")) {
     @media not (-moz-pref("neo-features-essentials-disabled")) {
         #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
+            --Neo-Essentials-Height: calc((var(--tab-min-height) + 7px) * 4) !important;
             & #zen-essentials {
                 margin-bottom: 10px !important;
             }
