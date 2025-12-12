@@ -1,0 +1,52 @@
+#navigator-toolbox{
+    --essentials-tabs-counter: 0;
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(1):first-child){
+        --essentials-tabs-counter: 1 !important;
+    }
+
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(2):first-child){
+        --essentials-tabs-counter: 2 !important;
+    }
+
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(3):first-child){
+        --essentials-tabs-counter: 3 !important;
+    }
+
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(4):first-child){
+        --essentials-tabs-counter: 4 !important;
+    }
+
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(5):first-child){
+        --essentials-tabs-counter: 5 !important;
+    }
+
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(6):first-child){
+        --essentials-tabs-counter: 5 !important;
+    }
+
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(7):first-child){
+        --essentials-tabs-counter: 5 !important;
+    }
+
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(8):first-child){
+        --essentials-tabs-counter: 5 !important;
+    }
+
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(9):first-child){
+        --essentials-tabs-counter: 5 !important;
+    }
+
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(10):first-child){
+        --essentials-tabs-counter: 5 !important;
+    }
+
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(11):first-child){
+        --essentials-tabs-counter: 5 !important;
+    }
+
+    :has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(12):first-child){
+        --essentials-tabs-counter: 5 !important;
+    }
+
+    --Neo-Essentials-Height: calc((var(--tab-min-height) + 7px) * var(--essentials-tabs-counter)) !important;
+}
