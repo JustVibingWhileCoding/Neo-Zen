@@ -10,6 +10,7 @@
       & .urlbarView-row {
         margin: calc(var(--Neo-Rows-Margin)) !important;
         height: var(--Neo-Rows-Height) !important;
+        max-height: var(--Neo-Rows-Height) !important;
       }
 
       .urlbarView-row {
