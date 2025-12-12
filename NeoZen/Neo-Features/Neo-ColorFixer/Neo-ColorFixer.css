@@ -9,7 +9,7 @@
     @media -moz-pref("zen.view.window.scheme", 1) {
         --Neo-Elements: black !important;
         --Neo-Background: white !important;
-        --zen-main-browser-background: #FFFFFF3A !important;
+        --zen-main-browser-background: transparent !important;
     }
     
     --zen-main-browser-background-toolbar: var(--Neo-Blur-Color) !important;
