@@ -4,6 +4,14 @@
 @import "Background/Neo-Sidebar-Background.css";
 @import "Background/Neo-Sidebar-Background-Align.css";
 
+
+.zen-toolbar-background {
+  &::before, &::after {
+    outline: none !important;
+    outline-offset: -1px;
+  }
+}
+
 /* This fixes an issue with the position of the elements inside the navigator-toolbox 
    so this might not be removed, Neo-Bottom feature needs this to work properly*/
 
