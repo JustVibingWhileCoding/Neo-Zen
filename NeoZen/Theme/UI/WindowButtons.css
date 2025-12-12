@@ -1,6 +1,16 @@
 @media not (-moz-pref("neo-theme-disabled")) {
     @media not (-moz-bool-pref: "neo-theme-window-buttons-disabled") {
         @media not (-moz-bool-pref: "zen.view.experimental-no-window-controls") {
+            .titlebar-buttonbox{
+                margin-left: calc(var(--zen-element-separation) + 1px) !important;
+                margin-right: calc(var(--zen-element-separation) + 1px) !important;
+            }
+            
+            .titlebar-button {
+                &::before {
+                    display: none !important;
+                }
+            }
             .titlebar-button {
                 min-height: 13px !important;
                 min-width: 13px !important;
@@ -15,27 +25,7 @@
                 background-color: rgba(200, 200, 200, 0.3) !important;
                 transition: all 200ms ease-in-out;
             }
-
-            .titlebar-button>image {
-                visibility: hidden !important;
-            }
-
-            .titlebar-buttonbox {
-                align-content: center !important;
-                justify-content: center !important;
-                margin-right: calc(var(--zen-element-separation) / 2) !important;
-            }
-
-            .titlebar-buttonbox-container {
-                align-self: center !important;
-                justify-self: center !important;
-                justify-content: center !important;
-                align-content: center !important;
-                margin-top: auto !important;
-                margin-bottom: auto !important;
-                padding-bottom: 1px !important;
-            }
-
+            
             .titlebar-button:hover {
                 min-height: 20px !important;
 
@@ -59,7 +49,7 @@
                     box-shadow: 0 0px 8px color-mix(in srgb, var(--zen-primary-color) 20%, rgb(255, 90, 100)) !important;
                 }
             }
-
+            
             @media (-moz-pref("neo-theme-window-buttons-colorful-enabled")) {
                 .titlebar-min {
                     background-color: color-mix(in srgb, var(--zen-primary-color) 90%, white) !important;
@@ -79,49 +69,6 @@
                 .titlebar-close {
                     background-color: color-mix(in srgb, var(--zen-primary-color) 20%, rgb(255, 90, 100)) !important;
                     box-shadow: 0 0px 4px color-mix(in srgb, var(--zen-primary-color) 20%, rgb(255, 90, 100)) !important;
-                }
-            }
-        }
-    }
-
-
-    @media not (-moz-bool-pref: "neo-theme-window-buttons-disabled") {
-        @media not (-moz-bool-pref: "zen.view.experimental-no-window-controls") {
-            @media (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
-                .titlebar-buttonbox-container {
-                    order: -1 !important;
-                }
-
-                @media (-moz-bool-pref: "neo-theme-window-buttons-inverse") {
-                    :root[zen-single-toolbar="true"] {
-                        .titlebar-buttonbox-container {
-                            order: 9999 !important;
-                        }
-                    }
-                }
-            }
-
-            @media not (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
-                @media not (-moz-bool-pref: "neo-theme-window-buttons-inverse") {
-                    :root[zen-single-toolbar="true"] {
-                        .titlebar-buttonbox-container {
-                            order: -1 !important;
-                        }
-                    }
-                }
-            }
-
-            @media -moz-pref("zen.tabs.vertical") {
-                :root:not([zen-single-toolbar="true"]):not([zen-right-side="true"])[zen-window-buttons-reversed="true"]:not([zen-sidebar-expanded="true"]):not([zen-compact-mode="true"]) {
-                    .titlebar-buttonbox {
-                        left: calc(var(--zen-toolbox-padding) * -1 / 2 - 1.5px) !important;
-                    }
-                }
-
-                :root:not([zen-single-toolbar="true"])[zen-right-side="true"]:not([zen-window-buttons-reversed="true"]):not([zen-sidebar-expanded="true"]):not([zen-compact-mode="true"]) {
-                    .titlebar-buttonbox {
-                        margin-right: calc(var(--zen-element-separation) / 2 - 1px) !important;
-                    }
                 }
             }
         }
