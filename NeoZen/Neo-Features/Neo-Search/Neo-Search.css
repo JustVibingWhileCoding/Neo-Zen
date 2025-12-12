@@ -14,11 +14,7 @@
                 top: calc(48% - var(--Neo-Zen-URL-Height) / 2) !important;
                 
                 & #urlbar-background {
-                    background: var(--Neo-Blur-Color) !important;
-                    backdrop-filter: var(--Neo-Blur-Search) !important;
-                    border-radius: calc(var(--Neo-Zen-URL-Height) / 2) !important;
                     
-                    transition: border-radius 0.4s ease !important;
                 }
                 
                 & .urlbarView {
@@ -32,18 +28,8 @@
                         opacity 0.1s ease !important;
                     
                     & #urlbar-results {
-                        display: flex !important;
-                        flex-direction: column !important;
-                        overflow: auto !important;
-                        padding: var(--Neo-Margin-Height) 10px 0px 10px !important;
-                        justify-content: center !important;
-                        
+                        max-height: none !important;
                         & .urlbarView-row {
-                            height: var(--Neo-Rows-Height) !important;
-                            min-height: var(--Neo-Rows-Height) !important;
-                            max-height: var(--Neo-Rows-Height) !important;
-                            margin-top: 0px !important;
-                            margin-bottom: var(--Neo-Margin-Height) !important;
                         }
                     }
                 }
