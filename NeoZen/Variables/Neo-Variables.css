@@ -2,6 +2,14 @@
   --Neo-Elements: light-dark(black,white);
   --Neo-Background: light-dark(white,black);
   --Neo-Border-Radius: 4px;
+  
+  /* Width Compact Mode */
+  --Neo-Width-Compact-Expanded: 20em;
+  
+  /* URL-Bar */
+  --Neo-Zen-URL-Height: 50px;
+  --Neo-Rows-Height: 40px;
+  --Neo-Rows-Margin: 10px;
 }
 
 
@@ -9,6 +17,11 @@ body{
   --Neo-Color-Default: color-mix(in srgb, color-mix(in srgb, var(--Neo-Accent) 5%, var(--Neo-Background)), transparent);
   --Neo-Color-Hover: color-mix(in srgb, color-mix(in srgb, var(--Neo-Accent) 20%, var(--Neo-Background)), transparent);
   --Neo-Color-Selected: color-mix(in srgb, color-mix(in srgb, var(--Neo-Accent) 10%, var(--Neo-Background)) 80%, transparent 20%);
+  
+  /* Black colors*/
+  --Neo-Black-1: color-mix(in srgb, var(--Neo-Background) 30%, transparent);
+  --Neo-Black-2: color-mix(in srgb, var(--Neo-Background) 50%, transparent);
+  --Neo-Black-3: color-mix(in srgb, var(--Neo-Background) 70%, transparent);
   
   /* Glow Colors */
   --Neo-Glow-1: color-mix(in srgb, var(--zen-primary-color) 90%, white);
@@ -18,11 +31,41 @@ body{
   --Neo-Accent: color-mix(in srgb, var(--zen-primary-color) 80%, white);
   
   /* Effects */
-  
-  --Neo-Glow-Filter-1: drop-shadow(0px 0px 4px var(--zen-primary-color)) brightness(1);
-  --Neo-Glow-Filter-2: drop-shadow(0px 0px 6px var(--zen-primary-color)) brightness(1);
-  --Neo-Glow-Filter-3: drop-shadow(0px 0px 8px var(--zen-primary-color)) brightness(1);
+  --Neo-Glow-Filter-1: drop-shadow(0px 0px 4px var(--zen-primary-color));
+  --Neo-Glow-Filter-2: drop-shadow(0px 0px 6px var(--zen-primary-color));
+  --Neo-Glow-Filter-3: drop-shadow(0px 0px 8px var(--zen-primary-color));
   
   /* Blur */
+  --Neo-Blur: blur(52px) saturate(180%) brightness(150%) contrast(110%);
+  /* Blur colors */
+  --Neo-Blur-Color: color-mix(in srgb, var(--zen-primary-color) 4%, var(--Neo-Background) 70%);
+}
 
+/* Legacy variables */
+:root {
+  --Neo-Color-Dark: color-mix(in srgb, var(--zen-primary-color) 10%, #000000c0);
+  --Neo-Color-Light: color-mix(in srgb, var(--zen-primary-color) 25%, white);
+
+  /* Shadow */
+  --Neo-Shadow-Color-1: black;
+  --Neo-Shadow-Color-2: black;
+  --Neo-Shadow-Color-3: black;
+
+  /*Glow Colors*/
+  --Neo-Glow-Color-1: color-mix(in srgb, var(--zen-primary-color) 90%, white);
+  --Neo-Glow-Color-2: color-mix(in srgb, var(--zen-primary-color) 80%, white);
+  --Neo-Glow-Color-3: color-mix(in srgb, var(--zen-primary-color) 70%, white);
+
+
+
+  /* Blur */
+  --Neo-Blur-Simple: blur(8px) brightness(110%) saturate(150%);
+  --Neo-Blur-Search: blur(20px) brightness(110%) saturate(150%);
+
+  /* Delays */
+  --Neo-Delay: 4s;
+  --Neo-Delay-Expanding-Indicator: 2.5s;
+  
+  /* Background color */
+  --Neo-Background-Color: light-dark(rgba(215, 215, 215, 1), rgba(10, 10, 10, 1));
 }
