@@ -56,12 +56,30 @@
             @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
 
                 /* Expands on hover */
-                & .zen-essentials-container:hover {
-                    max-height: calc((var(--tab-min-height) + 7px) * 5) !important;
+                &:has(.zen-essentials-container:hover) {
+                    .zen-essentials-container{
+                        max-height: calc((var(--tab-min-height) + 7px) * 5) !important;
+                    }
+                    zen-workspace{
+                        transition: padding-top 0.4s ease !important;
+                        padding-top: calc((var(--tab-min-height) + 7px) * var(--essentials-tabs-counter)) !important;
+                    }
 
                     & .tabbrowser-tab {
                         opacity: 1 !important;
                         visibility: visible !important;
+                    }
+                    &:not(:has(.zen-essentials-container>.tabbrowser-tab[selected])){
+                        zen-workspace{
+                            transition: padding-top 0.4s ease !important;
+                            padding-top: calc((var(--tab-min-height) + 7px) * (var(--essentials-tabs-counter) + 1)) !important;
+                        }
+                    }
+                }
+                &:not(:has(.zen-essentials-container:hover)) {
+                    zen-workspace{
+                        padding-top: 45px !important;
+                        transition: padding-top 0.4s ease !important;
                     }
                 }
             }
@@ -106,7 +124,7 @@
                     }
 
                     &::before {
-                        opacity: 0.0;
+                        opacity: 1.0;
                         transition: opacity 0.4s ease !important;
                     }
                 }
