@@ -15,7 +15,22 @@
 
 # Neo Zen  
 
-> ⚠️ Should I?
+> ## 🔄 Project Status – Upcoming Rework
+> 
+> Neo Zen has reached its 2.0 milestone, but this is not the end.  
+> I will be **reworking Neo Zen soon** to adapt it to recent changes in Zen Browser and to continue evolving its modular design. The upcoming updates will focus on refining layout logic, improving feature interoperability, and modernizing the codebase for
+> contributors.
+> 
+> ### Branch Information
+> - **Main Branch** – Currently stable and compatible with **Zen Browser v1.13.2**.  
+> - **Experimental Branch** – Actively updated with new fixes, features, and rework efforts. This branch reflects ongoing development and may include breaking changes or unfinished features.
+> 
+> While I step back from active maintenance, I’m opening the door for **community contributions and volunteer help**. If you’d like to participate, feel free to fork the repository, submit pull requests, or share ideas — your input will help shape the next phase of Neo Zen.
+
+
+
+
+
 
 Welcome to **Neo Zen** – a sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity. With **innovative features, refined UI enhancements, and adaptive styling**, Neo Zen creates a seamless, distraction-free browsing experience.
 
