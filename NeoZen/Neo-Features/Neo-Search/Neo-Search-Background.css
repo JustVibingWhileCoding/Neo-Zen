@@ -8,7 +8,7 @@
                     justify-self: center !important;
                     z-index: -999 !important;
                     content: "" !important;
-                    background: var(--Neo-Background-Color);
+                    background: var(--Neo-Pseudo);
 
                     width: 0px;
                     align-self: center !important;
