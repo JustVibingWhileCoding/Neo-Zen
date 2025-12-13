@@ -13,7 +13,7 @@
                 }
 
 
-                @media not (-moz-pref("neo-features-bottom-at-bottom")) {
+                @media not (-moz-pref("neo-bottom-at-bottom")) {
                     order: -1 !important;
                 }
 
