@@ -1,4 +1,4 @@
-@media not (-moz-pref("neo-features-disabled")) {
+/*@media not (-moz-pref("neo-features-disabled")) {
     @media not (-moz-pref("neo-features-toolbar-disabled")) {
         @media (-moz-pref("browser.tabs.allow_transparent_browser")) {
             @media (-moz-pref("zen.view.compact.hide-toolbar")) {
@@ -49,10 +49,11 @@
         }
     }
 
-    /*I don't know if this rule can lead to issues, is used to justify
-      to the center the pseudo element for the nav-bar*/
+    I don't know if this rule can lead to issues, is used to justify
+      to the center the pseudo element for the nav-bar
     #browser {
         display: flex !important;
         justify-content: center !important;
     }
 }
+*/
