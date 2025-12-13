@@ -7,7 +7,7 @@
             position: absolute !important;
             z-index: -1 !important;
             content: "" !important;
-            background: var(--Neo-Background-Color);
+            background: var(--Neo-Pseudo);
 
             width: calc(100%);
             opacity: 0;
