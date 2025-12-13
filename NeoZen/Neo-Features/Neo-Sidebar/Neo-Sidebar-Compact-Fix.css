@@ -142,6 +142,14 @@
 
                         :root[zen-sidebar-expanded='true'] & {
                             width: calc(var(--zen-sidebar-width) + var(--zen-toolbox-padding));
+
+                            @media not (-moz-pref("neo-features-disabled")) {
+                                @media not (-moz-pref("neo-features-sidebar-disabled")) {
+                                    @media (-moz-pref("browser.tabs.allow_transparent_browser")) {
+                                        width: calc(var(--Neo-Width-Compact-Expanded) + var(--zen-toolbox-padding)) !important;
+                                    }
+                                }
+                            }
                         }
 
                         & .zen-toolbar-background {
