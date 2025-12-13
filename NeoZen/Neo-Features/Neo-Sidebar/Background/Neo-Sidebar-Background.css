@@ -7,7 +7,7 @@
                 content: "" !important;
                 opacity: 1;
 
-                background-color: var(--Neo-Background-Color);
+                background-color: var(--Neo-Pseudo);
                 border-radius: calc(var(--Neo-Border-Radius) + 2px) !important;
 
                 width: auto;
