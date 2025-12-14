@@ -2,8 +2,10 @@
     @media not (-moz-pref("neo-theme-tab-groups-disabled")) {
         #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
             tab-group:not([split-view-group]) {
+                align-self: strech !important;
+                min-width: 100% !important;
                 & .tab-group-label-container>label::before {
-                    top: 5px !important;
+                    top: 2px !important;
                     left: calc(50% - 10px) !important;
                 }
             }
@@ -23,7 +25,7 @@
 
                     align-content: center !important;
 
-                    margin: 3px 1px 3px 1px !important;
+                    margin: 0px 1px 0px 1px !important;
                     padding: 0px 0px 0px 0px !important;
 
                     &[collapsed] {
@@ -55,7 +57,7 @@
                         content: "" !important;
                         color: transparent !important;
 
-                        padding: 0px 3px !important;
+                        padding: 0px 0px !important;
                         margin: 0px 0px 0px 0px !important;
                     }
                 }
