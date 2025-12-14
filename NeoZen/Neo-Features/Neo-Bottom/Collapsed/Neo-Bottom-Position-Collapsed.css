@@ -1,9 +1,23 @@
 :root {
-  
+
   --Neo-Bottom-Position-Default: calc(var(--Neo-Bottom-Top-Adjustment) + var(--Neo-Bottom-Height) + var(--Neo-Bottom-Media-Height) - 30px);
   --Neo-Bottom-Position-Open: calc(var(--Neo-Bottom-Position-Default) + 30px);
   --Neo-Bottom-Media-Height: 0px;
-  --Neo-Bottom-Top-Adjustment: var(--zen-toolbar-height);
+
+  &[zen-compact-mode='true'] {
+    @media (-moz-pref("zen.view.compact.hide-toolbar")) {
+      --Neo-Bottom-Top-Adjustment: 0px;
+    }
+  }
+
+  &:not([zen-compact-mode='true']) {
+    --Neo-Bottom-Top-Adjustment: 0px;
+
+    @media not (-moz-bool-pref: "zen.view.experimental-force-window-controls-left") {
+      --Neo-Bottom-Top-Adjustment: var(--zen-toolbar-height);
+    }
+  }
+
 
   @media (-moz-bool-pref: "neo-bottom-at-bottom") {
     --Neo-Bottom-Media-Height: 30px;
@@ -22,7 +36,7 @@
         margin-bottom: 15px !important;
 
         & #zen-workspaces-button {
-          top: 0px !important;
+          top: var(--Neo-Bottom-Top-Adjustment) !important;
           bottom: unset !important;
         }
       }
