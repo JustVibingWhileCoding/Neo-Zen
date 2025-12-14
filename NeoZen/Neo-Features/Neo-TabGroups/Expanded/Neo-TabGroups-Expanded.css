@@ -79,7 +79,9 @@
             /* Display tabs when tab group is collapsed */
             tab-group:not([split-view-group])[collapsed] tab {
                 opacity: 0 !important;
-                z-index: -1 !important;
+                z-index: -999 !important;
+                pointer-events: none !important;
+                display: none !important;
             }
 
             /* Hide bar that shows to the side of the tabs */
