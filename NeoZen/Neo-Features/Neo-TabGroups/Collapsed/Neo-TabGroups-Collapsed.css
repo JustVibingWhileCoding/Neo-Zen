@@ -81,13 +81,21 @@
             }
 
             /*HIDE A FUCKING PSEUDO ELEMENT THAT IS COMPLETELY USELESS*/
-            tab-group:not([split-view-group]) .tab-group-label-container {
-                #tabbrowser-tabs[orient="vertical"] tab-group:not([collapsed])>&::after {
-                    width: var(--tab-group-line-thickness);
-                    inset-block: unset !important;
-                    inset-inline: unset !important;
-                    border-start-start-radius: unset !important;
-                    border-start-end-radius: unset !important;
+
+            .tab-group-label-container {
+
+                #tabbrowser-tabs[orient="vertical"] tab-group:not([collapsed])>&::after,
+                #tabbrowser-tabs[orient="vertical"] tab-group[collapsed][hasactivetab]:not([movingtabgroup])>&::after {
+                    width: 20px !important;
+                    height: 3px !important;
+                    justify-self: center !important;
+                    align-self: center !important;
+                    position: relative !important;
+                    inset-inline: auto !important;
+                    border-radius: 5px !important;
+                    background: color-mix(in srgb, var(--tab-group-color) 60%, white 50%) !important;
+                    filter: drop-shadow(0px 0px 10px color-mix(in srgb, var(--tab-group-color) 60%, white 50%)) brightness(1.0) !important;
+
                 }
             }
         }
