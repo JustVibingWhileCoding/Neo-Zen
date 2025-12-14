@@ -48,7 +48,7 @@
                     }
 
                     #navigator-toolbox {
-                        --zen-toolbox-max-width: 74px !important;
+                        --zen-toolbox-max-width: calc(74px + var(--zen-toolbox-padding) * 3) !important;
                         --zen-compact-float: var(--zen-element-separation);
 
                         :root[zen-no-padding='true'] & {
@@ -58,7 +58,7 @@
                         }
 
                         /* Initial padding for when we are animating */
-                        padding: 0 0 0 var(--zen-toolbox-padding) !important;
+                        padding: none !important;
 
                         &:not([animate='true']) {
                             position: fixed;
@@ -130,7 +130,7 @@
 
                         :root:not([zen-sidebar-expanded='true']) & {
                             padding: var(--zen-toolbox-padding) 0 !important;
-                            max-width: calc(var(--zen-sidebar-width) - var(--zen-toolbox-padding) * 2);
+                            max-width: calc(var(--zen-sidebar-width) - var(--zen-toolbox-padding) * 4.5) !important;
                             width: var(--zen-sidebar-width);
                         }
 
@@ -167,7 +167,7 @@
                             --zen-compact-mode-time: 0.4s !important;
                             transition:
                                 left var(--zen-compact-mode-time) var(--zen-compact-mode-func),
-                                right var(--zen-compact-mode-time) var(--zen-compact-mode-func);
+                                right var(--zen-compact-mode-time) var(--zen-compact-mode-func) !important;
 
                             :root:not([supress-primary-adjustment='true']) & {
                                 & #titlebar {
