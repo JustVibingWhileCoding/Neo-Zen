@@ -1,6 +1,7 @@
 @media not (-moz-pref("neo-theme-disabled")) {
   @media not (-moz-pref("neo-theme-workspace-button-disabled")) {
     #zen-workspaces-button {
+      min-width: 200px !important;
       background: transparent !important;
       box-shadow: 0 0px 0px transparent !important;
       filter: drop-shadow(0px 0px 5px var(--zen-primary-color)) brightness(1) !important;
