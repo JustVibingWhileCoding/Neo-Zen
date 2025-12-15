@@ -2,10 +2,10 @@
     @media not (-moz-pref("neo-features-search-disabled")) {
         @media (-moz-pref("zen.urlbar.behavior", "float")) {
             #zen-main-app-wrapper:has(#urlbar[open=""][focused=""][zen-floating-urlbar='true'][usertyping=""]) {
-                --Auxiliar-Row-Height: calc(var(--Neo-Rows-Height) + var(--Neo-Margin-Height) + 5px);
-                --min-height-view: calc(var(--Auxiliar-Row-Height) * var(--Neo-Count-Rows) + var(--Neo-Margin-Height));
+                --Auxiliar-Row-Height: calc(var(--Neo-Rows-Height) + var(--Neo-Rows-Margin));
+                --min-height-view: calc(var(--Auxiliar-Row-Height) * (var(--Neo-Count-Rows)) + var(--Neo-Rows-Margin) * 3);
                 &::after {
-                    height: calc(var(--min-height-view) + var(--urlbar-container-height) - 2px);
+                    height: calc(var(--min-height-view) + var(--Neo-Zen-URL-Height) - 2px);
                     border-radius: calc(var(--Neo-Border-Radius) + 3px) !important;
                     top: calc(48% - (2% * var(--Neo-Max-Result-Number)) - var(--Neo-Zen-URL-Height) + 1px) !important;
                 }

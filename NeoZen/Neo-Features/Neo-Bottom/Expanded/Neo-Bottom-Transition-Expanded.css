@@ -31,7 +31,8 @@
                 }
 
                 &>.toolbarbutton-1:not(#zen-workspaces-button),
-                &>.toolbaritem-combined-buttons {
+                &>.toolbaritem-combined-buttons,
+                &>#zen-toggle-compact-mode {
                   opacity: 1 !important;
                   pointer-events: all !important;
                 }

@@ -28,11 +28,11 @@
               width: 40px !important;
 
               @media not (-moz-bool-pref: "neo-bottom-at-bottom") {
-                top: var(--Neo-Bottom-Position-Aux-Open) !important;
+                top: var(--Neo-Bottom-Position-Open) !important;
               }
 
               @media (-moz-bool-pref: "neo-bottom-at-bottom") {
-                bottom: var(--Neo-Bottom-Position-Aux-Open) !important;
+                bottom: var(--Neo-Bottom-Position-Open) !important;
               }
 
               transition: width 0.3s 0ms ease,
@@ -43,7 +43,8 @@
             }
 
             &>.toolbarbutton-1:not(#zen-workspaces-button),
-            &>.toolbaritem-combined-buttons {
+            &>.toolbaritem-combined-buttons,
+            &>#zen-toggle-compact-mode {
               opacity: 1 !important;
               pointer-events: all !important;
               transition: opacity 0.5s ease 0ms !important;

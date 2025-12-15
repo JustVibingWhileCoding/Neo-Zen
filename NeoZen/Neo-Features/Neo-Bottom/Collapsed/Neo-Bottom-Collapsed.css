@@ -28,7 +28,8 @@
       @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
         &:not([customizing=""]) #zen-sidebar-foot-buttons:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
           &>.toolbarbutton-1:not(#zen-workspaces-button),
-          &>.toolbaritem-combined-buttons {
+          &>.toolbaritem-combined-buttons,
+          &>#zen-toggle-compact-mode {
             justify-self: center !important;
             opacity: 0 !important;
             pointer-events: none !important;

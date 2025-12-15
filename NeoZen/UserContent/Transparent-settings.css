@@ -1,79 +1,129 @@
-@-moz-document regexp("^(?!chrome:).*") {
-  @-moz-document domain(monkeytype.com) {
-    body {
-      background-color: rgba(15, 15, 20, 0.4) !important;
-      /* Darker base color */
-    }
+:root {
+  --zen-colors-tertiary: transparent !important;
+  --zen-settings-secondary-background: transparent !important;
+}
+
+groupbox:not(#sineInstallationGroup:popover-open) {
+/*   background: var(--zen-colors-tertiary) !important; */
+  background: light-dark(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.35)) !important;
+  border: none;
+}
+
+#preferences-root{
+  background-color: transparent !important;
+}
+
+/* ---------------- Transparent backgrounds for all about: pages ---------------- */
+
+@-moz-document url-prefix("about:") {
+
+  /* General page background */
+  html, body, #toolbar, .App, .sticky-container, .main-search, .main-heading {
+    background-color: transparent !important;
   }
 
-  :root {
-    --zen-colors-tertiary: transparent !important;
-    --zen-settings-secondary-background: transparent !important;
+  /* Tables and action boxes */
+  table,
+  tr,
+  .action-box {
+    background-color: transparent !important;
+    border-radius: 13px !important;
+    border: none !important;
   }
 
-  groupbox:not(#sineInstallationGroup:popover-open) {
-    /*   background: var(--zen-colors-tertiary) !important; */
-    background: var(--zen-colors-border-contrast) !important;
-    border: none
+  /* Table rows outline */
+  tr {
+    outline: none !important;
+    background-image: none !important;
   }
 
-  @-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing){
-
-  body,
-  .App {
-    background-color: #00000070 !important;
-  }
-
+  /* Top sites / personalize buttons on home/newtab */
   .top-sites-list,
   .personalizeButtonWrapper {
     opacity: 0 !important;
     transition: opacity 0.3s ease-in-out;
-
-    &:hover {
-      opacity: 1 !important;
-    }
   }
 
-  .App>div:nth-child(2),
+  .top-sites-list:hover,
+  .personalizeButtonWrapper:hover {
+    opacity: 1 !important;
+  }
+
+  /* Hide default background elements */
+  .App > div:nth-child(2),
   .wallpaper {
     display: none !important;
   }
 }
 
-@-moz-document url(addons.mozilla.org){
+/*
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+  body, .App{
+    background-color: transparent !important;
+  }
 
-/* transparency */
-html,
-body,
-nav,
-header {
-  background-color: transparent !important;
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
+  .top-sites-list, .personalizeButtonWrapper{
+    opacity: 0 !important;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover{
+      opacity: 1 !important;
+    }
+  }
+  
+  .App > div:nth-child(2), .wallpaper{
+    display: none !important;
+  }
 }
 
-/* darkreader */
-:root {
-  --darkreader-background-ffffff: transparent !important;
+@-moz-document url(about:config), url(about:support), url(about:profiles) {
+  html, #toolbar{
+    background-color: transparent !important;
+  }
+  tr, table{
+    background-color: transparent !important;
+    border: none !important;
+  }
+  tr{
+    outline: solid 1px #88888822 !important;
+  }
+}
+*/
+
+/* Fixes the transparent dialogs. */
+.dialogFrame {
+  background: var(--zen-dialog-background);
+  border-radius: 8px;
 }
 
-/* no footer */
-footer {
+
+@layer tokens-foundation {
+  :root, :host(.anonymous-content-host) {
+    --background-color-canvas: transparent !important;
+    --color-accent-primary: light-dark(var(--color-blue-60), var(--color-cyan-30));
+    --font-size-root: 15px;
+    --text-color: light-dark(var(--color-gray-100), var(--color-gray-05));
+  }
+}
+
+.add > td::before {
+  content: "";
   display: none !important;
-}
-}
-
-@-moz-document url(about:config){
-
-tr,
-table {
-  background-color: transparent !important;
-  border: none !important;
+  position: absolute;
+  top: 0;
+  inset-inline: calc(var(--prefs-table-border-width) * -1);
+  height: 12px;
+  background-color: var(--background-color-canvas);
+  border-bottom: var(--prefs-table-border);
 }
 
-tr {
-  outline: solid 1px #88888822 !important;
-}
-}
+.add > th::before {
+  content: "";
+  display: none !important;
+  position: absolute;
+  top: 0;
+  inset-inline: calc(var(--prefs-table-border-width) * -1);
+  height: 12px;
+  background-color: var(--background-color-canvas);
+  border-bottom: var(--prefs-table-border);
 }

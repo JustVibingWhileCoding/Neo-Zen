@@ -46,10 +46,26 @@
                 }
             }
 
-            .tabbrowser-tab:has(.tab-close-button:hover, .tab-reset-button:hover) .tab-background::before {
-                animation: half-borderTrail 3s infinite cubic-bezier(0.7, 0, 0.3, 1) forwards !important;
-                clip-path: inset(0 0 0 0);
+            :root {
+                &[zen-sidebar-expanded="true"] {
+                    .tabbrowser-tab:has(.tab-close-button:hover, .tab-reset-button:hover) .tab-background::before {
+
+                        animation: half-borderTrail 3s infinite cubic-bezier(0.7, 0, 0.3, 1) forwards !important;
+
+                        clip-path: inset(0 0 0 0);
+                    }
+                }
+
+                &:not([zen-sidebar-expanded="true"]) {
+                    .tabbrowser-tab:has(.tab-close-button:hover, .tab-reset-button:hover) .tab-background::before {
+
+                        animation: half-borderTrail-2 3s infinite cubic-bezier(0.7, 0, 0.3, 1) forwards !important;
+
+                        clip-path: inset(0 0 0 0);
+                    }
+                }
             }
+
         }
     }
 }

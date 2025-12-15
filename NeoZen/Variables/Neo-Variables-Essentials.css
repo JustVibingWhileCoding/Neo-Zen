@@ -1,0 +1,52 @@
+:root {
+
+    --essentials-tabs-counter: 0;
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(1):first-child) {
+        --essentials-tabs-counter: 1 !important;
+    }
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(2):first-child) {
+        --essentials-tabs-counter: 2 !important;
+    }
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(3):first-child) {
+        --essentials-tabs-counter: 3 !important;
+    }
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(4):first-child) {
+        --essentials-tabs-counter: 4 !important;
+    }
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(5):first-child) {
+        --essentials-tabs-counter: 5 !important;
+    }
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(6):first-child) {
+        --essentials-tabs-counter: 6 !important;
+    }
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(7):first-child) {
+        --essentials-tabs-counter: 7 !important;
+    }
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(8):first-child) {
+        --essentials-tabs-counter: 8 !important;
+    }
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(9):first-child) {
+        --essentials-tabs-counter: 9 !important;
+    }
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(10):first-child) {
+        --essentials-tabs-counter: 10 !important;
+    }
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(11):first-child) {
+        --essentials-tabs-counter: 11 !important;
+    }
+
+    #navigator-toolbox:has(#zen-essentials>.zen-essentials-container.zen-workspace-tabs-section>:nth-last-child(12):first-child) {
+        --essentials-tabs-counter: 12 !important;
+    }
+}
