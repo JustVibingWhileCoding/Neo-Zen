@@ -22,7 +22,7 @@
 > contributors.
 > 
 > ### Branch Information
-> - **Main Branch** – Currently stable and compatible with **Zen Browser v1.13.2**.  
+> - **Main Branch** – Currently stable and compatible with **Zen Browser v1.17.4**.  
 > - **Experimental Branch** – Actively updated with new fixes, features, and rework efforts. This branch reflects ongoing development and may include breaking changes or unfinished features.
 > 
 > While I step back from active maintenance, I’m opening the door for **community contributions and volunteer help**. If you’d like to participate, feel free to fork the repository, submit pull requests, or share ideas — your input will help shape the next phase of Neo Zen.
