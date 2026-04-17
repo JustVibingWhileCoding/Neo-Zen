@@ -1,35 +1,44 @@
-:root[zen-default-theme="true"]{
-    #zen-browser-background{
-        @media -moz-pref("zen.view.window.scheme", 0) or -moz-pref("zen.view.window.scheme", 2) {
-            --zen-main-browser-background: #00000090 !important;
+:root{
+    @media -moz-pref("zen.view.window.scheme", 0) or -moz-pref("zen.view.window.scheme", 2) {
+        --Neo-Browser-Background: #00000080 !important;
+
+        @media -moz-pref("zen.widget.linux.transparency", true) {
+            --Neo-Browser-Background: #00000090 !important;
         }
-        
-        @media -moz-pref("zen.view.window.scheme", 1) {
-            --zen-main-browser-background: #ffffff80 !important;
+
+        &:not([zen-default-theme="true"]){
+            --Neo-Elements-Aux: White !important;
+            --Neo-Background-Aux: black !important;
+        }
+    }
+    
+    @media -moz-pref("zen.view.window.scheme", 1) {
+        --Neo-Browser-Background: transparent !important;
+
+        @media -moz-pref("zen.widget.linux.transparency", true) {
+            --Neo-Browser-Background: #ffffff80 !important;
+        }
+
+        &:not([zen-default-theme="true"]){
+            --Neo-Elements-Aux: black !important;
+            --Neo-Background-Aux: #d0d0d0 !important;
+        }
+    }
+
+    &[zen-default-theme="true"]{
+        #zen-browser-background{
+            --zen-main-browser-background: var(--Neo-Browser-Background) !important;
         }
     }
 }
 
 body:has(#PanelUI-zen-gradient-generator-view>#PanelUI-zen-gradient-generator-controls>#PanelUI-zen-gradient-colors-wrapper>#PanelUI-zen-gradient-opacity-wrapper>#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
-    @media -moz-pref("zen.view.window.scheme", 0) or -moz-pref("zen.view.window.scheme", 2) {
-        --Neo-Elements: White !important;
-        --Neo-Background: black !important;
-
-        #zen-browser-background{
-            --zen-main-browser-background: #00000090 !important;
-        }
-
+    #zen-browser-background{
+        --zen-main-browser-background: var(--Neo-Browser-Background) !important;
     }
 
-    @media -moz-pref("zen.view.window.scheme", 1) {
-        --Neo-Elements: black !important;
-        --Neo-Background: #d0d0d0 !important;
-        
-        #zen-browser-background{
-            --zen-main-browser-background: #ffffff80 !important;
-        }
-    }
-    --zen-main-browser-background-toolbar: var(--Neo-Blur-Color) !important;
+    --Neo-Elements: var(--Neo-Elements-Aux) !important;
+    --Neo-Background: var(--Neo-Background-Aux) !important;
 }
 
 :root[zen-sidebar-expanded="true"] #zen-main-app-wrapper *:not(#urlbar){
