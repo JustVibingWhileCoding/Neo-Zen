@@ -3,7 +3,7 @@
         --Neo-Browser-Background: #00000080 !important;
 
         @media -moz-pref("zen.widget.linux.transparency", true) {
-            --Neo-Browser-Background: #00000090 !important;
+            --Neo-Browser-Background: #000000A0 !important;
         }
 
         &:not([zen-default-theme="true"]){
