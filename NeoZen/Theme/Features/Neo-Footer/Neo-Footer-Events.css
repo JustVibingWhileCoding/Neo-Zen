@@ -1,5 +1,5 @@
 @media not (-moz-pref("neo-features-disabled")) {
-    @media not (-moz-pref("neo-features-bottom-disabled")) {
+    @media not (-moz-pref("neo-features-footer-disabled")) {
         :root:not([animating-background="true"]):not([customizing=""]) {
             #navigator-toolbox:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
                 @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
