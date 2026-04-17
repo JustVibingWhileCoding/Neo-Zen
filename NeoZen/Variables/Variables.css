@@ -1,0 +1,15 @@
+:root {
+    --Neo-Elements: light-dark(black,white);
+    --Neo-Background: light-dark(white,black);
+
+    /* Top bar height */
+    --zen-toolbar-height: 50px;
+
+    /* Sidebar width */
+    --Neo-sidebar-width: 19em;
+    
+    /*Glow Colors*/
+  --Neo-Glow-Color-1: color-mix(in srgb, var(--zen-primary-color) 90%, white);
+  --Neo-Glow-Color-2: color-mix(in srgb, var(--zen-primary-color) 80%, white);
+  --Neo-Glow-Color-3: color-mix(in srgb, var(--zen-primary-color) 70%, white);
+}
