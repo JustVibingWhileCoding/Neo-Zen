@@ -2,7 +2,7 @@
 
 /* This file is used to adjust the layout of some elements in the sidebar using CSS variables to calculate values that modify positions and sizes. */
 
-body{
+:root{
 
     --Workspace-Buttons-Height: 30px;
     --Workspace-Subview-Buttons-Height: 25px;
