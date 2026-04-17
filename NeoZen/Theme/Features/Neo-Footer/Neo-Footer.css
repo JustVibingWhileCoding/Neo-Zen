@@ -1,29 +1,27 @@
 @media not (-moz-pref("neo-features-disabled")) {
     @media not (-moz-pref("neo-features-footer-disabled")) {
-        @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
-            :root {
-                #zen-sidebar-foot-buttons {
-                    overflow-y: auto !important;
-                    scrollbar-width: none !important;
-                    scroll-behavior: smooth !important;
+        :root {
+            #zen-sidebar-foot-buttons {
+                overflow-y: auto !important;
+                scrollbar-width: none !important;
+                scroll-behavior: smooth !important;
 
-                    justify-content: center !important;
+                justify-content: center !important;
 
-                    transition: width 0.3s 100ms ease,
-                        height 0.3s 100ms ease,
-                        top 0.5s ease 100ms,
-                        bottom 0.5s ease 100ms,
-                        opacity 1s ease 100ms !important;
-                }
+                transition: width 0.3s 100ms ease,
+                    height 0.3s 100ms ease,
+                    top 0.5s ease 100ms,
+                    bottom 0.5s ease 100ms,
+                    opacity 1s ease 100ms !important;
+            }
 
-                &[zen-sidebar-expanded="true"] {
-                    #zen-sidebar-foot-buttons {}
-                }
+            &[zen-sidebar-expanded="true"] {
+                #zen-sidebar-foot-buttons {}
+            }
 
 
-                &:not([zen-sidebar-expanded="true"]) {
-                    #zen-sidebar-foot-buttons {}
-                }
+            &:not([zen-sidebar-expanded="true"]) {
+                #zen-sidebar-foot-buttons {}
             }
         }
     }
