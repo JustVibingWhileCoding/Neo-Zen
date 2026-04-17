@@ -21,7 +21,8 @@
 
 /* Neo Zen V3.0.0*/
 
-
+@import "Layout/Layout.css";
+@import "Rules/Rules.css";
 @import "Theme/Features/Neo-Features.css";
 @import "Theme/Style/Style.css";
 
