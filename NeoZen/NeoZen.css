@@ -25,6 +25,7 @@
 @import "Rules/Rules.css";
 @import "Theme/Features/Neo-Features.css";
 @import "Theme/Style/Style.css";
+@import "Variables/Variables.css";
 
 /* Required for blur rendering */
 browser {
