@@ -9,6 +9,7 @@
         }
     }
 }
+
 body:has(#PanelUI-zen-gradient-generator-view>#PanelUI-zen-gradient-generator-controls>#PanelUI-zen-gradient-colors-wrapper>#PanelUI-zen-gradient-opacity-wrapper>#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
     @media -moz-pref("zen.view.window.scheme", 0) or -moz-pref("zen.view.window.scheme", 2) {
         --Neo-Elements: White !important;
