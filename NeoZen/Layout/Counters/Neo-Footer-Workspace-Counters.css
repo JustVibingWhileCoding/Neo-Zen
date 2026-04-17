@@ -1,0 +1,125 @@
+/* This file is used to count the number of subbuttons in the workspaces button and set a CSS variable accordingly. This is used to adjust the layout of the buttons in the workspaces button. */
+
+body {
+    --Neo-Footer-Workspace-Subview-Button-Counter: 0;
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(1)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 1;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(2)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 2;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(3)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 3;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(4)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 4;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(5)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 5;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(6)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 6;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(7)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 7;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(8)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 8;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(9)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 9;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(10)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 10;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(11)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 11;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(12)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 12;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(13)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 13;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(14)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 14;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(15)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 15;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(16)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 16;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(17)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 17;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(18)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 18;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(19)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 19;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(20)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 20;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(21)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 21;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(22)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 22;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(23)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 23;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(24)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 24;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(25)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 25;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(26)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 26;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(27)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 27;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(28)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 28;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(29)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 29;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(30)) {
+        --Neo-Footer-Workspace-Subview-Button-Counter: 30;
+    }
+}
