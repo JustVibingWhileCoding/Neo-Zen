@@ -17,11 +17,14 @@
     }
 }
 
-.zen-browser-generic-background {
-  &::after {
-    transition: background 2s ease, opacity 2s ease !important;
+body:not(:has(#PanelUI-zen-gradient-generator[panelopen="true"])){
+  .zen-browser-generic-background {
+    &::after {
+      transition: background 2s ease, opacity 2s ease !important;
+    }
   }
 }
+
 .zen-browser-generic-background {
   background: transparent !important;
 }
