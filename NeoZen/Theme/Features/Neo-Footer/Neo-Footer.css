@@ -2,6 +2,7 @@
     @media not (-moz-pref("neo-features-footer-disabled")) {
         :root {
             #zen-sidebar-foot-buttons {
+                height: var(--Neo-Footer-Height) !important;
                 overflow-y: auto !important;
                 scrollbar-width: none !important;
                 scroll-behavior: smooth !important;
