@@ -1,0 +1,24 @@
+@media not (-moz-pref("neo-features-disabled")) {
+    @media not (-moz-pref("neo-features-bottom-disabled")) {
+        :root:not([animating-background="true"]):not([customizing=""]) {
+            #navigator-toolbox:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
+                @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+                    #zen-sidebar-foot-buttons:hover:not(:has(#zen-workspaces-button:hover)) {
+                        /* shared modifications */
+
+                        #navigator-toolbox[zen-sidebar-expanded] & {
+                            background-color: blue !important;
+                            /* expanded tweaks */
+                        }
+
+                        #navigator-toolbox:not([zen-sidebar-expanded]) & {
+                            background-color: red !important;
+                            /* collapsed tweaks */
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
