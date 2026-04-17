@@ -10,9 +10,11 @@
     --Media-Height: 30px;
     --Neo-Footer-Height: 50px;
     --Neo-Footer-Height-Opened: 100px;
+    --Neo-Footer-Indicator-Height: 3px;
 
     &:not([zen-sidebar-expanded="true"]) {
         /* When the sidebar is not expanded, the height of the footer is calculated based on the number of buttons in the workspaces button, the height of the buttons, and the margin between them. */
         --Neo-Footer-Height: calc((var(--Workspace-Subview-Buttons-Height) + var(--Workspace-Subview-Buttons-Vertical-Margin)) * var(--Neo-Footer-Workspace-Subview-Button-Counter)) !important;
+        --Neo-Footer-Indicator-Height: 28px;
     }
 }
