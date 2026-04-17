@@ -1,5 +1,0 @@
-.zen-browser-generic-background {
-  &::after {
-      backdrop-filter: var(--Neo-Blur) !important;
-  }
-}
