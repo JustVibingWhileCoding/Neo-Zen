@@ -8,7 +8,7 @@
 
     --Workspace-Strip-Height: 30px;
     --Workspace-Subview-Height: 28px;
-    --Workspace-Subview-Vertical-Margin: 0px;
+    --Workspace-Subview-Vertical-Margin: 2px;
 
     --Workspace-Sumatory: calc(var(--Workspace-Subview-Height) + var(--Workspace-Subview-Vertical-Margin));
 
@@ -32,8 +32,8 @@
                 --Neo-Footer-Adjustment: var(--Media-Height);
             }
         }
-
-        @media (-moz-bool-pref("neo-features-footer-collapsed-max-height-enabled")) {
+        
+        @media (-moz-bool-pref: "neo-features-footer-collapsed-max-height-enabled") {
             /* When the footer height is set to a fixed value, the height of the footer is set to that value. */
             --Neo-Footer-Height: var(--Neo-Footer-Max-Height) !important;
             /* When the footer height is set to a fixed value, the height of the workspace strip is set to the 
@@ -41,10 +41,10 @@
             --Workspace-Strip-Height: calc(var(--Neo-Footer-Max-Height) - var(--Neo-Footer-Indicator-Height) - 20px) !important;
         }
 
-        @media not (-moz-bool-pref("neo-features-footer-collapsed-max-height-enabled")) {
+        @media not (-moz-bool-pref: "neo-features-footer-collapsed-max-height-enabled") {
             /* When the footer height is not set to a fixed value, the height of the footer is calculated based on 
             the number of buttons in the workspaces button, the height of the buttons, and the margin between them. */
-            --Workspace-Strip-Height: calc(var(--Workspace-Sumatory) * var(--Workspace-Subview-Counter) + 10px) !important;
+            --Workspace-Strip-Height: calc(var(--Workspace-Sumatory) * var(--Workspace-Subview-Counter) + 20px) !important;
             /* When the sidebar is not expanded, the height of the footer is calculated based on the number of 
             buttons in the workspaces button, the height of the buttons, and the margin between them. */
             --Neo-Footer-Height: calc(var(--Workspace-Strip-Height) + var(--Neo-Footer-Indicator-Height) + 20px) !important;
