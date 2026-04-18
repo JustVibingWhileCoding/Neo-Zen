@@ -26,6 +26,7 @@
     }
 
     &[zen-default-theme="true"]{
+        --zen-primary-color: rgb(255, 190, 120) !important;
         #zen-browser-background{
             --zen-main-browser-background: var(--Neo-Browser-Background) !important;
         }
