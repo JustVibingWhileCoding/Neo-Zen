@@ -3,40 +3,54 @@
 /* This file is used to adjust the layout of some elements in the sidebar using CSS variables to calculate values that modify positions and sizes. */
 
 :root body {
-    
+
     --zen-toolbar-height: 50px !important;
-    
+
     --Workspace-Strip-Height: 30px;
     --Workspace-Subview-Height: 28px;
     --Workspace-Subview-Vertical-Margin: 0px;
-    
+
     --Workspace-Sumatory: calc(var(--Workspace-Subview-Height) + var(--Workspace-Subview-Vertical-Margin));
-    
+
     --Media-Height: 30px;
-    
+
     --Neo-Footer-Height: 50px;
     --Neo-Footer-Height-Opened: 100px;
     --Neo-Footer-Indicator-Height: 3px;
-    
+
     --Neo-Footer-Adjustment: 0px;
 
     :not([zen-sidebar-expanded="true"]) & {
         --Neo-Footer-Indicator-Height: 28px;
-        
+
         @media not (-moz-pref("neo-footer-at-bottom")) {
             --Neo-Footer-Adjustment: var(--zen-toolbar-height);
         }
-        
+
         @media (-moz-pref("neo-footer-at-bottom")) {
-            :has(#zen-media-controls-toolbar:not([hidden])){
+            :has(#zen-media-controls-toolbar:not([hidden])) {
                 --Neo-Footer-Adjustment: var(--Media-Height);
             }
         }
-        
-        --Workspace-Strip-Height: calc(var(--Workspace-Sumatory) * var(--Workspace-Subview-Counter) + 10px) !important;
-        /* When the sidebar is not expanded, the height of the footer is calculated based on the number of buttons in the workspaces button, the height of the buttons, and the margin between them. */
-        --Neo-Footer-Height: calc(var(--Workspace-Strip-Height) + var(--Neo-Footer-Indicator-Height) + 20px) !important;
-        
+
+        @media (-moz-bool-pref("neo-features-footer-collapsed-max-height-enabled")) {
+            /* When the footer height is set to a fixed value, the height of the footer is set to that value. */
+            --Neo-Footer-Height: var(--Neo-Footer-Max-Height) !important;
+            /* When the footer height is set to a fixed value, the height of the workspace strip is set to the 
+            difference between the fixed value and the height of the footer indicator and 20px for spacing. */
+            --Workspace-Strip-Height: calc(var(--Neo-Footer-Max-Height) - var(--Neo-Footer-Indicator-Height) - 20px) !important;
+        }
+
+        @media not (-moz-bool-pref("neo-features-footer-collapsed-max-height-enabled")) {
+            /* When the footer height is not set to a fixed value, the height of the footer is calculated based on 
+            the number of buttons in the workspaces button, the height of the buttons, and the margin between them. */
+            --Workspace-Strip-Height: calc(var(--Workspace-Sumatory) * var(--Workspace-Subview-Counter) + 10px) !important;
+            /* When the sidebar is not expanded, the height of the footer is calculated based on the number of 
+            buttons in the workspaces button, the height of the buttons, and the margin between them. */
+            --Neo-Footer-Height: calc(var(--Workspace-Strip-Height) + var(--Neo-Footer-Indicator-Height) + 20px) !important;
+        }
+        /* The position of the footer indicator is calculated based on the height of the workspace strip, 
+        the adjustment for the footer, and an additional 10px for spacing. */
         --Neo-Footer-Indicator-Position: calc(var(--Workspace-Strip-Height) + var(--Neo-Footer-Adjustment) + 10px);
     }
 }
@@ -45,5 +59,5 @@
 @media not (-moz-pref("neo-footer-at-bottom")) {
     #zen-sidebar-foot-buttons {
         order: -1;
-    }   
+    }
 }
