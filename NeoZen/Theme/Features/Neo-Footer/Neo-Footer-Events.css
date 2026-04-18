@@ -12,6 +12,17 @@
 
                         #navigator-toolbox:not([zen-sidebar-expanded]) & {
                             /* collapsed tweaks */
+                            &::after{
+                                height: 5px;
+                                width: 70%;
+                                @media (-moz-bool-pref: "neo-footer-at-bottom") {
+                                    bottom: calc(var(--Neo-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Height) + 5px);
+                                }
+
+                                @media not (-moz-bool-pref: "neo-footer-at-bottom") {
+                                    top: calc(var(--Neo-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Height) + 5px);;
+                                }
+                            }
                         }
                     }
                 }

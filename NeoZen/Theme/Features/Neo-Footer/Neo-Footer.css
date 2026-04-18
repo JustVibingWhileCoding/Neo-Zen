@@ -77,6 +77,8 @@
                     flex-direction: row !important;
                     flex-wrap: wrap !important;
                     white-space: nowrap !important;
+                    
+                    background: white !important;
 
                     #zen-workspaces-button {
                         
