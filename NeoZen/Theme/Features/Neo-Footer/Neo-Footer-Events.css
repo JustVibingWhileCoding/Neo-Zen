@@ -7,12 +7,10 @@
                         /* shared modifications */
 
                         #navigator-toolbox[zen-sidebar-expanded] & {
-                            background-color: blue !important;
                             /* expanded tweaks */
                         }
 
                         #navigator-toolbox:not([zen-sidebar-expanded]) & {
-                            background-color: red !important;
                             /* collapsed tweaks */
                         }
                     }

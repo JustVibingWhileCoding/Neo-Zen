@@ -79,7 +79,21 @@
                     white-space: nowrap !important;
 
                     #zen-workspaces-button {
+                        
+                        position: absolute !important;
+                        justify-content: center !important;
+                        
+                        background-color: blue !important;
+                        height: var(--Workspace-Strip-Height) !important;
                         width: 100% !important;
+                        
+                        @media (-moz-pref("neo-footer-at-bottom")) {
+                            bottom: var(--Neo-Footer-Adjustment);
+                        }
+                        
+                        @media not (-moz-pref("neo-footer-at-bottom")) {
+                            top: var(--Neo-Footer-Adjustment);
+                        }
                     }
                 }
             }
