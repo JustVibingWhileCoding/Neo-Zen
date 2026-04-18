@@ -16,6 +16,8 @@
                     opacity 1s ease 100ms !important;
 
                 #zen-workspaces-button {
+                    border-radius: 0px !important;
+                    
                     transition: width 0.3s 0ms ease,
                         height 0.3s 0ms ease,
                         top 0.6s ease 0ms,
@@ -61,8 +63,6 @@
                         grid-column: 1 / -1 !important;
                         grid-row: 1 !important;
                         order: -1 !important;
-
-                        border-radius: 0px !important;
                         
                         width: 100% !important;
                         position: sticky !important;
