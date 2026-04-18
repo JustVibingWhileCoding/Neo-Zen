@@ -1,5 +1,205 @@
 :root {
-  --Neo-Footer-Max-Height: 220px;
+  --Neo-Footer-Max-Height: 210px;
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 150)) {
+    --Neo-Footer-Max-Height: 150px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 151)) {
+    --Neo-Footer-Max-Height: 151px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 152)) {
+    --Neo-Footer-Max-Height: 152px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 153)) {
+    --Neo-Footer-Max-Height: 153px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 154)) {
+    --Neo-Footer-Max-Height: 154px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 155)) {
+    --Neo-Footer-Max-Height: 155px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 156)) {
+    --Neo-Footer-Max-Height: 156px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 157)) {
+    --Neo-Footer-Max-Height: 157px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 158)) {
+    --Neo-Footer-Max-Height: 158px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 159)) {
+    --Neo-Footer-Max-Height: 159px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 160)) {
+    --Neo-Footer-Max-Height: 160px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 161)) {
+    --Neo-Footer-Max-Height: 161px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 162)) {
+    --Neo-Footer-Max-Height: 162px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 163)) {
+    --Neo-Footer-Max-Height: 163px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 164)) {
+    --Neo-Footer-Max-Height: 164px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 165)) {
+    --Neo-Footer-Max-Height: 165px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 166)) {
+    --Neo-Footer-Max-Height: 166px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 167)) {
+    --Neo-Footer-Max-Height: 167px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 168)) {
+    --Neo-Footer-Max-Height: 168px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 169)) {
+    --Neo-Footer-Max-Height: 169px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 170)) {
+    --Neo-Footer-Max-Height: 170px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 171)) {
+    --Neo-Footer-Max-Height: 171px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 172)) {
+    --Neo-Footer-Max-Height: 172px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 173)) {
+    --Neo-Footer-Max-Height: 173px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 174)) {
+    --Neo-Footer-Max-Height: 174px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 175)) {
+    --Neo-Footer-Max-Height: 175px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 176)) {
+    --Neo-Footer-Max-Height: 176px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 177)) {
+    --Neo-Footer-Max-Height: 177px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 178)) {
+    --Neo-Footer-Max-Height: 178px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 179)) {
+    --Neo-Footer-Max-Height: 179px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 180)) {
+    --Neo-Footer-Max-Height: 180px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 181)) {
+    --Neo-Footer-Max-Height: 181px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 182)) {
+    --Neo-Footer-Max-Height: 182px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 183)) {
+    --Neo-Footer-Max-Height: 183px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 184)) {
+    --Neo-Footer-Max-Height: 184px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 185)) {
+    --Neo-Footer-Max-Height: 185px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 186)) {
+    --Neo-Footer-Max-Height: 186px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 187)) {
+    --Neo-Footer-Max-Height: 187px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 188)) {
+    --Neo-Footer-Max-Height: 188px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 189)) {
+    --Neo-Footer-Max-Height: 189px;
+  }
+  
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 190)) {
+    --Neo-Footer-Max-Height: 190px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 191)) {
+    --Neo-Footer-Max-Height: 191px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 192)) {
+    --Neo-Footer-Max-Height: 192px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 193)) {
+    --Neo-Footer-Max-Height: 193px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 194)) {
+    --Neo-Footer-Max-Height: 194px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 195)) {
+    --Neo-Footer-Max-Height: 195px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 196)) {
+    --Neo-Footer-Max-Height: 196px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 197)) {
+    --Neo-Footer-Max-Height: 197px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 198)) {
+    --Neo-Footer-Max-Height: 198px;
+  }
+
+  @media (-moz-pref("neo-features-footer-collapsed-max-height", 199)) {
+    --Neo-Footer-Max-Height: 199px;
+  }
 
   @media (-moz-pref("neo-features-footer-collapsed-max-height", 200)) {
     --Neo-Footer-Max-Height: 200px;
