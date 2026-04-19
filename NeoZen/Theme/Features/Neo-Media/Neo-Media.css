@@ -6,6 +6,10 @@
             #zen-media-controls-toolbar:not([hidden])>toolbaritem {
                 display: flex !important;
             }
+
+            #zen-media-controls-toolbar {
+              
+            }
         }
   }
 }
