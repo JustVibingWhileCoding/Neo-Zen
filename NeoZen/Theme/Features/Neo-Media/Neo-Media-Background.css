@@ -1,0 +1,5 @@
+@media not (-moz-pref("neo-features-disabled")) {
+  @media not (-moz-pref("neo-features-media-disabled")) {
+
+  }
+}
