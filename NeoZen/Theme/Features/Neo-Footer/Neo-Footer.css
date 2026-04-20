@@ -18,7 +18,7 @@
                 #zen-workspaces-button {
                     border-radius: 0px !important;
                     height: var(--Workspace-Strip-Height) !important;
-                    
+
                     transition: width 0.3s 200ms ease,
                         height 0.3s 200ms ease,
                         top 0.6s ease 200ms,
@@ -27,7 +27,7 @@
                 }
 
                 @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
-                    @media not (-moz-bool-pref: "neo-features-buttons-keep-expanded") {
+                    @media not (-moz-bool-pref: "neo-features-footer-keep-max-height-enabled") {
                         &:not([customizing=""]):not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
 
                             &>.toolbarbutton-1:not(#zen-workspaces-button),
@@ -65,7 +65,7 @@
                         grid-column: 1 / -1 !important;
                         grid-row: 1 !important;
                         order: -1 !important;
-                        
+
                         width: 100% !important;
                         position: sticky !important;
                     }
@@ -80,31 +80,31 @@
                     flex-direction: row !important;
                     flex-wrap: wrap !important;
                     white-space: nowrap !important;
-                    
+
 
                     #zen-workspaces-button {
-                        
+
                         position: absolute !important;
                         justify-content: center !important;
-                        
+
                         @media (-moz-bool-pref: "neo-features-footer-collapsed-max-height-enabled") {
                             overflow-x: unset !important;
                             overflow-y: auto !important;
-                        
+
                             flex-direction: row !important;
                             flex-wrap: wrap !important;
                             white-space: nowrap !important;
                         }
-                        
+
                         height: var(--Workspace-Strip-Height) !important;
                         width: 100% !important;
                         padding-top: 1px !important;
                         padding-bottom: 1px !important;
-                        
+
                         @media (-moz-pref("neo-footer-at-bottom")) {
                             bottom: var(--Neo-Footer-Adjustment);
                         }
-                        
+
                         @media not (-moz-pref("neo-footer-at-bottom")) {
                             top: var(--Neo-Footer-Adjustment);
                         }

@@ -1,82 +1,83 @@
 @media not (-moz-pref("neo-features-disabled")) {
     @media not (-moz-pref("neo-features-footer-disabled")) {
-        :root:not([animating-background="true"]):not([customizing=""]) {
-            #navigator-toolbox:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
-                @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+        @media not (-moz-bool-pref: "neo-features-footer-keep-max-height-enabled") {
+            :root:not([animating-background="true"]):not([customizing=""]) {
+                #navigator-toolbox:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
+                    @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
 
-                    #zen-sidebar-foot-buttons:hover:not(:has(#zen-workspaces-button:hover)),
-                    #zen-sidebar-foot-buttons:has(toolbarbutton[open="true"]) {
-                        /* shared modifications */
+                        #zen-sidebar-foot-buttons:hover:not(:has(#zen-workspaces-button:hover)),
+                        #zen-sidebar-foot-buttons:has(toolbarbutton[open="true"]) {
+                            /* shared modifications */
 
-                        #navigator-toolbox[zen-sidebar-expanded] & {
+                            #navigator-toolbox[zen-sidebar-expanded] & {
 
-                            /* expanded tweaks */
-                            &::after {
-                                opacity: 0 !important;
-                                width: 0px !important;
-                                top: 0px !important;
-                                height: 0px !important;
+                                /* expanded tweaks */
+                                &::after {
+                                    opacity: 0 !important;
+                                    width: 0px !important;
+                                    top: 0px !important;
+                                    height: 0px !important;
+                                }
+
+                                #zen-workspaces-button {
+                                    height: 0px !important;
+                                    opacity: 0 !important;
+                                }
+
+                                @media (-moz-bool-pref: "neo-features-footer-expanded-max-height-enabled") {
+                                    /* When the footer height is set to a fixed value, the height of the footer is set to that value. */
+                                    --Neo-Footer-Height: var(--Neo-Footer-Max-Height) !important;
+                                }
                             }
 
-                            #zen-workspaces-button {
-                                height: 0px !important;
-                                opacity: 0 !important;
+                            #navigator-toolbox:not([zen-sidebar-expanded]) & {
+
+                                /* collapsed tweaks */
+                                &::after {
+                                    height: 5px;
+                                    width: 70%;
+
+                                    @media (-moz-bool-pref: "neo-footer-at-bottom") {
+                                        bottom: calc(var(--Neo-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Height) + 5px);
+                                    }
+
+                                    @media not (-moz-bool-pref: "neo-footer-at-bottom") {
+                                        top: calc(var(--Neo-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Height) + 5px);
+                                        ;
+                                    }
+                                }
+
+                                #zen-workspaces-button {
+                                    @media (-moz-bool-pref: "neo-footer-at-bottom") {
+                                        bottom: calc(var(--Neo-Footer-Height) * -1);
+                                    }
+
+                                    @media not (-moz-bool-pref: "neo-footer-at-bottom") {
+                                        top: calc(var(--Neo-Footer-Height) * -1);
+                                    }
+                                }
                             }
 
-                            @media (-moz-bool-pref: "neo-features-footer-expanded-max-height-enabled") {
-                                /* When the footer height is set to a fixed value, the height of the footer is set to that value. */
-                                --Neo-Footer-Height: var(--Neo-Footer-Max-Height) !important;
+                            &>.toolbarbutton-1:not(#zen-workspaces-button),
+                            &>.toolbaritem-combined-buttons,
+                            &>#zen-toggle-compact-mode {
+                                opacity: 1 !important;
+                                pointer-events: all !important;
                             }
                         }
 
-                        #navigator-toolbox:not([zen-sidebar-expanded]) & {
+                        #zen-sidebar-foot-buttons:has(#zen-workspaces-button:hover) {
+                            #navigator-toolbox[zen-sidebar-expanded] & {
+                                &::after {
+                                    width: 80% !important;
 
-                            /* collapsed tweaks */
-                            &::after {
-                                height: 5px;
-                                width: 70%;
-
-                                @media (-moz-bool-pref: "neo-footer-at-bottom") {
-                                    bottom: calc(var(--Neo-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Height) + 5px);
+                                    transition: width 0.3s 0ms ease !important;
                                 }
-
-                                @media not (-moz-bool-pref: "neo-footer-at-bottom") {
-                                    top: calc(var(--Neo-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Height) + 5px);
-                                    ;
-                                }
-                            }
-
-                            #zen-workspaces-button {
-                                @media (-moz-bool-pref: "neo-footer-at-bottom") {
-                                    bottom: calc(var(--Neo-Footer-Height) * -1);
-                                }
-
-                                @media not (-moz-bool-pref: "neo-footer-at-bottom") {
-                                    top: calc(var(--Neo-Footer-Height) * -1);
-                                }
-                            }
-                        }
-
-                        &>.toolbarbutton-1:not(#zen-workspaces-button),
-                        &>.toolbaritem-combined-buttons,
-                        &>#zen-toggle-compact-mode {
-                            opacity: 1 !important;
-                            pointer-events: all !important;
-                        }
-                    }
-
-                    #zen-sidebar-foot-buttons:has(#zen-workspaces-button:hover) {
-                        #navigator-toolbox[zen-sidebar-expanded] & {
-                            &::after {
-                                width: 80% !important;
-
-                                transition: width 0.3s 0ms ease !important;
                             }
                         }
                     }
                 }
             }
         }
-
     }
 }

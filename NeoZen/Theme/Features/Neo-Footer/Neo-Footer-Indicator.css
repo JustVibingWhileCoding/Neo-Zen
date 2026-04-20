@@ -3,7 +3,7 @@
         @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
             :root:not([customizing=""]):not([zen-creating-workspace="true"]) {
                 #zen-sidebar-foot-buttons:not(:has(#zen-workspaces-button> .subviewbutton:only-child)):not(:has(#zen-workspaces-button:only-child)) {
-                    &::after{
+                    &::after {
                         display: flex;
                         content: "";
                         visibility: visible;
@@ -24,28 +24,31 @@
                     }
                 }
 
-                &[zen-sidebar-expanded="true"]{
-                    #zen-sidebar-foot-buttons {
-                        &::after{
-                            position: sticky;
-                            z-index: 9999;
-                            
-                            flex-shrink: 0 !important;
-                            grid-column: 1 / -1 !important;
-                            grid-row: 2 !important;
-                            
-                            width: 50%;
-                            height: var(--Neo-Footer-Indicator-Height);
-                            border-radius: 3px;
-                            
-                            top: calc(var(--Neo-Footer-Height) - 14px);
+                &[zen-sidebar-expanded="true"] {
+                    @media not (-moz-bool-pref: "neo-features-footer-keep-max-height-enabled") {
+
+                        #zen-sidebar-foot-buttons {
+                            &::after {
+                                position: sticky;
+                                z-index: 9999;
+
+                                flex-shrink: 0 !important;
+                                grid-column: 1 / -1 !important;
+                                grid-row: 2 !important;
+
+                                width: 50%;
+                                height: var(--Neo-Footer-Indicator-Height);
+                                border-radius: 3px;
+
+                                top: calc(var(--Neo-Footer-Height) - 14px);
+                            }
                         }
                     }
                 }
 
                 &:not([zen-sidebar-expanded="true"]) {
                     #zen-sidebar-foot-buttons {
-                        &::after{
+                        &::after {
                             position: absolute;
                             width: var(--Neo-Footer-Indicator-Height);
                             height: var(--Neo-Footer-Indicator-Height);
