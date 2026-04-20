@@ -24,7 +24,7 @@
         --Neo-Footer-Indicator-Height: 28px;
 
         :has(#zen-media-controls-toolbar:not([hidden])) {
-                --Media-Height: 30px;
+            --Media-Height: 30px;
         }
 
         @media not (-moz-pref("neo-footer-at-bottom")) {
@@ -34,7 +34,7 @@
         @media (-moz-pref("neo-footer-at-bottom")) {
             --Neo-Footer-Adjustment: calc(var(--Media-Height) + var(--zen-toolbox-padding) - 0.1px);
         }
-        
+
         @media (-moz-bool-pref: "neo-features-footer-collapsed-max-height-enabled") {
             /* When the footer height is set to a fixed value, the height of the footer is set to that value. */
             --Neo-Footer-Height: var(--Neo-Footer-Max-Height) !important;
@@ -51,9 +51,14 @@
             buttons in the workspaces button, the height of the buttons, and the margin between them. */
             --Neo-Footer-Height: calc(var(--Workspace-Strip-Height) + var(--Neo-Footer-Indicator-Height) + 20px) !important;
         }
+
         /* The position of the footer indicator is calculated based on the height of the workspace strip, 
         the adjustment for the footer, and an additional 10px for spacing. */
         --Neo-Footer-Indicator-Position: calc(var(--Workspace-Strip-Height) + var(--Neo-Footer-Adjustment) + 10px);
+
+        & #navigator-toolbox:has(#zen-media-controls-toolbar:not([hidden])) {
+            padding-bottom: 0px !important;
+        }
     }
 }
 
@@ -61,5 +66,19 @@
 @media not (-moz-pref("neo-footer-at-bottom")) {
     #zen-sidebar-foot-buttons {
         order: -1;
+    }
+}
+
+
+/* This change the position of the navigation bar when the compact mode is not enabled, using the attributes declared in :root. */
+:root:not([zen-compact-mode="true"]) {
+
+    &:not([zen-right-side="true"]) :not([zen-sidebar-expanded="true"]) :not([zen-window-buttons-reversed="true"]),
+    &[zen-right-side="true"] :not([zen-sidebar-expanded="true"])[zen-window-buttons-reversed="true"] {
+        & #nav-bar {
+            :root:not([zen-window-buttons-reversed="true"]) & {
+                margin-left: calc(-1 * var(--zen-toolbox-max-width) + var(--zen-element-separation) + 7px) !important;
+            }
+        }
     }
 }
