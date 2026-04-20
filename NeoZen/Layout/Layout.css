@@ -20,6 +20,10 @@
 
     --Neo-Footer-Adjustment: 0px;
 
+    @media (-moz-bool-pref: "neo-features-footer-keep-max-height-enabled") {
+        --Neo-Footer-Height: var(--Neo-Footer-Max-Height) !important;
+    }
+
     :not([zen-sidebar-expanded="true"]) & {
         --Neo-Footer-Indicator-Height: 28px;
 
