@@ -37,5 +37,7 @@ body:not(:has(#PanelUI-zen-gradient-generator[panelopen="true"])){
 
 /* This remove a new background introduced in Zen browser version 1.20.0 */
 body {
-  --toolbox-bgcolor: transparent !important;
+  /*--toolbox-bgcolor: transparent !important;*/ /* Looks like overriding the variable cause some glitches in the browser
+  on linux using hyprland and wayland compositor, so for now I'll override the background directly. */
+  background: transparent !important;
 }
