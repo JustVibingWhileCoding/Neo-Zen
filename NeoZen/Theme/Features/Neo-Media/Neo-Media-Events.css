@@ -1,5 +1,9 @@
 @media not (-moz-pref("neo-features-disabled")) {
   @media not (-moz-pref("neo-features-media-disabled")) {
-
+    #zen-media-controls-toolbar:not([hidden]):hover {
+      &>toolbaritem {
+        height: 210px !important;
+      }
+    }
   }
 }
