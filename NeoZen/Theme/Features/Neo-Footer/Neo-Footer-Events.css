@@ -19,6 +19,11 @@
                                 height: 0px !important;
                                 opacity: 0 !important;
                             }
+
+                            @media (-moz-bool-pref: "neo-features-footer-expanded-max-height-enabled") {
+                                /* When the footer height is set to a fixed value, the height of the footer is set to that value. */
+                                --Neo-Footer-Height: var(--Neo-Footer-Expanded-Max-Height) !important;
+                            }
                         }
 
                         #navigator-toolbox:not([zen-sidebar-expanded]) & {
