@@ -1,3 +1,7 @@
+/* This file is used to override the default color scheme to fix the readability of some elements when the background opacity is set to the lowest value, 
+and also fixing the issue with the gradient generator not respecting the color scheme that you select due to the forced automation of the color scheme 
+when having a gradient or a color set*/
+
 :root {
     @media -moz-pref("zen.view.window.scheme", 0) or -moz-pref("zen.view.window.scheme", 2) {
         --Neo-Browser-Background: #00000080 !important;
@@ -25,20 +29,26 @@
         }
     }
 
+    /* This change the zen-primary-color variable to a custom color when the default theme is enabled, using the attribute declared in :root. */
     &[zen-default-theme="true"] {
         --zen-primary-color: rgb(255, 190, 120) !important;
 
+        /* This change the background color of the browser when the default theme is enabled, using the attribute declared in :root. */
         #zen-browser-background {
             --zen-main-browser-background: var(--Neo-Browser-Background) !important;
         }
     }
 }
 
+/* This change how the browser manage the color scheme when the background opacity is set to the lowest value, using the attribute declared in the
+gradient generator. */
 #main-window:has(#PanelUI-zen-gradient-generator-view
                 >#PanelUI-zen-gradient-generator-controls
                 >#PanelUI-zen-gradient-colors-wrapper
                 >#PanelUI-zen-gradient-opacity-wrapper
                 >#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+
+    /* This change the background color of the browser whent the opacity is set to the lowest value, using the attribute declared in the gradient generator. */
     #zen-browser-background {
         --zen-main-browser-background: var(--Neo-Browser-Background) !important;
     }
@@ -46,6 +56,8 @@
     --Neo-Elements: var(--Neo-Elements-Aux) !important;
     --Neo-Background: var(--Neo-Background-Aux) !important;
 
+    /* This change the color scheme of the browser to fix an issue with some elements not changing their color when using the variable --Neo-Elements
+    which may be applied to the elements using the rules declared below this block of code. */
     &,
     & #browser,
     & body,
@@ -66,28 +78,14 @@
     }
 }
 
+/* This change the color of all the elements in the browser to the color declared in the variable
+ --Neo-Elements when the sidebar is expanded, using the attribute declared in :root. */
 :root[zen-sidebar-expanded="true"] #zen-main-app-wrapper * {
     color: var(--Neo-Elements) !important;
 }
 
+/* This change the color of all the elements in the browser to the color declared in the variable
+ --Neo-Elements when the sidebar is not expanded, using the attribute declared in :root. */
 :root:not([zen-sidebar-expanded="true"]) #zen-main-app-wrapper *:not(.tab-group-label) {
     color: var(--Neo-Elements) !important;
 }
-
-/*#main-window {
-
-    color-scheme: dark !important;
-
-    #browser,
-    body,
-    panel,
-    menupopup,
-    .zen-browser-generic-background,
-    #urlbar,
-    #tabbrowser-tabpanels browser,
-    :not([zen-should-be-dark-mode]),
-    [zen-should-be-dark-mode],
-    #zen-toast-container {
-        color-scheme: dark !important;
-    }
-}*/
