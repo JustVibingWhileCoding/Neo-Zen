@@ -34,7 +34,11 @@
     }
 }
 
-#main-window:has(#PanelUI-zen-gradient-generator-view>#PanelUI-zen-gradient-generator-controls>#PanelUI-zen-gradient-colors-wrapper>#PanelUI-zen-gradient-opacity-wrapper>#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+#main-window:has(#PanelUI-zen-gradient-generator-view
+                >#PanelUI-zen-gradient-generator-controls
+                >#PanelUI-zen-gradient-colors-wrapper
+                >#PanelUI-zen-gradient-opacity-wrapper
+                >#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
     #zen-browser-background {
         --zen-main-browser-background: var(--Neo-Browser-Background) !important;
     }
