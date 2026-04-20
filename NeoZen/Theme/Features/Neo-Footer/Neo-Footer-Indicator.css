@@ -38,7 +38,7 @@
                             height: var(--Neo-Footer-Indicator-Height);
                             border-radius: 3px;
                             
-                            top: calc(var(--Neo-Footer-Height) - 10px);
+                            top: calc(var(--Neo-Footer-Height) - 14px);
                         }
                     }
                 }
