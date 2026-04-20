@@ -5,7 +5,13 @@
       height: var(--Media-Height) !important;
       justify-content: center !important;
       align-content: center !important;
-
+    }
+    
+    /* This moves the media controls a little but up when the sidebar is expanded, just and aesthetic choice */
+    :root[zen-sidebar-expanded="true"]{
+      #zen-media-controls-toolbar>toolbaritem {
+        bottom: calc(var(--zen-toolbox-padding)/2) !important;
+      }
     }
 
     :root:not([zen-sidebar-expanded="true"]) {
@@ -19,9 +25,6 @@
       #zen-media-controls-toolbar:not([hidden])>toolbaritem {
         display: flex !important;
       }
-
-
-
 
       #zen-media-controls-toolbar>toolbaritem {
         flex-direction: column !important;
