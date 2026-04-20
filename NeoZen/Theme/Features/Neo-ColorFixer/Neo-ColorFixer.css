@@ -1,4 +1,4 @@
-:root{
+:root {
     @media -moz-pref("zen.view.window.scheme", 0) or -moz-pref("zen.view.window.scheme", 2) {
         --Neo-Browser-Background: #00000080 !important;
 
@@ -6,12 +6,12 @@
             --Neo-Browser-Background: #000000A0 !important;
         }
 
-        &:not([zen-default-theme="true"]){
+        &:not([zen-default-theme="true"]) {
             --Neo-Elements-Aux: White !important;
             --Neo-Background-Aux: black !important;
         }
     }
-    
+
     @media -moz-pref("zen.view.window.scheme", 1) {
         --Neo-Browser-Background: transparent !important;
 
@@ -19,33 +19,74 @@
             --Neo-Browser-Background: #ffffff80 !important;
         }
 
-        &:not([zen-default-theme="true"]){
+        &:not([zen-default-theme="true"]) {
             --Neo-Elements-Aux: black !important;
             --Neo-Background-Aux: #d0d0d0 !important;
         }
     }
 
-    &[zen-default-theme="true"]{
+    &[zen-default-theme="true"] {
         --zen-primary-color: rgb(255, 190, 120) !important;
-        #zen-browser-background{
+
+        #zen-browser-background {
             --zen-main-browser-background: var(--Neo-Browser-Background) !important;
         }
     }
 }
 
-body:has(#PanelUI-zen-gradient-generator-view>#PanelUI-zen-gradient-generator-controls>#PanelUI-zen-gradient-colors-wrapper>#PanelUI-zen-gradient-opacity-wrapper>#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
-    #zen-browser-background{
+#main-window:has(#PanelUI-zen-gradient-generator-view>#PanelUI-zen-gradient-generator-controls>#PanelUI-zen-gradient-colors-wrapper>#PanelUI-zen-gradient-opacity-wrapper>#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+    #zen-browser-background {
         --zen-main-browser-background: var(--Neo-Browser-Background) !important;
     }
 
     --Neo-Elements: var(--Neo-Elements-Aux) !important;
     --Neo-Background: var(--Neo-Background-Aux) !important;
+
+
+    &,
+    & #browser,
+    & body,
+    & panel,
+    & menupopup,
+    & .zen-browser-generic-background,
+    & #urlbar,
+    & #tabbrowser-tabpanels browser[type="content"],
+    &:not([zen-should-be-dark-mode]),
+    & #zen-toast-container {
+        @media -moz-pref("zen.view.window.scheme", 1) {
+            color-scheme: light !important;
+        }
+
+        @media not -moz-pref("zen.view.window.scheme", 1) {
+            color-scheme: dark !important;
+        }
+    }
 }
 
-:root[zen-sidebar-expanded="true"] #zen-main-app-wrapper *:not(#urlbar){
+:root[zen-sidebar-expanded="true"] #zen-main-app-wrapper * {
     color: var(--Neo-Elements) !important;
 }
 
-:root:not([zen-sidebar-expanded="true"]) #zen-main-app-wrapper *:not(#urlbar):not(.tab-group-label){
+:root:not([zen-sidebar-expanded="true"]) #zen-main-app-wrapper *:not(.tab-group-label) {
     color: var(--Neo-Elements) !important;
 }
+
+/*#main-window {
+
+    color-scheme: dark !important;
+
+    #browser,
+    body,
+    panel,
+    menupopup,
+    .zen-browser-generic-background,
+    #urlbar,
+    #tabbrowser-tabpanels browser,
+    :not([zen-should-be-dark-mode]),
+    [zen-should-be-dark-mode],
+    #zen-toast-container {
+
+
+        color-scheme: dark !important;
+    }
+}*/
