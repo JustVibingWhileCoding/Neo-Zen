@@ -34,3 +34,8 @@ body:not(:has(#PanelUI-zen-gradient-generator[panelopen="true"])){
     display: none !important;
   }
 }
+
+/* This remove a new background introduced in Zen browser version 1.20.0 */
+body {
+  --toolbox-bgcolor: transparent !important;
+}
