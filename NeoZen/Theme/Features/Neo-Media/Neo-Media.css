@@ -1,117 +1,118 @@
 @media not (-moz-pref("neo-features-disabled")) {
-  @media not (-moz-pref("neo-features-media-disabled")) {
+    @media not (-moz-pref("neo-features-media-disabled")) {
+        #zen-media-controls-toolbar {
+            height: calc(var(--Media-Height) - 5px) !important;
+            justify-content: center !important;
+            align-content: center !important;
+        }
 
-    #zen-media-controls-toolbar {
-      height: var(--Media-Height) !important;
-      justify-content: center !important;
-      align-content: center !important;
+        /* This moves the media controls a little but up when the sidebar is expanded, 
+         *just and aesthetic choice */
+        :root[zen-sidebar-expanded="true"] {
+            #zen-media-controls-toolbar>toolbaritem {
+                bottom: calc(var(--zen-toolbox-padding)/2) !important;
+            }
+        }
+
+        :root:not([zen-sidebar-expanded="true"]) {
+
+            #zen-media-controls-toolbar {
+                height: var(--Media-Height) !important;
+            }
+
+            /* Show media controls in collapsed mode */
+            #zen-media-controls-toolbar:not([hidden]),
+            #zen-media-controls-toolbar:not([hidden])>toolbaritem {
+                display: flex !important;
+            }
+
+            #zen-media-controls-toolbar>toolbaritem {
+                flex-direction: column !important;
+                width: fit-content !important;
+                padding: 5px 10px !important;
+                position: absolute !important;
+                align-self: center !important;
+                left: auto !important;
+                right: auto !important;
+
+                /* This is used to separate the media controls from the bottom of the browser 
+                 * when the sidebar is not expanded using a native variable */
+                bottom: var(--zen-toolbox-padding) !important;
+
+
+                height: 35px !important;
+
+                transition: height 0.7s ease 100ms,
+                    bottom 0.3s ease 100ms,
+                    background 1s ease,
+                    backdrop-filter 0.3s ease,
+                    box-shadow 0.2s ease !important;
+
+                /* Show the media focus button */
+                & #zen-media-focus-button {
+                    display: flex !important;
+                }
+
+                /* Hide media progress bar */
+                & #zen-media-progress-hbox {
+                    display: none !important;
+                }
+
+                /* Hide media info */
+                & #zen-media-info-vbox {
+                    display: none !important;
+                }
+
+                & #zen-media-controls-hbox {
+                    display: flex !important;
+                    flex-direction: column !important;
+                    justify-items: center !important;
+                    align-items: stretch !important;
+                    order: -1 !important;
+
+                    height: fit-content !important;
+                }
+
+                & #zen-media-buttons-hbox {
+                    display: flex !important;
+                    flex-direction: column !important;
+                    position: relative !important;
+
+                    justify-items: center !important;
+                    align-items: stretch !important;
+                    justify-self: center !important;
+                    align-self: center !important;
+
+                    margin: 0px 0px !important;
+                    padding: 0px 0px !important;
+                    transform: none !important;
+                }
+
+                & #zen-media-playback-buttons {
+                    display: flex !important;
+                    flex-direction: column !important;
+                    position: relative !important;
+
+                    margin: 0px 0px !important;
+                    padding: 0px 0px !important;
+                    transform: none !important;
+                }
+
+                & .show-on-hover {
+                    display: flex !important;
+                    position: relative !important;
+                    padding: 0px 0px !important;
+                    transform: none !important;
+                    top: unset !important;
+                    bottom: unset !important;
+
+                    min-height: fit-content !important;
+                    max-height: unset !important;
+                    margin: 0px 0px !important;
+
+                    opacity: 1 !important;
+                }
+            }
+        }
     }
-    
-    /* This moves the media controls a little but up when the sidebar is expanded, just and aesthetic choice */
-    :root[zen-sidebar-expanded="true"]{
-      #zen-media-controls-toolbar>toolbaritem {
-        bottom: calc(var(--zen-toolbox-padding)/2) !important;
-      }
-    }
-
-    :root:not([zen-sidebar-expanded="true"]) {
-
-      #zen-media-controls-toolbar {
-        height: var(--Media-Height) !important;
-      }
-
-      /* Show media controls in collapsed mode */
-      #zen-media-controls-toolbar:not([hidden]),
-      #zen-media-controls-toolbar:not([hidden])>toolbaritem {
-        display: flex !important;
-      }
-
-      #zen-media-controls-toolbar>toolbaritem {
-        flex-direction: column !important;
-        width: fit-content !important;
-        padding: 5px 10px !important;
-        position: absolute !important;
-        align-self: center !important;
-        left: auto !important;
-        right: auto !important;
-
-        /* This is used to separate the media controls from the bottom of the browser when the sidebar is not expanded using a native variable */
-        bottom: var(--zen-toolbox-padding) !important;
-
-
-        height: 35px !important;
-
-        transition: height 0.7s ease 100ms,
-          bottom 0.3s ease 100ms,
-          background 1s ease,
-          backdrop-filter 0.3s ease,
-          box-shadow 0.2s ease !important;
-
-        /* Show the media focus button */
-        & #zen-media-focus-button {
-          display: flex !important;
-        }
-
-        /* Hide media progress bar */
-        & #zen-media-progress-hbox {
-          display: none !important;
-        }
-
-        /* Hide media info */
-        & #zen-media-info-vbox {
-          display: none !important;
-        }
-
-        & #zen-media-controls-hbox {
-          display: flex !important;
-          flex-direction: column !important;
-          justify-items: center !important;
-          align-items: stretch !important;
-          order: -1 !important;
-
-          height: fit-content !important;
-        }
-
-        & #zen-media-buttons-hbox {
-          display: flex !important;
-          flex-direction: column !important;
-          position: relative !important;
-
-          justify-items: center !important;
-          align-items: stretch !important;
-          justify-self: center !important;
-          align-self: center !important;
-
-          margin: 0px 0px !important;
-          padding: 0px 0px !important;
-          transform: none !important;
-        }
-
-        & #zen-media-playback-buttons {
-          display: flex !important;
-          flex-direction: column !important;
-          position: relative !important;
-
-          margin: 0px 0px !important;
-          padding: 0px 0px !important;
-          transform: none !important;
-        }
-
-        & .show-on-hover {
-          display: flex !important;
-          position: relative !important;
-          padding: 0px 0px !important;
-          transform: none !important;
-          top: unset !important;
-          bottom: unset !important;
-
-          min-height: fit-content !important;
-          max-height: unset !important;
-          margin: 0px 0px !important;
-
-          opacity: 1 !important;
-        }
-      }
-    }
-  }
 }
