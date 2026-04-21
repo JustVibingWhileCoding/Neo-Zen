@@ -207,3 +207,11 @@ menuitem {
     background-color: -moz-menuhoverdisabled;
   }
 }
+
+/* NeoZen: This changes the color when hovering an item in the application popup menu */
+:is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
+  &:not([disabled]):hover {
+    color: var(--button-text-color-ghost-hover);
+    background-color: color-mix(in srgb, var(--Neo-Background) 30%, var(--Neo-Glow-Color-1) 20%) !important;
+  }
+}
