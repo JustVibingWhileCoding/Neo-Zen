@@ -13,19 +13,20 @@ panel {
   color-scheme: light dark;
 
   min-width: 1px;
-
-  /* NeoZen: This has been overriden to get transparent menus that works with hyprland's blur, 
-  I will try to use the media identifiers to make it only apply to linux in the future */
-  --panel-background: #00000080 !important;
+  
+  /* NeoZen: Looks like using the media query for the linux platform can change the background color and the border color of the popup menus,
+  without changing it for the other platforms, so I moved the background color and the border color to be inside the media query for linux */
+  @media (-moz-platform: linux) {
+    --panel-background: color-mix(in srgb, var(--Neo-Background) 47%, var(--Neo-Glow-Color-1) 3%) !important;
+    --panel-border-color: transparent !important;
+  }
+  
   --panel-color: MenuText;
   --panel-padding: var(--panel-padding-block) 0;
   /* This should match GetMenuCornerRadius() on macOS, or be overridden below */
   --panel-border-radius: 6px;
   --panel-padding-block: var(--dimension-4);
-
-  /* NeoZen: We set the border color to transparent to avoid weird borders on linux,
-  I will try to use the media identifiers to make it only apply to linux in the future */
-  --panel-border-color: transparent !important;
+  
   --panel-width: initial;
 
   --panel-shadow-margin: 8px;
@@ -38,9 +39,9 @@ panel {
 
   @media (-moz-platform: linux) {
     @media (prefers-contrast) {
-      --panel-border-color: transparent !important;
+      --panel-border-color: color-mix(in srgb, currentColor 60%, transparent);
     }
-    --panel-background: #00000080 !important;
+    
     /* On some linux WMs we need to draw square and opaque menus because alpha
      * is not available */
     @media not (-moz-gtk-csd-transparency-available) {
@@ -76,6 +77,8 @@ panel {
     color: var(--panel-color);
     background: var(--panel-background);
     border-radius: var(--panel-border-radius);
+
+    /* NeoZen: This has been overriden to fix an issue with the blur when the panel is transitioning to closed state */
     border: 0px solid var(--panel-border-color) !important;
     width: var(--panel-width);
     box-shadow: var(--panel-shadow);
