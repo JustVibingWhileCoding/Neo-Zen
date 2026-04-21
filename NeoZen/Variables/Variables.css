@@ -1,6 +1,8 @@
 :root {
     --Neo-Elements: light-dark(black, white);
     --Neo-Background: light-dark(white, black);
+
+    /* General roundness */
     --Roundness: 5px;
     /* Top bar height */
     --zen-toolbar-height: 50px;
