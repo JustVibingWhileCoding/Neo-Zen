@@ -3,6 +3,10 @@
 
         zen-workspace {
             &>arrowscrollbox {
+                ::before,
+                ::after {
+                    
+                }
                 &::after, 
                 &::before {
 
