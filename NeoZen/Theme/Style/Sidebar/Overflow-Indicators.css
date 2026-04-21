@@ -2,17 +2,26 @@
     @media not (-moz-pref("neo-theme-tabs-overflow-indicators-disabled")) {
 
         zen-workspace {
-            &>arrowscrollbox {
-                ::before,
-                ::after {
-                    
-                }
-                &::after, 
-                &::before {
 
-                }
+            &>arrowscrollbox::before,
+            &>arrowscrollbox::after {
+                z-index: 9999 !important;
+                margin: 3px 5px !important;
+                left: auto !important;
+                position: absolute !important;
+                align-self: center !important;
+                justify-self: center !important;
+                background: var(--Neo-Glow-Color-3) !important;
+                box-shadow: 0px 0px 4px var(--Neo-Glow-Color-3) !important;
+                transition: opacity 0.3s ease !important;
+            }
+        }
+
+        zen-workspace {
+            &>arrowscrollbox {
                 &[overflowing] {
-                    &::after, 
+
+                    &::after,
                     &::before {
                         content: '';
                         width: 20% !important;
