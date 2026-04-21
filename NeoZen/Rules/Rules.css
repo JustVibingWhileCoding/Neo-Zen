@@ -1,1 +1,5 @@
 @import "Neo-Footer-Rules/Neo-Footer-Rules-Max-Height.css";
+
+
+/* General theme rules */
+@import "Roundness-Rules.css";

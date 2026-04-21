@@ -1,0 +1,85 @@
+:root{
+    @media (-moz-pref("neo-theme-roundness", 0)) {
+        --Roundness: 0px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 1)) {
+        --Roundness: 1px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 2)) {
+        --Roundness: 2px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 3)) {
+        --Roundness: 3px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 4)) {
+        --Roundness: 4px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 5)) {
+        --Roundness: 5px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 6)) {
+        --Roundness: 6px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 7)) {
+        --Roundness: 7px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 8)) {
+        --Roundness: 8px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 9)) {
+        --Roundness: 9px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 10)) {
+        --Roundness: 10px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 11)) {
+        --Roundness: 11px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 12)) {
+        --Roundness: 12px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 13)) {
+        --Roundness: 13px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 14)) {
+        --Roundness: 14px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 15)) {
+        --Roundness: 15px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 16)) {
+        --Roundness: 16px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 17)) {
+        --Roundness: 17px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 18)) {
+        --Roundness: 18px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 19)) {
+        --Roundness: 19px !important;
+    }
+
+    @media (-moz-pref("neo-theme-roundness", 20)) {
+        --Roundness: 20px !important;
+    }
+}
