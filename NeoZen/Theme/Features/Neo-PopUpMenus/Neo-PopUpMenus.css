@@ -186,3 +186,24 @@ panel[type="arrow"] {
     pointer-events: none;
   }
 }
+
+/* NeoZen: This changes the color when hovering an item in the popup menu */
+menu,
+menuitem {
+  -moz-context-properties: fill;
+  fill: var(--menuitem-icon-fill);
+
+  &:where([disabled]) {
+    color: var(--text-color-disabled);
+    text-shadow: none;
+  }
+
+  &:where([_moz-menuactive]:not([disabled])) {
+    color: -moz-menuhovertext;
+    background-color: color-mix(in srgb, var(--Neo-Background) 30%, var(--Neo-Glow-Color-1) 20%) !important;
+  }
+
+  &:where([_moz-menuactive][disabled]) {
+    background-color: -moz-menuhoverdisabled;
+  }
+}
