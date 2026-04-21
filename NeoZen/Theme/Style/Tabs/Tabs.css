@@ -3,7 +3,7 @@
     @media not (-moz-pref("neo-theme-tabs-normals-disabled")) {
         .tabbrowser-tab{
 
-            --tab-background: color-mix(in srgb, var(--Neo-Background) 50%, transparent 50%) !important;
+            --tab-background: color-mix(in srgb, var(--Neo-Background) 30%, transparent 50%) !important;
             
             &:not([pinned]):not([zen-essential]){
                 padding: 3px 3px !important;
