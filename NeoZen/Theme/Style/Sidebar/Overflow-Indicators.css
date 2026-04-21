@@ -1,0 +1,23 @@
+@media not (-moz-pref("neo-theme-disabled")) {
+    @media not (-moz-pref("neo-theme-tabs-overflow-indicators-disabled")) {
+
+        zen-workspace {
+            &>arrowscrollbox {
+                &::after, 
+                &::before {
+
+                }
+                &[overflowing] {
+                    &::after, 
+                    &::before {
+                        content: '';
+                        width: 20% !important;
+                        height: 4px !important;
+                        border-radius: 20px !important;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+}
