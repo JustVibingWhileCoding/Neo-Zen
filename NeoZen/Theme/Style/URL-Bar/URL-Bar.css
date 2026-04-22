@@ -1,0 +1,27 @@
+@media not (-moz-pref("neo-theme-disabled")) {
+    @media not (-moz-pref("neo-theme-urlbar-disabled")) {
+        #urlbar {
+            --zen-toolbar-element-bg: transparent !important;
+            background: transparent !important;
+
+            .urlbar-background {
+
+                border-radius: var(--Roundness) !important;
+                outline: none !important;
+            }
+        }
+
+        #urlbar-container {
+            background: none !important;
+        }
+
+        #urlbar-input {
+            text-align: center !important;
+            background: none !important;
+        }
+
+        #urlbar-input-container {
+            background: none !important;
+        }
+    }
+}
