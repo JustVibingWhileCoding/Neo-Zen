@@ -1,0 +1,7 @@
+@media not (-moz-pref("neo-theme-disabled")) {
+    @media not (-moz-pref("neo-theme-tabs-disabled")) {
+      @media not (-moz-pref("neo-theme-tabs-newtab-button-disabled")) {
+
+      }
+    }
+}
