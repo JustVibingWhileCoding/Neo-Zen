@@ -1,6 +1,7 @@
 @import "Background/Background.css";
 @import "Sidebar/Sidebar.css";
 @import "Tabs/Tabs.css";
+@import "Tabs/New-Tab-Button.css";
 @import "Toolbar/Toolbar.css";
 @import "URL-Bar/URL-Bar.css";
 @import "Workspace-Indicator/Workspace-Indicator.css";
