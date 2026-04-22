@@ -76,7 +76,8 @@ panel {
     padding: var(--panel-padding);
     color: var(--panel-color);
     background: var(--panel-background);
-    border-radius: var(--panel-border-radius);
+    /* NeoZen: With this, the popup menus will use the same border radius as the rest of the UI.*/
+    border-radius: var(--Roundness) !important;
 
     /* NeoZen: This has been overriden to fix an issue with the blur when the panel is transitioning to closed state */
     border: 0px solid var(--panel-border-color) !important;
