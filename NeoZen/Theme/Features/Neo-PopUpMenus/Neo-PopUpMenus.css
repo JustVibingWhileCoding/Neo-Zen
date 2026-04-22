@@ -17,7 +17,7 @@ panel {
   /* NeoZen: Looks like using the media query for the linux platform can change the background color and the border color of the popup menus,
   without changing it for the other platforms, so I moved the background color and the border color to be inside the media query for linux */
   @media (-moz-platform: linux) {
-    --panel-background: color-mix(in srgb, var(--Neo-Background) 47%, var(--Neo-Glow-Color-1) 3%) !important;
+    --panel-background: color-mix(in srgb, var(--Neo-Background) 49%, var(--Neo-Glow-Color-1) 1%) !important;
     --panel-border-color: transparent !important;
   }
   
@@ -76,8 +76,7 @@ panel {
     padding: var(--panel-padding);
     color: var(--panel-color);
     background: var(--panel-background);
-    /* NeoZen: With this, the popup menus will use the same border radius as the rest of the UI.*/
-    border-radius: var(--Roundness) !important;
+    border-radius: var(--panel-border-radius);
 
     /* NeoZen: This has been overriden to fix an issue with the blur when the panel is transitioning to closed state */
     border: 0px solid var(--panel-border-color) !important;
