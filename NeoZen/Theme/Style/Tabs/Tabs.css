@@ -3,7 +3,7 @@
         @media not (-moz-pref("neo-theme-tabs-normals-disabled")) {
             .tabbrowser-tab {
 
-                --tab-background: color-mix(in srgb, var(--Neo-Background) 30%, transparent 50%) !important;
+                --tab-background: color-mix(in srgb, var(--Neo-Background) 40%, transparent 50%) !important;
 
                 &:not([pinned]):not([zen-essential]) {
                     padding: 4px 4px !important;
@@ -12,6 +12,8 @@
                 .tab-background {
                     border-radius: var(--Roundness) !important;
                     position: relative !important;
+                    
+                    transition: background 0.5s ease !important;
                 }
 
                 &:hover .tab-background,
