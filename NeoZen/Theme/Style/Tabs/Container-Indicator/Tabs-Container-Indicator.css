@@ -1,3 +1,22 @@
 @media (-moz-pref("zen.workspaces.hide-default-container-indicator")) {
-    
+    @media not (-moz-pref("neo-theme-disabled")) {
+        @media not (-moz-pref("neo-theme-tabs-containers-disabled")) {
+
+            /* Tab gradient background color container */
+            .tabbrowser-tab:not([zen-essential]) .tab-background::after {
+                z-index: -1 !important;
+                content: "";
+                top: 0;
+                left: 0;
+                background-size: 100% 100% !important;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                opacity: 0.0;
+                background: radial-gradient(color-mix(in srgb, var(--identity-tab-color) 40%, white) 20%, color-mix(in srgb, var(--identity-tab-color) 70%, white) 100%) !important;
+                transition: opacity 0.9s ease;
+            }
+
+        }
+    }
 }
