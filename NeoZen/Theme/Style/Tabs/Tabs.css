@@ -5,6 +5,18 @@
 
                 --tab-background: color-mix(in srgb, var(--Neo-Background) 40%, transparent 50%) !important;
 
+                &[zen-essential] {
+                    .tab-background {
+                        background: var(--tab-background) !important;
+                    }
+
+                    &[visuallyselected] .tab-background {
+                        &::before {
+                            border-radius: var(--Roundness) !important;
+                        }
+                    }
+                }
+
                 &:not([pinned]):not([zen-essential]) {
                     padding: 4px 4px !important;
                 }
@@ -13,7 +25,7 @@
                     border-radius: var(--Roundness) !important;
                     position: relative !important;
                     margin: 0px !important;
-                    
+
                     transition: background 0.5s ease !important;
                 }
 
