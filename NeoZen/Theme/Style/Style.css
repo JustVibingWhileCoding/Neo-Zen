@@ -4,6 +4,7 @@
 @import "Tabs/Tabs.css";
 @import "Tabs/New-Tab-Button.css";
 @import "Tabs/Tab-Groups/Tab-Groups.css";
+@import "Tabs/Container-Indicator/Tabs-Container-Indicator.css";
 @import "Toolbar/Toolbar.css";
 @import "URL-Bar/URL-Bar.css";
 @import "Workspace-Indicator/Workspace-Indicator.css";
