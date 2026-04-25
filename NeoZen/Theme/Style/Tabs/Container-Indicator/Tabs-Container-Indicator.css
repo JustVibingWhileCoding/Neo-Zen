@@ -54,22 +54,24 @@
                 }
             }
 
-            .tabbrowser-tab[usercontextid] {
-                &:hover[usercontextid]:not([selected]) {
-                    .tab-context-line {
-                        width: 40% !important;
+            :root:not([animating-background="true"]) {
+                .tabbrowser-tab[usercontextid] {
+                    &:hover[usercontextid]:not([selected]) {
+                        .tab-context-line {
+                            width: 40% !important;
+                        }
                     }
-                }
 
-                &[selected][usercontextid] {
-                    .tab-context-line {
-                        width: 60% !important;
+                    &[selected][usercontextid] {
+                        .tab-context-line {
+                            width: 60% !important;
+                        }
                     }
-                }
 
-                &:hover[usercontextid][selected] {
-                    .tab-context-line {
-                        width: 75% !important;
+                    &:hover[usercontextid][selected] {
+                        .tab-context-line {
+                            width: 75% !important;
+                        }
                     }
                 }
             }
