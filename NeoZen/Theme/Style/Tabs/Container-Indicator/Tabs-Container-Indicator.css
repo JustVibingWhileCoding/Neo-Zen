@@ -34,7 +34,7 @@
                         z-index: 9 !important;
 
                         top: auto !important;
-                        bottom: 3px !important;
+                        bottom: 4px !important;
 
                         transition: width 0.5s ease !important;
                     }
@@ -70,7 +70,7 @@
 
                     &:hover[usercontextid][selected] {
                         .tab-context-line {
-                            width: 75% !important;
+                            width: 85% !important;
                         }
                     }
                 }
