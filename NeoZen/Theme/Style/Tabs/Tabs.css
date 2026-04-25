@@ -4,10 +4,16 @@
             .tabbrowser-tab {
 
                 --tab-background: color-mix(in srgb, var(--Neo-Background) 40%, transparent 50%) !important;
+                padding: 4px !important;
 
                 &[zen-essential] {
                     .tab-background {
                         background: var(--tab-background) !important;
+                    }
+
+                    &:hover .tab-background {
+                        background: color-mix(in srgb, var(--Neo-Background) 60%, transparent 50%) !important;
+                        box-shadow: 0px 0px 5px color-mix(in srgb, var(--zen-primary-color) 30%, white 50%) !important;
                     }
 
                     &[visuallyselected] .tab-background {
