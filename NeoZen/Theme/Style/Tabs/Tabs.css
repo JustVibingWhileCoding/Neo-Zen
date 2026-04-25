@@ -6,7 +6,7 @@
             --tab-background: color-mix(in srgb, var(--Neo-Background) 30%, transparent 50%) !important;
             
             &:not([pinned]):not([zen-essential]){
-                padding: 3px 3px !important;
+                padding: 4px 4px !important;
             }
             
             .tab-background{
