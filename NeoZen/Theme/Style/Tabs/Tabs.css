@@ -13,6 +13,7 @@
                     &[visuallyselected] .tab-background {
                         &::before {
                             border-radius: var(--Roundness) !important;
+                            background-color: var(--tab-background) !important;
                         }
                     }
                 }
@@ -29,8 +30,8 @@
                     transition: background 0.5s ease !important;
                 }
 
-                &:hover .tab-background,
-                &[selected] .tab-background {
+                &:not([zen-essential]):hover .tab-background,
+                &:not([zen-essential])[selected] .tab-background {
                     background: var(--tab-background) !important;
                 }
             }
