@@ -1,46 +1,82 @@
-@media not (-moz-pref("neo-theme-disabled")) {
-    @media not (-moz-pref("neo-theme-tab-groups-disabled")) {
-        tab-group:not([split-view-group="true"]) {
-            .tab-group-label-container {
-                margin: 0px 0px !important;
-                padding: 0px 0px !important;
-                display: flex !important;
-                height: calc(var(--tab-min-height) + 10px) !important;
+tab-group:not([split-view-group="true"]) {
 
-                .tab-group-label {
-                    position: relative !important;
-                    display: flex !important;
-                    width: 100% !important;
-                    height: 100% !important;
-                    padding-left: 12px !important;
-                    margin: 5px !important;
+    --color-tabgroup: color-mix(in srgb, var(--tab-group-color) 30%, white 30%);
 
-                    align-content: center !important;
-                    text-align: center !important;
-                    line-height: 100% !important;
-                    align-items: center;
-                }
-            }
+    .tab-group-label-container {
+        margin: 0px 0px !important;
+        padding: 0px 0px !important;
+        display: flex !important;
+        height: calc(var(--tab-min-height) + 10px) !important;
 
-            [collapsed]&>.tab-group-label-container {}
 
-            .tab-group-container {
-                overflow: auto !important;
-                display: flex !important;
-                flex-direction: column !important;
-                position: relative !important;
-                min-height: fit-content !important;
-                height: fit-content !important;
-                max-height: fit-content !important;
-                transition: max-height 1.5s !important;
-            }
 
-            [collapsed]&>.tab-group-container {
-                max-height: 0px !important;
-                z-index: -1 !important;
-            }
+        &::after {
+            display: flex !important;
+            position: absolute !important;
+            background: var(--color-tabgroup) !important;
+            width: 30% !important;
+            height: 3px !important;
+            opacity: 1 !important;
+            content: "";
+            margin: auto !important;
+
+            inset-block: auto !important;
+            inset-inline: auto !important;
+            ;
+            border-start-start-radius: auto !important;
+            border-start-end-radius: auto !important;
+        }
+
+        [collapsed]&::after {
+            display: flex !important;
+            position: absolute !important;
+            background: var(--color-tabgroup) !important;
+            width: 30% !important;
+            height: 3px !important;
+            opacity: 1 !important;
+            bottom: 5px !important;
+            content: "";
         }
 
 
+        .tab-group-label {
+            position: relative !important;
+            display: flex !important;
+            width: 100% !important;
+            height: 100% !important;
+            padding-left: 12px !important;
+            margin: 5px !important;
+
+            align-content: center !important;
+            text-align: center !important;
+            line-height: 100% !important;
+            align-items: center;
+            /* vertical */
+
+            background: transparent !important;
+            outline: none !important;
+            outline-width: unset !important;
+            outline-offset: unset !important;
+
+            filter: drop-shadow(0px 0px 6px var(--color-tabgroup)) brightness(1.0) !important;
+        }
+    }
+
+    [collapsed]&>.tab-group-label-container {}
+
+    .tab-group-container {
+        overflow: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        position: relative !important;
+        min-height: fit-content !important;
+        height: fit-content !important;
+        max-height: fit-content !important;
+        transition: max-height 1.5s !important;
+    }
+
+    [collapsed]&>.tab-group-container {
+        max-height: 0px !important;
+        z-index: -1 !important;
     }
 }
