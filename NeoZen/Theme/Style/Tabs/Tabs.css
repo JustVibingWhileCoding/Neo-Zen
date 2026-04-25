@@ -39,7 +39,7 @@
                     position: relative !important;
                     margin: 0px !important;
 
-                    transition: background 0.5s ease !important;
+                    transition: background 0.5s ease, box-shadow 0.5s ease, border 0.5s ease !important;
                 }
 
                 &:not([zen-essential]):hover .tab-background,
