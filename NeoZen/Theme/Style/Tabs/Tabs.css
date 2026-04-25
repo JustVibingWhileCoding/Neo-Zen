@@ -20,13 +20,6 @@
                 &:hover .tab-background,
                 &[selected] .tab-background {
                     background: var(--tab-background) !important;
-
-                    [usercontextid] & {
-                        &::after {
-                            opacity: 0.25;
-                            background: radial-gradient(color-mix(in srgb, var(--identity-tab-color) 40%, white) 20%, color-mix(in srgb, var(--identity-tab-color) 70%, white) 100%) !important;
-                        }
-                    }
                 }
             }
         }
