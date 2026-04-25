@@ -1,7 +1,17 @@
 @media not (-moz-pref("neo-theme-disabled")) {
-    @media not (-moz-pref("neo-theme-tabs-disabled")) {
-      @media not (-moz-pref("neo-theme-tabs-newtab-button-disabled")) {
+  @media not (-moz-pref("neo-theme-tabs-disabled")) {
+    @media not (-moz-pref("neo-theme-tabs-newtab-button-disabled")) {
+      #tabbrowser-arrowscrollbox-periphery {
 
+        >#tabs-newtab-button {
+          border-radius: var(--Roundness) !important;
+          margin: 4px !important;
+
+          &:hover {
+            background: color-mix(in srgb, var(--Neo-Background) 30%, transparent 50%) !important;
+          }
+        }
       }
     }
+  }
 }
