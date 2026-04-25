@@ -6,9 +6,10 @@
         >#tabs-newtab-button {
           border-radius: var(--Roundness) !important;
           margin: 4px !important;
+          transition: background 0.5s ease !important;
 
           &:hover {
-            background: color-mix(in srgb, var(--Neo-Background) 30%, transparent 50%) !important;
+            background: color-mix(in srgb, var(--Neo-Background) 40%, transparent 50%) !important;
           }
         }
       }
