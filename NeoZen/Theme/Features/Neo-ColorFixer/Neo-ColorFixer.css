@@ -38,6 +38,8 @@ when having a gradient or a color set*/
             --zen-main-browser-background: var(--Neo-Browser-Background) !important;
         }
     }
+    
+    --Neo-Compact-Background: transparent;
 }
 
 /* This change how the browser manage the color scheme when the background opacity is set to the lowest value, using the attribute declared in the
