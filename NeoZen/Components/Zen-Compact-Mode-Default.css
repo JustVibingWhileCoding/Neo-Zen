@@ -35,6 +35,7 @@
 
 
     @media -moz-pref('zen.theme.acrylic-elements') {
+
         /*NeoZen: If acrylic elements is enabled, the background of the pseudo element ::after needs to be set to transparent
          *otherwise it will be a solid color, and the acrylic effect will not work.
          *To fix this, the background of the pseudo element ::after is set to transparent, and we type the media query after
@@ -134,9 +135,9 @@
                     position: fixed;
                     z-index: 10;
                     transition:
-                        left 0.15s ease,
-                        right 0.15s ease,
-                        visibility 0.15s ease;
+                        left 0.4s ease,
+                        right 0.4s ease,
+                        visibility 0.4s ease !important;
                     bottom: var(--zen-compact-float);
                     padding: 0 var(--zen-compact-float) !important;
 
@@ -208,7 +209,7 @@
 
                 position: relative;
                 min-width: var(--zen-toolbox-min-width);
-                transition: visibility 0.15s;
+                transition: visibility 0.4s !important;
                 /* Same as the toolbox */
                 visibility: hidden;
 
@@ -228,7 +229,7 @@
             &[zen-renaming-tab='true'] #navigator-toolbox {
                 &:not([animate='true']) {
                     --zen-compact-mode-func: ease !important;
-                    --zen-compact-mode-time: 3s !important;
+                    --zen-compact-mode-time: 0.4s !important;
                     transition:
                         left var(--zen-compact-mode-time) var(--zen-compact-mode-func),
                         right var(--zen-compact-mode-time) var(--zen-compact-mode-func);
