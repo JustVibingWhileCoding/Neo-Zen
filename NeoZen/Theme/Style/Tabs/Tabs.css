@@ -15,6 +15,7 @@
                 &[zen-essential] {
                     .tab-background {
                         background: var(--tab-background) !important;
+                        box-shadow: 0 0px 4px color-mix(in srgb, black 80%, transparent 10%) !important;
                     }
 
                     &:hover .tab-background {
