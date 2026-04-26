@@ -71,7 +71,7 @@
                                 &::after {
                                     width: 80% !important;
 
-                                    transition: width 0.3s 0ms ease !important;
+                                    transition: width 0.3s 30ms ease !important;
                                 }
                             }
                         }
