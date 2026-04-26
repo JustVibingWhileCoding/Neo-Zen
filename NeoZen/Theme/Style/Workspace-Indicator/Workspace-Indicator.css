@@ -12,7 +12,11 @@
                         justify-content: center;
                         filter: drop-shadow(0px 0px 15px var(--zen-primary-color)) brightness(1.1) !important;
                         margin-bottom: 10px !important;
+                        
+                        
                         & .zen-current-workspace-indicator-name {
+                            display: flex !important;
+                            position: relative !important;
                             text-align: center !important;
                             justify-content: center !important;
                             margin-left: auto !important;
@@ -22,6 +26,8 @@
                             opacity: 1 !important;
                             font-weight: 500 !important;
                             font-size: 14px !important;
+                            
+                            
                             
                             filter: drop-shadow(0px 0px 8px var(--Neo-Glow-Color-1)) brightness(1.3) !important;
                         }
@@ -44,12 +50,17 @@
                             
                         }
 
-                        .zen-current-workspace-indicator-stack {
+                        & .zen-current-workspace-indicator-stack {
                             visibility: visible !important;
                             opacity: 1.0 !important;
+                            display: flex !important;
+                            position: relative !important;
+                            margin: 0px !important;
 
-                            .zen-current-workspace-indicator-chevron {
+                            & .zen-current-workspace-indicator-chevron {
+                                position: relative !important;
                                 display: flex !important;
+                                opacity: 1.0 !important;
                             }
                         }
                         
