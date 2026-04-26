@@ -10,7 +10,7 @@
                 }
                 --tab-background: color-mix(in srgb, var(--Neo-Background) 60%, transparent 40%) !important;
                 --tab-hover-background: color-mix(in srgb, var(--Neo-Background) 80%, transparent 40%) !important;
-                padding: 3px !important;
+                padding: 2px !important;
 
                 &[zen-essential] {
                     .tab-background {
