@@ -2,6 +2,23 @@
     @media not (-moz-pref("neo-theme-disabled")) {
         @media not (-moz-pref("neo-theme-tabs-containers-disabled")) {
 
+            :root {
+                &:not([zen-sidebar-expanded]) {
+
+
+                    .tabbrowser-tab[usercontextid] {
+                        &:not([zen-essential="true"]) .tab-background {
+
+                            justify-content: center !important;
+
+                            & .tab-context-line {
+                                left: auto !important;
+                            }
+                        }
+                    }
+                }
+            }
+
             /* Tab gradient background color container */
             .tabbrowser-tab:not([zen-essential]) .tab-background::after {
                 z-index: -1 !important;
