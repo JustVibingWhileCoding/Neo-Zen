@@ -78,7 +78,7 @@
                             height: 3px !important;
                             top: auto !important;
                             bottom: 2% !important;
-                            width: 0%;
+                            width: 0% !important;
                         }
                     }
                     
