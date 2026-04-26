@@ -2,10 +2,15 @@
 
 /* This file is used to adjust the layout of some elements in the sidebar using CSS variables to calculate values that modify positions and sizes. */
 
-:root body {
-
+:root{
     --zen-toolbar-height: 50px !important;
     --Neo-Toolbar-Height: var(--zen-toolbar-height);
+    
+    &[zen-compact-mode="true"] {
+        --Neo-Toolbar-Height: 0px !important;
+    }
+}
+:root body {
 
     --Workspace-Strip-Height: 30px;
     --Workspace-Subview-Height: 28px;
@@ -31,10 +36,6 @@
 
     :not([zen-sidebar-expanded="true"]) & {
         --Neo-Footer-Indicator-Height: 28px;
-        
-        &:has([zen-compact-mode]) {
-            --Neo-Toolbar-Height: 0px !important;
-        }
 
         @media not (-moz-pref("neo-footer-at-bottom")) {
             
