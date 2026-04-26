@@ -8,14 +8,14 @@
                     --tab-color: color-mix(in srgb, var(--identity-tab-color) 40%, white) !important;
                     --tab-hover-color: color-mix(in srgb, var(--identity-tab-color) 60%, white) !important;
                 }
-                --tab-background: color-mix(in srgb, var(--Neo-Background) 40%, transparent 50%) !important;
-                --tab-hover-background: color-mix(in srgb, var(--Neo-Background) 80%, transparent 50%) !important;
-                padding: 4px !important;
+                --tab-background: color-mix(in srgb, var(--Neo-Background) 60%, transparent 40%) !important;
+                --tab-hover-background: color-mix(in srgb, var(--Neo-Background) 80%, transparent 40%) !important;
+                padding: 3px !important;
 
                 &[zen-essential] {
                     .tab-background {
                         background: var(--tab-background) !important;
-                        box-shadow: 0 0px 4px color-mix(in srgb, black 80%, transparent 10%) !important;
+                        box-shadow: 0 0px 4px color-mix(in srgb, black 100%, transparent 10%) !important;
                     }
 
                     &:hover .tab-background {
