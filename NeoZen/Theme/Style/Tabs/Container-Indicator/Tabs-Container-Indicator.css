@@ -3,8 +3,15 @@
         @media not (-moz-pref("neo-theme-tabs-containers-disabled")) {
 
             :root {
+                --context-line-width: 20px;
+                --context-line-time: 0.5s;
+                --context-line-width-hover: 40%;
+
                 &:not([zen-sidebar-expanded]) {
 
+                    --context-line-width: 6px;
+                    --context-line-time: 0.2s;
+                    --context-line-width-hover: 30%;
 
                     .tabbrowser-tab[usercontextid] {
                         &:not([zen-essential="true"]) .tab-background {
@@ -46,14 +53,14 @@
                         box-shadow: 0 0px 3px color-mix(in srgb, var(--identity-tab-color) 60%, white) !important;
 
                         position: absolute !important;
-                        width: 20px !important;
+                        width: var(--context-line-width) !important;
                         height: 3px !important;
                         z-index: 9 !important;
 
                         top: auto !important;
                         bottom: 4px !important;
 
-                        transition: width 0.5s ease !important;
+                        transition: width var(--context-line-time) ease !important;
                     }
                 }
 
@@ -75,19 +82,19 @@
                 .tabbrowser-tab[usercontextid] {
                     &:hover[usercontextid]:not([selected]) {
                         .tab-context-line {
-                            width: 40% !important;
+                            width: calc(var(--context-line-width-hover)) !important;
                         }
                     }
 
                     &[selected][usercontextid] {
                         .tab-context-line {
-                            width: 60% !important;
+                            width: calc(var(--context-line-width-hover) + 20%) !important;
                         }
                     }
 
                     &:hover[usercontextid][selected] {
                         .tab-context-line {
-                            width: 85% !important;
+                            width: calc(var(--context-line-width-hover) + 40%) !important;
                         }
                     }
                 }
