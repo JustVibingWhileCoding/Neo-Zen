@@ -17,7 +17,7 @@ panel {
   /* NeoZen: Looks like using the media query for the linux platform can change the background color and the border color of the popup menus,
   without changing it for the other platforms, so I moved the background color and the border color to be inside the media query for linux */
   @media (-moz-platform: linux) {
-    --panel-background: color-mix(in srgb, var(--Neo-Background) 49%, var(--Neo-Glow-Color-1) 1%) !important;
+    --panel-background: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Glow-Color-1) 5%) !important;
     --panel-border-color: transparent !important;
   }
   
@@ -212,6 +212,6 @@ menuitem {
 :is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
   &:not([disabled]):hover {
     color: var(--button-text-color-ghost-hover);
-    background-color: color-mix(in srgb, var(--Neo-Background) 30%, var(--Neo-Glow-Color-1) 20%) !important;
+    background-color: color-mix(in srgb, var(--Neo-Background) 5%, var(--Neo-Glow-Color-1) 70%) !important;
   }
 }
