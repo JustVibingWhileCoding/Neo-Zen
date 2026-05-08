@@ -211,7 +211,30 @@ menuitem {
 /* NeoZen: This changes the color when hovering an item in the application popup menu */
 :is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
   &:not([disabled]):hover {
-    color: var(--button-text-color-ghost-hover);
+    color: var(--Neo-Elements) !important;
     background-color: color-mix(in srgb, var(--Neo-Background) 5%, var(--Neo-Glow-Color-1) 70%) !important;
+  }
+}
+
+
+menu,
+menuitem {
+  -moz-context-properties: fill;
+  fill: var(--menuitem-icon-fill);
+
+  &:where([disabled]) {
+    color: var(--text-color-disabled);
+    text-shadow: none;
+  }
+
+  &:where([_moz-menuactive]:not([disabled])) {
+    /* NeoZen: This changes the text color when hovering an item in the application popup menu and fixes the white color text
+     * when light mode is set in the theme editor*/
+    color: var(--Neo-Elements) !important;
+    background-color: -moz-menuhover;
+  }
+
+  &:where([_moz-menuactive][disabled]) {
+    background-color: -moz-menuhoverdisabled;
   }
 }
