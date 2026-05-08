@@ -3,13 +3,11 @@ and also fixing the issue with the gradient generator not respecting the color s
 when having a gradient or a color set*/
 
 :root {
-
-    @media (-moz-pref: "zen.view.window.scheme", 0),
-    (-moz-pref: "zen.view.window.scheme", 2) {
+    @media -moz-pref("zen.view.window.scheme", 0) or -moz-pref("zen.view.window.scheme", 2) {
         --Neo-Browser-Background: #00000080 !important;
 
         @media (-moz-platform: linux) {
-            @media (-moz-pref: "zen.widget.linux.transparency", true) {
+            @media -moz-pref("zen.widget.linux.transparency", true) {
                 --Neo-Browser-Background: #000000A0 !important;
             }
         }
@@ -20,11 +18,11 @@ when having a gradient or a color set*/
         }
     }
 
-    @media (-moz-pref: "zen.view.window.scheme", 1) {
+    @media -moz-pref("zen.view.window.scheme", 1) {
         --Neo-Browser-Background: transparent !important;
 
         @media (-moz-platform: linux) {
-            @media (-moz-pref: "zen.widget.linux.transparency", true) {
+            @media -moz-pref("zen.widget.linux.transparency", true) {
                 --Neo-Browser-Background: #FFFFFFA0 !important;
             }
         }
@@ -76,11 +74,11 @@ gradient generator. */
     & #tabbrowser-tabpanels browser[type="content"],
     &:not([zen-should-be-dark-mode]),
     & #zen-toast-container {
-        @media (-moz-pref: "zen.view.window.scheme", 1) {
+        @media -moz-pref("zen.view.window.scheme", 1) {
             color-scheme: light !important;
         }
 
-        @media not (-moz-pref: "zen.view.window.scheme", 1) {
+        @media not -moz-pref("zen.view.window.scheme", 1) {
             color-scheme: dark !important;
         }
     }
