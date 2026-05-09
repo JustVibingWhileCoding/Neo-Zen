@@ -14,11 +14,16 @@
     background: light-dark(#e9e9e9, #131313);
     box-shadow: var(--zen-big-shadow);
 
+    @media -moz-pref('zen.theme.acrylic-elements') {
+        background: transparent;
+        /*NeoZen: I changed the amount of blur from 42px to 30px, to make the background a little bit more visible */
+        backdrop-filter: blur(30px) saturate(110%) brightness(0.25) contrast(100%) !important;
+    }
 
     &::before,
     &::after {
         /*NeoZen: This is just an aesthetic change, to remove the default outline from the background. */
-        outline: unset !important;
+        outline: none !important;
         outline-offset: -1px;
         background-attachment: fixed !important;
         background-size: 100vw 100vh !important;
@@ -31,23 +36,27 @@
         * elements. */
         border-radius: var(--Roundness) !important;
     }
+}
 
+/*NeoZen: With this modification, the background of the toolbar is now transparent when the
+ *gradient generator is enabled and the background opacity is set to the lowest value
+ *Looks like the blur effect is working without pseudo elements in the background for now
+ *I'll keep this like that because there is no reason to use pseudo elements for this */
+#main-window:has(#PanelUI-zen-gradient-generator-view 
+                >#PanelUI-zen-gradient-generator-controls 
+                >#PanelUI-zen-gradient-colors-wrapper 
+                >#PanelUI-zen-gradient-opacity-wrapper 
+                >#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+    .zen-toolbar-background {
+        @media -moz-pref('zen.theme.acrylic-elements') {
 
-
-    @media -moz-pref('zen.theme.acrylic-elements') {
-
-        /*NeoZen: If acrylic elements is enabled, the background of the pseudo element ::after needs to be set to transparent
-         *otherwise it will be a solid color, and the acrylic effect will not work.
-         *To fix this, the background of the pseudo element ::after is set to transparent, and we type the media query after
-         *the pseudo element ::after too ensure that the background of the pseudo element ::after is set to transparent when 
-         *the media query is active */
-        &::after {
-            background: var(--Neo-Compact-Background) !important;
+            &::before,
+            &::after {
+                background: var(--Neo-Compact-Background) !important;
+            }
         }
-
-        background: transparent !important;
-        backdrop-filter: blur(42px) saturate(110%) brightness(0.25) contrast(100%) !important;
     }
+
 }
 
 :root[zen-compact-mode='true']:not([customizing]):not([inDOMFullscreen='true']) {
