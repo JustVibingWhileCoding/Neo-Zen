@@ -93,3 +93,13 @@
         }
     }
 }
+
+/* This fixes an issue with the overflow extensions list being displayed when the sidebar is not expanded, 
+ *using the attribute declared in :root. 
+ *This is a temporary fix until the developer fixes the issue in the future. 
+ *Or that's what I'm thinking, I don't know if it will be fixed or not. */
+:root:not([zen-sidebar-expanded="true"]){
+    #zen-overflow-extensions-list{
+        display: none !important;
+    }
+}
