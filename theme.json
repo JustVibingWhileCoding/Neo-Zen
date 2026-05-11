@@ -4,7 +4,7 @@
   "author": "JustVibingWhileCoding",
   "name": "Neo Zen",
   "description": "A sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity",
-  "version": "3.0.0",
+  "version": "1.20.0T-neo.0",
   "createdAt": "2025-05-31",
   "updatedAt": "2026-04-27",
   "style": {
@@ -12,7 +12,7 @@
     "content": "userContent.css"
   },
   "preferences": "preferences.json",
-  "readme": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/main/README.md",
+  "readme": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/Rewrite/README.md",
   "image": "https://github.com/user-attachments/assets/c37e9f4e-1ab1-43ec-945e-2be1592351a4",
   "tags": [
     "content",
