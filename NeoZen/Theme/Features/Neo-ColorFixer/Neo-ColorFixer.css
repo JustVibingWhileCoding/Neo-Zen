@@ -63,6 +63,8 @@ gradient generator. */
     --Neo-Background: var(--Neo-Background-Aux) !important;
                     
     --Neo-Compact-Background: color-mix(in srgb, var(--Neo-Background) 65%, var(--Neo-Glow-Color-1) 3%);
+    --Neo-Background-T1: color-mix(in srgb, var(--Neo-Background) 60%, transparent 40%);
+    --Neo-Background-T2: color-mix(in srgb, var(--Neo-Background) 80%, transparent 40%);
 
     /* This change the color scheme of the browser to fix an issue with some elements not changing their color when using the variable --Neo-Elements
     which may be applied to the elements using the rules declared below this block of code. */

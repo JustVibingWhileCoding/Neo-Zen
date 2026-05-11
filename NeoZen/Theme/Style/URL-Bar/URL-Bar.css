@@ -23,5 +23,11 @@
         #urlbar-input-container {
             background: none !important;
         }
+
+        #urlbar:not([breakout-extend="true"]) {
+            &:hover .urlbar-background {
+                background-color: var(--Neo-Background-T1) !important;
+            }
+        }
     }
 }
