@@ -5,7 +5,7 @@
             background: transparent !important;
 
             .urlbar-background {
-
+                transition: background-color 0.3s ease !important;
                 border-radius: var(--Roundness) !important;
                 outline: none !important;
             }
@@ -20,14 +20,52 @@
             background: none !important;
         }
 
-        #urlbar-input-container {
-            background: none !important;
+        #urlbar:not([breakout-extend="true"]) {
+
+            .urlbar-input-container {
+                padding-left: 55px !important;
+            }
+
+            /* NeoZen: This ensures that the site data icon button is always visible and not hidden by the browser only when the URL bar is not opened */
+            #zen-site-data-icon-button {
+                display: flex !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+            }
+
+            /* NeoZen: This is used to move the buttons inside the URL bar to the right side of the URL bar 
+            and get a cleaner layout with a better hover effect */
+            #zen-copy-url-button,
+            #page-action-buttons,
+            #identity-box {
+                transform: translateX(50px) !important;
+
+                transition: transform 0.3s ease !important;
+            }
+
+            &:hover,
+            &[has-popup-open="true"] { /*NeoZen: I use the attribute has-popup-open to detect when the URL bar has a 
+                                        *pop up menu opened and than keep the displacement of the buttons inside the URL bar*/
+                & .urlbar-background {
+                    background-color: var(--Neo-Background-T1) !important;
+                }
+
+                & #zen-copy-url-button,
+                & #page-action-buttons,
+                & #identity-box {
+                    transform: translateX(0px) !important
+                }
+            }
         }
 
-        #urlbar:not([breakout-extend="true"]) {
-            &:hover .urlbar-background {
-                background-color: var(--Neo-Background-T1) !important;
-            }
+        /* NeoZen: This ensures that the buttons inside the URL bar are always visible and not hidden by the browser */
+        #zen-copy-url-button,
+        #page-action-buttons {
+            display: flex !important;
+            position: relative !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+
         }
     }
 }
