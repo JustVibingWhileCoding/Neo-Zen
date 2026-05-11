@@ -5,12 +5,12 @@
             background: transparent !important;
 
             .urlbar-background {
-                transition: background-color 0.3s ease,
-                    border 0.3s ease,
-                    box-shadow 0.3s ease !important;
+                transition: background-color 0.4s ease,
+                    border 0.4s ease,
+                    box-shadow 0.4s ease !important;
                 border-radius: var(--Roundness) !important;
                 outline: none !important;
-                box-shadow: 0px 0px 5px transparent !important;
+                box-shadow: 0px 0px 8px transparent !important;
                 border: 1px solid transparent !important;
             }
         }
@@ -30,7 +30,7 @@
                 &:hover {
                     & .urlbar-background {
                         border: 1px solid var(--Neo-Glow-Color-3) !important;
-                        box-shadow: 0px 0px 5px var(--Neo-Glow-Color-3) !important;
+                        box-shadow: 0px 0px 8px var(--Neo-Glow-Color-3) !important;
                         background-color: var(--Neo-Background-T1) !important;
                     }
                 }
@@ -48,8 +48,8 @@
                     margin-right: 20px !important;
                     margin-left: 0px !important;
                     opacity: 1 !important;
-                    transform: translateX(-100px) !important;
-                    transition: transform 0.3s ease !important;
+                    transform: translateX(-60px) !important;
+                    transition: transform 0.5s ease !important;
                 }
                 
                 #translations-button{
@@ -71,10 +71,10 @@
                  * and get a cleaner layout with a better hover effect */
                 #page-action-buttons,
                 #identity-box {
-                    transform: translateX(100px) !important;
+                    transform: translateX(60px) !important;
                     visibility: visible !important;
 
-                    transition: transform 0.3s ease !important;
+                    transition: transform 0.5s ease !important;
                 }
 
                 &:hover,
