@@ -42,9 +42,21 @@
         :root:not([zen-has-empty-tab="true"]) {
 
             #urlbar:not([breakout-extend="true"]) {
+                
+                #zen-copy-url-button {
+                    order: -1 !important;
+                    margin-right: 15px !important;
+                    opacity: 1 !important;
+                    transform: translateX(-100px) !important;
+                    transition: transform 0.3s ease !important;
+                }
+                
+                #translations-button{
+                    display: flex !important;
+                    visibility: visible !important;
+                }
                 #urlbar-input {
-                    max-width: 70% !important;
-                    margin-right: 0px !important;
+                    max-width: 100% !important;
                 }
 
                 .urlbar-input-container {}
@@ -58,7 +70,6 @@
 
                 /* NeoZen: This is used to move the buttons inside the URL bar to the right side of the URL bar 
                  * and get a cleaner layout with a better hover effect */
-                #zen-copy-url-button,
                 #page-action-buttons,
                 #identity-box {
                     transform: translateX(100px) !important;
@@ -70,11 +81,10 @@
                 &[has-popup-open="true"] {
                     /* NeoZen: I use the attribute has-popup-open to detect when the URL bar has a 
                      * pop up menu opened and than keep the displacement of the buttons inside the URL bar*/
-
                     & #zen-copy-url-button,
                     & #page-action-buttons,
                     & #identity-box {
-                        transform: translateX(0px) !important
+                        transform: translateX(0px) !important;
                     }
                 }
             }
@@ -86,12 +96,6 @@
                 position: relative !important;
                 opacity: 1 !important;
                 visibility: visible !important;
-                order: 2 !important;
-
-            }
-
-            #zen-copy-url-button {
-                order: 1 !important;
             }
         }
 
