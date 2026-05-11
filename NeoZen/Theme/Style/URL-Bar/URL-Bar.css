@@ -5,9 +5,13 @@
             background: transparent !important;
 
             .urlbar-background {
-                transition: background-color 0.3s ease !important;
+                transition: background-color 0.3s ease,
+                    border 0.3s ease,
+                    box-shadow 0.3s ease !important;
                 border-radius: var(--Roundness) !important;
                 outline: none !important;
+                box-shadow: 0px 0px 5px transparent !important;
+                border: 1px solid transparent !important;
             }
         }
 
@@ -18,12 +22,15 @@
         #urlbar-input {
             text-align: center !important;
             background: none !important;
+            margin: auto !important;
         }
 
         :root {
             #urlbar:not([breakout-extend="true"]) {
                 &:hover {
                     & .urlbar-background {
+                        border: 1px solid var(--Neo-Glow-Color-3) !important;
+                        box-shadow: 0px 0px 5px var(--Neo-Glow-Color-3) !important;
                         background-color: var(--Neo-Background-T1) !important;
                     }
                 }
@@ -33,11 +40,14 @@
         /* NeoZen: I use the attribute zen-has-empty-tab to detect when the URL bar is empty and than keep the displacement of the buttons inside the URL bar
          * This fixes an issue when there is an empty tab which shows the buttons in wrong position */
         :root:not([zen-has-empty-tab="true"]) {
-            #urlbar:not([breakout-extend="true"]) {
 
-                .urlbar-input-container {
-                    padding-left: 55px !important;
+            #urlbar:not([breakout-extend="true"]) {
+                #urlbar-input {
+                    max-width: 70% !important;
+                    margin-right: 0px !important;
                 }
+
+                .urlbar-input-container {}
 
                 /* NeoZen: This ensures that the site data icon button is always visible and not hidden by the browser only when the URL bar is not opened */
                 #zen-site-data-icon-button {
@@ -51,7 +61,7 @@
                 #zen-copy-url-button,
                 #page-action-buttons,
                 #identity-box {
-                    transform: translateX(55px) !important;
+                    transform: translateX(100px) !important;
 
                     transition: transform 0.3s ease !important;
                 }
@@ -60,9 +70,6 @@
                 &[has-popup-open="true"] {
                     /* NeoZen: I use the attribute has-popup-open to detect when the URL bar has a 
                      * pop up menu opened and than keep the displacement of the buttons inside the URL bar*/
-                    & .urlbar-background {
-                        background-color: var(--Neo-Background-T1) !important;
-                    }
 
                     & #zen-copy-url-button,
                     & #page-action-buttons,
