@@ -38,7 +38,7 @@
             #zen-copy-url-button,
             #page-action-buttons,
             #identity-box {
-                transform: translateX(50px) !important;
+                transform: translateX(55px) !important;
 
                 transition: transform 0.3s ease !important;
             }
@@ -66,6 +66,11 @@
             opacity: 1 !important;
             visibility: visible !important;
 
+        }
+        
+        /* NeoZen: This ensures that the copy button is always on the left side of the URL bar */
+        #zen-copy-url-button{
+            order: 1 !important;
         }
     }
 }
