@@ -45,7 +45,8 @@
                 
                 #zen-copy-url-button {
                     order: -1 !important;
-                    margin-right: 15px !important;
+                    margin-right: 20px !important;
+                    margin-left: 0px !important;
                     opacity: 1 !important;
                     transform: translateX(-100px) !important;
                     transition: transform 0.3s ease !important;
@@ -59,8 +60,6 @@
                     max-width: 100% !important;
                 }
 
-                .urlbar-input-container {}
-
                 /* NeoZen: This ensures that the site data icon button is always visible and not hidden by the browser only when the URL bar is not opened */
                 #zen-site-data-icon-button {
                     display: flex !important;
@@ -73,6 +72,7 @@
                 #page-action-buttons,
                 #identity-box {
                     transform: translateX(100px) !important;
+                    visibility: visible !important;
 
                     transition: transform 0.3s ease !important;
                 }
@@ -98,6 +98,16 @@
                 visibility: visible !important;
             }
         }
-
+        /* NeoZen: This is used to remove the buttons from extensions inside the URL bar */
+        :root[zen-single-toolbar="true"] #urlbar:not([breakout-extend="true"]) {
+            & .urlbar-page-action:not(#zen-copy-url-button):not(#translations-button), & .unified-extensions-item {
+                display: none !important;
+            }
+        }
+        :root:not([zen-single-toolbar="true"]) #urlbar:not([breakout-extend="true"]) {
+            & .urlbar-page-action:not(#zen-copy-url-button):not(#translations-button), & .unified-extensions-item {
+                display: none !important;
+            }
+        }
     }
 }
