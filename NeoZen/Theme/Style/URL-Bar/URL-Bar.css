@@ -55,6 +55,13 @@
                 #translations-button{
                     display: flex !important;
                     visibility: visible !important;
+                    /* NeoZen: This fixes an issue with some elements inside the translations button
+                     * which are visible when a tab is loading and than they will never be hidden again
+                     * when the tab is loaded */
+                    & .urlbar-icon:not(#translations-button-icon),
+                    & #translations-button-locale {
+                        display: none !important;
+                    }
                 }
                 #urlbar-input {
                     max-width: 100% !important;
