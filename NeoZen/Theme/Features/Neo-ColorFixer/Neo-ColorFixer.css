@@ -8,7 +8,7 @@ when having a gradient or a color set*/
 
         @media (-moz-platform: linux) {
             @media -moz-pref("zen.widget.linux.transparency", true) {
-                --Neo-Browser-Background: #1A1A1AC0 !important;
+                --Neo-Browser-Background: #121212C0 !important;
             }
         }
 
