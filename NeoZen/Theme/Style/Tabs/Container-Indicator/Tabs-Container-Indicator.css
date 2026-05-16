@@ -1,4 +1,4 @@
-@media (-moz-pref("zen.workspaces.hide-default-container-indicator")) {
+@media not (-moz-pref("zen.workspaces.hide-default-container-indicator")) {
     @media not (-moz-pref("neo-theme-disabled")) {
         @media not (-moz-pref("neo-theme-tabs-containers-disabled")) {
 
