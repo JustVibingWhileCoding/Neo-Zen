@@ -4,10 +4,16 @@
             .tabbrowser-tab {
                 --tab-color: var(--Neo-Glow-Color-3) !important;
                 --tab-hover-color: var(--Neo-Glow-Color-1) !important;
-                &[usercontextid] {
-                    --tab-color: color-mix(in srgb, var(--identity-tab-color) 40%, white) !important;
-                    --tab-hover-color: color-mix(in srgb, var(--identity-tab-color) 60%, white) !important;
+
+                @media not (-moz-pref("zen.workspaces.hide-default-container-indicator")) {
+                    @media not (-moz-pref("neo-theme-tabs-containers-disabled")) {
+                        &[usercontextid] {
+                            --tab-color: color-mix(in srgb, var(--identity-tab-color) 40%, white) !important;
+                            --tab-hover-color: color-mix(in srgb, var(--identity-tab-color) 60%, white) !important;
+                        }
+                    }
                 }
+
                 --tab-background: color-mix(in srgb, var(--Neo-Background) 60%, transparent 40%) !important;
                 --tab-hover-background: color-mix(in srgb, var(--Neo-Background) 80%, transparent 40%) !important;
                 padding: 2px !important;
@@ -24,13 +30,13 @@
                     }
 
                     &[visuallyselected] .tab-background {
-                        
+
                         box-shadow: 0px 0px 6px color-mix(in srgb, white 20%, transparent) !important;
-                        
+
                         &::before {
                             border-radius: var(--Roundness) !important;
                             background-color: var(--tab-background) !important;
-                            
+
                             box-shadow: 0px 0px 10px color-mix(in srgb, white 30%, transparent) !important;
                             transition: background 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
                         }
@@ -39,8 +45,8 @@
 
                 &:not([zen-essential]) {
                     padding: 5px 5px !important;
-                    
-                    .tab-background{
+
+                    .tab-background {
                         border: 1px solid color-mix(in srgb, var(--zen-primary-color) 0%, transparent) !important;
                     }
                 }
@@ -50,18 +56,18 @@
                     position: relative !important;
                     margin-top: 0px !important;
                     margin-bottom: 0px !important;
-                    
+
                     transition: background 0.5s ease, box-shadow 0.2s ease, border 0.3s ease !important;
                 }
-                
+
                 &:not([zen-essential])[selected] .tab-background,
-                &:not([zen-essential])[multiselected="true"] .tab-background{
+                &:not([zen-essential])[multiselected="true"] .tab-background {
                     background: var(--tab-background) !important;
                     box-shadow: 0px 0px 5px var(--tab-color) !important;
                     border: 1px solid var(--tab-color) !important;
                 }
-                
-                &:not([zen-essential]):hover .tab-background{
+
+                &:not([zen-essential]):hover .tab-background {
                     background: var(--tab-hover-background) !important;
                     box-shadow: 0px 0px 5px var(--tab-hover-color) !important;
                     border: 1px solid var(--tab-hover-color) !important;
