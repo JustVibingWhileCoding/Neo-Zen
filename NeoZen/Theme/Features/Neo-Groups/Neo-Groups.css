@@ -27,6 +27,11 @@ tab-group:not([split-view-group="true"]) {
     }
 
     & .tab-group-label-container {
+        /* Neo Zen: I use position sticky to make the label of the tab group stay at the top of the tab group when it's scrolled, 
+         * and I use z-index to make it stay above the tabs. */
+        top: 0 !important;
+        order: -1 !important;
+        position: sticky !important;
         z-index: 10 !important;
         width: 95% !important;
         display: flex !important;
@@ -39,12 +44,16 @@ tab-group:not([split-view-group="true"]) {
         height: var(--tab-min-height) !important;
 
         >label {
-            margin: auto !important;
+            position: relative !important;
+            height: var(--tab-min-height) !important;
+            text-align: center !important;
+            align-content: center !important;
+            left: 10px !important;
         }
     }
 
     .tab-group-container {
-        margin-top: 10px !important;
+        margin-top: 5px !important;
         margin-left: 0px !important;
 
         & .tabbrowser-tab {
