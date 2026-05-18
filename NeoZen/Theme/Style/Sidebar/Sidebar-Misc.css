@@ -9,3 +9,14 @@
     margin: auto 8px !important;
   }
 }
+
+/* Neo Zen: This hides the scrollbars of the sidebar, maybe I'll use this to hide the scrollbar when
+ * a tab group is hovered and not collapsed for a better experience */
+
+@media not (-moz-pref("neo-theme-disabled")) {
+    @media not (-moz-pref("neo-theme-scrollbar-enabled")) {
+        scrollbox {
+            scrollbar-width: none !important;
+        }
+    }
+}

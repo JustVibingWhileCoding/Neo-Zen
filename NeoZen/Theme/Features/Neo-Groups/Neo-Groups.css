@@ -1,0 +1,84 @@
+tab-group:not([split-view-group="true"]) {
+    display: flex !important;
+    flex-direction: column !important;
+
+    overflow-y: scroll !important;
+
+    scrollbar-width: thin !important;
+
+    z-index: 9999 !important;
+
+    max-height: calc((var(--tab-min-height) + 8px) * 4) !important;
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+
+    transition: max-height 0.5s ease !important;
+
+
+    &[collapsed=""] {
+        max-height: var(--tab-min-height) !important;
+
+        .tab-group-container {
+            & .tabbrowser-tab {
+                opacity: 0;
+                visibility: hidden !important;
+            }
+        }
+    }
+
+    & .tab-group-label-container {
+        z-index: 10 !important;
+        width: 95% !important;
+        display: flex !important;
+
+        margin: 0px !important;
+
+        justify-content: center !important;
+        align-content: center !important;
+
+        height: var(--tab-min-height) !important;
+
+        >label {
+            margin: auto !important;
+        }
+    }
+
+    .tab-group-container {
+        margin-top: 10px !important;
+        margin-left: 0px !important;
+
+        & .tabbrowser-tab {
+            opacity: 1;
+            visibility: visible;
+
+            transition: visibility 0.5s ease,
+                opacity 0.5s ease !important;
+        }
+    }
+}
+
+.tab-group-label-container {
+    #tabbrowser-tabs[orient="vertical"] & {
+
+        tab-group:not([collapsed])>&,
+        tab-group[collapsed][hasactivetab]>& {
+            padding-block-end: unset !important;
+        }
+    }
+}
+
+/* Neo Zen: I tried to keep the tabs area scroll disabled when a tab group is hovvered to make the scroll works on the tab groups, 
+ * but it didn't work with this code, so I'm disabling it for now */
+
+/*body:has(tab-group:not([split-view-group="true"]):hover){
+  zen-workspace {
+  & > arrowscrollbox,
+  & > .workspace-arrowscrollbox{
+    max-height: 100%;
+    overflow: clip !important;
+    overscroll-behavior-y: none !important;
+    position: relative;
+    background: red !important;
+  }
+}
+}*/
