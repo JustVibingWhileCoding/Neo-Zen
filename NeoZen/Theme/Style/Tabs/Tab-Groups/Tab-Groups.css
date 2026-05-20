@@ -11,10 +11,24 @@
             }
 
             & .tab-group-label-container {
+
                 >label {
+                    margin: auto !important;
+                    display: flex !important;
                     background: none !important;
                     outline: none !important;
-                    left: 4px !important;
+                    left: 0px !important;
+                    width: 100% !important;
+                    padding-left: 32px !important;
+
+                    align-items: center !important;
+
+                    &::before {
+                        align-self: center !important;
+                        margin: auto !important;
+                        left: 3.5px;
+                        top: 7px !important;
+                    }
                 }
             }
         }
@@ -52,6 +66,7 @@
                         display: flex !important;
                         margin: auto !important;
                         left: auto !important;
+                        padding-left: unset !important;
 
                         justify-content: center !important;
                         align-content: center !important;
@@ -61,8 +76,7 @@
                         width: 100% !important;
 
                         &::before {
-                            align-self: center !important;
-                            margin: auto !important;
+                            left: 13px !important;
                         }
                     }
                 }
