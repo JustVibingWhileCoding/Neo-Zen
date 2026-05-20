@@ -2,9 +2,20 @@
     @media (-moz-bool-pref("neo-theme-tab-groups")) {
         tab-group:not([split-view-group="true"]) {
 
-            
-            &[collapsed=""] {
 
+            &[collapsed=""] {}
+        }
+
+        /* Neo Zen: This is used to remove a line from the tab group label when the sidebar is in collapsed mode*/
+        :root:not([zen-sidebar-expanded="true"]) {
+            tab-group:not([split-view-group]) .tab-group-label-container {
+                #tabbrowser-tabs[orient="vertical"] tab-group:not([collapsed])>&::after {
+                    width: var(--tab-group-line-thickness);
+                    inset-block: unset !important;
+                    inset-inline: unset !important;
+                    border-start-start-radius: unset !important;
+                    border-start-end-radius: unset !important;
+                }
             }
         }
     }
