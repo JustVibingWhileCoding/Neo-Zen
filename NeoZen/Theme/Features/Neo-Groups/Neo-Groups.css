@@ -12,6 +12,7 @@ tab-group:not([split-view-group="true"]) {
     margin: 3px !important;
 
     &[collapsed=""] {
+        overflow-y: clip !important;
         max-height: calc(var(--tab-min-height) + 2px) !important;
 
         .tab-group-container {
