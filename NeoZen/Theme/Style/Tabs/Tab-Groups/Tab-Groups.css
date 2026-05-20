@@ -7,12 +7,18 @@
             border: 1px solid color-mix(in srgb, var(--tab-group-color) 70%, white) !important;
             background: color-mix(in srgb, color-mix(in srgb, var(--tab-group-color) 15%, black 35%), white 5%) !important;
 
+            box-shadow: 0 0px 3px color-mix(in srgb, var(--tab-group-color) 100%, white 80%) !important;
+            filter: drop-shadow(0px 0px 5px color-mix(in srgb, var(--tab-group-color) 0%, white 0%)) brightness(1.0) !important;
+
             transition: background 0.5s ease,
                 max-height 0.5s ease !important;
 
             &[collapsed=""] {
                 background: transparent !important;
                 border: 1px solid color-mix(in srgb, var(--tab-group-color) 0%, transparent) !important;
+
+                box-shadow: 0 0px 4px transparent !important;
+                filter: drop-shadow(0px 0px 10px transparent) brightness(1.0) !important;
 
                 & .tab-group-label-container {
                     background: transparent !important;
@@ -35,6 +41,8 @@
                     padding-left: 32px !important;
 
                     align-items: center !important;
+
+
 
                     &::before {
                         align-self: center !important;
