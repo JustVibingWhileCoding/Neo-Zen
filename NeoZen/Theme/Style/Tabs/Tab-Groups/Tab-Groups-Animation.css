@@ -1,5 +1,19 @@
 tab-group:not([split-view-group]) {
     &[collapsed] {
+        &:hover {
+            & .tab-group-label-container>label::before {
+                scale: 1.4 !important;
+
+                @media not (-moz-bool-pref: "tab.groups.theme-folders") {
+                    background-color: color-mix(in srgb, var(--tab-group-color) 70%, white) !important;
+                }
+            }
+
+            & .tab-group-label-container>label {
+                filter: drop-shadow(0px 0px 3px color-mix(in srgb, var(--tab-group-color) 90%, white 10%)) brightness(1.2) !important;
+            }
+        }
+
         & .tab-group-label-container>label::before {
             animation: iconAnimation-close 1s ease-in-out forwards !important;
             animation-fill-mode: forwards !important;
@@ -8,8 +22,8 @@ tab-group:not([split-view-group]) {
 
     &:not([collapsed]) {
         & .tab-group-label-container>label::before {
-                    animation: iconAnimation-open 1s ease-in-out forwards !important;
-                    animation-fill-mode: forwards !important;
+            animation: iconAnimation-open 1s ease-in-out forwards !important;
+            animation-fill-mode: forwards !important;
         }
     }
 }
