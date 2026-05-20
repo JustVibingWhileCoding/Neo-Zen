@@ -62,7 +62,7 @@
 
                 /* Expands on hover */
                 & .zen-essentials-container:hover {
-                    max-height: calc((var(--tab-min-height) + 7px) * 5) !important;
+                    max-height: calc((var(--tab-min-height) + 0px) * 5) !important;
 
                     & .tabbrowser-tab {
                         opacity: 1 !important;
