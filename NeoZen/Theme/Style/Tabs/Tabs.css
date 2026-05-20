@@ -16,10 +16,11 @@
 
                 --tab-background: color-mix(in srgb, var(--Neo-Background) 60%, transparent 40%) !important;
                 --tab-hover-background: color-mix(in srgb, var(--Neo-Background) 80%, transparent 40%) !important;
-                padding: 2px !important;
+
 
                 &[zen-essential] {
                     .tab-background {
+                        margin: 2px !important;
                         background: var(--tab-background) !important;
                         box-shadow: 0 0px 4px color-mix(in srgb, black 100%, transparent 10%) !important;
                     }
@@ -44,10 +45,12 @@
                 }
 
                 &:not([zen-essential]) {
-                    padding: 5px 5px !important;
-
                     .tab-background {
                         border: 1px solid color-mix(in srgb, var(--zen-primary-color) 0%, transparent) !important;
+                        
+                         /* Instead of using the padding outside the tab background, we use a margin to get an space between the tab-stack and the tab background 
+                         * With this we avoid and issue with tab folders, where the folder doesn't close correctly when the tab is active */
+                        margin: 5px !important;
                     }
                 }
 
