@@ -9,7 +9,7 @@ tab-group:not([split-view-group="true"]) {
     z-index: 9999 !important;
 
     max-height: calc((var(--tab-min-height) + 8px) * 4 + 4px) !important;
-    margin: 5px !important;
+    margin: 3px !important;
 
     &[collapsed=""] {
         max-height: calc(var(--tab-min-height) + 2px) !important;

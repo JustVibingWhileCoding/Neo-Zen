@@ -22,14 +22,16 @@
 
                 & .tab-group-label-container {
                     background: transparent !important;
+                    filter: drop-shadow(0px 0px 3px color-mix(in srgb, var(--tab-group-color) 90%, white 10%)) brightness(1.2) !important;
                 }
             }
 
             & .tab-group-label-container {
 
                 background: color-mix(in srgb, color-mix(in srgb, var(--tab-group-color) 9%, black), white 3%) !important;
+                filter: drop-shadow(0px 0px 5px color-mix(in srgb, var(--tab-group-color) 90%, white)) brightness(1.2) !important;
 
-                transition: background 0.5s ease, padding-left 0.5s ease !important;
+                transition: background 0.5s ease !important;
 
                 >label {
                     margin: auto !important;
@@ -42,13 +44,15 @@
 
                     align-items: center !important;
 
-
+                    color: color-mix(in srgb, var(--tab-group-color) 40%, white) !important;
+                    filter: drop-shadow(0px 0px 3px color-mix(in srgb, var(--tab-group-color) 90%, white 10%)) brightness(1.2) !important;
+                    transition: padding-left 0.3s ease !important;
 
                     &::before {
                         align-self: center !important;
                         margin: auto !important;
-                        left: 4px;
-                        top: 7px !important;
+                        left: 6px;
+                        top: 6.5px !important;
                     }
                 }
             }
