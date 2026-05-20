@@ -8,7 +8,7 @@ tab-group:not([split-view-group="true"]) {
 
     z-index: 9999 !important;
 
-    max-height: calc((var(--tab-min-height) + 8px) * 4 + 4px) !important;
+    max-height: calc((var(--tab-min-height) + 8px) * 4 + 8px) !important;
     margin: 5px !important;
 
 
@@ -17,7 +17,7 @@ tab-group:not([split-view-group="true"]) {
     border: 1px solid color-mix(in srgb, var(--Neo-Glow-Color-1) 100%, transparent 0%) !important;
 
     &[collapsed=""] {
-        max-height: var(--tab-min-height) !important;
+        max-height: calc(var(--tab-min-height) + 2px) !important;
 
         .tab-group-container {
             & .tabbrowser-tab {
@@ -46,7 +46,7 @@ tab-group:not([split-view-group="true"]) {
 
         >label {
             position: relative !important;
-            height: calc(var(--tab-min-height) - 2px) !important;
+            height: var(--tab-min-height) !important;
             text-align: center !important;
             align-content: center !important;
             left: 4px !important;
