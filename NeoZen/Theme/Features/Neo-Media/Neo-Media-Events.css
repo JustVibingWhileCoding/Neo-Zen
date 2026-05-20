@@ -2,7 +2,7 @@
   @media not (-moz-pref("neo-features-media-disabled")) {
     #navigator-toolbox:not([zen-sidebar-expanded]) #zen-media-controls-toolbar:not([hidden]):hover {
       &>toolbaritem {
-        height: 210px !important;
+        max-height: 225px !important;
       }
     }
   }
