@@ -48,11 +48,7 @@ when having a gradient or a color set*/
 
 /* This change how the browser manage the color scheme when the background opacity is set to the lowest value, using the attribute declared in the
 gradient generator. */
-#main-window:has(#PanelUI-zen-gradient-generator-view
-                >#PanelUI-zen-gradient-generator-controls
-                >#PanelUI-zen-gradient-colors-wrapper
-                >#PanelUI-zen-gradient-opacity-wrapper
-                >#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+#main-window:has(#PanelUI-zen-gradient-generator-view >#PanelUI-zen-gradient-generator-controls >#PanelUI-zen-gradient-colors-wrapper >#PanelUI-zen-gradient-opacity-wrapper >#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
 
     /* This change the background color of the browser whent the opacity is set to the lowest value, using the attribute declared in the gradient generator. */
     #zen-browser-background {
@@ -61,8 +57,21 @@ gradient generator. */
 
     --Neo-Elements: var(--Neo-Elements-Aux) !important;
     --Neo-Background: var(--Neo-Background-Aux) !important;
-                    
+
     --Neo-Compact-Background: color-mix(in srgb, var(--Neo-Background) 65%, var(--Neo-Glow-Color-1) 3%);
+
+    /* Neo Zen: Looks like i can change the color scheme with only using the id #browser, and performance is better 
+     * than changing the color scheme of all the elements in the browser, so for now i will keep it like this until i find a better solution. */
+    & #browser {
+        @media -moz-pref("zen.view.window.scheme", 1) {
+            color-scheme: light !important;
+        }
+
+        @media not -moz-pref("zen.view.window.scheme", 1) {
+            color-scheme: dark !important;
+        }
+    }
+
 
     /* This change the color scheme of the browser to fix an issue with some elements not changing their color when using the variable --Neo-Elements
     which may be applied to the elements using the rules declared below this block of code. */
