@@ -69,7 +69,7 @@
 
                         /* Instead of using the padding outside the tab background, we use a margin to get an space between the tab-stack and the tab background 
                          * With this we avoid and issue with tab folders, where the folder doesn't close correctly when the tab is active */
-                        margin: 5px !important;
+                        margin: 3px !important;
                     }
                 }
 
