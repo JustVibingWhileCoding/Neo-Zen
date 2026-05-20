@@ -1,5 +1,6 @@
-@media (-moz-bool-pref("neo-theme-disabbled")) {
-    @media (-moz-bool-pref("neo-theme-tab-groups")) {
+@media not (-moz-pref("neo-theme-disabled")) {
+    @media not (-moz-pref("neo-theme-tab-groups-disabled")) {
+
         tab-group:not([split-view-group="true"]) {
 
 
