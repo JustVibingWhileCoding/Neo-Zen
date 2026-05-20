@@ -27,3 +27,15 @@ tab-group:not([split-view-group]) {
         }
     }
 }
+
+:root[zen-sidebar-expanded="true"] {
+    tab-group:not([split-view-group]) {
+        &[collapsed] {
+            &:hover {
+                & .tab-group-label-container>label{
+                    padding-left: 38px !important;
+                }
+            }
+        }
+    }
+}

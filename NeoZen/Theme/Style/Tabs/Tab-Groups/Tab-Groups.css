@@ -29,7 +29,7 @@
 
                 background: color-mix(in srgb, color-mix(in srgb, var(--tab-group-color) 9%, black), white 3%) !important;
 
-                transition: background 0.5s ease !important;
+                transition: background 0.5s ease, padding-left 0.5s ease !important;
 
                 >label {
                     margin: auto !important;
