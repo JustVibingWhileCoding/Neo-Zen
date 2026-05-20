@@ -66,6 +66,10 @@ gradient generator. */
 
     /* This change the color scheme of the browser to fix an issue with some elements not changing their color when using the variable --Neo-Elements
     which may be applied to the elements using the rules declared below this block of code. */
+
+    /* Due to performance issues, the automatic switch of the color scheme is set as a comment until a better solution is found. */
+
+    /*
     &,
     & #browser,
     & body,
@@ -84,6 +88,7 @@ gradient generator. */
             color-scheme: dark !important;
         }
     }
+    */
 }
 
 /* This change the color of all the elements in the browser to the color declared in the variable
