@@ -47,7 +47,7 @@
                     &::before {
                         align-self: center !important;
                         margin: auto !important;
-                        left: 3.5px;
+                        left: 4px;
                         top: 7px !important;
                     }
                 }
