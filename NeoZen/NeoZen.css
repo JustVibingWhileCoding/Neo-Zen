@@ -35,11 +35,11 @@ browser {
 
 /* Please do not remove this, it is required for the proper functioning of the theme */
 :root{
-  --tab-collapsed-background-width: 42px !important;
+  --tab-collapsed-background-width: 40px !important;
 }
 
 @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
   :root {
-    --tab-min-height: 40px !important;
+    --tab-min-height: 38px !important;
   }
 }

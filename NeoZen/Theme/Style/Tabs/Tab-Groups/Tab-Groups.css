@@ -24,5 +24,16 @@
                 }
             }
         }
+
+        /*Neo Zen: This is used to make the tab groups in the collapsed sidebar mode have a smaller width, 
+         *and to add some margin to them to make them look better*/
+        :root:not([zen-sidebar-expanded="true"]) {
+            tab-group:not([split-view-group="true"]) {
+                margin-right: 4px !important;
+                margin-left: 4px !important;
+                min-width: unset !important;
+                width: calc(var(--tab-collapsed-background-width) + 8px) !important;
+            }
+        }
     }
 }
