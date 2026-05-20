@@ -1,0 +1,15 @@
+tab-group:not([split-view-group]) {
+    &[collapsed] {
+        & .tab-group-label-container>label::before {
+            animation: iconAnimation-close 1s ease-in-out forwards !important;
+            animation-fill-mode: forwards !important;
+        }
+    }
+
+    &:not([collapsed]) {
+        & .tab-group-label-container>label::before {
+                    animation: iconAnimation-open 1s ease-in-out forwards !important;
+                    animation-fill-mode: forwards !important;
+        }
+    }
+}
