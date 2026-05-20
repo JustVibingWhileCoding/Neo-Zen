@@ -1,6 +1,11 @@
 @media (-moz-bool-pref("neo-theme-disabbled")) {
     @media (-moz-bool-pref("neo-theme-tab-groups")) {
         tab-group:not([split-view-group="true"]) {
+
+            
+            &[collapsed=""] {
+
+            }
         }
     }
 }

@@ -21,6 +21,7 @@
 
 /* Neo Zen 1.20.0T-neo.0*/
 
+@import "Animations/Animations.css";
 @import "Layout/Layout.css";
 @import "Rules/Rules.css";
 @import "Theme/Features/Neo-Features.css";
