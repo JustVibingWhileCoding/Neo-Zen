@@ -84,7 +84,7 @@
                 justify-content: start !important;
 
                 & .tab-context-line {
-                    left: 3px !important;
+                    left: 5px !important;
                 }
             }
 
@@ -114,6 +114,5 @@
                 }
             }
         }
-
     }
 }
