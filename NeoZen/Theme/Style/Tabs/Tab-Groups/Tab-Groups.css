@@ -5,12 +5,25 @@
 
             border-radius: var(--Roundness) !important;
             border: 1px solid color-mix(in srgb, var(--tab-group-color) 70%, white) !important;
+            background: color-mix(in srgb, color-mix(in srgb, var(--tab-group-color) 15%, black 35%), white 5%) !important;
+
+            transition: background 0.5s ease,
+                max-height 0.5s ease !important;
 
             &[collapsed=""] {
+                background: transparent !important;
                 border: 1px solid color-mix(in srgb, var(--tab-group-color) 0%, transparent) !important;
+
+                & .tab-group-label-container {
+                    background: transparent !important;
+                }
             }
 
             & .tab-group-label-container {
+
+                background: color-mix(in srgb, color-mix(in srgb, var(--tab-group-color) 9%, black), white 3%) !important;
+
+                transition: background 0.5s ease !important;
 
                 >label {
                     margin: auto !important;

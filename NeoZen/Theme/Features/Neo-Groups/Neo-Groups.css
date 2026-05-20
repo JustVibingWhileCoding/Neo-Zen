@@ -11,9 +11,6 @@ tab-group:not([split-view-group="true"]) {
     max-height: calc((var(--tab-min-height) + 8px) * 4 + 8px) !important;
     margin: 5px !important;
 
-
-    transition: max-height 0.5s ease !important;
-
     &[collapsed=""] {
         max-height: calc(var(--tab-min-height) + 2px) !important;
 
