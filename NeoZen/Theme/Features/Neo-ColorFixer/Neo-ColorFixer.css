@@ -42,8 +42,6 @@ when having a gradient or a color set*/
             --zen-main-browser-background: var(--Neo-Browser-Background) !important;
         }
     }
-
-    --Neo-Compact-Background: transparent;
 }
 
 /* This change how the browser manage the color scheme when the background opacity is set to the lowest value, using the attribute declared in the
@@ -58,7 +56,7 @@ gradient generator. */
     --Neo-Elements: var(--Neo-Elements-Aux) !important;
     --Neo-Background: var(--Neo-Background-Aux) !important;
 
-    --Neo-Compact-Background: color-mix(in srgb, var(--Neo-Background) 65%, var(--Neo-Glow-Color-1) 3%);
+    --Neo-Compact-Background: color-mix(in srgb, var(--Neo-Background) 55%, var(--Neo-Glow-Color-1) 5%, white 1%);
 
     /* Neo Zen: Looks like i can change the color scheme with only using the id #browser, and performance is better 
      * than changing the color scheme of all the elements in the browser, so for now i will keep it like this until i find a better solution. */
