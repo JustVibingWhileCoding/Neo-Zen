@@ -42,19 +42,19 @@
         :root:not([zen-has-empty-tab="true"]) {
 
             #urlbar:not([breakout-extend="true"]) {
-                
+
                 #zen-copy-url-button {
                     order: -1 !important;
                     margin-right: 20px !important;
                     margin-left: 0px !important;
-                    opacity: 1 !important;
-                    transform: translateX(-60px) !important;
-                    transition: transform 0.5s ease !important;
+                    opacity: 0 !important;
+                    transition: opacity 0.5s ease !important;
                 }
-                
-                #translations-button{
+
+                #translations-button {
                     display: flex !important;
                     visibility: visible !important;
+
                     /* NeoZen: This fixes an issue with some elements inside the translations button
                      * which are visible when a tab is loading and than they will never be hidden again
                      * when the tab is loaded */
@@ -63,6 +63,7 @@
                         display: none !important;
                     }
                 }
+
                 #urlbar-input {
                     max-width: 100% !important;
                 }
@@ -78,10 +79,10 @@
                  * and get a cleaner layout with a better hover effect */
                 #page-action-buttons,
                 #identity-box {
-                    transform: translateX(60px) !important;
+                    opacity: 0 !important;
                     visibility: visible !important;
 
-                    transition: transform 0.5s ease !important;
+                    transition: opacity 0.5s ease !important;
                 }
 
                 &:hover,
@@ -91,7 +92,7 @@
                     & #zen-copy-url-button,
                     & #page-action-buttons,
                     & #identity-box {
-                        transform: translateX(0px) !important;
+                        opacity: 1 !important;
                     }
                 }
             }
@@ -105,14 +106,20 @@
                 visibility: visible !important;
             }
         }
+
         /* NeoZen: This is used to remove the buttons from extensions inside the URL bar */
         :root[zen-single-toolbar="true"] #urlbar:not([breakout-extend="true"]) {
-            & .urlbar-page-action:not(#zen-copy-url-button):not(#translations-button), & .unified-extensions-item {
+
+            & .urlbar-page-action:not(#zen-copy-url-button):not(#translations-button),
+            & .unified-extensions-item {
                 display: none !important;
             }
         }
+
         :root:not([zen-single-toolbar="true"]) #urlbar:not([breakout-extend="true"]) {
-            & .urlbar-page-action:not(#zen-copy-url-button):not(#translations-button), & .unified-extensions-item {
+
+            & .urlbar-page-action:not(#zen-copy-url-button):not(#translations-button),
+            & .unified-extensions-item {
                 display: none !important;
             }
         }
