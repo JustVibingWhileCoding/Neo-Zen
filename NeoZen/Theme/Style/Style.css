@@ -3,6 +3,7 @@
 @import "Sidebar/Sidebar.css";
 @import "Tabs/Tabs.css";
 @import "Tabs/New-Tab-Button.css";
+@import "Tabs/Tab-Glance/Tab-Glance.css";
 @import "Tabs/Tab-Groups/Tab-Groups.css";
 @import "Tabs/Tab-Groups/Tab-Groups-Animation.css";
 @import "Tabs/Container-Indicator/Tabs-Container-Indicator.css";
