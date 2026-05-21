@@ -6,15 +6,11 @@
    If it is due to a native browser issue please report it to the developer of Zen browser.
    If the issue only appears when using Neo Zen please report it to the developer of Neo Zen.*/
 
-/* Starting from version 3.0.0 the Nebula animations are no longer included in Neo Zen.*/
+/* Starting from version 3.0.0 better called 1.20.0T-neo.0 the Nebula animations are no longer included in Neo Zen.*/
 
-/* Starting from version 2.0, the nebula pseudobackground implementation for compact mode has been replaced 
-   with a new version that no longer uses the Nebula base. This change affects the CSS structure of Neo Zen 
-   across multiple modes.
-
-   If you’re not a fan of the new design, you can disable it via Zen’s advanced options in about:config check the wiki to learn more.
-
-   However, keeping it enabled is recommended, as the new Neo-Sidebar and Neo Toolbar features resolve native browser issues. */
+/* The compact mode will use the default zen browser theme with small changes, this reduces the amount of code and makes the theme lighter and faster to load.
+   The customizations can not be disabled in this version, and many other features are not customizable as it was in previous versions, that doesn't
+   mean that the customizations won't be added in the future, is just an adaptation to the new rewrite of the theme.
 
 /* Otherwise, I don't know what I'm doing too :D so please tell me if I did something wrong, if you have any suggestions to improve the theme, please let me know,
   I'm always open to suggestions and feedback. */
