@@ -17,7 +17,7 @@
     @media -moz-pref('zen.theme.acrylic-elements') {
         background: transparent;
         /*NeoZen: I changed the amount of blur from 42px to 30px, to make the background a little bit more visible */
-        backdrop-filter: blur(40px) saturate(120%) brightness(0.75) contrast(100%) !important;
+        backdrop-filter: blur(30px) saturate(120%) brightness(1) contrast(105%) !important;
     }
 
     &::before,
