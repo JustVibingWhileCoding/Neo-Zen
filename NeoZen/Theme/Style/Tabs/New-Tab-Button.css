@@ -2,7 +2,7 @@
   @media not (-moz-pref("neo-theme-tabs-disabled")) {
     @media not (-moz-pref("neo-theme-tabs-newtab-button-disabled")) {
       #tabbrowser-arrowscrollbox-periphery {
-        padding: 5px !important;
+        padding: 2px !important;
         >#tabs-newtab-button {
           border-radius: var(--Roundness) !important;
           border: 1px solid transparent !important;
