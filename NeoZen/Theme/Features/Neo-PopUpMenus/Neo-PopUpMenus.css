@@ -40,10 +40,10 @@
   }
 
   /* NeoZen: This changes the color when hovering an item in the application popup menu */
-  :root:is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
+  :is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
     &:not([disabled]):hover {
       color: var(--Neo-Elements) !important;
-      background-color: color-mix(in srgb, var(--Neo-Background) 5%, var(--Neo-Glow-Color-1) 70%) !important;
+      background-color: color-mix(in srgb, var(--Neo-Background) 15%, var(--Neo-Glow-Color-1) 60%) !important;
     }
   }
 
