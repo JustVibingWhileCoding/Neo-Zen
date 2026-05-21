@@ -38,7 +38,8 @@
                 height: fit-content !important;
                 max-height: calc(var(--Media-Height) + 3px) !important;
 
-                transition: max-height 0.8s ease !important;
+                transition: max-height 0.8s ease,
+                            background 0.8s ease !important;
 
                 #zen-media-progress-hbox,
                 #zen-media-info-vbox {
