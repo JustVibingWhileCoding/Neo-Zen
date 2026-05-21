@@ -2,7 +2,7 @@
   without changing it for the other platforms, so I moved the background color and the border color to be inside the media query for linux */
   menupopup,
   #appMenu-popup,
-  panel:not(#notification-popup) {
+  panel:not(#notification-popup, #appMenu-notification-popup){
     @media (-moz-platform: linux) {
       --panel-background: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Glow-Color-1) 5%) !important;
       --panel-border-color: transparent !important;
@@ -11,7 +11,7 @@
     }
   }
 
-  panel:not(#appMenu-popup):is(#notification-popup) {
+  panel:not(#appMenu-popup):is(#notification-popup, #appMenu-notification-popup) {
     @media (-moz-platform: linux) {
       --panel-background: color-mix(in srgb, var(--Neo-Background) 100%, var(--Neo-Glow-Color-1) 55%) !important;
       --panel-border-color: transparent !important;
