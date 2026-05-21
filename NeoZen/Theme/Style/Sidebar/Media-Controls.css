@@ -42,7 +42,7 @@
                 &:hover .toolbarbutton-icon {
                     fill: color-mix(in srgb, var(--zen-primary-color) 60%, white) !important;
                     background: transparent !important;
-                    scale: 1.6 !important;
+                    scale: 1.5 !important;
                     filter: drop-shadow(0px 0px 5px color-mix(in srgb, var(--zen-primary-color) 60%, white)) brightness(1.0) !important;
                 }
             }
