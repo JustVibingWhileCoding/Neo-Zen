@@ -31,7 +31,7 @@
         --Neo-Footer-Height: var(--Neo-Footer-Max-Height) !important;
     }
 
-    :has(#zen-media-controls-toolbar:not([hidden])) {
+    #navigator-toolbox:has(#zen-media-controls-toolbar:not([hidden])) {
         --Media-Height: 35px;
     }
 
@@ -43,9 +43,7 @@
             --Neo-Footer-Adjustment: var(--Neo-Toolbar-Height);
         }
 
-        @media (-moz-pref("neo-footer-at-bottom")) {
-            --Neo-Footer-Adjustment: calc(var(--Media-Height) + var(--zen-toolbox-padding) - 0.1px);
-        }
+
 
         @media (-moz-bool-pref: "neo-features-footer-collapsed-max-height-enabled") {
             /* When the footer height is set to a fixed value, the height of the footer is set to that value. */
@@ -58,6 +56,11 @@
         /* This has been changed instead of using :root to calculate the height of the footer because the workspace counters are now using
          * the #navigator-toolbox selector instead of the body selector, this way we improve browser performance when switching between workspaces. */
         #navigator-toolbox {
+
+            @media (-moz-pref("neo-footer-at-bottom")) {
+                --Neo-Footer-Adjustment: calc(var(--Media-Height) + var(--zen-toolbox-padding) - 0.1px);
+            }
+
             @media not (-moz-bool-pref: "neo-features-footer-collapsed-max-height-enabled") {
                 /* When the footer height is not set to a fixed value, the height of the footer is calculated based on 
             the number of buttons in the workspaces button, the height of the buttons, and the margin between them. */
