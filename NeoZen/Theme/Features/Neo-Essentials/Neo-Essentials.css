@@ -4,7 +4,7 @@
  * but looks like it's working now. */
 
 @media not (-moz-pref("neo-features-disabled")) {
-    @media not (-moz-pref("neo-features-essentials-disabled")) {
+    @media (-moz-pref("neo-features-essentials-experimental-enabled")) {
         #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
             & #zen-essentials {
                 margin-bottom: 10px !important;
