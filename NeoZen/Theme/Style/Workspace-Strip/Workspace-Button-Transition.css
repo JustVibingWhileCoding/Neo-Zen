@@ -1,0 +1,24 @@
+@media not (-moz-pref("neo-theme-disabled")) {
+  @media not (-moz-pref("neo-theme-workspace-button-disabled")) {
+    #zen-workspaces-button toolbarbutton:not([active="true"]) .zen-workspace-icon {
+      transition: opacity 0.5s ease, background-color 0.5s ease, box-shadow 0.7s ease, scale 0.5s ease, width 0.4s ease !important;
+    }
+
+    /* Expand only when active */
+    #zen-workspaces-button toolbarbutton[active="true"] .zen-workspace-icon {
+      background-color: var(--Neo-Glow-Color-3) !important;
+      box-shadow: 0 0px 5px var(--Neo-Glow-Color-3) !important;
+      width: 22px !important;
+    }
+
+
+
+    /* Hover effect */
+    #zen-workspaces-button toolbarbutton:not([active="true"]):hover .zen-workspace-icon {
+      background-color: var(--Neo-Glow-Color-3) !important;
+      box-shadow: 0 0px 4px var(--Neo-Glow-Color-3) !important;
+      opacity: 1.0 !important;
+      width: 16px !important;
+    }
+  }
+}
