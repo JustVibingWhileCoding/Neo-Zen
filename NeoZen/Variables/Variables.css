@@ -18,5 +18,5 @@
     --Neo-Background-T1: color-mix(in srgb, var(--Neo-Background) 60%, transparent 40%);
     --Neo-Background-T2: color-mix(in srgb, var(--Neo-Background) 80%, transparent 40%);
 
-    --Neo-Compact-Background: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Glow-Color-1) 1%, white 1%);
+    --Neo-Compact-Background: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Glow-Color-1) 2%, white 2%);
 }
