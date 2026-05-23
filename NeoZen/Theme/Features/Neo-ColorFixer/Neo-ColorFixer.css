@@ -2,110 +2,66 @@
 and also fixing the issue with the gradient generator not respecting the color scheme that you select due to the forced automation of the color scheme 
 when having a gradient or a color set*/
 
-:root {
-    @media -moz-pref("zen.view.window.scheme", 0) or -moz-pref("zen.view.window.scheme", 2) {
-        --Neo-Browser-Background: #00000080 !important;
-
-        @media (-moz-platform: linux) {
-            @media -moz-pref("zen.widget.linux.transparency", true) {
-                --Neo-Browser-Background: #080808A5 !important;
+:root:not([zen-default-theme="true"]) {
+    /* Neo Zen: Now the background color of the browser will be set to the color declared in the variable --aux-background-color only
+     * when the default theme is not true and the browser mode is not set to automatic, this way we can choose between the 3 modes
+     * than the change will only be applied if the opacity of the gradient generator is set to the lowest value,
+     * this way we can have a better readability of the elements in the browser when the background is too transparent 
+     
+     * Using the rule to change only the background improves the performance of the browser, that's why Neo-ColorFixer will only apply
+     * the change when we choose any other mode than automatic */
+    @media not -moz-pref("zen.view.window.scheme", 2) {
+        body:has(#mainPopupSet >#PanelUI-zen-gradient-generator >#PanelUI-zen-gradient-generator-multiview >.panel-viewcontainer >.panel-viewstack >#PanelUI-zen-gradient-generator-view >#PanelUI-zen-gradient-generator-controls >#PanelUI-zen-gradient-colors-wrapper >#PanelUI-zen-gradient-opacity-wrapper >#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+            #zen-browser-background {
+                --zen-main-browser-background: var(--aux-background-color) !important;
             }
         }
+    }
+}
 
-        &:not([zen-default-theme="true"]) {
-            --Neo-Elements-Aux: White !important;
-            --Neo-Background-Aux: black !important;
-        }
+:root {
+    --aux-background-color: rgba(0, 0, 0, 0.4) !important;
+
+    @media (-moz-platform: linux) {
+        --aux-background-color: rgba(10, 10, 10, 0.65) !important;
     }
 
     @media -moz-pref("zen.view.window.scheme", 1) {
-        --Neo-Browser-Background: transparent !important;
+        --aux-background-color: rgba(255, 255, 255, 0.0) !important;
 
         @media (-moz-platform: linux) {
-            @media -moz-pref("zen.widget.linux.transparency", true) {
-                --Neo-Browser-Background: #FFFFFFA0 !important;
-            }
-        }
-
-        &:not([zen-default-theme="true"]) {
-            --Neo-Elements-Aux: black !important;
-            --Neo-Background-Aux: #ffffff !important;
+            --aux-background-color: rgba(255, 255, 255, 0.5) !important;
         }
     }
 
-    /* This change the zen-primary-color variable to a custom color when the default theme is enabled, using the attribute declared in :root. */
     &[zen-default-theme="true"] {
+        
         --zen-primary-color: rgb(255, 190, 120) !important;
-
-        /* This change the background color of the browser when the default theme is enabled, using the attribute declared in :root. */
+        
         #zen-browser-background {
-            --zen-main-browser-background: var(--Neo-Browser-Background) !important;
+            --zen-main-browser-background: var(--aux-background-color) !important;
+        }
+    }
+    /* Neo Zen: In the previous version of Neo-ColorFixer, the I was using the color change with variables to change the color of the elements,
+     * but this way the color can be changed using the color scheme in the entire browser and at the same time the performance improves a little bit.
+     
+     * The color scheme will only apply when the mode is not set to automatic, this way we can choose between the 3 modes */
+    * {
+        @media -moz-pref("zen.view.window.scheme", 0) {
+            color-scheme: dark !important;
+        }
+
+        @media -moz-pref("zen.view.window.scheme", 1) {
+            color-scheme: light !important;
         }
     }
 }
 
-/* This change how the browser manage the color scheme when the background opacity is set to the lowest value, using the attribute declared in the
-gradient generator. */
-#main-window:has(#PanelUI-zen-gradient-generator-view >#PanelUI-zen-gradient-generator-controls >#PanelUI-zen-gradient-colors-wrapper >#PanelUI-zen-gradient-opacity-wrapper >#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
-
-    /* This change the background color of the browser whent the opacity is set to the lowest value, using the attribute declared in the gradient generator. */
-    #zen-browser-background {
-        --zen-main-browser-background: var(--Neo-Browser-Background) !important;
-    }
-
-    --Neo-Elements: var(--Neo-Elements-Aux) !important;
-    --Neo-Background: var(--Neo-Background-Aux) !important;
-
-    --Neo-Compact-Background: color-mix(in srgb, var(--Neo-Background) 55%, var(--Neo-Glow-Color-1) 5%, white 1%);
-
-    /* Neo Zen: Looks like i can change the color scheme with only using the id #browser, and performance is better 
-     * than changing the color scheme of all the elements in the browser, so for now i will keep it like this until i find a better solution. */
-    & #browser {
-        @media -moz-pref("zen.view.window.scheme", 1) {
-            color-scheme: light !important;
-        }
-
-        @media not -moz-pref("zen.view.window.scheme", 1) {
-            color-scheme: dark !important;
-        }
-    }
-
-
-    /* This change the color scheme of the browser to fix an issue with some elements not changing their color when using the variable --Neo-Elements
-    which may be applied to the elements using the rules declared below this block of code. */
-
-    /* Due to performance issues, the automatic switch of the color scheme is set as a comment until a better solution is found. */
-
-    /*
-    &,
-    & #browser,
-    & body,
-    & panel,
-    & menupopup,
-    & .zen-browser-generic-background,
-    & #urlbar,
-    & #tabbrowser-tabpanels browser[type="content"],
-    &:not([zen-should-be-dark-mode]),
-    & #zen-toast-container {
-        @media -moz-pref("zen.view.window.scheme", 1) {
-            color-scheme: light !important;
-        }
-
-        @media not -moz-pref("zen.view.window.scheme", 1) {
-            color-scheme: dark !important;
-        }
-    }
-    */
-}
-
-/* This change the color of all the elements in the browser to the color declared in the variable
- --Neo-Elements when the sidebar is expanded, using the attribute declared in :root. */
-:root[zen-sidebar-expanded="true"] #zen-main-app-wrapper * {
+/* This change the color of the text in the browser to the color declared in the variable
+ --Neo-Elements*/
+:root[zen-sidebar-expanded="true"] * {
     color: var(--Neo-Elements) !important;
 }
-
-/* This change the color of all the elements in the browser to the color declared in the variable
- --Neo-Elements when the sidebar is not expanded, using the attribute declared in :root. */
-:root:not([zen-sidebar-expanded="true"]) #zen-main-app-wrapper *:not(.tab-group-label) {
+:root:not([zen-sidebar-expanded="true"]) *:not(.tab-group-label) {
     color: var(--Neo-Elements) !important;
 }
