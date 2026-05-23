@@ -56,8 +56,11 @@
                     position: relative !important;
 
                     height: var(--Neo-Footer-Height) !important;
-                    margin-top: 10px !important;
-
+                    
+                    @media not (-moz-pref("neo-footer-at-bottom")) {
+                        margin-top: 10px !important;
+                    }
+                    
                     #zen-workspaces-button {
                         z-index: 9999 !important;
                         flex-shrink: 0 !important;
