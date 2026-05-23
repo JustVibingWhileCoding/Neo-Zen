@@ -20,6 +20,7 @@
 
             #zen-media-controls-toolbar:not([hidden]) {
                 height: var(--Media-Height) !important;
+                order: 9999 !important;
             }
 
             #zen-media-controls-toolbar:not([hidden])>toolbaritem {
