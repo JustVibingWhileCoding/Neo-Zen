@@ -1,43 +1,44 @@
 @media not (-moz-pref("neo-theme-disabled")) {
-    @media not (-moz-pref("neo-theme-background-enabled")) {
+  @media not (-moz-pref("neo-theme-background-enabled")) {
 
-        /* Remove new tab background color*/
-        .browserStack browser {
-            background-color: transparent !important;
-        }
+    /* Remove new tab background color*/
+    .browserStack browser {
+      background-color: transparent !important;
     }
+  }
 
-    @media not (-moz-pref("neo-theme-shadow-enabled")) {
+  @media not (-moz-pref("neo-theme-shadow-enabled")) {
 
-        /* Remove shadow */
-        hbox.browserSidebarContainer,
-        #zen-tabbox-wrapper {
-            box-shadow: none !important;
-        }
+    /* Remove shadow */
+    hbox.browserSidebarContainer,
+    #zen-tabbox-wrapper {
+      box-shadow: none !important;
     }
-}
+  }
 
-body:not(:has(#PanelUI-zen-gradient-generator[panelopen="true"])){
+  body:not(:has(#PanelUI-zen-gradient-generator[panelopen="true"])) {
+    .zen-browser-generic-background {
+      &::after {
+        transition: background 2s ease, opacity 2s ease !important;
+      }
+    }
+  }
+
   .zen-browser-generic-background {
-    &::after {
-      transition: background 2s ease, opacity 2s ease !important;
+    background: transparent !important;
+  }
+
+  .zen-browser-generic-background {
+    &::before {
+      display: none !important;
     }
   }
-}
 
-.zen-browser-generic-background {
-  background: transparent !important;
-}
-
-.zen-browser-generic-background {
-  &::before {
-    display: none !important;
-  }
-}
-
-/* This remove a new background introduced in Zen browser version 1.20.0 */
-body {
-  /*--toolbox-bgcolor: transparent !important;*/ /* Looks like overriding the variable cause some glitches in the browser
+  /* This remove a new background introduced in Zen browser version 1.20.0 */
+  body {
+    /*--toolbox-bgcolor: transparent !important;*/
+    /* Looks like overriding the variable cause some glitches in the browser
   on linux using hyprland and wayland compositor, so for now I'll override the background directly. */
-  background: transparent !important;
+    background: transparent !important;
+  }
 }
