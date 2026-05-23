@@ -11,7 +11,7 @@ when having a gradient or a color set*/
      * Using the rule to change only the background improves the performance of the browser, that's why Neo-ColorFixer will only apply
      * the change when we choose any other mode than automatic */
     @media not -moz-pref("zen.view.window.scheme", 2) {
-        body:has(#mainPopupSet >#PanelUI-zen-gradient-generator >#PanelUI-zen-gradient-generator-multiview >.panel-viewcontainer >.panel-viewstack >#PanelUI-zen-gradient-generator-view >#PanelUI-zen-gradient-generator-controls >#PanelUI-zen-gradient-colors-wrapper >#PanelUI-zen-gradient-opacity-wrapper >#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+        body:has(#PanelUI-zen-gradient-generator >#PanelUI-zen-gradient-generator-multiview >#PanelUI-zen-gradient-generator-view >#PanelUI-zen-gradient-generator-controls >#PanelUI-zen-gradient-colors-wrapper >#PanelUI-zen-gradient-opacity-wrapper >#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
             #zen-browser-background {
                 --zen-main-browser-background: var(--aux-background-color) !important;
             }
