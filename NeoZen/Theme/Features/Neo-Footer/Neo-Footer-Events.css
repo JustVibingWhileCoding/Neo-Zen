@@ -48,6 +48,7 @@
                                 }
 
                                 #zen-workspaces-button {
+                                    opacity: 0 !important;
                                     @media (-moz-bool-pref: "neo-footer-at-bottom") {
                                         bottom: calc(var(--Neo-Footer-Height) * -1);
                                     }
