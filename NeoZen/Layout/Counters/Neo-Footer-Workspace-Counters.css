@@ -1,6 +1,6 @@
 /* This file is used to count the number of subbuttons in the workspaces button and set a CSS variable accordingly. This is used to adjust the layout of the buttons in the workspaces button. */
 
-#titlebar {
+#navigator-toolbox {
     --Workspace-Subview-Counter: 0;
 
     &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(1)) {

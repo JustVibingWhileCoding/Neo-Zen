@@ -56,7 +56,7 @@
         }
 
         /* This has been changed instead of using :root to calculate the height of the footer because the workspace counters are now using
-         * the titlebar selector instead of the body selector, this way we improve browser performance when switching between workspaces. */
+         * the #navigator-toolbox selector instead of the body selector, this way we improve browser performance when switching between workspaces. */
         #navigator-toolbox {
             @media not (-moz-bool-pref: "neo-features-footer-collapsed-max-height-enabled") {
                 /* When the footer height is not set to a fixed value, the height of the footer is calculated based on 
