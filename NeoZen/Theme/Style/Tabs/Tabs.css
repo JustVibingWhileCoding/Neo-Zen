@@ -34,8 +34,8 @@
                     }
                 }
 
-                --tab-background: color-mix(in srgb, var(--Neo-Background) 60%, transparent 40%) !important;
-                --tab-hover-background: color-mix(in srgb, var(--Neo-Background) 80%, transparent 40%) !important;
+                --tab-background: var(--Neo-Background-T2) !important;
+                --tab-hover-background: var(--Neo-Background-T1) !important;
 
 
                 &[zen-essential] {
