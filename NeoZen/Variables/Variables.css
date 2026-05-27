@@ -3,7 +3,7 @@
     --Neo-Background: light-dark(white, black);
 
     /* General roundness */
-    --Roundness: 6px;
+    --Roundness: 5px;
     /* Top bar height */
     --zen-toolbar-height: 50px;
 
@@ -15,8 +15,11 @@
     --Neo-Glow-Color-2: color-mix(in srgb, var(--zen-primary-color) 80%, white);
     --Neo-Glow-Color-3: color-mix(in srgb, var(--zen-primary-color) 70%, white);
     
-    --Neo-Background-T1: color-mix(in srgb, var(--Neo-Background) 60%, transparent 40%);
-    --Neo-Background-T2: color-mix(in srgb, var(--Neo-Background) 80%, transparent 40%);
+    --Neo-Background-T1: color-mix(in srgb, var(--Neo-Background) 70%, transparent 40%);
+    --Neo-Background-T2: color-mix(in srgb, var(--Neo-Background) 35%, transparent 40%);
 
     --Neo-Compact-Background: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Glow-Color-1) 2%, white 2%);
+
+    /* Extension button colors */
+    --zen-toolbar-element-bg: var(--Neo-Background-T2) !important;
 }
