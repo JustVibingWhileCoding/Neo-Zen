@@ -2,7 +2,7 @@
 and also fixing the issue with the gradient generator not respecting the color scheme that you select due to the forced automation of the color scheme 
 when having a gradient or a color set*/
 
-:root:not([zen-default-theme="true"]) {
+:root:not([zen-default-theme="true"]):not([animating-background="true"]) {
     /* Neo Zen: Now the background color of the browser will be set to the color declared in the variable --aux-background-color only
      * when the default theme is not true and the browser mode is not set to automatic, this way we can choose between the 3 modes
      * than the change will only be applied if the opacity of the gradient generator is set to the lowest value,
@@ -18,7 +18,11 @@ when having a gradient or a color set*/
         }
     }
 }
-
+:root[animating-background="true"]{
+    #zen-browser-background {
+        --zen-main-browser-background: var(--aux-background-color) !important;
+    }
+}
 :root {
     --aux-background-color: rgba(0, 0, 0, 0.4) !important;
 
