@@ -1,4 +1,4 @@
-/* Neo Zen V2.1.0*/
+/* Neo Zen 1.20.0-neo.0*/
 
 /* Hi, I'm Neo Zen, I'm a theme that has new "features", animations, and a new design, I hope you like it, and I hope you find it useful. */
 
@@ -6,42 +6,28 @@
    If it is due to a native browser issue please report it to the developer of Zen browser.
    If the issue only appears when using Neo Zen please report it to the developer of Neo Zen.*/
 
-/* As I stole the animations tabs from nebula, I mean... added the animations [I asked to do it], yes, you can do the same with this theme, you can take any part of the code
-   and add it to your own theme. For example, to add the features withouth the style of the theme, you can add the entire folder called Neo-Features to your own theme, just
-   take a look at the variables folder and animations folder, those ones are required for some features to work.*/
+/* Starting from version 3.0.0 better called 1.20.0-neo.0 the Nebula animations are no longer included in Neo Zen.*/
 
-/* Starting from version 2.0, the nebula pseudobackground implementation for compact mode has been replaced 
-   with a new version that no longer uses the Nebula base. This change affects the CSS structure of Neo Zen 
-   across multiple modes.
+/* The compact mode will use the default zen browser theme with small changes, this reduces the amount of code and makes the theme lighter and faster to load.
+   The customizations can not be disabled in this version, and many other features are not customizable as it was in previous versions, that doesn't
+   mean that the customizations won't be added in the future, is just an adaptation to the new rewrite of the theme.*/
 
-   If you’re not a fan of the new design, you can disable it via Zen’s advanced options in about:config check the wiki to learn more.
-
-   However, keeping it enabled is recommended, as the new Neo-Sidebar and Neo Toolbar features resolve native browser issues. */
+/* The version 1.20.0-neo.0 is a rewrite of the theme, it is still in development, and it is not yet finished, but I wanted to release it as soon as possible,
+   however, it took me a long time to rewrite the theme, and I'm still working on it, so please be patient. Why did I do this? Well, I wanted to make the theme
+   lighter, faster, and more efficient using a cleaner code, so I rewrote the theme from scratch.
+   
+   I will try to release a new version as soon as possible.
+   Many things are still in development, at least maybe you installed the theme using the main branch which is basically empty at this moment, and the sine
+   settings are not yet implemented, but I will try to implement them as soon as possible */
 
 /* Otherwise, I don't know what I'm doing too :D so please tell me if I did something wrong, if you have any suggestions to improve the theme, please let me know,
   I'm always open to suggestions and feedback. */
 
-/* Neo Zen V2.1.0*/
+/* Neo Zen 1.20.0-neo.0*/
 
-
-@import "Variables/Variables.css";
-@import "Neo-Features/Neo-Features.css";
-@import "Theme/Theme.css";
 @import "Animations/Animations.css";
-@import "Moz-Rules/Moz-Rules.css";
-
-/* Required for blur rendering */
-browser {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-/* Please do not remove this, it is required for the proper functioning of the theme */
-:root{
-  --tab-collapsed-background-width: 40px !important;
-}
-
-@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-  :root {
-    --tab-min-height: 39px !important;
-  }
-}
+@import "Components/Components.css";
+@import "Customization/Customization.css";
+@import "Layout/Layout.css";
+@import "Rules/Rules.css";
+@import "Theme/Theme.css";
