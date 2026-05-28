@@ -1,0 +1,17 @@
+@media not -moz-pref("neo.theme.disable") {
+    @media not -moz-pref("neo.theme.tabs.disable") {
+        .tabbrowser-tab {
+            .tab-background {
+                transition:background-color var(--tab-bg-transition-duration) ease !important;
+            }
+
+            &[zen-essential] {
+                
+            }
+            
+            &:not([zen-essential]) {
+
+            }
+        }
+    }
+}
