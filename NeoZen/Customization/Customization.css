@@ -42,4 +42,7 @@
 
     /* Tab min height */
     --tab-min-height: 38px !important;
+
+    /* Tab transition */
+    --tab-bg-transition-duration: 0.5s !important;
 }
