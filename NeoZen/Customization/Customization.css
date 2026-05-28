@@ -1,0 +1,45 @@
+:root {
+    --Neo-Elements: light-dark(black, white);
+    --Neo-Background: light-dark(white, black);
+
+    /* Default Theme Color */
+    --default-theme-color: rgb(255, 190, 120);
+
+    /*Browser Background - Windows*/
+    --browser-bg-dark-color-windows: rgba(0, 0, 0, 0.4);
+    --browser-bg-light-color-windows: rgba(255, 255, 255, 0.0);
+
+    /*Browser Background - Linux*/
+    --browser-bg-dark-color-linux: rgba(10, 10, 10, 0.75);
+    --browser-bg-light-color-linux: rgba(255, 255, 255, 0.5);
+
+    /* General roundness */
+    --Roundness: 50px;
+    --Fixed-Roundness: 6px;
+
+    /* Top bar height */
+    --zen-toolbar-height: 50px !important;
+
+    /* Blur effect */
+    --Neo-Blur-Effect: blur(30px) saturate(120%) brightness(1) contrast(105%);
+
+    /* Floating elements */
+    --Neo-Floating-BG-Color: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Elements) 10%, transparent);
+    /* Advertisement: if you are going to change the popup color, this only affects linux platforms and the color opacity should match
+     * the alpha value you set in the compositor for the blur effect to work properly, if the opacity is lower, the compositor could
+     * not blur the popup, and the popup will be transparent, if the opacity is higher, the popup will be blurred*/
+    --Neo-Popup-BG-Color: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Elements) 10%, transparent);
+
+    /* Tab color */
+    --Neo-Tab-BG-Color-Hover: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Elements) 10%, transparent);
+    --Neo-Tab-BG-Color-Selected: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Elements) 5%, transparent);
+    --Neo-Tab-Essential-BG-Color: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Elements) 10%, transparent);
+    --Neo-Tab-Essential-BG-Color-Hover: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Elements) 10%, transparent);
+    --Neo-Tab-Essential-BG-Color-Selected: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Elements) 5%, transparent);
+
+    /* Tab collapsed width */
+    --tab-collapsed-background-width: 40px !important;
+
+    /* Tab min height */
+    --tab-min-height: 38px !important;
+}
