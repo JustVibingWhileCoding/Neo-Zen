@@ -15,7 +15,7 @@
 /* The version 1.20.0-neo.0 is a rewrite of the theme, it is still in development, and it is not yet finished, but I wanted to release it as soon as possible,
    however, it took me a long time to rewrite the theme, and I'm still working on it, so please be patient. Why did I do this? Well, I wanted to make the theme
    lighter, faster, and more efficient using a cleaner code, so I rewrote the theme from scratch.
-   
+
    I will try to release a new version as soon as possible.
    Many things are still in development, at least maybe you installed the theme using the main branch which is basically empty at this moment, and the sine
    settings are not yet implemented, but I will try to implement them as soon as possible */
@@ -30,4 +30,5 @@
 @import "Customization/Customization.css";
 @import "Layout/Layout.css";
 @import "Rules/Rules.css";
-@import "Theme/Theme.css";
+@import "Theme/Features/Neo-Features.css";
+@import "Theme/Style/Style.css";
