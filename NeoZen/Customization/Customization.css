@@ -13,6 +13,9 @@
     --browser-bg-dark-color-linux: rgba(10, 10, 10, 0.75);
     --browser-bg-light-color-linux: rgba(255, 255, 255, 0.5);
 
+    /* Browser tab area background */
+    --browser-tab-area-bg-color: transparent;
+
     /* General roundness */
     --Roundness: 50px;
     --Fixed-Roundness: 6px;
@@ -45,4 +48,10 @@
 
     /* Tab transition */
     --tab-bg-transition-duration: 0.5s !important;
+
+    /* Glow Colors */
+    --Neo-Glow-Color-1: color-mix(in srgb, var(--zen-primary-color) 95%, white 5%);
+    --Neo-Glow-Color-2: color-mix(in srgb, var(--zen-primary-color) 90%, white 10%);
+    --Neo-Glow-Color-3: color-mix(in srgb, var(--zen-primary-color) 85%, white 15%);
+    --Neo-Glow-Color-4: color-mix(in srgb, var(--zen-primary-color) 80%, white 20%);
 }
