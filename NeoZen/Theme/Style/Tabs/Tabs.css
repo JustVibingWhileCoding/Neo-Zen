@@ -1,16 +1,28 @@
 @media not -moz-pref("neo.theme.disable") {
     @media not -moz-pref("neo.theme.tabs.disable") {
-        .tabbrowser-tab {
-            .tab-background {
-                transition:background-color var(--tab-bg-transition-duration) ease !important;
+        :root {
+            :not([animating-background="true"]) {
+                .tabbrowser-tab {
+                    .tab-background {
+                        transition: background-color var(--tab-bg-transition-duration) ease !important;
+                    }
+                }
             }
 
-            &[zen-essential] {
-                
-            }
-            
-            &:not([zen-essential]) {
+            .tabbrowser-tab {
+                .tab-background {
 
+                    --zen-toolbar-element-bg: var(--Neo-Tab-Essential-BG-Color) !important;
+                    --zen-essential-tab-selected-bg-hover: var(--Neo-Tab-Essential-BG-Color-Hover) !important;
+                    --zen-essential-tab-selected-bg: var(--Neo-Tab-Essential-BG-Color-Selected) !important;
+                    --tab-selected-bgcolor: var(--Neo-Tab-Essential-BG-Color-Selected) !important;
+
+                    --tab-selected-shadow: 0 0 3px var(--Neo-Tab-Essential-BG-Color-Selected) !important;
+                }
+
+                &[zen-essential] {}
+
+                &:not([zen-essential]) {}
             }
         }
     }
