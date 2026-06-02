@@ -1,8 +1,8 @@
 /* === BETTER CUSTOMIZE TOOLBAR === */
 /* Based on code by https://github.com/Tanay-Kar */
 
-@media not (-moz-pref("neozen.theme.disabled")) {
-    @media not (-moz-pref("neozen.theme.customization-toolbar-disabled")) {
+@media not (-moz-pref("neo.theme.disabled")) {
+    @media not (-moz-pref("neo.theme.customization-toolbar-disabled")) {
         #customization-container {
             position: absolute;
             z-index: 1;
