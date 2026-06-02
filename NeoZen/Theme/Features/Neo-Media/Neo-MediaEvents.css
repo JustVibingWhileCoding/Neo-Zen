@@ -1,0 +1,26 @@
+@media not -moz-pref("neo.features.disable") {
+    @media not -moz-pref("neo.features.media.disable") {
+        #navigator-toolbox:not([zen-sidebar-expanded]) #zen-media-controls-toolbar:not([hidden]) {
+            &:hover {
+                &>toolbaritem {
+                    max-height: 225px !important;
+                }
+            }
+        }
+
+        #zen-media-controls-toolbar:not([hidden]) {
+            &:hover {
+                &>toolbaritem {
+                    border-radius: 6px !important;
+                }
+            }
+
+            &:not(:hover) {
+                &>toolbaritem {
+                    background: transparent !important;
+                    box-shadow: 0 0 0px color-mix(in srgb, var(--Neo-Background) 0%, white 2%) !important;
+                }
+            }
+        }
+    }
+}

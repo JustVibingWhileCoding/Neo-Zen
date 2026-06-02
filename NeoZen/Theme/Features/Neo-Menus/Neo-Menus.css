@@ -1,0 +1,56 @@
+  /* NeoZen: Looks like using the media query for the linux platform can change the background color and the border color of the popup menus,
+  without changing it for the other platforms, so I moved the background color and the border color to be inside the media query for linux */
+  menupopup,
+  #appMenu-popup,
+  panel:not(#notification-popup, #appMenu-notification-popup) {
+      @media (-moz-platform: linux) {
+          --panel-background: color-mix(in srgb, var(--Neo-Background) 65%, var(--Neo-Elements) 5%) !important;
+          --panel-border-color: transparent !important;
+
+          border: 0px solid var(--panel-border-color) !important;
+      }
+  }
+
+  panel:not(#appMenu-popup):is(#notification-popup, #appMenu-notification-popup) {
+      @media (-moz-platform: linux) {
+          --panel-background: color-mix(in srgb, var(--Neo-Background) 100%, var(--zen-primary-color) 25%) !important;
+          --panel-border-color: transparent !important;
+      }
+  }
+
+  menu,
+  menuitem {
+      -moz-context-properties: fill;
+      fill: var(--menuitem-icon-fill);
+
+      &:where([disabled]) {
+          color: var(--text-color-disabled);
+          text-shadow: none;
+      }
+
+      &:where([_moz-menuactive]:not([disabled])) {
+          /* NeoZen: This changes the text color when hovering an item in the application popup menu and fixes the white color text
+     * when light mode is set in the theme editor*/
+          color: var(--Neo-Elements) !important;
+          background-color: -moz-menuhover;
+      }
+
+      &:where([_moz-menuactive][disabled]) {
+          background-color: -moz-menuhoverdisabled;
+      }
+  }
+
+  /* NeoZen: This changes the color when hovering an item in the application popup menu */
+  :is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
+      &:not([disabled]):hover {
+          color: var(--Neo-Elements) !important;
+          background-color: color-mix(in srgb, var(--Neo-Background) 15%, var(--zen-primary-color) 60%) !important;
+      }
+  }
+
+  menu,
+  menuitem {
+      &:where([_moz-menuactive]:not([disabled])) {
+          background-color: color-mix(in srgb, var(--Neo-Background) 15%, var(--zen-primary-color) 60%) !important;
+      }
+  }
