@@ -25,10 +25,10 @@
 
 /* Neo Zen 1.20.0-neo.0*/
 
-@import "Animations/Animations.css";
-@import "Components/Components.css";
-@import "Customization/Customization.css";
-@import "Layout/Layout.css";
-@import "Rules/Rules.css";
-@import "Theme/Features/Neo-Features.css";
-@import "Theme/Style/Style.css";
+@import "NeoZen/Animations/Animations.css";
+@import "NeoZen/Components/Components.css";
+@import "NeoZen/Customization/Customization.css";
+@import "NeoZen/Layout/Layout.css";
+@import "NeoZen/Rules/Rules.css";
+@import "NeoZen/Theme/Features/Neo-Features.css";
+@import "NeoZen/Theme/Style/Style.css";
