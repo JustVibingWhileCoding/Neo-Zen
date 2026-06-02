@@ -1,0 +1,4 @@
+/* This modifies the border radius of all the elements in the sidebar */
+#navigator-toolbox[zen-sidebar-expanded="true"] {
+    --border-radius-medium: var(--Roundness) !important;
+}
