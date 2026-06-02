@@ -10,7 +10,7 @@
                         min-width: 100% !important;
                         width: 100% !important;
 
-                        transition: min-width 1s ease 200ms, width 1s ease 200ms !important;
+                        transition: min-width 1s ease 0ms, width 1s ease 0ms !important;
                     }
                 }
 
@@ -24,7 +24,7 @@
                     margin: 0 !important;
                     position: relative !important;
 
-                    transition: opacity 0.8s ease 200ms, visibility 1s ease 200ms !important;
+                    transition: opacity 0.8s ease 0ms, visibility 1s ease 0ms !important;
                 }
 
                 &:hover,
@@ -34,6 +34,8 @@
                     .urlbar-input-box {
                         width: 20% !important;
                         min-width: 20% !important;
+
+                        transition: min-width 1s ease 200ms, width 1s ease 200ms !important;
                     }
 
                     .identity-box-button,
@@ -42,6 +44,8 @@
                     & #zen-copy-url-button {
                         opacity: 1 !important;
                         visibility: visible !important;
+
+                        transition: opacity 0.8s ease 200ms, visibility 1s ease 200ms !important;
                     }
                 }
 
