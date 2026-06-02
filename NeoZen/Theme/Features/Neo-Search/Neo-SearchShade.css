@@ -1,0 +1,26 @@
+@media not -moz-pref("neo.features.disable") {
+    @media not -moz-pref("neo.features.search.disable") {
+        @media not -moz-pref("neo.features.search.shade.disable") {
+            :root:not([zen-has-empty-tab="true"])[zen-single-toolbar="true"] #urlbar:not([breakout-extend="true"]) {
+
+                &:not([has-popup-open="true"]) {
+
+                    #urlbar-input,
+                    .urlbar-input-box {
+                        transition: min-width 1.5s ease, width 1.5s ease !important;
+                    }
+                }
+
+                &:hover,
+                &[has-popup-open="true"] {}
+
+                /* This restores the media buttons to the urlbar, I don't know why it got removed from the urlbar,
+                 * the media controls are not always the best option when you have multiple media playing */
+                & #picture-in-picture-button:not([hidden]) {
+                    display: flex !important;
+                    padding-right: 4px !important;
+                }
+            }
+        }
+    }
+}
