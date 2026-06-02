@@ -7,18 +7,60 @@
 
                     #urlbar-input,
                     .urlbar-input-box {
-                        transition: min-width 1.5s ease, width 1.5s ease !important;
+                        min-width: 100% !important;
+                        width: 100% !important;
+
+                        transition: min-width 1s ease, width 1s ease !important;
                     }
                 }
 
+                & .identity-box-button,
+                & .urlbar-page-action,
+                & .unified-extensions-item,
+                & #zen-copy-url-button {
+                    opacity: 0 !important;
+                    height: 100%;
+                    visibility: collapse !important;
+                    margin: 0 !important;
+                    position: relative !important;
+
+                    transition: opacity 0.8s ease, visibility 1s !important;
+                }
+
                 &:hover,
-                &[has-popup-open="true"] {}
+                &[has-popup-open="true"] {
+
+                    #urlbar-input,
+                    .urlbar-input-box {
+                        width: 20% !important;
+                        min-width: 20% !important;
+                    }
+
+                    .identity-box-button,
+                    & .urlbar-page-action,
+                    & .unified-extensions-item,
+                    & #zen-copy-url-button {
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                    }
+                }
 
                 /* This restores the media buttons to the urlbar, I don't know why it got removed from the urlbar,
                  * the media controls are not always the best option when you have multiple media playing */
                 & #picture-in-picture-button:not([hidden]) {
                     display: flex !important;
                     padding-right: 4px !important;
+                }
+            }
+
+            /* This hides all the elements in the urlbar when the tab is empty */
+            :root[zen-has-empty-tab="true"] #urlbar:not([breakout-extend="true"]) {
+
+                & .urlbar-page-action,
+                & .unified-extensions-item,
+                & #zen-copy-url-button {
+                    display: block !important;
+                    visibility: collapse !important;
                 }
             }
         }
