@@ -4,5 +4,16 @@
             justify-content: center !important;
             text-align: center !important;
         }
+
+        #urlbar {
+            & .urlbar-background {
+                transition: background 1s ease !important;
+            }
+        }
+
+        .urlbar-background {
+            --zen-toolbar-element-bg: var(--Neo-BG-Color-Hover) !important;
+            --zen-toolbar-element-bg-hover: var(--Neo-BG-Color-Selected) !important;
+        }
     }
 }
