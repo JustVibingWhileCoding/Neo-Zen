@@ -1,6 +1,8 @@
 @media not -moz-pref("neo.theme.disable") {
     @media not -moz-pref("neo.theme.tabs.disable") {
         :root {
+            --tab-hover-background-color: var(--Neo-Tab-BG-Color-Hover) !important;
+
             :not([animating-background="true"]) {
                 .tabbrowser-tab {
                     .tab-background {
@@ -16,7 +18,6 @@
                     --zen-essential-tab-selected-bg-hover: var(--Neo-Tab-Essential-BG-Color-Hover) !important;
                     --zen-essential-tab-selected-bg: var(--Neo-Tab-Essential-BG-Color-Selected) !important;
                     --tab-selected-bgcolor: var(--Neo-Tab-Essential-BG-Color-Selected) !important;
-
                     --tab-selected-shadow: 0 0 3px var(--Neo-Tab-Essential-BG-Color-Selected) !important;
                 }
 
