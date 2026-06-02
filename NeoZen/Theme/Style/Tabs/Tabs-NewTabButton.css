@@ -1,0 +1,11 @@
+/* This is used to change the background color of the new tab button when the vertical tab bar is enabled */
+@media -moz-pref("zen.tabs.show-newtab-vertical") {
+    #tabs-newtab-button {
+        --tab-selected-bgcolor: var(--Neo-BG-Color-Selected) !important;
+
+        &[in-urlbar] {
+            background: var(--tab-selected-bgcolor) !important;
+            box-shadow: var(--tab-selected-shadow);
+        }
+    }
+}
