@@ -5,3 +5,5 @@
 @import "Tabs/Tabs.css";
 @import "Tabs/Tabs-Containers.css";
 @import "Tabs/Tabs-NewTabButton.css";
+@import "URL-Bar/URL-Bar.css";
+@import "URL-Bar/URL-Bar-Floating.css";
