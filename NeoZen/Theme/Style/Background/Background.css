@@ -1,0 +1,20 @@
+@media not -moz-pref("neo.theme.disabled") {
+    @media not -moz-pref("neo.theme.background.disable") {
+        @media not -moz-pref("neo.theme.background.tab.transparent.disable") {
+
+            /* Remove new tab background color*/
+            .browserStack browser {
+                background-color: transparent !important;
+            }
+        }
+
+        @media not -moz-pref("neo.theme.background.tab.shadow.enable") {
+
+            /* Remove shadow  of the tab browser area*/
+            hbox.browserSidebarContainer,
+            #zen-tabbox-wrapper {
+                box-shadow: none !important;
+            }
+        }
+    }
+}
