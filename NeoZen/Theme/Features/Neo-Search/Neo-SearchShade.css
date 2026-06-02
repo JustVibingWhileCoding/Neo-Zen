@@ -10,7 +10,7 @@
                         min-width: 100% !important;
                         width: 100% !important;
 
-                        transition: min-width 1s ease 100ms, width 1s ease 100ms !important;
+                        transition: min-width 1s ease 200ms, width 1s ease 200ms !important;
                     }
                 }
 
@@ -24,7 +24,7 @@
                     margin: 0 !important;
                     position: relative !important;
 
-                    transition: opacity 0.8s ease 100ms, visibility 1s ease 100ms !important;
+                    transition: opacity 0.8s ease 200ms, visibility 1s ease 200ms !important;
                 }
 
                 &:hover,
