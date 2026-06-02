@@ -1,5 +1,8 @@
 @media not -moz-pref("neo.theme.disabled") {
     @media not -moz-pref("neo.theme.url-bar-disabled") {
-
+        .urlbar-input-box {
+            justify-content: center !important;
+            text-align: center !important;
+        }
     }
 }
