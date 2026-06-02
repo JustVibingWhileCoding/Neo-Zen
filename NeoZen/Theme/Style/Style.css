@@ -1,2 +1,5 @@
 @import "Background/Background.css";
 @import "CustomizationMode/CustomizationMode.css";
+@import "Tabs/Tabs.css";
+@import "Tabs/Tabs-Containers.css";
+@import "Tabs/Tabs-NewTabButton.css";
