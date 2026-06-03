@@ -7,15 +7,14 @@
                 .tabbrowser-tab {
                     .tab-background {
                         transition: background-color var(--tab-bg-transition-duration) ease,
-                            outline-color var(--tab-bg-transition-duration) ease,
-                            box-shadow 0.3s ease !important;
+                                    outline-color var(--tab-bg-transition-duration) ease,
+                                    box-shadow 0.5s ease !important;
                     }
                 }
             }
 
             .tabbrowser-tab {
                 .tab-background {
-
                     --zen-toolbar-element-bg: var(--Neo-Essential-BG-Color) !important;
                     --zen-essential-tab-selected-bg-hover: var(--Neo-Essential-BG-Color-Hover) !important;
                     --zen-essential-tab-selected-bg: var(--Neo-Essential-BG-Color-Selected) !important;
@@ -29,9 +28,15 @@
                 &[zen-essential] {
                     --tab-selected-shadow: 0 0 5px color-mix(in srgb, var(--Neo-Elements) 40%, transparent) !important;
 
-                    &:hover:not([selected="true"]) {
+                    :not([selected="true"]) {
                         .tab-background {
-                            box-shadow: 0 0 5px var(--Neo-Glow-Color-4) !important;
+                            box-shadow: 0 0 5px var(--Neo-Essential-BG-Color-Hover) !important;
+                        }
+
+                        &:hover {
+                            .tab-background {
+                                box-shadow: 0 0 5px var(--Neo-Glow-Color-4) !important;
+                            }
                         }
                     }
                 }
@@ -39,6 +44,12 @@
                 &:not([zen-essential]) {
                     --tab-selected-shadow: 0 0 3px var(--Neo-Glow-Color-2) !important;
                     --tab-selected-outline-color: var(--Neo-Glow-Color-2) !important;
+
+                    &:not([selected="true"]) {
+                        .tab-background {
+                            box-shadow: 0 0 3px transparent !important;
+                        }
+                    }
                 }
             }
         }
