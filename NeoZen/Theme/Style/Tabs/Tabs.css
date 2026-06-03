@@ -7,8 +7,8 @@
                 .tabbrowser-tab {
                     .tab-background {
                         transition: background-color var(--tab-bg-transition-duration) ease,
-                                    outline-color var(--tab-bg-transition-duration) ease,
-                                    box-shadow 0.3s ease !important;
+                            outline-color var(--tab-bg-transition-duration) ease,
+                            box-shadow 0.3s ease !important;
                     }
                 }
             }
@@ -20,14 +20,20 @@
                     --zen-essential-tab-selected-bg-hover: var(--Neo-Essential-BG-Color-Hover) !important;
                     --zen-essential-tab-selected-bg: var(--Neo-Essential-BG-Color-Selected) !important;
                     --tab-selected-bgcolor: var(--Neo-Essential-BG-Color-Selected) !important;
-                    
+
                     --focus-outline-color: var(--Neo-Glow-Color-3) !important;
-                    
+
                     --tab-hover-outline-color: var(--Neo-Glow-Color-4) !important;
                 }
 
                 &[zen-essential] {
                     --tab-selected-shadow: 0 0 3px color-mix(in srgb, var(--Neo-Elements) 40%, transparent) !important;
+
+                    &:hover {
+                        .tab-background {
+                            box-shadow: 0 0 3px var(--Neo-Glow-Color-4) !important;
+                        }
+                    }
                 }
 
                 &:not([zen-essential]) {
