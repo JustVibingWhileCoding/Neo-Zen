@@ -7,13 +7,27 @@
 
         #urlbar {
             & .urlbar-background {
-                transition: background 1s ease !important;
+                transition: background 1s ease 200ms,
+                            box-shadow 0.5s ease 200ms,
+                            border 0.5s ease 200ms !important;
             }
         }
 
         .urlbar-background {
             --zen-toolbar-element-bg: var(--Neo-BG-Color-Hover) !important;
             --zen-toolbar-element-bg-hover: var(--Neo-BG-Color-Selected) !important;
+        
+            box-shadow: 0 0 5px transparent !important;
+            border: 1px solid transparent !important;
+        }
+        
+        #urlbar:not([breakout-extend="true"]) {
+            &:hover{
+                & .urlbar-background {
+                    box-shadow: 0 0 5px var(--Neo-Glow-Color-2) !important;
+                    border: 1px solid var(--Neo-Glow-Color-2) !important;
+                }
+            }
         }
     }
 }
