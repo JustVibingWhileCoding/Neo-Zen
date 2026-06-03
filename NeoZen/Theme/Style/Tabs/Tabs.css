@@ -22,6 +22,8 @@
                     --tab-selected-bgcolor: var(--Neo-Essential-BG-Color-Selected) !important;
                     
                     --focus-outline-color: var(--Neo-Glow-Color-3) !important;
+                    
+                    --tab-hover-outline-color: var(--Neo-Glow-Color-4) !important;
                 }
 
                 &[zen-essential] {
