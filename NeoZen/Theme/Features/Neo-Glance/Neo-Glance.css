@@ -1,0 +1,30 @@
+@media not -moz-pref("neo.features.disable") {
+    @media not -moz-pref("neo.features.glance.disable") {
+        /* Yes Neo-Glance is based on sameeras code from transparent zen mod, please check the original code at https://sameerasw.com/*/
+
+        .zen-glance-background>vbox {
+            mask-image: linear-gradient(to right,
+                    black 0%,
+                    transparent 8%,
+                    transparent 92%,
+                    black 100%);
+            mask-repeat: no-repeat;
+            mask-size: 100% 100%;
+
+            transition: all var(--zen-hidden-toolbar-transition), mask-image 0.3s ease-in-out 1s !important;
+        }
+
+        /* No, this part is not based on sameeras code */
+        .zen-glance-sidebar-container {
+            >toolbarbutton {
+                --toolbarbutton-icon-fill: var(--Neo-Elements) !important;
+                background: var(--Neo-Glance-Buttons-BG) !important;
+                color: var(--Neo-Elements) !important;
+
+                >.toolbarbutton-icon {
+                    opacity: 1 !important;
+                }
+            }
+        }
+    }
+}
