@@ -6,6 +6,8 @@
         }
 
         #urlbar {
+            --border-radius-medium: var(--Roundness) !important;
+            
             & .urlbar-background {
                 transition: background 1s ease 200ms,
                             box-shadow 0.5s ease 200ms,
