@@ -10,7 +10,7 @@
     --browser-bg-light-color-windows: rgba(255, 255, 255, 0.0);
 
     /*Browser Background - Linux*/
-    --browser-bg-dark-color-linux: rgba(15, 15, 15, 0.75);
+    --browser-bg-dark-color-linux: rgba(10, 10, 10, 0.8);
     --browser-bg-light-color-linux: rgba(255, 255, 255, 0.5);
 
     /* Browser tab area background */
