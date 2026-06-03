@@ -51,9 +51,13 @@
 
                 /* This restores the media buttons to the urlbar, I don't know why it got removed from the urlbar,
                  * the media controls are not always the best option when you have multiple media playing */
-                & #picture-in-picture-button:not([hidden]) {
+                & #picture-in-picture-button {
                     display: flex !important;
                     padding-right: 4px !important;
+
+                    &[hidden] {
+                        visibility: collapse !important;
+                    }
                 }
             }
 
