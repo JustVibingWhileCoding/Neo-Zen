@@ -2,6 +2,7 @@
 @import "CustomizationMode/CustomizationMode.css";
 @import "Media/Media.css";
 @import "Sidebar/Sidebar.css";
+@import "Sidebar/WorkspaceIndicator.css";
 @import "Tabs/Tabs.css";
 @import "Tabs/Tabs-Containers.css";
 @import "Tabs/Tabs-NewTabButton.css";
