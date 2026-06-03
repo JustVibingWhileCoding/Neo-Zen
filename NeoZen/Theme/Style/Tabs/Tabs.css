@@ -21,7 +21,7 @@
                     --zen-essential-tab-selected-bg: var(--Neo-Essential-BG-Color-Selected) !important;
                     --tab-selected-bgcolor: var(--Neo-Essential-BG-Color-Selected) !important;
                     
-                    
+                    --focus-outline-color: var(--Neo-Glow-Color-3) !important;
                 }
 
                 &[zen-essential] {
@@ -29,8 +29,8 @@
                 }
 
                 &:not([zen-essential]) {
-                    --tab-selected-shadow: 0 0 3px var(--Neo-Glow-Color-1) !important;
-                    --tab-selected-outline-color: var(--Neo-Glow-Color-1) !important;
+                    --tab-selected-shadow: 0 0 3px var(--Neo-Glow-Color-2) !important;
+                    --tab-selected-outline-color: var(--Neo-Glow-Color-2) !important;
                 }
             }
         }
