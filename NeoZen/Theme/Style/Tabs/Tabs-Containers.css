@@ -20,7 +20,7 @@
         }
 
         :root {
-            --context-line-width: 20px;
+            --context-line-width: 10px;
             --context-line-time: 0.5s;
             --context-line-width-hover: 40%;
 
@@ -84,7 +84,7 @@
                 justify-content: start !important;
 
                 & .tab-context-line {
-                    left: 5px !important;
+                    left: 10px !important;
                 }
             }
 
