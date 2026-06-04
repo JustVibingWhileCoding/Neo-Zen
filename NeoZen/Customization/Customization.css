@@ -38,7 +38,7 @@
     --Neo-BG-Color-Selected: color-mix(in srgb, var(--Neo-Background) 90%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
     --Neo-Essential-BG-Color: color-mix(in srgb, var(--Neo-Background) 70%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
     --Neo-Essential-BG-Color-Hover: color-mix(in srgb, var(--Neo-Background) 90%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
-    --Neo-Essential-BG-Color-Selected: color-mix(in srgb, var(--Neo-Background) 90%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
+    --Neo-Essential-BG-Color-Selected: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
 
     /* Tab collapsed width */
     --tab-collapsed-background-width: 40px !important;
@@ -54,4 +54,8 @@
     --Neo-Glow-Color-2: color-mix(in srgb, var(--zen-primary-color) 90%, white 10%);
     --Neo-Glow-Color-3: color-mix(in srgb, var(--zen-primary-color) 85%, white 15%);
     --Neo-Glow-Color-4: color-mix(in srgb, var(--zen-primary-color) 80%, white 20%);
+    
+    
+    --Neo-Background-Color-1: color-mix(in srgb, var(--Neo-Background) 70%, transparent 40%);
+    --Neo-Background-Color-2: color-mix(in srgb, var(--Neo-Background) 35%, transparent 40%);
 }
