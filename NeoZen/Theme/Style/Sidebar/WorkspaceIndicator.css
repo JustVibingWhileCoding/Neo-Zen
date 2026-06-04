@@ -3,5 +3,42 @@
         .zen-current-workspace-indicator {
             --tab-hover-background-color: transparent !important;
         }
+
+        zen-workspace {
+            & .zen-current-workspace-indicator {
+                justify-content: center;
+                padding: 10px !important;
+
+                & .zen-current-workspace-indicator-stack {
+                    visibility: visible !important;
+                    display: flex !important;
+                    position: relative !important;
+                    margin: unset !important;
+                    left: 0 !important;
+                    min-width: 16px !important;
+
+                    & .zen-current-workspace-indicator-chevron {
+                        opacity: 1 !important;
+                    }
+                }
+
+                & .zen-current-workspace-indicator-stack>* {
+                    flex: 1 1 auto;
+                }
+
+                & .zen-current-workspace-indicator-name {
+                    display: flex !important;
+                    position: relative !important;
+                    text-align: center !important;
+                    justify-content: center !important;
+                    margin: auto !important;
+                    margin-right: 24px !important;
+                }
+
+                & .zen-workspaces-actions {
+                    display: none !important;
+                }
+            }
+        }
     }
 }
