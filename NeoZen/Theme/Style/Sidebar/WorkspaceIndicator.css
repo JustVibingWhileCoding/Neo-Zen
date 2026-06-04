@@ -1,5 +1,7 @@
 @media not -moz-pref("neo.theme.disabled") {
     @media not -moz-pref("neo.theme.workspace-indicator.disabled") {
-        
+        .zen-current-workspace-indicator {
+            --tab-hover-background-color: transparent !important;
+        }
     }
 }
