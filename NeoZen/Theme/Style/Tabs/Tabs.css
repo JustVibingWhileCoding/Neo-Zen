@@ -28,7 +28,7 @@
                 &[zen-essential] {
                     --tab-selected-shadow: 0 0 5px color-mix(in srgb, var(--Neo-Elements) 40%, transparent) !important;
 
-                    :not([selected="true"]) {
+                    &:not([selected="true"]) {
                         .tab-background {
                             box-shadow: 0 0 5px var(--Neo-Essential-BG-Color-Hover) !important;
                         }
