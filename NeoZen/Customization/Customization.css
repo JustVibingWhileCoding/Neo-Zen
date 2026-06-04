@@ -33,13 +33,6 @@
      * not blur the popup, and the popup will be transparent, if the opacity is higher, the popup will be blurred*/
     --Neo-Popup-BG-Color: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Elements) 10%, transparent);
 
-    /* Tab color */
-    --Neo-BG-Color-Hover: color-mix(in srgb, var(--Neo-Background) 70%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
-    --Neo-BG-Color-Selected: color-mix(in srgb, var(--Neo-Background) 90%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
-    --Neo-Essential-BG-Color: color-mix(in srgb, var(--Neo-Background) 70%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
-    --Neo-Essential-BG-Color-Hover: color-mix(in srgb, var(--Neo-Background) 90%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
-    --Neo-Essential-BG-Color-Selected: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
-
     /* Tab collapsed width */
     --tab-collapsed-background-width: 40px !important;
 
@@ -56,6 +49,6 @@
     --Neo-Glow-Color-4: color-mix(in srgb, var(--zen-primary-color) 80%, white 20%);
     
     
-    --Neo-Background-Color-1: color-mix(in srgb, var(--Neo-Background) 70%, transparent 40%);
-    --Neo-Background-Color-2: color-mix(in srgb, var(--Neo-Background) 35%, transparent 40%);
+    --Neo-Background-T1: color-mix(in srgb, var(--Neo-Background) 90%, var(--Neo-Elements) 3%, transparent 40%, var(--zen-primary-color) 3%);
+    --Neo-Background-T2: color-mix(in srgb, var(--Neo-Background) 65%, var(--Neo-Elements) 3%, transparent 40%, var(--zen-primary-color) 3%);
 }
