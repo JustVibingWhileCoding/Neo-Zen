@@ -30,6 +30,13 @@
                     text-align: center !important;
                     justify-content: center !important;
                     margin: auto !important;
+
+                    color: var(--Neo-Elements) !important;
+
+                    opacity: 1 !important;
+
+                    font-weight: 500 !important;
+                    font-size: 14px !important;
                 }
 
                 & .zen-workspaces-actions {
@@ -45,28 +52,63 @@
                         --workspace-aux-height: 50px;
                         min-height: var(--workspace-aux-height) !important;
                         max-height: var(--workspace-aux-height) !important;
-                        
+
                         & .zen-current-workspace-indicator-name {
                             display: flex !important;
                             position: relative !important;
                             margin-right: 24px !important;
                         }
-                        
+
                         & .zen-current-workspace-indicator-icon {
                             display: none !important;
                         }
-                        
+
                         & .zen-current-workspace-indicator-stack {
                             & .zen-current-workspace-indicator-chevron {
                                 opacity: 0 !important;
                                 display: flex !important;
                             }
                         }
-                        
-                        &:hover{
+
+                        &:hover {
                             & .zen-current-workspace-indicator-stack {
                                 & .zen-current-workspace-indicator-chevron {
                                     opacity: 1 !important;
+                                }
+                            }
+                        }
+
+                        &::before {
+                            background: var(--Neo-Glow-Color-3) !important;
+                            box-shadow: 0px 0px 8px var(--Neo-Glow-Color-3) !important;
+                            filter: drop-shadow(0px 0px 10px var(--zen-primary-color)) brightness(1.0) !important;
+
+                            position: absolute !important;
+                            border-radius: 20px !important;
+                            align-self: center !important;
+
+                            left: auto !important;
+                            right: auto !important;
+                            height: 3px !important;
+                            top: auto !important;
+                            bottom: 15% !important;
+                            width: 0% !important;
+                        }
+                    }
+                }
+
+                &:not([animating-background="true"]) zen-workspace {
+                    &[active] {
+                        & .zen-current-workspace-indicator {
+                            &::before {
+                                width: 45% !important;
+                                transition: width 0.6s ease, opacity 0.5s ease !important;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    width: 80% !important;
+                                    transition: width 0.3s ease !important;
                                 }
                             }
                         }
