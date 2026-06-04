@@ -1,0 +1,7 @@
+@media not -moz-pref("neo.theme.disabled") {
+    @media not -moz-pref("neo.theme.workspace-strip.disabled") {
+        @media not -moz-pref("neo.theme.workspace-strip.hidden") {
+            
+        }
+    }
+}
