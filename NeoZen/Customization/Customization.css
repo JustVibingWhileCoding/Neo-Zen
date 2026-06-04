@@ -51,8 +51,9 @@
     --Neo-Glow-Color-2: color-mix(in srgb, var(--zen-primary-color) 90%, var(--Neo-Elements) 10%);
     --Neo-Glow-Color-3: color-mix(in srgb, var(--zen-primary-color) 85%, var(--Neo-Elements) 15%);
     --Neo-Glow-Color-4: color-mix(in srgb, var(--zen-primary-color) 80%, var(--Neo-Elements) 20%);
+    --Neo-Glow-Color-5: color-mix(in srgb, var(--zen-primary-color) 50%, var(--Neo-Elements) 10%);
     
     
-    --Neo-Background-T1: color-mix(in srgb, var(--Neo-Background) 90%, var(--Neo-Elements) 3%, transparent 40%, var(--zen-primary-color) 3%);
-    --Neo-Background-T2: color-mix(in srgb, var(--Neo-Background) 65%, var(--Neo-Elements) 3%, transparent 40%, var(--zen-primary-color) 3%);
+    --Neo-Background-T1: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Elements) 3%, transparent 40%, var(--zen-primary-color) 3%);
+    --Neo-Background-T2: color-mix(in srgb, var(--Neo-Background) 45%, var(--Neo-Elements) 3%, transparent 40%, var(--zen-primary-color) 3%);
 }
