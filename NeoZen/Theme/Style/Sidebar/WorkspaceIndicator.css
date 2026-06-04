@@ -42,6 +42,10 @@
             &[zen-sidebar-expanded="true"] {
                 zen-workspace {
                     & .zen-current-workspace-indicator {
+                        --workspace-aux-height: 50px;
+                        min-height: var(--workspace-aux-height) !important;
+                        max-height: var(--workspace-aux-height) !important;
+                        
                         & .zen-current-workspace-indicator-name {
                             display: flex !important;
                             position: relative !important;
