@@ -1,7 +1,7 @@
 #navigator-toolbox{
     /* This modifies the background color of the urlbar and the new tab button */
-    --toolbarbutton-hover-background: var(--Neo-BG-Color-Hover) !important;
-    --toolbarbutton-active-background: var(--Neo-BG-Color-Selected) !important;
+    --toolbarbutton-hover-background: var(--Neo-Background-T2) !important;
+    --toolbarbutton-active-background: var(---Neo-Background-T1) !important;
     /* This modifies the border radius of all the elements in the sidebar */
     --border-radius-medium: var(--Roundness) !important;
 }
