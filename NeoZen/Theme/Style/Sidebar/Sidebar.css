@@ -4,6 +4,8 @@
     --toolbarbutton-active-background: var(---Neo-Background-T1) !important;
     /* This modifies the border radius of all the elements in the sidebar */
     --border-radius-medium: var(--Roundness) !important;
+    
+    --tab-hover-background-color: var(--Neo-Background-T2) !important;
 }
 #navigator-toolbox[zen-sidebar-expanded="true"] {
     /* This modifies the border radius of all the elements in the sidebar */
