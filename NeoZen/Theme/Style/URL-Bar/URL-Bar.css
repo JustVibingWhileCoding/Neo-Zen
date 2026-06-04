@@ -19,15 +19,15 @@
             --zen-toolbar-element-bg: var(--Neo-Background-T2) !important;
             --zen-toolbar-element-bg-hover: var(--Neo-Background-T1) !important;
         
-            box-shadow: 0 0px 4px color-mix(in srgb, black 100%, transparent 10%) !important; !important;
-            border: 1px solid transparent !important;
+            box-shadow: 0 0px 0px color-mix(in srgb, black 100%, transparent 10%) !important; !important;
+            border: 2px solid var(--Neo-Glow-Color-2) !important;
         }
         
         #urlbar:not([breakout-extend="true"]) {
             &:hover{
                 & .urlbar-background {
-                    box-shadow: 0 0 5px var(--Neo-Glow-Color-2) !important;
-                    border: 1px solid var(--Neo-Glow-Color-2) !important;
+                    box-shadow: 0 0 10px var(--Neo-Glow-Color-2) !important;
+                    border: 2px solid var(--Neo-Glow-Color-2) !important;
                 }
             }
         }
