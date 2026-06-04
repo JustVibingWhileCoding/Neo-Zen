@@ -11,7 +11,7 @@
 
     /*Browser Background - Linux*/
     --browser-bg-dark-color-linux: rgba(10, 10, 10, 0.8);
-    --browser-bg-light-color-linux: rgba(255, 255, 255, 0.5);
+    --browser-bg-light-color-linux: rgba(205, 205, 205, 0.7);
 
     /* Browser tab area background */
     --browser-tab-area-bg-color: transparent;
