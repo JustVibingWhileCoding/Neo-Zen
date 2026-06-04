@@ -1,56 +1,77 @@
-@media not -moz-pref("neo.theme.disable") {
-    @media not -moz-pref("neo.theme.tabs.disable") {
-        :root {
-            --tab-hover-background-color: var(--Neo-BG-Color-Hover) !important;
+@media not (-moz-pref("neo.theme.disabled")) {
+    @media not (-moz-pref("neo.theme.tabs.disabled")) {
 
-            :not([animating-background="true"]) {
-                .tabbrowser-tab {
-                    .tab-background {
-                        transition: background-color var(--tab-bg-transition-duration) ease,
-                                    outline-color var(--tab-bg-transition-duration) ease,
-                                    box-shadow 0.5s ease !important;
+
+        .tabbrowser-tab {
+            --tab-color: var(--Neo-Glow-Color-3) !important;
+            --tab-hover-color: var(--Neo-Glow-Color-1) !important;
+
+            @media not (-moz-pref("zen.workspaces.hide-default-container-indicator")) {
+                @media not (-moz-pref("neo.theme.tabs-containers.disabled")) {
+                    &[usercontextid] {
+                        --tab-color: color-mix(in srgb, var(--identity-tab-color) 40%, white) !important;
+                        --tab-hover-color: color-mix(in srgb, var(--identity-tab-color) 60%, white) !important;
                     }
                 }
             }
 
-            .tabbrowser-tab {
+            --tab-background: var(--Neo-Background-T2) !important;
+            --tab-hover-background: var(--Neo-Background-T1) !important;
+
+
+            &[zen-essential] {
                 .tab-background {
-                    --zen-toolbar-element-bg: var(--Neo-Essential-BG-Color) !important;
-                    --zen-essential-tab-selected-bg-hover: var(--Neo-Essential-BG-Color-Hover) !important;
-                    --zen-essential-tab-selected-bg: var(--Neo-Essential-BG-Color-Selected) !important;
-                    --tab-selected-bgcolor: var(--Neo-Essential-BG-Color-Selected) !important;
-
-                    --focus-outline-color: var(--Neo-Glow-Color-3) !important;
-
-                    --tab-hover-outline-color: var(--Neo-Glow-Color-4) !important;
+                    background: var(--tab-background) !important;
+                    box-shadow: 0 0px 4px color-mix(in srgb, black 100%, transparent 10%) !important;
                 }
 
-                &[zen-essential] {
-                    --tab-selected-shadow: 0 0 5px color-mix(in srgb, var(--Neo-Elements) 40%, transparent) !important;
+                &:hover .tab-background {
+                    background: color-mix(in srgb, var(--Neo-Background) 60%, transparent 50%) !important;
+                    box-shadow: 0px 0px 5px var(--Neo-Glow-Color-3) !important;
+                }
 
-                    &:not([selected="true"]) {
-                        .tab-background {
-                            box-shadow: 0 0 5px var(--Neo-Essential-BG-Color-Hover) !important;
-                        }
+                &[visuallyselected] .tab-background {
 
-                        &:hover {
-                            .tab-background {
-                                box-shadow: 0 0 5px var(--Neo-Glow-Color-4) !important;
-                            }
-                        }
+                    box-shadow: 0px 0px 6px color-mix(in srgb, white 20%, transparent) !important;
+
+                    &::before {
+                        border-radius: var(--Roundness) !important;
+                        background-color: var(--tab-background) !important;
+
+                        box-shadow: 0px 0px 10px color-mix(in srgb, white 30%, transparent) !important;
+                        transition: background 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
                     }
                 }
+            }
 
-                &:not([zen-essential]) {
-                    --tab-selected-shadow: 0 0 3px var(--Neo-Glow-Color-2) !important;
-                    --tab-selected-outline-color: var(--Neo-Glow-Color-2) !important;
+            &:not([zen-essential]) {
+                .tab-background {
+                    border: 1px solid color-mix(in srgb, var(--zen-primary-color) 0%, transparent) !important;
 
-                    &:not([selected="true"]) {
-                        .tab-background {
-                            box-shadow: 0 0 3px transparent !important;
-                        }
-                    }
+                    /* Instead of using the padding outside the tab background, we use a margin to get an space between the tab-stack and the tab background 
+                         * With this we avoid and issue with tab folders, where the folder doesn't close correctly when the tab is active */
+
                 }
+            }
+
+            .tab-background {
+                border-radius: var(--Roundness) !important;
+                position: relative !important;
+
+                transition: background 0.5s ease, box-shadow 0.2s ease, border 0.3s ease !important;
+            }
+
+            &:not([zen-essential])[selected] .tab-background,
+            &:not([zen-essential])[multiselected="true"] .tab-background {
+                background: var(--tab-background) !important;
+                box-shadow: 0px 0px 5px var(--tab-color) !important;
+                border: 1px solid var(--tab-color) !important;
+            }
+
+            &:not([zen-essential]):hover .tab-background {
+                background: var(--tab-hover-background) !important;
+                box-shadow: 0px 0px 5px var(--tab-hover-color) !important;
+                border: 1px solid var(--tab-hover-color) !important;
             }
         }
     }
