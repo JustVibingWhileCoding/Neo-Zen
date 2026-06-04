@@ -16,10 +16,10 @@
         }
 
         .urlbar-background {
-            --zen-toolbar-element-bg: var(--Neo-BG-Color-Hover) !important;
-            --zen-toolbar-element-bg-hover: var(--Neo-BG-Color-Selected) !important;
+            --zen-toolbar-element-bg: var(--Neo-Background-T2) !important;
+            --zen-toolbar-element-bg-hover: var(--Neo-Background-T1) !important;
         
-            box-shadow: 0 0 5px var(--Neo-BG-Color-Hover) !important;
+            box-shadow: 0 0px 4px color-mix(in srgb, black 100%, transparent 10%) !important; !important;
             border: 1px solid transparent !important;
         }
         
