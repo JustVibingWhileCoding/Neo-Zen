@@ -18,7 +18,7 @@
                     min-width: 16px !important;
 
                     & .zen-current-workspace-indicator-chevron {
-                        opacity: 1 !important;
+                        transition: opacity 0.4s ease, transform 0.3s ease !important;
                     }
                 }
 
@@ -46,6 +46,25 @@
                             display: flex !important;
                             position: relative !important;
                             margin-right: 24px !important;
+                        }
+                        
+                        & .zen-current-workspace-indicator-icon {
+                            display: none !important;
+                        }
+                        
+                        & .zen-current-workspace-indicator-stack {
+                            & .zen-current-workspace-indicator-chevron {
+                                opacity: 0 !important;
+                                display: flex !important;
+                            }
+                        }
+                        
+                        &:hover{
+                            & .zen-current-workspace-indicator-stack {
+                                & .zen-current-workspace-indicator-chevron {
+                                    opacity: 1 !important;
+                                }
+                            }
                         }
                     }
                 }
