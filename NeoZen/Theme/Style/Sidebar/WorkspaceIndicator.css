@@ -53,7 +53,7 @@
             &[zen-sidebar-expanded="true"] {
                 zen-workspace {
                     & .zen-current-workspace-indicator {
-                        --workspace-aux-height: 50px;
+                        --workspace-aux-height: 60px;
                         min-height: var(--workspace-aux-height) !important;
                         max-height: var(--workspace-aux-height) !important;
                         
@@ -97,7 +97,7 @@
                             right: auto !important;
                             height: 3px !important;
                             top: auto !important;
-                            bottom: 15% !important;
+                            bottom: 24% !important;
                             width: 0% !important;
                         }
                     }
