@@ -123,8 +123,18 @@
             }
 
             &:not([zen-sidebar-expanded="true"]) {
-                .zen-current-workspace-indicator-icon {
-                    display: flex !important;
+                .zen-current-workspace-indicator{
+                    
+                    opacity: 1 !important;
+                    
+                    .zen-current-workspace-indicator-stack{
+                        opacity: 1 !important;
+                        
+                        .zen-current-workspace-indicator-icon {
+                            display: flex !important;
+                            opacity: 1 !important;
+                        }
+                    }
                 }
             }
         }
