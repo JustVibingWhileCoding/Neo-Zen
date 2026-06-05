@@ -1,0 +1,43 @@
+:root {
+    --Neo-Essentials-Max-Tabs: 4;
+
+    @media -moz-pref("neo.features.essentials.max-tabs", 2) {
+        --Neo-Essentials-Max-Tabs: 2;
+    }
+
+    @media -moz-pref("neo.features.essentials.max-tabs", 3) {
+        --Neo-Essentials-Max-Tabs: 3;
+    }
+
+    @media -moz-pref("neo.features.essentials.max-tabs", 4) {
+        --Neo-Essentials-Max-Tabs: 4;
+    }
+
+    @media -moz-pref("neo.features.essentials.max-tabs", 5) {
+        --Neo-Essentials-Max-Tabs: 5;
+    }
+
+    @media -moz-pref("neo.features.essentials.max-tabs", 6) {
+        --Neo-Essentials-Max-Tabs: 6;
+    }
+
+    @media -moz-pref("neo.features.essentials.max-tabs", 7) {
+        --Neo-Essentials-Max-Tabs: 7;
+    }
+
+    @media -moz-pref("neo.features.essentials.max-tabs", 8) {
+        --Neo-Essentials-Max-Tabs: 8;
+    }
+
+    @media -moz-pref("neo.features.essentials.max-tabs", 9) {
+        --Neo-Essentials-Max-Tabs: 9;
+    }
+
+    @media -moz-pref("neo.features.essentials.max-tabs", 10) {
+        --Neo-Essentials-Max-Tabs: 10;
+    }
+
+    @media -moz-pref("neo.features.essentials.max-tabs", 11) {
+        --Neo-Essentials-Max-Tabs: 11;
+    }
+}
