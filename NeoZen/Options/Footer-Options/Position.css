@@ -2,4 +2,8 @@
     #zen-sidebar-foot-buttons {
         order: -1;
     }
+
+    #TabsToolbar {
+        margin-top: 10px !important;
+    }
 }
