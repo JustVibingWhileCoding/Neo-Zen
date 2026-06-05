@@ -1,0 +1,18 @@
+@media not -moz-pref("neo.theme.disabled") {
+    @media not -moz-pref("neo.theme.urlbar.floating.disabled") {
+        #urlbar[breakout-extend="true"] {
+            & .urlbar-background {
+                --zen-urlbar-filter: var(--Neo-Blur-Effect) !important;
+                --zen-urlbar-background-base: var(--Neo-Floating-BG-Color) !important;
+
+                outline: none !important;
+
+                @media -moz-pref("zen.theme.acrylic-elements") {
+                        {
+                        backdrop-filter: var(--zen-urlbar-filter) !important;
+                    }
+                }
+            }
+        }
+    }
+}
