@@ -1,13 +1,72 @@
-#navigator-toolbox{
-    /* This modifies the background color of the urlbar and the new tab button */
-    --toolbarbutton-hover-background: var(--Neo-Background-T2) !important;
-    --toolbarbutton-active-background: var(---Neo-Background-T1) !important;
-    /* This modifies the border radius of all the elements in the sidebar */
-    --border-radius-medium: var(--Roundness) !important;
-    
-    --tab-hover-background-color: var(--Neo-Background-T2) !important;
-}
-#navigator-toolbox[zen-sidebar-expanded="true"] {
-    /* This modifies the border radius of all the elements in the sidebar */
-    --border-radius-medium: var(--Roundness) !important;
+@media not -moz-pref("neo.theme.disabled") {
+
+    #navigator-toolbox {
+        /* This modifies the background color of the urlbar and the new tab button */
+        --toolbarbutton-hover-background: var(--Neo-Background-T2) !important;
+        --toolbarbutton-active-background: var(---Neo-Background-T1) !important;
+        /* This modifies the border radius of all the elements in the sidebar */
+        --border-radius-medium: var(--Roundness) !important;
+
+        --tab-hover-background-color: var(--Neo-Background-T2) !important;
+    }
+
+    #navigator-toolbox[zen-sidebar-expanded="true"] {
+        /* This modifies the border radius of all the elements in the sidebar */
+        --border-radius-medium: var(--Roundness) !important;
+    }
+
+
+
+    /* Changed the color and the style of the pinned tabs container separator to make it fit better with the neozen theme */
+    .pinned-tabs-container-separator {
+        @media -moz-pref("neo.theme.sidebar.pinned-tabs-separator.hidden") {
+            display: none !important;
+        }
+
+        @media not -moz-pref("neo.theme.sidebar.pinned-tabs-separator.disabled") {
+            & toolbarseparator {
+                filter: drop-shadow(0px 0px 4px var(--zen-primary-color)) brightness(1);
+                border-radius: 3px !important;
+                height: 2px !important;
+                background: color-mix(in srgb, var(--Neo-Elements) 20%, var(--Neo-Glow-Color-1) 30%) !important;
+                padding: 0;
+                margin: auto 8px !important;
+            }
+        }
+    }
+
+
+    @media not -moz-pref("neo.theme.sidebar.overflow-indicators.disabled") {
+
+        zen-workspace {
+
+            &>arrowscrollbox::before,
+            &>arrowscrollbox::after {
+                z-index: 9999 !important;
+                margin: 8px 5px !important;
+                left: auto !important;
+                position: absolute !important;
+                align-self: center !important;
+                justify-self: center !important;
+                background: var(--Neo-Glow-Color-3) !important;
+                box-shadow: 0px 0px 2px var(--Neo-Glow-Color-3) !important;
+                filter: drop-shadow(0px 0px 4px var(--zen-primary-color)) brightness(1);
+                transition: opacity 0.3s ease !important;
+            }
+
+            &>arrowscrollbox {
+                &[overflowing] {
+
+                    &::after,
+                    &::before {
+                        content: '';
+                        width: 20% !important;
+                        height: 4px !important;
+                        border-radius: 20px !important;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
 }
