@@ -27,7 +27,7 @@
     --Neo-Blur-Effect: blur(30px) saturate(120%) brightness(1) contrast(105%);
 
     /* Floating elements */
-    --Neo-Floating-BG-Color: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Elements) 10%, transparent);
+    --Neo-Floating-BG-Color: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Elements) 5%, transparent, var(--Neo-Glow-Color-1) 3%);
     /* Advertisement: if you are going to change the popup color, this only affects linux platforms and the color opacity should match
      * the alpha value you set in the compositor for the blur effect to work properly, if the opacity is lower, the compositor could
      * not blur the popup, and the popup will be transparent, if the opacity is higher, the popup will be blurred*/
