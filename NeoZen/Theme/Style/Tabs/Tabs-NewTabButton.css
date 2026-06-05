@@ -1,51 +1,56 @@
-/* This is used to change the background color of the new tab button when the vertical tab bar is enabled */
-@media -moz-pref("zen.tabs.show-newtab-vertical") {
-    #tabs-newtab-button {
-        --tab-selected-bgcolor: var(--Neo-BG-Color-Selected) !important;
-        border: 2px solid transparent !important;
-        box-shadow: 0px 0px 3px transparent !important;
-        transition: opacity 0.5s ease,
-            background 1s ease,
-            box-shadow 0.3s ease,
-            border 0.3s ease,
-            filter 0.3s ease !important;
+@media not -moz-pref("neo.theme.disabled") {
+    @media not -moz-pref("neo.theme.tabs.newtab-button.disabled") {
+        @media -moz-pref("zen.tabs.show-newtab-vertical") {
+            #tabs-newtab-button {
+                /* This is used to change the background color of the new tab button when the vertical tab bar is enabled */
+                --tab-selected-bgcolor: var(--Neo-BG-Color-Selected) !important;
+                border: 2px solid transparent !important;
+                box-shadow: 0px 0px 3px transparent !important;
+                transition: opacity 0.5s ease,
+                    background 1s ease,
+                    box-shadow 0.3s ease,
+                    border 0.3s ease,
+                    filter 0.3s ease !important;
 
-        padding-left: 11px !important;
-        padding-right: 11px !important;
-        margin: 15px 0 !important;
+                & .toolbarbutton-text::before,
+                .toolbarbutton-icon {
+                    background: transparent !important;
+                    padding: 9px !important;
+                    transition: margin-left 0.5s, scale 0.5s ease, opacity 0.3s ease !important;
+                }
 
-        & .toolbarbutton-text::before,
-        .toolbarbutton-icon {
+                &:not([in-urlbar="true"]):hover {
+                    border: 2px solid var(--Neo-Glow-Color-1) !important;
+                    box-shadow: 0px 0px 4px var(--Neo-Glow-Color-1) !important;
 
-            transition: margin-left 0.5s, scale 0.5s ease, opacity 0.3s ease !important;
-        }
+                    .toolbarbutton-icon {
+                        scale: 1.3 !important;
+                    }
 
-        &:not([in-urlbar="true"]):hover {
-            border: 2px solid var(--Neo-Glow-Color-1) !important;
-            box-shadow: 0px 0px 4px var(--Neo-Glow-Color-1) !important;
+                    & .toolbarbutton-text::before,
+                    .toolbarbutton-icon {
+                        opacity: 1.0 !important;
+                    }
+                }
 
-            .toolbarbutton-icon {
-                scale: 1.3 !important;
+                &[in-urlbar="true"] {
+                    border: 2px solid var(--Neo-Glow-Color-3) !important;
+                    box-shadow: 0px 0px 4px var(--Neo-Glow-Color-1) !important;
+                    background: color-mix(in srgb, var(--Neo-Background) 40%, transparent 50%) !important;
+                }
             }
 
-            & .toolbarbutton-text::before,
-            .toolbarbutton-icon {
-                opacity: 1.0 !important;
-            }
-        }
+            :root[zen-sidebar-expanded="true"] {
+                #tabs-newtab-button {
+                    margin: 15px 0 !important;
+                    padding-left: 11px !important;
+                    padding-right: 11px !important;
 
-        &[in-urlbar="true"] {
-            border: 2px solid var(--Neo-Glow-Color-3) !important;
-            box-shadow: 0px 0px 4px var(--Neo-Glow-Color-1) !important;
-            background: color-mix(in srgb, var(--Neo-Background) 40%, transparent 50%) !important;
-        }
-    }
-
-    :root[zen-sidebar-expanded="true"] {
-        #tabs-newtab-button {
-            &:not([in-urlbar="true"]):hover {
-                & .toolbarbutton-text::before {
-                    margin-left: 8px !important;
+                    &:not([in-urlbar="true"]):hover {
+                        & .toolbarbutton-text::before {
+                            margin-left: 8px !important;
+                        }
+                    }
                 }
             }
         }
