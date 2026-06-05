@@ -14,8 +14,8 @@
                 }
 
                 &:not([zen-sidebar-expanded="true"]) {
-                    --workspace-width-hover: 55%;
-                    --workspace-width-active: 75%;
+                    --workspace-width-hover: 50%;
+                    --workspace-width-active: 70%;
                 }
 
                 #zen-workspaces-button {
