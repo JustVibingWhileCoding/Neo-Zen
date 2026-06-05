@@ -37,7 +37,7 @@
     --tab-collapsed-background-width: 40px !important;
 
     /* Tab min height */
-    --tab-min-height: 39px !important;
+    --tab-min-height: 40px !important;
     
     &[zen-sidebar-expanded]{
         --tab-min-height: 40px !important;

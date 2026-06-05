@@ -139,8 +139,8 @@
                 .zen-current-workspace-indicator {
 
                     opacity: 1 !important;
-                    max-height: 40px !important;
-                    max-width: 40px !important;
+                    max-height: var(--tab-collapsed-background-width) !important;
+                    max-width: var(--tab-collapsed-background-width) !important;
                     align-self: center !important;
 
                     border: 4px solid var(--Neo-Glow-Color-3) !important;
