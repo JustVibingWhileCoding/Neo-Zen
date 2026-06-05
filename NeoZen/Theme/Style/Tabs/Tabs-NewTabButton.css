@@ -15,7 +15,6 @@
                 & .toolbarbutton-text::before,
                 .toolbarbutton-icon {
                     background: transparent !important;
-                    padding: 9px !important;
                     transition: margin-left 0.5s, scale 0.5s ease, opacity 0.3s ease !important;
                 }
 
@@ -50,6 +49,16 @@
                         & .toolbarbutton-text::before {
                             margin-left: 8px !important;
                         }
+                    }
+                }
+            }
+
+            :root:not([zen-sidebar-expanded="true"]) {
+                #tabs-newtab-button {
+
+                    & .toolbarbutton-text::before,
+                    .toolbarbutton-icon {
+                        padding: 9px !important;
                     }
                 }
             }
