@@ -44,7 +44,7 @@
                 }
             }
 
-            :root:not([zen-sidebar-expanded="true"]) {
+            :root[zen-sidebar-expanded="true"] {
                 #zen-workspaces-button {
                     min-height: 35px !important;
                     height: 35px !important;
