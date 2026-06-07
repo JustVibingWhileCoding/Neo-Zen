@@ -40,6 +40,4 @@
     @media -moz-pref("neo.features.essentials.max-tabs", 11) {
         --Neo-Essentials-Max-Tabs: 11;
     }
-
-    --Neo-Essentials-Max-Height: calc((var(--tab-min-height) + 4px) * var(--Neo-Essentials-Max-Tabs)) !important;
 }
