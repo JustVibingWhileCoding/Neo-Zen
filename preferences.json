@@ -1,6 +1,12 @@
 [
     {
         "type": "text",
+        "label": "**DO NOT USE THESE SETTINGS, THEY ARE NOT WORKING DUE TO THE NEW REWRITE OF THE THEME**",
+        "margin": "10px 0 15px 0",
+        "size": "30px"
+    },
+    {
+        "type": "text",
         "label": "**Neo Features**",
         "margin": "10px 0 15px 0",
         "size": "20px"
