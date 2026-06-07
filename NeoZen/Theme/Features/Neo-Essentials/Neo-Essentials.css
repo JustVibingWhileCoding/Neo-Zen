@@ -15,6 +15,7 @@
             visibility: visible !important;
             pointer-events: none !important;
         }
+
         /* --------------------------------------------------------------------------------------------------------------------*/
 
         #navigator-toolbox {
@@ -26,10 +27,6 @@
                 scrollbar-width: none !important;
                 scroll-behavior: smooth !important;
 
-                @media not -moz-pref("neo.features.essentials.keep-expanded") {
-                    max-height: calc(var(--tab-min-height) + 4px + 8px) !important;
-                }
-
                 & .tabbrowser-tab {
                     transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out !important;
                 }
@@ -38,6 +35,10 @@
             @media not -moz-pref("neo.features.essentials.collapsed.disabled") {
                 &:not([zen-sidebar-expanded="true"]) .zen-essentials-container {
                     display: grid !important;
+
+                    @media not -moz-pref("neo.features.essentials.keep-expanded") {
+                        max-height: calc(var(--tab-min-height) + 4px + 8px) !important;
+                    }
 
                     & .tabbrowser-tab:not([selected]) {
                         @media not -moz-pref("neo.features.essentials.keep-expanded") {
@@ -100,6 +101,11 @@
 
             @media not -moz-pref("neo.features.essentials.expanded.disabled") {
                 &[zen-sidebar-expanded="true"]& .zen-essentials-container {
+
+                    @media not -moz-pref("neo.features.essentials.keep-expanded") {
+                        max-height: calc(var(--tab-min-height) + 4px + 8px) !important;
+                    }
+
                     &:hover {
                         max-height: calc(4 * (var(--tab-min-height) + 4px) + 10px) !important;
                     }
