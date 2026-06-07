@@ -3,7 +3,7 @@
         #navigator-toolbox {
             & .zen-essentials-container {
 
-                --Neo-Essentials-Max-Height: calc((var(--tab-min-height) + 4px) * var(--Neo-Essentials-Max-Tabs)) !important;
+                --Neo-Essentials-Max-Height: calc((var(--tab-min-height) + 6px) * var(--Neo-Essentials-Max-Tabs)) !important;
 
                 overflow-y: auto !important;
                 scrollbar-width: none !important;
@@ -47,6 +47,12 @@
                             opacity: 1 !important;
                             visibility: visible !important;
                         }
+
+                        &::before {
+                            opacity: 0 !important;
+                            visibility: hidden !important;
+                            height: 0px !important;
+                        }
                     }
 
                     @media not -moz-pref("neo.features.essentials.keep-expanded") {
@@ -71,9 +77,7 @@
                         }
 
                         &:has(.tabbrowser-tab[selected])::before {
-                            opacity: 0 !important;
-                            visibility: hidden !important;
-                            height: 0px !important;
+                            display: none !important;
                         }
                     }
                 }
