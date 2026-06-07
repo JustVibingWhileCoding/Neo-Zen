@@ -10,7 +10,7 @@
                 scroll-behavior: smooth !important;
 
                 @media not -moz-pref("neo.features.essentials.keep-expanded") {
-                    max-height: calc(var(--tab-min-height) + 4px + 10px) !important;
+                    max-height: calc(var(--tab-min-height) + 4px + 12px) !important;
                 }
 
                 & .tabbrowser-tab {
@@ -40,7 +40,7 @@
                 }
 
                 &:hover {
-                    max-height: calc(var(--Neo-Essentials-Max-Height) + 10px) !important;
+                    max-height: calc(var(--Neo-Essentials-Max-Height) + 12px) !important;
 
                     & .tabbrowser-tab {
                         opacity: 1 !important;
@@ -77,7 +77,7 @@
 
             &[zen-sidebar-expanded="true"].zen-essentials-container {
                 &:hover {
-                    max-height: calc(4 * (var(--tab-min-height) + 4px) + 10px) !important;
+                    max-height: calc(4 * (var(--tab-min-height) + 4px) + 12px) !important;
                 }
             }
         }
