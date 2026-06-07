@@ -1,13 +1,13 @@
 @media not -moz-pref("neo.features.disabled") {
     @media not -moz-pref("neo.features.essentials.disabled") {
-        :root:not([animating-background="true"]){
+        :root:not([animating-background="true"]) {
             & .zen-essentials-container:not([hidden="true"]) {
                 &::before {
                     transition: opacity 0.4s ease, height 0.4s ease;
                 }
             }
         }
-        
+
         #navigator-toolbox {
             & .zen-essentials-container {
 
@@ -18,7 +18,7 @@
                 scroll-behavior: smooth !important;
 
                 @media not -moz-pref("neo.features.essentials.keep-expanded") {
-                    max-height: calc(var(--tab-min-height) + 4px + 12px) !important;
+                    max-height: calc(var(--tab-min-height) + 4px + 8px) !important;
                 }
 
                 & .tabbrowser-tab {
@@ -90,9 +90,9 @@
             }
 
             @media not -moz-pref("neo.features.essentials.expanded.disabled") {
-                &[zen-sidebar-expanded="true"].zen-essentials-container {
+                &[zen-sidebar-expanded="true"]& .zen-essentials-container {
                     &:hover {
-                        max-height: calc(4 * (var(--tab-min-height) + 4px) + 12px) !important;
+                        max-height: calc(4 * (var(--tab-min-height) + 4px) + 10px) !important;
                     }
                 }
             }
