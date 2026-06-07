@@ -22,8 +22,10 @@
                 display: grid !important;
 
                 & .tabbrowser-tab:not([selected]) {
-                    opacity: 0 !important;
-                    visibility: hidden !important;
+                    @media not -moz-pref("neo.features.essentials.keep-expanded") {
+                        opacity: 0 !important;
+                        visibility: hidden !important;
+                    }
                 }
 
                 /* Reorder selected tab to stay visible */
