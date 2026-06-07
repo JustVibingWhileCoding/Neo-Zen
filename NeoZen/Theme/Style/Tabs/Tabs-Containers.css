@@ -28,7 +28,7 @@
 
                 --context-line-width: 6px;
                 --context-line-time: 0.2s;
-                --context-line-width-hover: 30%;
+                --context-line-width-hover: 25%;
 
                 .tabbrowser-tab[usercontextid] {
                     &:not([zen-essential="true"]) .tab-background {
@@ -103,13 +103,13 @@
 
                 &[selected][usercontextid] {
                     .tab-context-line {
-                        width: calc(var(--context-line-width-hover) + 20%) !important;
+                        width: calc(var(--context-line-width-hover) + 10%) !important;
                     }
                 }
 
                 &:hover[usercontextid][selected] {
                     .tab-context-line {
-                        width: calc(var(--context-line-width-hover) + 40%) !important;
+                        width: calc(var(--context-line-width-hover) + 30%) !important;
                     }
                 }
             }
