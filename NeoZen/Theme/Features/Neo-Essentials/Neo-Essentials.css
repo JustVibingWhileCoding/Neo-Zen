@@ -1,5 +1,13 @@
 @media not -moz-pref("neo.features.disabled") {
     @media not -moz-pref("neo.features.essentials.disabled") {
+        :root:not([animating-background="true"]){
+            & .zen-essentials-container:not([hidden="true"]) {
+                &::before {
+                    transition: opacity 0.4s ease, height 0.4s ease;
+                }
+            }
+        }
+        
         #navigator-toolbox {
             & .zen-essentials-container {
 
@@ -50,10 +58,7 @@
 
                         &::before {
                             opacity: 0 !important;
-                            visibility: hidden !important;
                             height: 0px !important;
-                            
-                            transition: opacity 0.4s ease, color 0.4s ease, height 0.4s ease, visibility 0.4s ease;
                         }
                     }
 
@@ -74,7 +79,7 @@
                             height: calc(var(--tab-min-height) + 4px);
                             width: 100%;
 
-                            filter: drop-shadow(0px 0px 5px var(--Neo-Glow-Color-2)) brightness(1.05);
+                            filter: drop-shadow(0px 0px 3px var(--Neo-Glow-Color-2)) brightness(1.05);
                         }
 
                         &:has(.tabbrowser-tab[selected])::before {
