@@ -59,7 +59,7 @@
                             align-content: center;
                             font-size: 15px;
                             font-weight: 540;
-                            color: color-mix(in srgb, var(--zen-primary-color) 100%, white);
+                            color: color-mix(in srgb, var(--Neo-Glow-Color-2) 100%, white);
                             position: sticky;
                             top: 0%;
                             left: 0%;
@@ -67,7 +67,7 @@
                             width: 100%;
                             filter: drop-shadow(0px 0px 5px var(--Neo-Glow-Color-2)) brightness(1.05);
 
-                            transition: opacity 0.4s ease, height 0.4s ease, visibility 0.4s ease;
+                            transition: opacity 0.4s ease, color 0.4s ease, height 0.4s ease, visibility 0.4s ease;
                         }
 
                         &:has(.tabbrowser-tab[selected])::before {
