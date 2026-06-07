@@ -1,5 +1,82 @@
 @media not -moz-pref("neo.features.disabled") {
     @media not -moz-pref("neo.features.essentials.disabled") {
-        
+        #navigator-toolbox {
+            & .zen-essentials-container {
+
+                --Neo-Essentials-Max-Height: calc((var(--tab-min-height) + 4px) * var(--Neo-Essentials-Max-Tabs)) !important;
+
+                overflow-y: auto !important;
+                scrollbar-width: none !important;
+                scroll-behavior: smooth !important;
+
+                @media not -moz-pref("neo.features.essentials.keep-expanded") {
+                    max-height: calc(var(--tab-min-height) + 4px + 10px) !important;
+                }
+
+                & .tabbrowser-tab {
+                    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out !important;
+                }
+            }
+
+            &:not([zen-sidebar-expanded="true"]) .zen-essentials-container {
+                display: grid !important;
+
+                & .tabbrowser-tab:not([selected]) {
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                }
+
+                /* Reorder selected tab to stay visible */
+                & .tabbrowser-tab[selected] {
+                    /* Moves selected tab to the first position */
+                    order: -1 !important;
+                    /* Sticks selected tab to the top */
+                    position: sticky !important;
+                    top: 0 !important;
+                    /* Mover selected tab over other tabs */
+                    z-index: 9999 !important;
+                }
+
+                &:hover {
+                    max-height: calc(var(--Neo-Essentials-Max-Height) + 10px) !important;
+
+                    & .tabbrowser-tab {
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                    }
+                }
+
+                &::before {
+                    order: 0;
+                    content: "Neo\A Zen" !important;
+                    white-space: pre-wrap !important;
+                    text-align: center !important;
+                    text-justify: center !important;
+                    align-content: center !important;
+                    font-size: 14px !important;
+                    color: color-mix(in srgb, var(--zen-primary-color) 100%, white) !important;
+                    position: sticky !important;
+                    top: 0% !important;
+                    left: 0% !important;
+                    height: var(var(--tab-min-height)) !important;
+                    width: 100% !important;
+                    filter: drop-shadow(0px 0px 3px var(--Neo-Glow-Color-2)) brightness(1.05) !important;
+
+                    transition: opacity 0.4s ease, height 0.4s ease, visibility 0.4s ease !important;
+                }
+
+                &:has(.tabbrowser-tab[selected])::before {
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                    height: 0px !important;
+                }
+            }
+
+            &[zen-sidebar-expanded="true"].zen-essentials-container {
+                &:hover {
+                    max-height: calc(4 * (var(--tab-min-height) + 4px) + 10px) !important;
+                }
+            }
+        }
     }
 }
