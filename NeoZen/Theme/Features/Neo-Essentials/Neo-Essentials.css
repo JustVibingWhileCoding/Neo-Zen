@@ -18,68 +18,72 @@
                 }
             }
 
-            &:not([zen-sidebar-expanded="true"]) .zen-essentials-container {
-                display: grid !important;
+            @media not -moz-pref("neo.features.essentials.collapsed.disabled") {
+                &:not([zen-sidebar-expanded="true"]) .zen-essentials-container {
+                    display: grid !important;
 
-                & .tabbrowser-tab:not([selected]) {
+                    & .tabbrowser-tab:not([selected]) {
+                        @media not -moz-pref("neo.features.essentials.keep-expanded") {
+                            opacity: 0 !important;
+                            visibility: hidden !important;
+                        }
+                    }
+
+                    /* Reorder selected tab to stay visible */
+                    & .tabbrowser-tab[selected] {
+                        /* Moves selected tab to the first position */
+                        order: -1 !important;
+                        /* Sticks selected tab to the top */
+                        position: sticky !important;
+                        top: 0 !important;
+                        /* Mover selected tab over other tabs */
+                        z-index: 9999 !important;
+                    }
+
+                    &:hover {
+                        max-height: calc(var(--Neo-Essentials-Max-Height) + 12px) !important;
+
+                        & .tabbrowser-tab {
+                            opacity: 1 !important;
+                            visibility: visible !important;
+                        }
+                    }
+
                     @media not -moz-pref("neo.features.essentials.keep-expanded") {
-                        opacity: 0 !important;
-                        visibility: hidden !important;
-                    }
-                }
+                        &::before {
+                            order: 0;
+                            content: "Neo\A Zen";
+                            white-space: pre-wrap;
+                            text-align: center;
+                            text-justify: center;
+                            align-content: center;
+                            font-size: 15px;
+                            font-weight: 540;
+                            color: color-mix(in srgb, var(--zen-primary-color) 100%, white);
+                            position: sticky;
+                            top: 0%;
+                            left: 0%;
+                            height: calc(var(--tab-min-height) + 4px);
+                            width: 100%;
+                            filter: drop-shadow(0px 0px 5px var(--Neo-Glow-Color-2)) brightness(1.05);
 
-                /* Reorder selected tab to stay visible */
-                & .tabbrowser-tab[selected] {
-                    /* Moves selected tab to the first position */
-                    order: -1 !important;
-                    /* Sticks selected tab to the top */
-                    position: sticky !important;
-                    top: 0 !important;
-                    /* Mover selected tab over other tabs */
-                    z-index: 9999 !important;
-                }
+                            transition: opacity 0.4s ease, height 0.4s ease, visibility 0.4s ease;
+                        }
 
-                &:hover {
-                    max-height: calc(var(--Neo-Essentials-Max-Height) + 12px) !important;
-
-                    & .tabbrowser-tab {
-                        opacity: 1 !important;
-                        visibility: visible !important;
-                    }
-                }
-
-                @media not -moz-pref("neo.features.essentials.keep-expanded") {
-                    &::before {
-                        order: 0;
-                        content: "Neo\A Zen";
-                        white-space: pre-wrap;
-                        text-align: center;
-                        text-justify: center;
-                        align-content: center;
-                        font-size: 15px;
-                        font-weight: 540;
-                        color: color-mix(in srgb, var(--zen-primary-color) 100%, white);
-                        position: sticky;
-                        top: 0%;
-                        left: 0%;
-                        height: calc(var(--tab-min-height) + 4px);
-                        width: 100%;
-                        filter: drop-shadow(0px 0px 5px var(--Neo-Glow-Color-2)) brightness(1.05);
-
-                        transition: opacity 0.4s ease, height 0.4s ease, visibility 0.4s ease;
-                    }
-
-                    &:has(.tabbrowser-tab[selected])::before {
-                        opacity: 0 !important;
-                        visibility: hidden !important;
-                        height: 0px !important;
+                        &:has(.tabbrowser-tab[selected])::before {
+                            opacity: 0 !important;
+                            visibility: hidden !important;
+                            height: 0px !important;
+                        }
                     }
                 }
             }
 
-            &[zen-sidebar-expanded="true"].zen-essentials-container {
-                &:hover {
-                    max-height: calc(4 * (var(--tab-min-height) + 4px) + 12px) !important;
+            @media not -moz-pref("neo.features.essentials.expanded.disabled") {
+                &[zen-sidebar-expanded="true"].zen-essentials-container {
+                    &:hover {
+                        max-height: calc(4 * (var(--tab-min-height) + 4px) + 12px) !important;
+                    }
                 }
             }
         }
