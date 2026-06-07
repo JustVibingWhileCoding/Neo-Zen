@@ -8,6 +8,15 @@
             }
         }
 
+        /* This fixes an issue with the essentials area flickering when switching between workspaces with different containers */
+        /* The issue is a native browser bug, and it is not possible to fix it without changing the code of the browser */
+        & .zen-essentials-container[hidden="true"] {
+            opacity: 0 !important;
+            visibility: visible !important;
+            pointer-events: none !important;
+        }
+        /* --------------------------------------------------------------------------------------------------------------------*/
+
         #navigator-toolbox {
             & .zen-essentials-container {
 
