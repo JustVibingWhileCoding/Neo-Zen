@@ -47,6 +47,10 @@
                         transition: background 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
                     }
                 }
+                
+                &[multiselected="true"] .tab-background {
+                    box-shadow: inset 0px 0px 25px var(--Neo-Glow-Color-4) !important;
+                }
             }
 
             &:not([zen-essential]) {
