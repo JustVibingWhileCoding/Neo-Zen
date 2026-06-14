@@ -14,8 +14,10 @@
         /* This modifies the border radius of all the elements in the sidebar */
         --border-radius-medium: var(--Roundness) !important;
     }
-
-
+    
+    zen-sidebar-notification {
+        --border-radius-medium: var(--Fixed-Roundness) !important;
+    }
 
     /* Changed the color and the style of the pinned tabs container separator to make it fit better with the neozen theme */
     .pinned-tabs-container-separator {
