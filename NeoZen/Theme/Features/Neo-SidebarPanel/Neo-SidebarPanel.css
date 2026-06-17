@@ -23,10 +23,11 @@
             width: 30px !important;
             min-width: 0px !important;
             backdrop-filter: var(--Neo-Blur-Effect) !important;
-            transition: height 0.5s ease, width 0.5s ease !important;
-            border-radius: var(--Roundness-Small) !important;
+            
+            border-radius: 50px !important;
             border: 2px solid rgba(255, 255, 255, 0.1) !important;
 
+            transition: height 0.5s ease, width 0.5s ease, border-radius 0.5s ease !important;
 
             & * {
                 visibility: hidden !important;
@@ -38,6 +39,7 @@
             &:hover {
                 height: 95% !important;
                 width: 300px !important;
+                border-radius: var(--Roundness-Small) !important;
 
                 & * {
                     visibility: visible !important;
