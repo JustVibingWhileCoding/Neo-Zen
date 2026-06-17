@@ -2,9 +2,133 @@
     @media not -moz-pref("neo.features.media.disable") {
         #zen-media-controls-toolbar:not([hidden])>toolbaritem {
             transition: border-radius 0.4s ease,
-                max-height 1s ease,
-                background 0.3s ease,
-                box-shadow 0.3s ease !important;
+                        max-height 1s ease,
+                        background 0.3s ease,
+                        box-shadow 0.3s ease !important;
+        }
+
+        :root:not([zen-sidebar-expanded="true"]) {
+            &:not([zen-compact-mode="true"]):not([customizing="true"]){
+                #navigator-toolbox {
+                    &:has(#zen-media-controls-toolbar:not([hidden])) {
+                        padding-bottom: 0px !important;
+                        --Aux-Media-Height: var(--Neo-Media-Height-Sidebar-Collapsed-Hidden);
+                    }
+                }
+            }
+            
+            &:not([customizing="true"])[zen-compact-mode="true"]{
+                @media -moz-pref('zen.view.compact.hide-tabbar') {
+                    #navigator-toolbox {
+                        &:has(#zen-media-controls-toolbar:not([hidden])) {
+                            --Aux-Media-Height: 220px;
+                        }
+                    }
+                }
+            }
+
+            /* Show media controls in collapsed mode and set the direction to column */
+            #zen-media-controls-toolbar:not([hidden]),
+            #zen-media-controls-toolbar:not([hidden])>toolbaritem {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+
+            #zen-media-controls-toolbar:not([hidden]) {
+                height: var(--Neo-Media-Height-Sidebar-Collapsed-Hidden) !important;
+                order: 9999 !important;
+            }
+
+            #zen-media-controls-toolbar:not([hidden])>toolbaritem {
+                position: absolute !important;
+                align-self: center !important;
+                left: auto !important;
+                right: auto !important;
+
+                width: 75% !important;
+                padding: 7px 0px !important;
+
+                /* Neo Zen: Now I use the max-height instead of the height property,
+                 * this way is not necessary a fixed value for the height of the media controls,
+                 * however, the max-height is set to a fixed value, so media controls can grow until 
+                 * the height doesn't exceed the value of the max-height */
+                height: fit-content !important;
+                max-height: calc(var(--Neo-Media-Height-Sidebar-Collapsed-Hidden) + 3px) !important;
+
+                transition: max-height 0.8s ease,
+                            background 0.8s ease !important;
+
+                #zen-media-progress-hbox,
+                #zen-media-info-vbox {
+                    display: none !important;
+                }
+
+                #zen-media-controls-hbox,
+                #zen-media-controls-hbox>*,
+                #zen-media-buttons-hbox,
+                #media-device-buttons {
+                    flex-direction: column !important;
+                    justify-items: center !important;
+                    align-items: stretch !important;
+                    position: relative !important;
+
+                    transform: none !important;
+                }
+
+                & .show-on-hover,
+                #zen-media-mute-button,
+                #zen-media-focus-button {
+                    display: flex !important;
+                    position: relative !important;
+                    padding: 0px 0px !important;
+                    transform: none !important;
+
+                    min-height: fit-content !important;
+                    max-height: unset !important;
+                    margin: auto !important;
+
+                    opacity: 1 !important;
+                }
+
+                #zen-media-mute-button {
+                    margin-bottom: 5px !important;
+                }
+
+                & #zen-media-controls-hbox {
+                    order: -1 !important;
+                }
+
+                &[media-sharing] {
+                    & #media-device-buttons {
+                        display: flex !important;
+                    }
+                }
+
+                & #zen-media-focus-button {
+                    & .toolbarbutton-icon {
+                        padding: auto !important;
+                    }
+                }
+            }
+
+            /* Neo Zen: Now the media controls are shown in compact mode without the need of the hover effect, with this I avoid
+             * an issue with the media controls flickering when the mouse pointer is over the bottom of the sidebar and also with
+             * this change becomes easier to use the media controls in compact mode. */
+            &[zen-compact-mode='true']:not([customizing]):not([inDOMFullscreen='true']) {
+                @media -moz-pref('zen.view.compact.hide-tabbar') {
+
+                    #zen-media-controls-toolbar:not([hidden]),
+                    #zen-media-controls-toolbar:not([hidden])>toolbaritem {
+                        position: relative !important;
+                        min-height: fit-content !important;
+                        height: var(--Aux-Media-Height) !important;
+                        max-height: fit-content !important;
+
+                        background: transparent !important;
+                        box-shadow: none !important;
+                    }
+                }
+            }
         }
     }
 }
