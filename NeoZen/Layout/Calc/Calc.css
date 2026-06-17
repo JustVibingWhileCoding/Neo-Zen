@@ -1,0 +1,45 @@
+:root {
+    --zen-toolbar-height: var(--Neo-Toolbar-height) !important;
+    --Aux-Toolbar-height: var(--Neo-Toolbar-height);
+    --Aux-Footer-Height: calc(var(--Neo-Workspace-Strip-Height-Sidebar-Expanded) + 15px);
+    --Aux-Indicator-Height: var(--Neo-Footer-Indicator-Height-Sidebar-Expanded);
+
+    &[zen-compact-mode="true"]{
+        --Aux-Toolbar-height: 0px !important;
+    }
+
+    --Aux-Workspace-Subview-Button-Height: calc(var(--Neo-Workspace-Strip-Subview-Button-Height-Sidebar-Collapsed) + var(--Neo-Workspace-Strip-Subview-Button-Separation-Sidebar-Collapsed));
+    --Aux-Workspace-Strip-Height: var(--Neo-Workspace-Strip-Height-Sidebar-Expanded);
+
+    &:not([zen-sidebar-expanded="true"]) {
+        
+        --Aux-Indicator-Height: var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed);
+
+        #navigator-toolbox {
+
+            /* Workspace-Subview-Counter is inside #navigator-toolbox so we need to calculate the height of the workspace strip here inside
+             * the #navigator-toolbox selector to avoid the workspace strip height not working properly when the sidebar is in collapsed mode.
+             *
+             * The variable Workspace-Subview-Counter is used to count how many workspaces are in the strip to multiply the height of the subview button
+             * by the number of workspaces in the strip to get the height of the workspace strip.
+             */
+            --Aux-Workspace-Strip-Height: calc(var(--Aux-Workspace-Subview-Button-Height) * var(--Workspace-Subview-Counter) + 20px);
+
+            --Aux-Media-Height: 0px;
+
+            /* This is used to adjust the position of the workspace strip when the sidebar is in collapsed mode when the footer is at the bottom. */
+            --Aux-Workspace-Strip-Position-Adjustment: calc(var(--zen-toolbox-padding) + var(--Aux-Media-Height) - 0.1px);
+
+            @media -moz-pref("neo.footer.position", "top") {
+                /* This changes the adjustment of the workspace strip when the footer is at the top. */
+                --Aux-Workspace-Strip-Position-Adjustment: var(--Aux-Toolbar-height);
+            }
+
+            /* This is used to adjust the height of the footer when the sidebar is in collapsed mode depending on how many workspaces are in the strip. */
+            --Aux-Footer-Height: calc(var(--Aux-Workspace-Strip-Height) + var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed) + 20px);
+
+            /* This is used to adjust the position of the footer indicator when the sidebar is in collapsed mode. */
+            --Aux-Footer-Indicator-Position: calc(var(--Aux-Workspace-Strip-Height) + var(--Aux-Workspace-Strip-Position-Adjustment) + 10px);
+        }
+    }
+}
