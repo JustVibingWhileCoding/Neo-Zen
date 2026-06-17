@@ -9,21 +9,21 @@
 
                 justify-content: center !important;
 
-                transition: width 0.3s 200ms ease,
-                    height 0.3s 200ms ease,
-                    top 0.5s ease 200ms,
-                    bottom 0.5s ease 200ms,
-                    opacity 1s ease 200ms !important;
+                transition: width 0.3s ease,
+                    height 0.3s ease,
+                    top 0.5s ease,
+                    bottom 0.5s ease,
+                    opacity 1s ease !important;
 
                 #zen-workspaces-button {
                     border-radius: 0px !important;
                     height: var(--Aux-Workspace-Strip-Height) !important;
 
-                    transition: width 0.3s 200ms ease,
-                        height 0.3s 200ms ease,
-                        top 0.8s ease 200ms,
-                        bottom 0.8s ease 200ms,
-                        opacity 0.5s ease 200ms !important;
+                    transition: width 0.3s ease,
+                        height 0.3s ease,
+                        top 0.8s ease,
+                        bottom 0.8s ease,
+                        opacity 0.5s ease !important;
                 }
 
                 @media not (-moz-bool-pref: "neo.features.workspace-button-hidden") {

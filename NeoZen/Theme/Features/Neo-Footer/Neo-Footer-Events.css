@@ -7,6 +7,32 @@
 
                         #zen-sidebar-foot-buttons:hover:not(:has(#zen-workspaces-button:hover)),
                         #zen-sidebar-foot-buttons:has(toolbarbutton[open="true"]) {
+
+                            transition: width 0.3s 200ms ease,
+                                        height 0.3s 200ms ease,
+                                        top 0.5s ease 200ms,
+                                        bottom 0.5s ease 200ms,
+                                        opacity 1s ease 200ms !important;
+
+                            &::after {
+                                transition: width 0.3s 300ms ease,
+                                            height 0.2s 300ms ease,
+                                            top 0.3s ease 200ms,
+                                            bottom 0.3s ease 200ms,
+                                            opacity 1s ease 200ms,
+                                            background-color 0.4s ease,
+                                            box-shadow 0.5s ease !important;
+                            }
+
+                            #zen-workspaces-button {
+
+                                transition: width 0.3s 200ms ease,
+                                            height 0.3s 200ms ease,
+                                            top 0.8s ease 200ms,
+                                            bottom 0.8s ease 200ms,
+                                            opacity 0.5s ease 200ms !important;
+                            }
+
                             /* shared modifications */
 
                             #navigator-toolbox[zen-sidebar-expanded] & {
@@ -47,7 +73,9 @@
                                 }
 
                                 #zen-workspaces-button {
+
                                     opacity: 0 !important;
+
                                     @media not -moz-pref("neo.footer.position", "top") {
                                         bottom: calc(var(--Aux-Footer-Height) * -1);
                                     }
