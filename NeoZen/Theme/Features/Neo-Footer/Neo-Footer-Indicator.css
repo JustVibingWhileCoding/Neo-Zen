@@ -1,6 +1,6 @@
-@media not (-moz-pref("neo-features-disabled")) {
-    @media not (-moz-pref("neo-features-bottom-disabled")) {
-        @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+@media not (-moz-pref("neo.features.disable")) {
+    @media not (-moz-pref("neo.features.footer.disabled")) {
+        @media not (-moz-bool-pref: "neo.features.workspace-button.hidden") {
             :root:not([customizing=""]):not([zen-creating-workspace="true"]) {
                 #zen-sidebar-foot-buttons:not(:has(#zen-workspaces-button> .subviewbutton:only-child)):not(:has(#zen-workspaces-button:only-child)) {
                     &::after {
@@ -25,7 +25,7 @@
                 }
 
                 &[zen-sidebar-expanded="true"] {
-                    @media not (-moz-bool-pref: "neo-features-footer-keep-max-height-enabled") {
+                    @media not (-moz-bool-pref: "neo.features.footer.keep.max-height.enabled") {
 
                         #zen-sidebar-foot-buttons {
                             &::after {
