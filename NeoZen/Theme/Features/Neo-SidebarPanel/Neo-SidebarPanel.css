@@ -1,5 +1,19 @@
 @media not -moz-pref("neo.features.disable") {
     @media not -moz-pref("neo.features.sidebar.panel.disable") {
+
+        #sidebar-main,
+        #sidebar-box {
+
+            --sidebar-background-color: var(--Neo-Compact-Background) !important;
+
+            #sidebar-header {
+                background: transparent !important;
+                font-size: 1.333em;
+                padding: 8px;
+                border-bottom: 0px solid transparent !important;
+            }
+        }
+
         #sidebar-box {
             position: absolute !important;
             align-self: center !important;
