@@ -1,0 +1,107 @@
+@media not -moz-pref("neo.features.disable") {
+    @media not -moz-pref("neo.features.find-bar.disable") {
+        findbar {
+            position: absolute !important;
+            align-self: center !important;
+            min-width: min(90%, 65rem) !important;
+            border-radius: var(--Roundness);
+            bottom: 10px !important;
+            outline: none !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+
+
+
+            background: var(--Neo-Compact-Glass-Background) !important;
+
+            backdrop-filter: var(--Neo-Blur-Effect) !important;
+            /* Safari support */
+            -webkit-backdrop-filter: var(--Neo-Blur-Effect);
+            
+            border-radius: var(--Roundness);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+            padding: 0px 0px !important;
+            height: 50px !important;
+            align-content: center !important;
+            align-items: center !important;
+
+            & .findbar-container {
+                height: 100% !important;
+
+                &::before {
+                    display: flex;
+                    content: "";
+                    visibility: visible;
+                    opacity: 1;
+                    justify-self: center;
+                    background-color: transparent;
+                    box-shadow: 0px 0px 3px var(--Neo-Elements);
+                    position: absolute;
+                    width: 20px !important;
+                    height: 20px !important;
+                    right: 40px !important;
+                    border-radius: 20px !important;
+                    border: 2px solid var(--Neo-Elements) !important;
+
+                    transition: box-shadow 0.2s ease !important;
+                }
+
+                & .findbar-label {
+                    order: -1 !important;
+                }
+
+                &> :first-child {
+                    position: relative !important;
+                    order: -2 !important;
+                    min-width: 100% !important;
+                    max-width: 100% !important;
+                    height: 100% !important;
+                    transition: min-width 0.5s ease, max-width 0.5s ease, visibility 0.5s ease, opacity 0.5s ease !important;
+
+                    & toolbarbutton {
+                        transition: min-width 0.5s ease, visibility 0.5s ease, opacity 0.5s ease !important;
+                    }
+                }
+
+                & checkbox {
+
+                    opacity: 0 !important;
+
+                    transition: opacity 0.3s ease, visibility 0.3s ease !important;
+                }
+
+                &:hover:not(:has(> :first-child:hover)) {
+                    & checkbox {
+                        visibility: visible !important;
+                        opacity: 1 !important;
+                    }
+
+                    &> :first-child {
+                        min-width: 0% !important;
+                        max-width: 0% !important;
+                        visibility: collapse !important;
+
+                        &>toolbarbutton {
+                            opacity: 0 !important;
+                            visibility: collapse !important;
+                        }
+                    }
+
+                    &::before {
+                        box-shadow: 0px 0px 10px var(--Neo-Elements);
+                    }
+                }
+            }
+
+            & .findbar-textbox {
+                background: transparent !important;
+                outline: none !important;
+                border: none !important;
+                box-shadow: none !important;
+                min-width: calc(100% - 100px) !important;
+
+                transition: min-width 0.5s ease, max-width 0.5s ease, visibility 0.5s ease, opacity 0.5s ease !important;
+            }
+        }
+    }
+}
