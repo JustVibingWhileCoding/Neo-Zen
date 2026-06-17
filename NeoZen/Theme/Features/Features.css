@@ -2,6 +2,8 @@
 @import "Neo-Essentials/Neo-Essentials.css";
 @import "Neo-FindBar/Neo-FindBar.css";
 @import "Neo-Footer/Neo-Footer.css";
+@import "Neo-Footer/Neo-Footer-Events";
+@import "Neo-Footer/Neo-Footer-Indicator.css";
 @import "Neo-Glance/Neo-Glance.css";
 @import "Neo-Media/Neo-Media.css";
 @import "Neo-Media/Neo-MediaEvents.css";
