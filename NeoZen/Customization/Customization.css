@@ -78,6 +78,11 @@
 
     /* Media */
     --Neo-Media-Height-Sidebar-Collapsed-Hidden: 35px;
+    
+    /* Black colors*/
+    --Neo-Black-1: color-mix(in srgb, var(--Neo-Background) 30%, transparent);
+    --Neo-Black-2: color-mix(in srgb, var(--Neo-Background) 50%, transparent);
+    --Neo-Black-3: color-mix(in srgb, var(--Neo-Background) 70%, transparent);
 
     /* Glow Colors */
     --Neo-Glow-Color-1: color-mix(in srgb, var(--zen-primary-color) 95%, var(--Neo-Elements) 5%);
@@ -87,6 +92,6 @@
     --Neo-Glow-Color-5: color-mix(in srgb, var(--zen-primary-color) 50%, var(--Neo-Elements) 10%);
     
     
-    --Neo-Background-T1: color-mix(in srgb, var(--Neo-Background) 80%, var(--Neo-Elements) 3%, transparent 40%, var(--zen-primary-color) 3%);
-    --Neo-Background-T2: color-mix(in srgb, var(--Neo-Background) 65%, var(--Neo-Elements) 3%, transparent 40%, var(--zen-primary-color) 3%);
+    --Neo-Background-T1: color-mix(in srgb, var(--Neo-Background) 35%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
+    --Neo-Background-T2: color-mix(in srgb, var(--Neo-Background) 20%, var(--Neo-Elements) 3%, var(--zen-primary-color) 3%);
 }
