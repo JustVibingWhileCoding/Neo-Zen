@@ -6,11 +6,6 @@
                 &[zen-sidebar-expanded="true"] {
                     --workspace-width-hover: 60%;
                     --workspace-width-active: 80%;
-
-                    #zen-workspaces-button {
-                        min-height: 35px !important;
-                        height: 35px !important;
-                    }
                 }
 
                 &:not([zen-sidebar-expanded="true"]) {
