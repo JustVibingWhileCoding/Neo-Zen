@@ -3,7 +3,7 @@
         :root:not([animating-background="true"]) {
             & .zen-essentials-container:not([hidden="true"]) {
                 &::before {
-                    transition: opacity 0.4s ease, height 0.4s ease;
+                    transition: opacity 0.4s ease;
                 }
             }
         }
@@ -26,18 +26,20 @@
                 overflow-y: auto !important;
                 scrollbar-width: none !important;
                 scroll-behavior: smooth !important;
-
-                & .tabbrowser-tab {
-                    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out !important;
-                }
             }
 
             @media not -moz-pref("neo.features.essentials.collapsed.disabled") {
                 &:not([zen-sidebar-expanded="true"]) .zen-essentials-container {
+                    transition: max-height 0.3s ease-out 100ms, grid-template-columns 0.3s ease-out !important;
+
                     display: grid !important;
 
                     @media not -moz-pref("neo.features.essentials.keep-expanded") {
                         max-height: calc(var(--tab-min-height) + 4px + 8px) !important;
+                    }
+
+                    & .tabbrowser-tab {
+                        transition: opacity 0.4s ease-in-out 200ms, visibility 0.4s ease-in-out 200ms !important;
                     }
 
                     & .tabbrowser-tab:not([selected]) {
@@ -58,7 +60,7 @@
                         z-index: 9999 !important;
                     }
 
-                    &:hover {
+                    &:not(:empty):hover {
                         max-height: calc(var(--Neo-Essentials-Max-Height) + 12px) !important;
 
                         & .tabbrowser-tab {
@@ -67,8 +69,7 @@
                         }
 
                         &::before {
-                            opacity: 0 !important;
-                            height: 0px !important;
+                            opacity: 0;
                         }
                     }
 
@@ -81,12 +82,12 @@
                             text-justify: center;
                             align-content: center;
                             font-size: 15px;
-                            font-weight: 540;
+                            font-weight: 640;
                             color: color-mix(in srgb, var(--Neo-Glow-Color-2) 100%, white);
                             position: sticky;
                             top: 0%;
                             left: 0%;
-                            height: calc(var(--tab-min-height) + 4px);
+                            height: calc(var(--tab-min-height) + 8px);
                             width: 100%;
 
                             filter: drop-shadow(0px 0px 3px var(--Neo-Glow-Color-2)) brightness(1.05);
