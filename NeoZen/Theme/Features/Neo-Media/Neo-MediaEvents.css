@@ -11,7 +11,7 @@
         #zen-media-controls-toolbar:not([hidden]) {
             &:hover {
                 &>toolbaritem {
-                    border-radius: var(--Fixed-Roundness) !important;
+                    border-radius: var(--Roundness-Small) !important;
                 }
             }
 

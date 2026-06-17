@@ -16,7 +16,7 @@
     }
     
     zen-sidebar-notification {
-        --border-radius-medium: var(--Fixed-Roundness) !important;
+        --border-radius-medium: var(--Roundness-Small) !important;
     }
 
     /* Changed the color and the style of the pinned tabs container separator to make it fit better with the neozen theme */
