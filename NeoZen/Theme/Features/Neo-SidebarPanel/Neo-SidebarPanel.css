@@ -6,6 +6,11 @@
 
             --sidebar-background-color: var(--Neo-Compact-Background) !important;
 
+            @media -moz-pref("neo.features.sidebar.panel.autohide.disabled") {
+                --sidebar-background-color: transparent !important;
+                box-shadow: none !important;
+            }
+
             #sidebar-header {
                 background: transparent !important;
                 font-size: 1.333em;
@@ -15,36 +20,40 @@
         }
 
         #sidebar-box {
-            position: absolute !important;
-            align-self: center !important;
-            z-index: 9999 !important;
-            left: 10px !important;
-            height: 20% !important;
-            width: 30px !important;
-            min-width: 0px !important;
-            backdrop-filter: var(--Neo-Blur-Effect) !important;
-            
-            border-radius: 50px !important;
-            border: 2px solid rgba(255, 255, 255, 0.1) !important;
 
-            transition: height 0.5s ease, width 0.5s ease, border-radius 0.5s ease !important;
+            @media not -moz-pref("neo.features.sidebar.panel.autohide.disabled") {
+                position: absolute !important;
+                height: 20% !important;
+                width: 30px !important;
+                align-self: center !important;
+                z-index: 9999 !important;
+                left: 10px !important;
 
-            & * {
-                visibility: hidden !important;
-                opacity: 0 !important;
+                min-width: 0px !important;
+                backdrop-filter: var(--Neo-Blur-Effect) !important;
 
-                transition: opacity 0.5s ease, visibility 0.5s ease !important;
-            }
+                border-radius: 50px !important;
+                border: 2px solid rgba(255, 255, 255, 0.1) !important;
 
-            &:hover,
-            &:has(#sidebar-switcher-target[aria-expanded="true"]){
-                height: 95% !important;
-                width: 300px !important;
-                border-radius: var(--Roundness-Small) !important;
+                transition: height 0.5s ease, width 0.5s ease, border-radius 0.5s ease !important;
 
                 & * {
-                    visibility: visible !important;
-                    opacity: 1 !important;
+                    visibility: hidden !important;
+                    opacity: 0 !important;
+
+                    transition: opacity 0.5s ease, visibility 0.5s ease !important;
+                }
+
+                &:hover,
+                &:has(#sidebar-switcher-target[aria-expanded="true"]) {
+                    height: 95% !important;
+                    width: 300px !important;
+                    border-radius: var(--Roundness-Small) !important;
+
+                    & * {
+                        visibility: visible !important;
+                        opacity: 1 !important;
+                    }
                 }
             }
         }
