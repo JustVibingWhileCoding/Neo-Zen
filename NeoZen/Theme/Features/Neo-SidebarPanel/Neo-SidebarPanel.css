@@ -36,7 +36,8 @@
                 transition: opacity 0.5s ease, visibility 0.5s ease !important;
             }
 
-            &:hover {
+            &:hover,
+            &:has(#sidebar-switcher-target[aria-expanded="true"]){
                 height: 95% !important;
                 width: 300px !important;
                 border-radius: var(--Roundness-Small) !important;
