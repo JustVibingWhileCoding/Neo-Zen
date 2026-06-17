@@ -1,0 +1,71 @@
+@media not (-moz-pref("neo-features-disabled")) {
+    @media not (-moz-pref("neo-features-bottom-disabled")) {
+        @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+            :root:not([customizing=""]):not([zen-creating-workspace="true"]) {
+                #zen-sidebar-foot-buttons:not(:has(#zen-workspaces-button> .subviewbutton:only-child)):not(:has(#zen-workspaces-button:only-child)) {
+                    &::after {
+                        display: flex;
+                        content: "";
+                        visibility: visible;
+                        opacity: 1;
+                        justify-self: center;
+                        background-color: color-mix(in srgb, var(--Neo-Elements) 75%, transparent);
+
+                        box-shadow: 0px 0px 4px color-mix(in srgb, black 15%, transparent);
+
+                        transition: width 0.3s 300ms ease,
+                                    height 0.2s 300ms ease,
+                                    top 0.3s ease 200ms,
+                                    bottom 0.3s ease 200ms,
+                                    opacity 1s ease 200ms,
+                                    background-color 0.4s ease,
+                                    box-shadow 0.5s ease !important;
+                    }
+                }
+
+                &[zen-sidebar-expanded="true"] {
+                    @media not (-moz-bool-pref: "neo-features-footer-keep-max-height-enabled") {
+
+                        #zen-sidebar-foot-buttons {
+                            &::after {
+                                position: sticky;
+                                z-index: 9999;
+
+                                flex-shrink: 0 !important;
+                                grid-column: 1 / -1 !important;
+                                grid-row: 2 !important;
+
+                                width: 50%;
+                                height: var(--Aux-Indicator-Height);
+                                border-radius: 3px;
+
+                                top: calc(var(--Aux-Footer-Height) - 10px);
+                            }
+                        }
+                    }
+                }
+
+                &:not([zen-sidebar-expanded="true"]) {
+                    #zen-sidebar-foot-buttons {
+                        &::after {
+                            position: absolute;
+                            width: var(--Aux-Indicator-Height);
+                            height: var(--Aux-Indicator-Height);
+                            border-radius: var(--Aux-Indicator-Height);
+                            background-color: transparent !important;
+                            border: 2px solid var(--Neo-Elements);
+
+                            @media not (-moz-pref("neo.footer.position", "top")) {
+                                bottom: var(--Aux-Footer-Indicator-Position);
+                            }
+
+                            @media (-moz-pref("neo.footer.position", "top")) {
+                                top: var(--Aux-Footer-Indicator-Position);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

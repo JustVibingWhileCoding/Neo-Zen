@@ -1,0 +1,119 @@
+@media not (-moz-pref("neo-features-disabled")) {
+    @media not (-moz-pref("neo-features-footer-disabled")) {
+        :root {
+            #zen-sidebar-foot-buttons {
+                height: var(--Aux-Footer-Height) !important;
+                overflow-y: auto !important;
+                scrollbar-width: none !important;
+                scroll-behavior: smooth !important;
+
+                justify-content: center !important;
+
+                transition: width 0.3s 200ms ease,
+                    height 0.3s 200ms ease,
+                    top 0.5s ease 200ms,
+                    bottom 0.5s ease 200ms,
+                    opacity 1s ease 200ms !important;
+
+                #zen-workspaces-button {
+                    border-radius: 0px !important;
+                    height: var(--Aux-Workspace-Strip-Height) !important;
+
+                    transition: width 0.3s 200ms ease,
+                        height 0.3s 200ms ease,
+                        top 0.8s ease 200ms,
+                        bottom 0.8s ease 200ms,
+                        opacity 0.5s ease 200ms !important;
+                }
+
+                @media not (-moz-bool-pref: "neo.features.workspace-button-hidden") {
+                    @media not (-moz-bool-pref: "neo.features.footer.keep.max-height.enabled") {
+                        &:not([customizing=""]):not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
+
+                            &>.toolbarbutton-1:not(#zen-workspaces-button),
+                            &>.toolbaritem-combined-buttons,
+                            &>#zen-toggle-compact-mode {
+                                justify-self: center !important;
+                                opacity: 0 !important;
+                                pointer-events: none !important;
+
+                                transition: opacity 0.5s ease 100ms,
+                                    color 0.3s ease,
+                                    fill 0.3s ease !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &[zen-sidebar-expanded="true"] {
+                #zen-sidebar-foot-buttons {
+                    display: grid !important;
+                    grid-auto-rows: auto !important;
+                    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) !important;
+                    gap: auto !important;
+
+                    position: relative !important;
+
+                    height: var(--Aux-Footer-Height) !important;
+                    
+                    @media not (-moz-pref("neo.footer.position", "top")) {
+                        margin-top: 10px !important;
+                    }
+                    
+                    #zen-workspaces-button {
+                        z-index: 9999 !important;
+                        flex-shrink: 0 !important;
+                        top: 0% !important;
+                        grid-column: 1 / -1 !important;
+                        grid-row: 1 !important;
+                        order: -1 !important;
+
+                        width: 100% !important;
+                        position: sticky !important;
+                    }
+                }
+            }
+
+
+            &:not([zen-sidebar-expanded="true"]) {
+                #zen-sidebar-foot-buttons {
+                    display: flex !important;
+
+                    flex-direction: row !important;
+                    flex-wrap: wrap !important;
+                    white-space: nowrap !important;
+
+
+                    #zen-workspaces-button {
+
+                        position: absolute !important;
+                        justify-content: center !important;
+
+                        @media (-moz-bool-pref: "neo.features.footer.collapsed.max-height.enabled") {
+                            overflow-x: unset !important;
+                            overflow-y: auto !important;
+
+                            flex-direction: row !important;
+                            flex-wrap: wrap !important;
+                            white-space: nowrap !important;
+                        }
+
+                        height: var(--Aux-Workspace-Strip-Height) !important;
+                        width: 100% !important;
+                        padding-top: 1px !important;
+                        padding-bottom: 1px !important;
+
+                        @media not (-moz-pref("neo.footer.position", "top")) {
+                            bottom: var(--Aux-Workspace-Strip-Position-Adjustment);
+                        }
+
+                        @media (-moz-pref("neo.footer.position", "top")) {
+                            top: var(--Aux-Workspace-Strip-Position-Adjustment);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

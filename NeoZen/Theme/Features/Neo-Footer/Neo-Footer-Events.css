@@ -1,0 +1,84 @@
+@media not (-moz-pref("neo.features.disable")) {
+    @media not (-moz-pref("neo.features.footer.disabled")) {
+        @media not (-moz-bool-pref: "neo.features.footer.keep.max-height.enabled") {
+            :root:not([animating-background="true"]):not([customizing=""]) {
+                #navigator-toolbox:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
+                    @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+
+                        #zen-sidebar-foot-buttons:hover:not(:has(#zen-workspaces-button:hover)),
+                        #zen-sidebar-foot-buttons:has(toolbarbutton[open="true"]) {
+                            /* shared modifications */
+
+                            #navigator-toolbox[zen-sidebar-expanded] & {
+
+                                /* expanded tweaks */
+                                &::after {
+                                    opacity: 0 !important;
+                                    width: 0px !important;
+                                    top: 0px !important;
+                                    height: 0px !important;
+                                }
+
+                                #zen-workspaces-button {
+                                    height: 0px !important;
+                                    opacity: 0 !important;
+                                }
+
+                                @media (-moz-bool-pref: "neo.features.footer.expanded.max-height.enabled") {
+                                    /* When the footer height is set to a fixed value, the height of the footer is set to that value. */
+                                    --Aux-Footer-Height: var(--Neo-Footer-Max-Height) !important;
+                                }
+                            }
+
+                            #navigator-toolbox:not([zen-sidebar-expanded]) & {
+
+                                /* collapsed tweaks */
+                                &::after {
+                                    height: 5px;
+                                    width: 70%;
+                                    background-color: var(--Neo-Elements) !important;
+                                    
+                                    @media not -moz-pref("neo.footer.position", "top") {
+                                        bottom: calc(var(--Aux-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed) + 5px);
+                                    }
+
+                                    @media -moz-pref("neo.footer.position", "top") {
+                                        top: calc(var(--Aux-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed) + 5px);
+                                    }
+                                }
+
+                                #zen-workspaces-button {
+                                    opacity: 0 !important;
+                                    @media not -moz-pref("neo.footer.position", "top") {
+                                        bottom: calc(var(--Aux-Footer-Height) * -1);
+                                    }
+
+                                    @media -moz-pref("neo.footer.position", "top") {
+                                        top: calc(var(--Aux-Footer-Height) * -1);
+                                    }
+                                }
+                            }
+
+                            &>.toolbarbutton-1:not(#zen-workspaces-button),
+                            &>.toolbaritem-combined-buttons,
+                            &>#zen-toggle-compact-mode {
+                                opacity: 1 !important;
+                                pointer-events: all !important;
+                            }
+                        }
+
+                        #zen-sidebar-foot-buttons:has(#zen-workspaces-button:hover) {
+                            #navigator-toolbox[zen-sidebar-expanded] & {
+                                &::after {
+                                    width: 80% !important;
+
+                                    transition: width 0.3s 30ms ease !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
