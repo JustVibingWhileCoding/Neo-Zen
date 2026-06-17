@@ -36,8 +36,7 @@
                                 &::after {
                                     height: 5px;
                                     width: 70%;
-                                    background-color: var(--Neo-Elements) !important;
-                                    
+
                                     @media not -moz-pref("neo.footer.position", "top") {
                                         bottom: calc(var(--Aux-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed) + 5px);
                                     }
