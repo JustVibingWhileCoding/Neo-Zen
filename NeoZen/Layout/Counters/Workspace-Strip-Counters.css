@@ -1,0 +1,125 @@
+/* This file is used to count the number of subbuttons in the workspaces button and set a CSS variable accordingly. This is used to adjust the layout of the buttons in the workspaces button. */
+
+#navigator-toolbox:not([zen-sidebar-expanded="true"]) {
+    --Workspace-Subview-Counter: 0;
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(1)) {
+        --Workspace-Subview-Counter: 1;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(2)) {
+        --Workspace-Subview-Counter: 2;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(3)) {
+        --Workspace-Subview-Counter: 3;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(4)) {
+        --Workspace-Subview-Counter: 4;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(5)) {
+        --Workspace-Subview-Counter: 5;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(6)) {
+        --Workspace-Subview-Counter: 6;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(7)) {
+        --Workspace-Subview-Counter: 7;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(8)) {
+        --Workspace-Subview-Counter: 8;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(9)) {
+        --Workspace-Subview-Counter: 9;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(10)) {
+        --Workspace-Subview-Counter: 10;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(11)) {
+        --Workspace-Subview-Counter: 11;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(12)) {
+        --Workspace-Subview-Counter: 12;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(13)) {
+        --Workspace-Subview-Counter: 13;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(14)) {
+        --Workspace-Subview-Counter: 14;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(15)) {
+        --Workspace-Subview-Counter: 15;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(16)) {
+        --Workspace-Subview-Counter: 16;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(17)) {
+        --Workspace-Subview-Counter: 17;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(18)) {
+        --Workspace-Subview-Counter: 18;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(19)) {
+        --Workspace-Subview-Counter: 19;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(20)) {
+        --Workspace-Subview-Counter: 20;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(21)) {
+        --Workspace-Subview-Counter: 21;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(22)) {
+        --Workspace-Subview-Counter: 22;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(23)) {
+        --Workspace-Subview-Counter: 23;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(24)) {
+        --Workspace-Subview-Counter: 24;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(25)) {
+        --Workspace-Subview-Counter: 25;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(26)) {
+        --Workspace-Subview-Counter: 26;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(27)) {
+        --Workspace-Subview-Counter: 27;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(28)) {
+        --Workspace-Subview-Counter: 28;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(29)) {
+        --Workspace-Subview-Counter: 29;
+    }
+
+    &:has(#zen-sidebar-foot-buttons>#zen-workspaces-button>:first-child:nth-last-child(30)) {
+        --Workspace-Subview--Counter: 30;
+    }
+}
