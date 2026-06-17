@@ -1,0 +1,45 @@
+@media not -moz-pref("neo.features.disable") {
+    @media not -moz-pref("neo.features.sidebar.panel.disable") {
+        #sidebar-box {
+            position: absolute !important;
+            align-self: center !important;
+            z-index: 9999 !important;
+            left: 10px !important;
+            height: 20% !important;
+            width: 30px !important;
+            min-width: 0px !important;
+            backdrop-filter: var(--Neo-Blur-Effect) !important;
+            transition: height 0.5s ease, width 0.5s ease !important;
+            border-radius: var(--Roundness-Small) !important;
+            border: 2px solid rgba(255, 255, 255, 0.1) !important;
+
+
+            & * {
+                visibility: hidden !important;
+                opacity: 0 !important;
+
+                transition: opacity 0.5s ease, visibility 0.5s ease !important;
+            }
+
+            &:hover {
+                height: 95% !important;
+                width: 300px !important;
+
+                & * {
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                }
+            }
+        }
+
+        .content-wrapper {
+            background: transparent !important;
+
+            &>input {
+                background: transparent !important;
+                outline: none !important;
+                border: none !important;
+            }
+        }
+    }
+}
