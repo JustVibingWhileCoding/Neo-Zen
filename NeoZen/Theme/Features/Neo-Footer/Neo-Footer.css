@@ -1,5 +1,5 @@
-@media not (-moz-pref("neo-features-disabled")) {
-    @media not (-moz-pref("neo-features-footer-disabled")) {
+@media not (-moz-pref("neo.features.disabled")) {
+    @media not (-moz-pref("neo.features.footer.disabled")) {
         :root {
             #zen-sidebar-foot-buttons {
                 height: var(--Aux-Footer-Height) !important;
