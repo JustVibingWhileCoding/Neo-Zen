@@ -8,54 +8,39 @@
 ###
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c37e9f4e-1ab1-43ec-945e-2be1592351a4" width="700" />
+  <img width="700" alt="Market-Image" src="https://github.com/user-attachments/assets/8fb6729e-5bef-4acb-af70-9d5066cb2e53" />
 </div>
 
 ###
 
 # Neo Zen  
 
-> ## 🔄 Project Status – Ongoing Rewrite
+> ## 🔄 Project Status – Rewrite Completed
 > 
-> Neo Zen has reached its **2.0 milestone**, but the journey continues.  
-> A **complete rewrite is underway** to align with the latest Zen Browser updates and rebuild Neo Zen’s modular design on a cleaner, maintainable foundation. The next phase will focus on:
-> - Smarter layout logic  
-> - Better feature interoperability  
-> - A modernized, contributor‑friendly codebase  
-> - Performance improvements (some features will be removed to reduce complexity and improve speed)  
+> The **rewrite of Neo Zen is finished**, delivering a cleaner and more maintainable foundation for the theme.  
+> Many planned features are **still missing or not yet implemented**, but the new base is stable and ready for use.  
 > 
 > ### Branch Information
-> - **Main Branch** – Legacy codebase, currently unmaintainable.  
-> - **Rewrite Branch** – Actively updated with new fixes, features, and the full rework effort. This branch represents the future of Neo Zen and will eventually replace the old main branch.  
+> - **Main Branch** – Contains the completed rewrite and is now the active branch.  
+> - **Rewrite Branch** – Will be removed soon, since most of the work from that branch has already been merged and implemented.  
+> 
+> ### Current Version
+> The latest release is: **1.21.3‑neo.1**  
+> This version marks the first stable release of the completed rewrite.  
 > 
 > ### Versioning
-> Neo Zen now uses a **semantic overlay versioning scheme**:  
-> - The first part (`1.20.0`) matches the **Zen Browser version** the theme is built for.  
+> Neo Zen uses a **semantic overlay versioning scheme**:  
+> - The first part (`1.21.3`) matches the **Zen Browser version** the theme is built for.  
 > - The overlay (`neo.1`, `neo.2`, etc.) indicates the **theme’s own release number** for that Zen version.  
 > 
 > For example:  
-> - Zen Browser: `1.20.0`  
-> - Neo Zen Theme: `1.20.0-neo.1` → first theme release for Zen Browser 1.20.0  
-> - Neo Zen Theme: `1.20.0-neo.2` → second theme release for Zen Browser 1.20.0 (bug fixes or improvements)  
+> - Zen Browser: `1.21.3`  
+> - Neo Zen Theme: `1.21.3‑neo.1` → first theme release for Zen Browser 1.21.3  
+> - Neo Zen Theme: `1.21.3‑neo.2` → second theme release for Zen Browser 1.21.3 (bug fixes or improvements)  
 > 
 > This scheme makes compatibility explicit while keeping the version string concise and easy to parse.  
-> 
-> ### Important Note on Media
-> The **images and videos currently shown in this README** do **not represent the current look of the theme**.  
-> Since the rewrite is in progress, many features may be broken or incomplete. Updated previews will be provided once the rewrite stabilizes.  
-> 
-> ### Code Base Clarification
-> Neo Zen will **no longer use any code from Nebula**, nor will it include code from **Anoms12’s Advanced Tab Groups CSS project**.  
-> These older codebases introduced bugs, stability issues, and compatibility problems. The rewrite is being built entirely from scratch to ensure a clean, stable, and future‑proof foundation.  
-> 
-> 🚀 **Community Contributions Welcome**  
-> While I step back from direct maintenance, I invite developers and enthusiasts to help shape Neo Zen’s future. Fork the repo, submit pull requests, or share ideas — your input will drive the next evolution.
 
-
-
-
-
-
+---
 
 Welcome to **Neo Zen** – a sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity. With **innovative features, refined UI enhancements, and adaptive styling**, Neo Zen creates a seamless, distraction-free browsing experience.
 
@@ -65,32 +50,31 @@ Welcome to **Neo Zen** – a sleek, futuristic theme for Zen Browser that blends
 
 | Feature | Demo |
 |---------|------|
-| **🔹 Neo Essentials [**REMOVED DUE TO PERFORMANCE ISSUES]** <br> In **collapsed mode**, a new **scrollable hidden area** keeps your tabs uncluttered. <br><br> - **Default:** Expands on hover. <br> - **Options:** Choose between **always expanded** or **always collapsed** for greater control. | <p align="center"><img src="https://github.com/user-attachments/assets/ff0cf564-b44b-489c-be17-1b70937fc802" width="70"></p> |
-| **🔹 Neo Bottom V2 — NO MORE DELAYS!** *(New!) [Available after V1.9.2]* <br> The bottom area now responds **instantly**, eliminating hover lag. <br><br> - **Scrollable Workspace Button:** Even in **collapsed mode**, it's accessible and fluid. <br> - **Customizable Height:** Adapt the maximum height to suit your layout needs in collapsed mode. | <p align="center"><img src="https://github.com/user-attachments/assets/e0cf7d0b-562a-40a4-940f-e587102899d5" width="200"></p> |
-| **🔹 Neo Media V2** *(New!) [Available after V1.9]* <br> Media controls are now **enabled across all modes**, ensuring seamless playback management. <br><br> - **Always Accessible:** No matter the mode, **media controls remain available** without restrictions. <br> - **Expand on Hover:** A refined interaction that keeps controls **intuitive and unobtrusive**. | <p align="center"><img src="https://github.com/user-attachments/assets/09eb8dd6-1566-4bbd-ae5c-7f1b14af4c99" width="130"></p> |
-| **🔹 Neo Sidebar [REMOVED UNTIL ZEN FIXES THE ENTIRE COMPACT MODE]** *(New!)* <br> The sidebar now **adapts to your needs**, ensuring a **stable background** when using **compact mode with transparent tabs enabled**—preserving aesthetics. <br><br> - **Enhanced:** A more **consistent background, only in Zen versions lower than 1.14** for a polished look. <br> - **Customization:** Use **Zen’s native gradient color** to personalize sidebar colors effortlessly. <br> - **Persistent Pseudo Background:** The sidebar’s background **remains visible** even when opening **context menus or the gradient generator**, ensuring seamless transitions ***[After V1.9.4]***. | <p align="center"><img src="https://github.com/user-attachments/assets/5e8df0f9-7137-4aee-98d4-0fa240453ab2" width="250"></p> |
-| **🔹 Neo Tabgroups [REMOVED - Scroll no longer works]** <br> Keep your tab groups **organized as hidden folders**, allowing you to store tabs **without cluttering your workspace**. <br><br> - **Scrollable Behavior:** Easily **navigate within groups**, keeping as many tabs as needed **without taking up excess space**. <br> - **Efficient Management:** Collapse and expand groups seamlessly for a **cleaner browsing experience**. | <p align="center"><img src="https://github.com/user-attachments/assets/49856024-ec3f-459c-93eb-bd264378e795" width="150"></p> |
-| **🔹 Neo Split Groups [REMOVED]** *(New!) [Available after V1.9]* <br> No more tiny buttons or oversized collapsed tabs—**split groups now expand on hover**, making navigation smoother and more efficient. <br><br> - **Expanded Visibility:** Hovering over split groups **reveals full tab names**, eliminating the frustration of small buttons. <br> - **Optimized Space:** In **collapsed mode**, split groups **expand only when needed**, keeping your workspace uncluttered and improving workflow. | <p align="center"><img src="https://github.com/user-attachments/assets/3ec654b4-b0a1-428d-a917-3026b8f3dcfe" width="150"></p> |
-| **🔹 Neo Search Bar / URL-Bar [REMOVED DUE TO PERFORMANCE ISSUES]** *(New!) [Available after V2.0]* <br> Tired of the **jumpy, cluttered** search bar? Experience the **best floating bar ever**, designed for **smooth transitions and adaptive behavior**. <br><br> - **Minimalist Design:** A sleek, **floating search bar** that blends seamlessly into your workflow. <br> - **Smart Adaptation:** Whether you have **4 or 7 max results**, the bar **adjusts dynamically** while preserving the **blur effect**. <br> - **Transparency Awareness:** No more issues with **transparent websites**—the bar **adapts itself** without disrupting visibility. <br> - **Hidden Top Sites:** Keeps your search bar **clean and focused**, eliminating unnecessary distractions. | <p align="center"><img src="https://github.com/user-attachments/assets/92221439-ec7c-46d8-ba11-155c0928d34b" width="250"></p> |
-| **🔹 Neo Findbar 2.0 [REMOVED DUE TO PERFORMANCE AND COMPATIBILITY ISSUES]** <br> A more **intuitive, adaptive** search experience with **enhanced visibility options and smoother interactions**. | <p align="center"><img src="https://github.com/user-attachments/assets/0b61c79e-5df3-4786-8046-e029f3da345b" width="300"></p> |
+| **Neo Essentials** <br> In **collapsed mode**, a new **scrollable hidden area** keeps your tabs uncluttered. <br><br> - **Default:** Expands on hover. <br> - **Options:** Choose between **always expanded** or **always collapsed** for greater control. | <p align="center"><img src="https://github.com/user-attachments/assets/ff0cf564-b44b-489c-be17-1b70937fc802" width="70"></p> |
+| **Neo Footer** <br> The bottom area now responds **instantly**, eliminating hover lag. <br><br> - **Scrollable Workspace Button:** Even in **collapsed mode**, it's accessible and fluid. <br> - **Customizable Height:** Adapt the maximum height to suit your layout needs in collapsed mode. | <p align="center"><img src="https://github.com/user-attachments/assets/e0cf7d0b-562a-40a4-940f-e587102899d5" width="200"></p> |
+| **Neo Media V3** <br> Media controls are now **enabled across all modes**, ensuring seamless playback management. <br><br> - **Always Accessible:** No matter the mode, **media controls remain available** without restrictions. <br> - **Expand on Hover:** A refined interaction that keeps controls **intuitive and unobtrusive**. | <p align="center"><img src="https://github.com/user-attachments/assets/09eb8dd6-1566-4bbd-ae5c-7f1b14af4c99" width="130"></p> |
+| **Neo Findbar V3.0** <br> A more **intuitive, adaptive** search experience with **enhanced visibility options and smoother interactions**. | <p align="center"><img width="300" alt="neo-findbar-gif" src="https://github.com/user-attachments/assets/d18c4129-b453-4efd-b83d-c6fda06d8565" /></p> |
 
-
-
-
-
+---
 
 ### ⚙️ **Customization Made Easy**  
 Modify Neo Zen’s behavior via the settings page (if you installed this through [Sine](https://github.com/CosmoCreeper/Sine)) or **"about:config"** if you did not.  
 For detailed settings and adjustments, check out the [Settings Wiki](https://github.com/JustVibingWhileCoding/Neo-Zen/wiki/Settings).  
 
+---
 
-###
+## ⚠️ Platform Support
 
-> **Note:** Neo Zen is continuously evolving, but I can only test it on Windows 11 and Linux. If you encounter any issues on macOS, please report them—I greatly appreciate your feedback!  
->   
-> **License Update:** Starting from version 1.2.3, this project is licensed under GPL-3.0.
-Versions prior to 1.2.3 remain under the MIT License.
+Neo Zen is **only tested on Linux with Hyprland**.  
+I have **no intention of verifying or ensuring compatibility** with other operating systems or environments.  
 
+If you are able to contribute fixes or adjustments for other platforms, your help will be greatly appreciated.  
+Community contributions are welcome to improve cross‑platform support. 
+
+> **License Update:** Starting from version 1.2.3, this project is licensed under GPL-3.0.  
+> Versions prior to 1.2.3 remain under the MIT License.
+
+---
 
 ## 🏆 Credits  
 
@@ -107,20 +91,20 @@ Neo Zen has been shaped by countless small pieces — some experimental, some fo
 - **🗂️ Tab Group System** – Based on code by [**Anoms12**](https://github.com/Anoms12).  
   Their implementation helped lay the foundation for Neo Zen’s tab group styling and behavior, [No longer implemented after version 1.20.0-neo.1].
 
-- **🧪 Miscellaneous Contributions** – Some features were added through collaboration, experimentation, or inherited code. If you recognize something you authored, thank you — even if it was forgotten in the shuffle.
+---
 
-If anyone wants to pick up where this left off, contributions and community-led updates are welcomed 💡
+## 📸 Screenshots & Visuals
 
+I know screenshots are useful, but honestly...  
+I’m too lazy to add them right now 😅.  
 
+I’ll upload them once I stop being lazy.  
+Thanks for your patience! 
 
-## 🌟 Screenshots & Visuals
-Here are some **preview images** showcasing the Neo Zen interface:
+Sé que las imágenes ayudan, pero la verdad...  
+me da hueva subirlas por ahora 😅.  
 
+Las agregaré cuando se me quite la flojera.  
+¡Gracias por la paciencia!
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/7dea3009-db26-4330-957f-07958fe7f1e7" width="400">
-  <img src="https://github.com/user-attachments/assets/cbd20fca-a7ac-4208-a4da-1e10a435751a" width="400">
-  <img src="https://github.com/user-attachments/assets/9c4bc610-48c8-4554-9d70-48ab72b824db" width="400">
-  <img src="https://github.com/user-attachments/assets/eee9e2e6-3174-4e3e-b716-328531030d93" width="400">
-  <img src="https://github.com/user-attachments/assets/5680748a-2010-4af1-9656-3d1f1c2cf46e" width="400">
-  <img src="https://github.com/user-attachments/assets/5b04cebf-2776-4d8b-ad6c-5e2b602e3ed7" width="400">
 </div>
