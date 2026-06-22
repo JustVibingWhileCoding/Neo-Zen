@@ -21,10 +21,12 @@
     --Roundness-Small: 8px;
 
     /* Compact mode background color */
-    --Neo-Compact-Glass-Background: linear-gradient(135deg,
-            rgba(20, 20, 30, 0.6) 0%,
-            rgba(10, 10, 10, 0.5) 100%) !important;
-            
+    
+    --Glass-Background-Light: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
+    --Glass-Background-Dark: linear-gradient(135deg, rgba(20, 20, 30, 0.6) 0%, rgba(10, 10, 10, 0.5) 100%);
+
+    --Neo-Compact-Glass-Background: light-dark(var(--Glass-Background-Light), var(--Glass-Background-Dark));
+
     --compact-bg-color: color-mix(in srgb, var(--Neo-Background) 50%, white 2%);
     --Neo-Compact-Background: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Glow-Color-1) 2%, white 2%);
     /* Blur effect */
