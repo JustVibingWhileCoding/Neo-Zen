@@ -7,10 +7,9 @@
                 scrollbar-width: none !important;
                 scroll-behavior: smooth !important;
 
-                justify-content: center !important;
-
                 transition: width 0.3s ease,
                     height 0.3s ease,
+                    max-height 0.4s ease,
                     top 0.5s ease,
                     bottom 0.5s ease,
                     opacity 1s ease !important;
@@ -50,12 +49,24 @@
                 #zen-sidebar-foot-buttons {
                     display: grid !important;
                     grid-auto-rows: auto !important;
-                    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) !important;
+                    align-items: start !important;
+                    align-content: start !important; 
+                    justify-items: start !important;
+                    
+                    grid-template-columns: repeat(auto-fit, minmax(50px, 30%)) !important;
                     gap: auto !important;
 
                     position: relative !important;
+                    
+                    @media not -moz-pref("neo.features.footer.fit-to-content") {
+                        height: var(--Aux-Footer-Height) !important;
+                    }
 
-                    height: var(--Aux-Footer-Height) !important;
+                    @media -moz-pref("neo.features.footer.fit-to-content") {
+                        height: fit-content !important;
+                        max-height: var(--Aux-Footer-Height) !important;
+                        overflow: clip !important;
+                    }
                     
                     @media not (-moz-pref("neo.footer.position", "top")) {
                         margin-top: 10px !important;
@@ -67,7 +78,7 @@
                         top: 0% !important;
                         grid-column: 1 / -1 !important;
                         grid-row: 1 !important;
-                        order: -1 !important;
+                        order: -2 !important;
 
                         width: 100% !important;
                         position: sticky !important;
@@ -83,7 +94,7 @@
                     flex-direction: row !important;
                     flex-wrap: wrap !important;
                     white-space: nowrap !important;
-
+                    justify-content: center !important;
 
                     #zen-workspaces-button {
 
