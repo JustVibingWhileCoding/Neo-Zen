@@ -40,7 +40,7 @@
                                 height: var(--Aux-Indicator-Height);
                                 border-radius: 3px;
 
-                                top: calc(var(--Aux-Footer-Height) - 10px);
+                                top: calc(var(--Neo-Workspace-Strip-Height-Sidebar-Expanded) + 15px - 10px);
                             }
                         }
                     }
