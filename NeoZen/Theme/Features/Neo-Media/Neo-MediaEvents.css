@@ -1,5 +1,5 @@
-@media not -moz-pref("neo.features.disable") {
-    @media not -moz-pref("neo.features.media.disable") {
+@media not (-moz-pref("neo.features.disabled")) {
+    @media not (-moz-pref("neo.features.media-disabled")) {
         #navigator-toolbox:not([zen-sidebar-expanded]) #zen-media-controls-toolbar:not([hidden]) {
             &:hover {
                 &>toolbaritem {
@@ -18,7 +18,7 @@
             &:not(:hover) {
                 &>toolbaritem {
                     background: transparent !important;
-                    box-shadow: 0 0 0px color-mix(in srgb, var(--Neo-Background) 0%, white 2%) !important;
+                    box-shadow: 0 0 0px color-mix(in srgb, var(--Neo-Background) 0%, white 0%) !important;
                 }
             }
         }
