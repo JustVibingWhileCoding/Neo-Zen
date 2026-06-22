@@ -4,7 +4,7 @@
     --Aux-Footer-Height: calc(var(--Neo-Workspace-Strip-Height-Sidebar-Expanded) + 15px);
     --Aux-Indicator-Height: var(--Neo-Footer-Indicator-Height-Sidebar-Expanded);
 
-    &[zen-compact-mode="true"]{
+    &[zen-compact-mode="true"] {
         --Aux-Toolbar-height: 0px !important;
     }
 
@@ -12,7 +12,7 @@
     --Aux-Workspace-Strip-Height: var(--Neo-Workspace-Strip-Height-Sidebar-Expanded);
 
     &:not([zen-sidebar-expanded="true"]) {
-        
+
         --Aux-Indicator-Height: var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed);
 
         #navigator-toolbox {
