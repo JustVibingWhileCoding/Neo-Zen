@@ -91,6 +91,19 @@
                         box-shadow: 0px 0px 10px var(--Neo-Elements);
                     }
                 }
+                
+                &:has(.findbar-label[value=""]){
+                    &::before {
+                        border: 2px solid rgb(252, 3, 73) !important;
+                        box-shadow: 0px 0px 3px rgb(252, 3, 73);
+                    }
+                    
+                    &:hover:not(:has(> :first-child:hover)) {
+                        &::before {
+                            box-shadow: 0px 0px 10px rgb(252, 3, 73);
+                        }
+                    }
+                }
             }
 
             & .findbar-textbox {
