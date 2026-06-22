@@ -3,13 +3,14 @@
         @media not (-moz-bool-pref: "neo.features.footer.keep.max-height.enabled") {
             :root:not([animating-background="true"]):not([customizing=""]) {
                 #navigator-toolbox:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
-                    @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+                    @media not (-moz-bool-pref: "neo.features.workspace.button.hidden") {
 
                         #zen-sidebar-foot-buttons:hover:not(:has(#zen-workspaces-button:hover)),
                         #zen-sidebar-foot-buttons:has(toolbarbutton[open="true"]) {
 
                             transition: width 0.3s 200ms ease,
                                         height 0.3s 200ms ease,
+                                        max-height 1s 200ms ease,
                                         top 0.5s ease 200ms,
                                         bottom 0.5s ease 200ms,
                                         opacity 1s ease 200ms !important;
@@ -37,17 +38,26 @@
 
                             #navigator-toolbox[zen-sidebar-expanded] & {
 
+                                @media -moz-pref("neo.features.footer.fit-to-content") {
+                                    --Aux-Footer-Height: 100% !important;
+                                }
                                 /* expanded tweaks */
                                 &::after {
                                     opacity: 0 !important;
                                     width: 0px !important;
                                     top: 0px !important;
-                                    height: 0px !important;
+                                    @media not -moz-pref("neo.features.footer.fit-to-content") {
+                                        height: 0px !important;
+                                    }
                                 }
 
                                 #zen-workspaces-button {
-                                    height: 0px !important;
-                                    opacity: 0 !important;
+                                    @media not -moz-pref("neo.features.footer.fit-to-content") {
+                                        height: 0px !important;
+                                        opacity: 0 !important;
+                                    
+                                        pointer-events: none !important;
+                                    }
                                 }
 
                                 @media (-moz-bool-pref: "neo.features.footer.expanded.max-height.enabled") {
@@ -75,6 +85,8 @@
                                 #zen-workspaces-button {
 
                                     opacity: 0 !important;
+                                    
+                                    pointer-events: none !important;
 
                                     @media not -moz-pref("neo.footer.position", "top") {
                                         bottom: calc(var(--Aux-Footer-Height) * -1);
