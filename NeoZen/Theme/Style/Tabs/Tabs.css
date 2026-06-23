@@ -47,7 +47,7 @@
                         transition: background 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
                     }
                 }
-                
+
                 &[multiselected="true"] .tab-background {
                     box-shadow: inset 0px 0px 25px var(--Neo-Glow-Color-4) !important;
                 }
@@ -58,7 +58,12 @@
                     border: 2px solid color-mix(in srgb, var(--zen-primary-color) 0%, transparent) !important;
                 }
 
-                .tab-content {
+                &[zen-glance-tab="true"] .tab-content {
+                    justify-content: center !important;
+                    padding: 0px 0px !important;
+                }
+
+                &:not([zen-glance-tab="true"]) .tab-content {
                     padding: 0 12px !important;
                 }
             }
