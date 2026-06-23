@@ -76,7 +76,8 @@
             }
 
             &:not([zen-essential])[selected] .tab-background,
-            &:not([zen-essential])[multiselected="true"] .tab-background {
+            &:not([zen-essential])[multiselected="true"] .tab-background,
+            &:not([zen-essential]) .tab-background[selected=""] {
                 background: var(--tab-background) !important;
                 box-shadow: 0px 0px 4px var(--tab-color) !important;
                 border: 2px solid var(--tab-color) !important;
