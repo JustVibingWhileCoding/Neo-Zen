@@ -1,0 +1,30 @@
+@media not (-moz-pref("neo.theme.disabled")) {
+    @media not (-moz-pref("neo.theme.sidebar.extensions.disabled")) {
+        #zen-overflow-extensions-list {
+            &>toolbaritem {
+
+                & .unified-extensions-item-action-button {
+                    background: var(--Neo-Background-T2) !important;
+                    transition: background 0.5s ease !important;
+                    border: 2px solid var(--Neo-Glow-Color-3) !important;
+                }
+
+                & .unified-extensions-item {
+                    filter: drop-shadow(0px 0px 8px transparent) brightness(1.0) !important;
+
+                    transition: filter 0.3s ease !important;
+                }
+            }
+
+            &>toolbaritem:hover {
+                & .unified-extensions-item-action-button {
+                    background: var(--Neo-Glow-Color-3) !important;
+                }
+
+                &.unified-extensions-item {
+                    filter: drop-shadow(0px 0px 8px var(--Neo-Glow-Color-1)) brightness(1.0) !important;
+                }
+            }
+        }
+    }
+}

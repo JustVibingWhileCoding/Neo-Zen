@@ -3,6 +3,7 @@
 @import "Media/Media.css";
 @import "Sidebar/Sidebar.css";
 @import "Sidebar/Sidebar-Create.css";
+@import "Sidebar/Sidebar-Extensions.css";
 @import "Sidebar/WorkspaceIndicator.css";
 @import "Sidebar/WorkspaceStrip.css";
 @import "Tabs/Tabs.css";
