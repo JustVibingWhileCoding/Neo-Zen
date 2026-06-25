@@ -1,0 +1,11 @@
+@import url("../../../../../matugen/output/Neo-Colors.css");
+
+:root {
+    @media -moz-pref("neo.features.color-fixer.matugen.enabled") {
+
+        &[zen-default-theme="true"] {
+            --aux-background-color: color-mix(in srgb, var(--background) 90%, transparent 10%) !important;
+            --default-theme-color: var(--primary) !important;
+        }
+    }
+}
