@@ -15,6 +15,8 @@
 
 # Neo Zen  
 
+Welcome to **Neo Zen** – a sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity. With **innovative features, refined UI enhancements, and adaptive styling**, Neo Zen creates a seamless, distraction-free browsing experience. 
+
 > ## 🔄 Project Status – Rewrite Completed
 > 
 > The **rewrite of Neo Zen is finished**, delivering a cleaner and more maintainable foundation for the theme.  
@@ -42,24 +44,61 @@
 
 ---
 
-Welcome to **Neo Zen** – a sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity. With **innovative features, refined UI enhancements, and adaptive styling**, Neo Zen creates a seamless, distraction-free browsing experience.
+## 🎨 Matugen Compatibility
 
-*Neo Zen works with [Sine](https://github.com/CosmoCreeper/Sine)*
+Neo Zen is fully compatible with **[Matugen]** —  
+a dynamic theming engine that generates color palettes based on your wallpaper or system preferences.  
+
+This integration allows Neo Zen to adapt its colors seamlessly, giving you a more personalized and cohesive browsing experience.  
+
+### ⚙️ Setup Instructions
+
+1. **Copy the template file**  
+   Place the provided `Neo-Colors.css` file inside the `templates` folder of your Matugen configuration:
+
+   ***~/.config/matugen/templates/Neo-Colors.css***
+
+
+2. **Update your `config.toml`**  
+Add the following block to your Matugen configuration file (`~/.config/matugen/config.toml`):
+
+```
+[templates.browser_theme]
+input_path = '~/.config/matugen/templates/Neo-Colors.css'
+output_path = '~/.config/matugen/output/Neo-Colors.css'
+```
+<br>
+ 
+Once these steps are completed, the next time you change your wallpaper,  
+Matugen will automatically generate new colors for Neo Zen — keeping your browser theme perfectly in sync with your desktop.
+
+⚠️ **Note:** Currently, you need to restart the browser for the new colors to take effect.  
+In the future, Neo Zen will likely add compatibility with **[Pywal]** to enable smoother updates without restarting.
+
 
 ## 🚀 Features  
-
-| Feature | Demo |
-|---------|------|
-| **Neo Essentials** <br> In **collapsed mode**, a new **scrollable hidden area** keeps your tabs uncluttered. <br><br> - **Default:** Expands on hover. <br> - **Options:** Choose between **always expanded** or **always collapsed** for greater control. | <p align="center"><img src="https://github.com/user-attachments/assets/ff0cf564-b44b-489c-be17-1b70937fc802" width="70"></p> |
-| **Neo Footer** <br> The bottom area now responds **instantly**, eliminating hover lag. <br><br> - **Scrollable Workspace Button:** Even in **collapsed mode**, it's accessible and fluid. <br> - **Customizable Height:** Adapt the maximum height to suit your layout needs in collapsed mode. | <p align="center"><img src="https://github.com/user-attachments/assets/e0cf7d0b-562a-40a4-940f-e587102899d5" width="200"></p> |
-| **Neo Media V3** <br> Media controls are now **enabled across all modes**, ensuring seamless playback management. <br><br> - **Always Accessible:** No matter the mode, **media controls remain available** without restrictions. <br> - **Expand on Hover:** A refined interaction that keeps controls **intuitive and unobtrusive**. | <p align="center"><img src="https://github.com/user-attachments/assets/09eb8dd6-1566-4bbd-ae5c-7f1b14af4c99" width="130"></p> |
-| **Neo Findbar V3.0** <br> A more **intuitive, adaptive** search experience with **enhanced visibility options and smoother interactions**. | <p align="center"><img width="300" alt="neo-findbar-gif" src="https://github.com/user-attachments/assets/d18c4129-b453-4efd-b83d-c6fda06d8565" /></p> |
 
 ---
 
 ### ⚙️ **Customization Made Easy**  
 Modify Neo Zen’s behavior via the settings page (if you installed this through [Sine](https://github.com/CosmoCreeper/Sine)) or **"about:config"** if you did not.  
 For detailed settings and adjustments, check out the [Settings Wiki](https://github.com/JustVibingWhileCoding/Neo-Zen/wiki/Settings).  
+
+---
+
+## 📸 Screenshots & Visuals
+
+I know screenshots are useful, but honestly...  
+I’m too lazy to add them right now 😅.  
+
+I’ll upload them once I stop being lazy.  
+Thanks for your patience! 
+
+Sé que las imágenes ayudan, pero la verdad...  
+me da hueva subirlas por ahora 😅.  
+
+Las agregaré cuando se me quite la flojera.  
+¡Gracias por la paciencia!
 
 ---
 
@@ -83,28 +122,10 @@ A huge thanks to **[JustAdumbPrsn](https://github.com/JustAdumbPrsn)**, the crea
 
 You can check out **Nebula** here: [Zen Nebula](https://github.com/JustAdumbPrsn/Zen-Nebula)
 
-Neo Zen has been shaped by countless small pieces — some experimental, some forgotten, but all appreciated. While this project is no longer actively maintained by me, it’s only right to acknowledge the creators whose work made an impact along the way:
-
 - **📄 PDF Viewer** – Integrated from the [Natsumi Browser](https://github.com/greeeen-dev/Natsumi-Browser), created by **greeeen-dev**.  
   A clean and functional viewer that greatly enhanced document support in Neo Zen.
 
 - **🗂️ Tab Group System** – Based on code by [**Anoms12**](https://github.com/Anoms12).  
   Their implementation helped lay the foundation for Neo Zen’s tab group styling and behavior, [No longer implemented after version 1.20.0-neo.1].
 
----
 
-## 📸 Screenshots & Visuals
-
-I know screenshots are useful, but honestly...  
-I’m too lazy to add them right now 😅.  
-
-I’ll upload them once I stop being lazy.  
-Thanks for your patience! 
-
-Sé que las imágenes ayudan, pero la verdad...  
-me da hueva subirlas por ahora 😅.  
-
-Las agregaré cuando se me quite la flojera.  
-¡Gracias por la paciencia!
-<div align="center">
-</div>
