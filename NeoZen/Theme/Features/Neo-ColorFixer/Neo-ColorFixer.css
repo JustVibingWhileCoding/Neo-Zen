@@ -27,7 +27,7 @@ when having a gradient or a color set*/
 
                 @media not -moz-pref("zen.view.window.scheme", 2),
                 @media -moz-pref("neo.features.color-fixer.force.allmodes") {
-                    body: has(#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+                    body:has(#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
                         #zen-browser-background {
                             --zen-main-browser-background: var(--aux-background-color) !important;
                         }
