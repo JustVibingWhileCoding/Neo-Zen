@@ -27,7 +27,7 @@ when having a gradient or a color set*/
 
                 @media not -moz-pref("zen.view.window.scheme", 2),
                 @media -moz-pref("neo.features.color-fixer.force.allmodes") {
-                    body:has(#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+                    body: has(#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
                         #zen-browser-background {
                             --zen-main-browser-background: var(--aux-background-color) !important;
                         }
@@ -55,19 +55,17 @@ when having a gradient or a color set*/
 
         /* --------------------- Light/Dark mode color scheme --------------------- */
         :root {
-            @media not -moz-pref("neo.features.color-fixer.matugen.enabled") {
-                --aux-background-color: var(--browser-bg-dark-color-windows) !important;
+            --aux-background-color: var(--browser-bg-dark-color-windows);
+
+            @media (-moz-platform: linux) {
+                --aux-background-color: var(--browser-bg-dark-color-linux);
+            }
+
+            @media -moz-pref("zen.view.window.scheme", 1) {
+                --aux-background-color: var(--browser-bg-light-color-windows);
 
                 @media (-moz-platform: linux) {
-                    --aux-background-color: var(--browser-bg-dark-color-linux) !important;
-                }
-
-                @media -moz-pref("zen.view.window.scheme", 1) {
-                    --aux-background-color: var(--browser-bg-light-color-windows) !important;
-
-                    @media (-moz-platform: linux) {
-                        --aux-background-color: var(--browser-bg-light-color-linux) !important;
-                    }
+                    --aux-background-color: var(--browser-bg-light-color-linux);
                 }
             }
 
