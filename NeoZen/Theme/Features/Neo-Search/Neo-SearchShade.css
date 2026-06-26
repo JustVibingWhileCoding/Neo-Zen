@@ -1,7 +1,7 @@
 @media not -moz-pref("neo.features.disable") {
     @media not -moz-pref("neo.features.search.disable") {
         @media not -moz-pref("neo.features.search.shade.disable") {
-            :root:not([zen-has-empty-tab="true"])[zen-single-toolbar="true"] #urlbar:not([breakout-extend="true"]) {
+            :root:not([zen-has-empty-tab="true"])[zen-single-toolbar="true"] #urlbar:not([open]):not([breakout-extend="true"]) {
 
                 &:not([has-popup-open="true"]) {
 
