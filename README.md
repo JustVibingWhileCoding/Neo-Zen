@@ -68,6 +68,8 @@ input_path = '~/.config/matugen/templates/Neo-Colors.css'
 output_path = '~/.config/matugen/output/Neo-Colors.css'
 ```
 <br>
+
+3. **Enable this on Zen Browser** `neo.features.color-fixer.matugen.enabled`
  
 Once these steps are completed, the next time you change your wallpaper,  
 Matugen will automatically generate new colors for Neo Zen — keeping your browser theme perfectly in sync with your desktop.
