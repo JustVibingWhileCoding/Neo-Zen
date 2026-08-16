@@ -51,7 +51,7 @@
                     grid-auto-rows: auto !important;
                     align-items: start !important;
                     align-content: start !important; 
-                    justify-items: start !important;
+                    
                     
                     grid-template-columns: repeat(auto-fit, minmax(50px, 30%)) !important;
                     gap: auto !important;
