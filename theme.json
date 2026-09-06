@@ -8,8 +8,7 @@
   "createdAt": "2025-05-31",
   "updatedAt": "2026-6-21",
   "style": {
-    "chrome": "userChrome.css",
-    "content": "userContent.css"
+    "chrome": "userChrome.css"
   },
   "preferences": "preferences.json",
   "readme": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/main/README.md",
