@@ -1,6 +1,6 @@
-@import "Theme/Features/Features.css";
-@import "Theme/Styles/Styles.css";
-@import "Theme/Variables/Variables.css";
+@import "Features/Features.css";
+@import "Styles/Styles.css";
+@import "Variables/Variables.css";
 
 @import url("../../../../noctalia/output/Matugen-CSS.css");
 @import url("../../../../noctalia/output/Noctalia-CSS.css");
