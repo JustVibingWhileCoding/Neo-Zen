@@ -1,0 +1,135 @@
+/* Noctalia v5 Color Tokens Template (Light & Dark Support) */
+
+/* -------------------------------------------------------------------------- */
+/* LIGHT MODE                                                                 */
+/* -------------------------------------------------------------------------- */
+@media (prefers-color-scheme: light) or -moz-pref("zen.view.window.scheme", 1) {
+  @media not -moz-pref("zen.view.window.scheme", 0) {
+    :root {
+      /* Core Backgrounds */
+      --neo-background: {{ colors.background.light.hex }};
+      --neo-on-background: {{ colors.on_background.light.hex }};
+
+      /* Surfaces & Containers */
+      --neo-surface: {{ colors.surface.light.hex }};
+      --neo-surface-dim: {{ colors.surface_dim.light.hex }};
+      --neo-surface-bright: {{ colors.surface_bright.light.hex }};
+      --neo-surface-variant: {{ colors.surface_variant.light.hex }};
+      --neo-surface-container-lowest: {{ colors.surface_container_lowest.light.hex }};
+      --neo-surface-container-low: {{ colors.surface_container_low.light.hex }};
+      --neo-surface-container: {{ colors.surface_container.light.hex }};
+      --neo-surface-container-high: {{ colors.surface_container_high.light.hex }};
+      --neo-surface-container-highest: {{ colors.surface_container_highest.light.hex }};
+
+      /* Inverse Surfaces */
+      --neo-inverse-surface: {{ colors.inverse_surface.light.hex }};
+      --neo-inverse-on-surface: {{ colors.inverse_on_surface.light.hex }};
+      --neo-inverse-primary: {{ colors.inverse_primary.light.hex }};
+
+      /* Text / On-Surface */
+      --neo-on-surface: {{ colors.on_surface.light.hex }};
+      --neo-on-surface-variant: {{ colors.on_surface_variant.light.hex }};
+
+      /* Primary Accents */
+      --neo-primary: {{ colors.primary.light.hex }};
+      --neo-on-primary: {{ colors.on_primary.light.hex }};
+      --neo-primary-container: {{ colors.primary_container.light.hex }};
+      --neo-on-primary-container: {{ colors.on_primary_container.light.hex }};
+      --neo-primary-fixed: {{ colors.primary_fixed.light.hex }};
+      --neo-primary-fixed-dim: {{ colors.primary_fixed_dim.light.hex }};
+      --neo-on-primary-fixed: {{ colors.on_primary_fixed.light.hex }};
+      --neo-on-primary-fixed-variant: {{ colors.on_primary_fixed_variant.light.hex }};
+
+      /* Secondary Accents */
+      --neo-secondary: {{ colors.secondary.light.hex }};
+      --neo-on-secondary: {{ colors.on_secondary.light.hex }};
+      --neo-secondary-container: {{ colors.secondary_container.light.hex }};
+      --neo-on-secondary-container: {{ colors.on_secondary_container.light.hex }};
+
+      /* Tertiary Accents */
+      --neo-tertiary: {{ colors.tertiary.light.hex }};
+      --neo-on-tertiary: {{ colors.on_tertiary.light.hex }};
+      --neo-tertiary-container: {{ colors.tertiary_container.light.hex }};
+      --neo-on-tertiary-container: {{ colors.on_tertiary_container.light.hex }};
+
+      /* Borders & Utility */
+      --neo-outline: {{ colors.outline.light.hex }};
+      --neo-outline-variant: {{ colors.outline_variant.light.hex }};
+      --neo-shadow: {{ colors.shadow.light.hex }};
+      --neo-scrim: {{ colors.scrim.light.hex }};
+
+      /* Status Colors */
+      --neo-error: {{ colors.error.light.hex }};
+      --neo-on-error: {{ colors.on_error.light.hex }};
+      --neo-error-container: {{ colors.error_container.light.hex }};
+      --neo-on-error-container: {{ colors.on_error_container.light.hex }};
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* DARK MODE                                                                  */
+/* -------------------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) or -moz-pref("zen.view.window.scheme", 0) {
+  @media not -moz-pref("zen.view.window.scheme", 1) {
+    :root {
+      /* Core Backgrounds */
+      --neo-background: {{ colors.background.dark.hex }};
+      --neo-on-background: {{ colors.on_background.dark.hex }};
+
+      /* Surfaces & Containers */
+      --neo-surface: {{ colors.surface.dark.hex }};
+      --neo-surface-dim: {{ colors.surface_dim.dark.hex }};
+      --neo-surface-bright: {{ colors.surface_bright.dark.hex }};
+      --neo-surface-variant: {{ colors.surface_variant.dark.hex }};
+      --neo-surface-container-lowest: {{ colors.surface_container_lowest.dark.hex }};
+      --neo-surface-container-low: {{ colors.surface_container_low.dark.hex }};
+      --neo-surface-container: {{ colors.surface_container.dark.hex }};
+      --neo-surface-container-high: {{ colors.surface_container_high.dark.hex }};
+      --neo-surface-container-highest: {{ colors.surface_container_highest.dark.hex }};
+
+      /* Inverse Surfaces */
+      --neo-inverse-surface: {{ colors.inverse_surface.dark.hex }};
+      --neo-inverse-on-surface: {{ colors.inverse_on_surface.dark.hex }};
+      --neo-inverse-primary: {{ colors.inverse_primary.dark.hex }};
+
+      /* Text / On-Surface */
+      --neo-on-surface: {{ colors.on_surface.dark.hex }};
+      --neo-on-surface-variant: {{ colors.on_surface_variant.dark.hex }};
+
+      /* Primary Accents */
+      --neo-primary: {{ colors.primary.dark.hex }};
+      --neo-on-primary: {{ colors.on_primary.dark.hex }};
+      --neo-primary-container: {{ colors.primary_container.dark.hex }};
+      --neo-on-primary-container: {{ colors.on_primary_container.dark.hex }};
+      --neo-primary-fixed: {{ colors.primary_fixed.dark.hex }};
+      --neo-primary-fixed-dim: {{ colors.primary_fixed_dim.dark.hex }};
+      --neo-on-primary-fixed: {{ colors.on_primary_fixed.dark.hex }};
+      --neo-on-primary-fixed-variant: {{ colors.on_primary_fixed_variant.dark.hex }};
+
+      /* Secondary Accents */
+      --neo-secondary: {{ colors.secondary.dark.hex }};
+      --neo-on-secondary: {{ colors.on_secondary.dark.hex }};
+      --neo-secondary-container: {{ colors.secondary_container.dark.hex }};
+      --neo-on-secondary-container: {{ colors.on_secondary_container.dark.hex }};
+
+      /* Tertiary Accents */
+      --neo-tertiary: {{ colors.tertiary.dark.hex }};
+      --neo-on-tertiary: {{ colors.on_tertiary.dark.hex }};
+      --neo-tertiary-container: {{ colors.tertiary_container.dark.hex }};
+      --neo-on-tertiary-container: {{ colors.on_tertiary_container.dark.hex }};
+
+      /* Borders & Utility */
+      --neo-outline: {{ colors.outline.dark.hex }};
+      --neo-outline-variant: {{ colors.outline_variant.dark.hex }};
+      --neo-shadow: {{ colors.shadow.dark.hex }};
+      --neo-scrim: {{ colors.scrim.dark.hex }};
+
+      /* Status Colors */
+      --neo-error: {{ colors.error.dark.hex }};
+      --neo-on-error: {{ colors.on_error.dark.hex }};
+      --neo-error-container: {{ colors.error_container.dark.hex }};
+      --neo-on-error-container: {{ colors.on_error_container.dark.hex }};
+    }
+  }
+}
