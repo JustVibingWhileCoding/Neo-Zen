@@ -1,23 +1,22 @@
 {
-  "id": "Neo-Zen",
+  "id": "Neo-Zen-Test",
   "homepage": "https://github.com/JustVibingWhileCoding/Neo-Zen",
   "author": "JustVibingWhileCoding",
-  "name": "Neo Zen",
+  "name": "Neo Zen Test",
   "description": "A sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity",
-  "version": "1.21.3-neo.1",
+  "version": "1.23.0T-neo.0",
   "createdAt": "2025-05-31",
-  "updatedAt": "2026-6-21",
+  "updatedAt": "2026-9-6",
   "style": {
     "chrome": "userChrome.css"
   },
   "preferences": "preferences.json",
-  "readme": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/main/README.md",
+  "readme": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/Another-Rewrite/README.md",
   "image": "https://github.com/user-attachments/assets/8fb6729e-5bef-4acb-af70-9d5066cb2e53",
   "tags": [
-    "content",
     "chrome",
     "minimal",
     "futuristic"
   ],
-  "fork": ["zen"]
+  "fork": []
 }
