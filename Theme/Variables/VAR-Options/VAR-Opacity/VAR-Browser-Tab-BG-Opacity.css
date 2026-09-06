@@ -1,0 +1,405 @@
+:root {
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 0) {
+        --neo-browser-tab-bg-opacity: 0%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 1) {
+        --neo-browser-tab-bg-opacity: 1%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 2) {
+        --neo-browser-tab-bg-opacity: 2%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 3) {
+        --neo-browser-tab-bg-opacity: 3%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 4) {
+        --neo-browser-tab-bg-opacity: 4%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 5) {
+        --neo-browser-tab-bg-opacity: 5%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 6) {
+        --neo-browser-tab-bg-opacity: 6%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 7) {
+        --neo-browser-tab-bg-opacity: 7%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 8) {
+        --neo-browser-tab-bg-opacity: 8%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 9) {
+        --neo-browser-tab-bg-opacity: 9%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 10) {
+        --neo-browser-tab-bg-opacity: 10%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 11) {
+        --neo-browser-tab-bg-opacity: 11%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 12) {
+        --neo-browser-tab-bg-opacity: 12%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 13) {
+        --neo-browser-tab-bg-opacity: 13%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 14) {
+        --neo-browser-tab-bg-opacity: 14%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 15) {
+        --neo-browser-tab-bg-opacity: 15%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 16) {
+        --neo-browser-tab-bg-opacity: 16%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 17) {
+        --neo-browser-tab-bg-opacity: 17%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 18) {
+        --neo-browser-tab-bg-opacity: 18%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 19) {
+        --neo-browser-tab-bg-opacity: 19%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 20) {
+        --neo-browser-tab-bg-opacity: 20%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 21) {
+        --neo-browser-tab-bg-opacity: 21%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 22) {
+        --neo-browser-tab-bg-opacity: 22%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 23) {
+        --neo-browser-tab-bg-opacity: 23%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 24) {
+        --neo-browser-tab-bg-opacity: 24%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 25) {
+        --neo-browser-tab-bg-opacity: 25%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 26) {
+        --neo-browser-tab-bg-opacity: 26%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 27) {
+        --neo-browser-tab-bg-opacity: 27%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 28) {
+        --neo-browser-tab-bg-opacity: 28%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 29) {
+        --neo-browser-tab-bg-opacity: 29%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 30) {
+        --neo-browser-tab-bg-opacity: 30%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 31) {
+        --neo-browser-tab-bg-opacity: 31%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 32) {
+        --neo-browser-tab-bg-opacity: 32%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 33) {
+        --neo-browser-tab-bg-opacity: 33%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 34) {
+        --neo-browser-tab-bg-opacity: 34%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 35) {
+        --neo-browser-tab-bg-opacity: 35%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 36) {
+        --neo-browser-tab-bg-opacity: 36%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 37) {
+        --neo-browser-tab-bg-opacity: 37%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 38) {
+        --neo-browser-tab-bg-opacity: 38%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 39) {
+        --neo-browser-tab-bg-opacity: 39%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 40) {
+        --neo-browser-tab-bg-opacity: 40%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 41) {
+        --neo-browser-tab-bg-opacity: 41%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 42) {
+        --neo-browser-tab-bg-opacity: 42%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 43) {
+        --neo-browser-tab-bg-opacity: 43%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 44) {
+        --neo-browser-tab-bg-opacity: 44%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 45) {
+        --neo-browser-tab-bg-opacity: 45%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 46) {
+        --neo-browser-tab-bg-opacity: 46%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 47) {
+        --neo-browser-tab-bg-opacity: 47%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 48) {
+        --neo-browser-tab-bg-opacity: 48%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 49) {
+        --neo-browser-tab-bg-opacity: 49%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 50) {
+        --neo-browser-tab-bg-opacity: 50%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 51) {
+        --neo-browser-tab-bg-opacity: 51%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 52) {
+        --neo-browser-tab-bg-opacity: 52%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 53) {
+        --neo-browser-tab-bg-opacity: 53%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 54) {
+        --neo-browser-tab-bg-opacity: 54%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 55) {
+        --neo-browser-tab-bg-opacity: 55%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 56) {
+        --neo-browser-tab-bg-opacity: 56%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 57) {
+        --neo-browser-tab-bg-opacity: 57%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 58) {
+        --neo-browser-tab-bg-opacity: 58%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 59) {
+        --neo-browser-tab-bg-opacity: 59%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 60) {
+        --neo-browser-tab-bg-opacity: 60%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 61) {
+        --neo-browser-tab-bg-opacity: 61%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 62) {
+        --neo-browser-tab-bg-opacity: 62%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 63) {
+        --neo-browser-tab-bg-opacity: 63%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 64) {
+        --neo-browser-tab-bg-opacity: 64%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 65) {
+        --neo-browser-tab-bg-opacity: 65%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 66) {
+        --neo-browser-tab-bg-opacity: 66%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 67) {
+        --neo-browser-tab-bg-opacity: 67%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 68) {
+        --neo-browser-tab-bg-opacity: 68%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 69) {
+        --neo-browser-tab-bg-opacity: 69%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 70) {
+        --neo-browser-tab-bg-opacity: 70%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 71) {
+        --neo-browser-tab-bg-opacity: 71%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 72) {
+        --neo-browser-tab-bg-opacity: 72%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 73) {
+        --neo-browser-tab-bg-opacity: 73%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 74) {
+        --neo-browser-tab-bg-opacity: 74%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 75) {
+        --neo-browser-tab-bg-opacity: 75%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 76) {
+        --neo-browser-tab-bg-opacity: 76%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 77) {
+        --neo-browser-tab-bg-opacity: 77%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 78) {
+        --neo-browser-tab-bg-opacity: 78%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 79) {
+        --neo-browser-tab-bg-opacity: 79%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 80) {
+        --neo-browser-tab-bg-opacity: 80%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 81) {
+        --neo-browser-tab-bg-opacity: 81%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 82) {
+        --neo-browser-tab-bg-opacity: 82%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 83) {
+        --neo-browser-tab-bg-opacity: 83%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 84) {
+        --neo-browser-tab-bg-opacity: 84%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 85) {
+        --neo-browser-tab-bg-opacity: 85%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 86) {
+        --neo-browser-tab-bg-opacity: 86%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 87) {
+        --neo-browser-tab-bg-opacity: 87%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 88) {
+        --neo-browser-tab-bg-opacity: 88%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 89) {
+        --neo-browser-tab-bg-opacity: 89%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 90) {
+        --neo-browser-tab-bg-opacity: 90%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 91) {
+        --neo-browser-tab-bg-opacity: 91%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 92) {
+        --neo-browser-tab-bg-opacity: 92%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 93) {
+        --neo-browser-tab-bg-opacity: 93%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 94) {
+        --neo-browser-tab-bg-opacity: 94%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 95) {
+        --neo-browser-tab-bg-opacity: 95%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 96) {
+        --neo-browser-tab-bg-opacity: 96%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 97) {
+        --neo-browser-tab-bg-opacity: 97%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 98) {
+        --neo-browser-tab-bg-opacity: 98%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 99) {
+        --neo-browser-tab-bg-opacity: 99%;
+    }
+
+    @media -moz-pref("neo.options.opacity.browser.tab.background", 100) {
+        --neo-browser-tab-bg-opacity: 100%;
+    }
+}
