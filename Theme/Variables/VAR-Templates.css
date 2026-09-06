@@ -2,7 +2,7 @@
 -moz-pref("neo.template", "Matugen") or -moz-pref("neo.template", "matugen") or -moz-pref("neo.template", "MATUGEN") {
 
     :root {
-        /* Browser background variables --------------------------------------------- */
+        /* Browser and browser tab background variables ------------------------------------- */
         --neo-browser-bg-color: var(--template-surface);
         --neo-browser-tab-bg-color: var(--template-surface);
     }
