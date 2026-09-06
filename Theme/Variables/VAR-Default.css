@@ -1,0 +1,22 @@
+:root {
+    --fg-color: light-dark(black, white);
+    --bg-color: light-dark(white, black);
+
+    /* Browser background variables --------------------------------------------- */
+
+    --default-browser-bg-color: var(--bg-color);
+
+    /* Browser background opacity */
+
+    @media (-moz-platform: linux) {
+        --default-browser-bg-opacity: 60%;
+    }
+
+    @media (-moz-platform: windows) {
+        --default-browser-bg-opacity: 50%;
+    }
+
+    @media (-moz-platform: macos) {
+        --default-browser-bg-opacity: 50%;
+    }
+}
