@@ -13,3 +13,11 @@ Reasons behind this rewrite:
 - **Fifth reason:** NO, THAT'S NOT A FORK OF ANY OTHER THEME! Neo Zen is an independent theme. It's not a fork of any other theme; it's a completely different theme with its own features and options.
 
 - **Sixth reason:** Maybe... just maybe... I'll make a script to automatically add the templates to matugen and noctalia.
+
+- **Seventh reason:** I forgot this one for a moment, THE THEME IS UGLY AS HELL WHEN using it in light mode. Why?, well, the "glow" effect just looks good when using the theme in dark mode, how can I fix this?, using light-dark() in the CSS variables, that way the glow effect will be there only on dark mode, meanwhile, in light mode there will be only a shadow effect; Another problem is the opacity of the shadow, the glow effect needs to use a higher opacity and also a filter, so... to fix that... :l i don't fkn know how i'll do that yet because the size of the filters and shadows are different between modes and elements... so I'm fked up.
+
+- **Eighth reason:** It is part of the seventh reason, maybe I'll try to make it look like glass in light mode... MAYBE. With the first commits in this branch, you can test the opacity of the browser background changing the values between 0 and 100 using the options neo.options.opacity.browser.background and neo.options.opacity.browser.tab.background, so you can get a full transparent browser... well on linux and macOS, on windows you have to pray for 3rd party programs to get a better effect than the default "acrylic" effect" like mica for everyone or something like that.
+
+The feature called "Neo ColorFixer" will be split into the entire theme, what I need with this is to make each part work separately, for example, color fixer overrides the color of the text and icons, but with this version you will be able to change the color of the text and icons for the tabs with any color from templates without affecting the rest of the elements like the url bar.
+
+This will be completely integrated in the main branch when the integration of noctalia is complete, for matugen, it will be the same I just don't have a template for it yet.
