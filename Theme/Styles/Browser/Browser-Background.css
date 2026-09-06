@@ -1,5 +1,6 @@
 :root {
-    &[zen-default-theme="true"] {
+    &[zen-default-theme="true"],
+    & body:has(#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
         #zen-browser-background {
             --zen-main-browser-background: var(--neo-browser-bg) !important;
         }
