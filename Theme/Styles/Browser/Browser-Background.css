@@ -1,0 +1,11 @@
+:root {
+    &[zen-default-theme="true"] {
+        #zen-browser-background {
+            --zen-main-browser-background: var(--neo-browser-bg) !important;
+        }
+
+        .browserStack browser {
+            background-color: var(--neo-browser-tab-bg) !important;
+        }
+    }
+}
