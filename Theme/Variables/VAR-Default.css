@@ -19,4 +19,9 @@
     @media (-moz-platform: macos) {
         --default-browser-bg-opacity: 50%;
     }
+
+    /* Browser tab background variables ----------------------------------------- */
+
+    --default-browser-tab-bg-color: var(--bg-color);
+    --default-browser-tab-bg-opacity: 35%;
 }
