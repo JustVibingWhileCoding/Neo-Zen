@@ -1,0 +1,7 @@
+@media -moz-pref("neo.template", "Noctalia") or -moz-pref("neo.template", "noctalia") or -moz-pref("neo.template", "NOCTALIA") or
+-moz-pref("neo.template", "Matugen") or -moz-pref("neo.template", "matugen") or -moz-pref("neo.template", "MATUGEN") {
+
+    :root {
+        
+    }
+}
