@@ -1,0 +1,6 @@
+:root {
+    --neo-browser-bg-color: var(--default-browser-bg-color);
+    --neo-browser-bg-opacity: var(--default-browser-bg-opacity);
+    /* Combining the color and the opacity to get the final background color */
+    --neo-browser-tab-bg: color-mix(in srgb, var(--neo-browser-tab-bg-color) var(--neo-browser-tab-bg-opacity), transparent);
+}
