@@ -11,4 +11,14 @@
     --neo-browser-tab-bg-opacity: var(--default-browser-tab-bg-opacity);
     /* Combining the color and the opacity to get the final background color */
     --neo-browser-tab-bg: color-mix(in srgb, var(--neo-browser-tab-bg-color) var(--neo-browser-tab-bg-opacity), transparent);
+
+    /* Accent color variables --------------------------------------------------- */
+    --neo-accent-color: var(--default-accent-color);
+    --neo-accent-color-hover: var(--default-accent-color-hover);
+    --neo-accent-color-active: var(--default-accent-color-active);
+
+    /* Accent color opacity variables */
+    --neo-accent-color-opacity: var(--default-accent-color-opacity);
+    --neo-accent-color-hover-opacity: var(--default-accent-color-hover-opacity);
+    --neo-accent-color-active-opacity: var(--default-accent-color-active-opacity);
 }
