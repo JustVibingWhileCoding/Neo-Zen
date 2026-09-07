@@ -3,25 +3,20 @@
     & body:has(#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
         #zen-browser-background {
             --zen-main-browser-background: var(--neo-browser-bg) !important;
+            
+            /* Fix background flashing when switching workspaces */
+            
+            --zen-main-browser-background-old: transparent !important;
+            
+            &::after {
+                transition: background 5s linear, opacity 5s linear !important;
+            }
+            /*---------------------------------------------------*/
+
         }
 
         .browserStack browser {
             background-color: var(--neo-browser-tab-bg) !important;
-        }
-    }
-
-    /* Fix background flashing when switching workspaces */
-    &[animating-background="true"] {
-        & #zen-browser-background {
-            --zen-main-browser-background-old: var(--neo-browser-bg) !important;
-            --zen-main-browser-background: var(--neo-browser-bg) !important;
-        }
-
-        /* Fix background flashing when switching workspaces */
-        & .zen-browser-generic-background {
-            &::after {
-                transition: background 2s ease, opacity 2s ease !important;
-            }
         }
     }
 }
