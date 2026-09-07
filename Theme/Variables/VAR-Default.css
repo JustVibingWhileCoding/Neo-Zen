@@ -17,7 +17,7 @@
     }
 
     @media (-moz-platform: windows) {
-        --default-browser-bg-opacity: 50%;
+        --default-browser-bg-opacity: 40%;
     }
 
     @media (-moz-platform: macos) {
