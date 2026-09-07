@@ -9,7 +9,11 @@
     /* Browser background opacity */
 
     @media (-moz-platform: linux) {
-        --default-browser-bg-opacity: 60%;
+        --default-browser-bg-opacity: 100%;
+
+        @media -moz-pref("zen.widget.linux.transparency") {
+            --default-browser-bg-opacity: 60%;
+        }
     }
 
     @media (-moz-platform: windows) {
