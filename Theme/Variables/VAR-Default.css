@@ -28,4 +28,16 @@
 
     --default-browser-tab-bg-color: var(--bg-color);
     --default-browser-tab-bg-opacity: 35%;
+
+    /* Accent color variables --------------------------------------------------- */
+
+    --default-accent-color: rgb(255, 189, 113);
+    --default-accent-color-hover: rgb(255, 189, 113);
+    --default-accent-color-active: rgb(255, 189, 113);
+
+    /* Accent color opacity variables ------------------------------------------- */
+
+    --default-accent-color-opacity: 100%;
+    --default-accent-color-hover-opacity: 100%;
+    --default-accent-color-active-opacity: 100%;
 }
