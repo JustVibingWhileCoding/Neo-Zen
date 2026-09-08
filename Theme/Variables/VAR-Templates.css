@@ -4,6 +4,6 @@
     :root {
         /* Browser and browser tab background variables ------------------------------------- */
         --neo-browser-bg-color: var(--template-surface);
-        --neo-browser-tab-bg-color: var(--template-surface-dim);
+        --neo-browser-tab-bg-color: var(--template-surface-container);
     }
 }
